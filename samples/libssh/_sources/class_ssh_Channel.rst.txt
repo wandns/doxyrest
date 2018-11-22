@@ -1,0 +1,407 @@
+.. index:: pair: class; ssh::Channel
+.. _doxid-classssh_1_1_channel:
+.. _cid-ssh::channel:
+
+class ssh::Channel
+==================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/libsshpp.hpp>
+
+
+Overview
+~~~~~~~~
+
+the :ref:`ssh::Channel <doxid-classssh_1_1_channel>` class describes the state of an SSH channel. :ref:`More...<details-doxid-classssh_1_1_channel>`
+
+.. _doxid-classssh_1_1_channel_1a342d8629aee4d4239ae791e1f7d38dd4:
+.. _cid-ssh::channel::channel:
+.. _doxid-classssh_1_1_channel_1aa9bd03b50afa6f6c0126fe490e17112e:
+.. _cid-ssh::channel::getexitstatus:
+.. _doxid-classssh_1_1_channel_1a1c60382b561193baebb1d68be1219500:
+.. _cid-ssh::channel::getsession:
+.. _doxid-classssh_1_1_channel_1ac5408b11bfb79ec58456660b8c8d98d8:
+.. _cid-ssh::channel::openforward:
+.. _doxid-classssh_1_1_channel_1ad6f328c91da72bc35f21cec8f0ec367f:
+.. _cid-ssh::channel::opensession:
+.. _doxid-classssh_1_1_channel_1a661394ceb03e65bb7c02e040d23d6fc8:
+.. _cid-ssh::channel::poll:
+.. _doxid-classssh_1_1_channel_1ab232d8f34a14af8f3a891bc964a103e7:
+.. _cid-ssh::channel::read:
+.. _doxid-classssh_1_1_channel_1a5a03a0f25f2e7044bcc97df338f57c62:
+.. _cid-ssh::channel::read-2:
+.. _doxid-classssh_1_1_channel_1a046e390e41453a66cd442a687efd6695:
+.. _cid-ssh::channel::read-3:
+.. _doxid-classssh_1_1_channel_1aef42ee6d77142e1a8369e06173ea550d:
+.. _cid-ssh::channel::readnonblocking:
+.. _doxid-classssh_1_1_channel_1a26a288266c862363964d3c41ac5b77f5:
+.. _cid-ssh::channel::requestenv:
+.. _doxid-classssh_1_1_channel_1a51a20e82f430513a52cfba3f329c3abe:
+.. _cid-ssh::channel::requestexec:
+.. _doxid-classssh_1_1_channel_1ab8dc3ab11eba4ad6c429337823d89bb8:
+.. _cid-ssh::channel::requestpty:
+.. _doxid-classssh_1_1_channel_1a3f21cf3cc8111380134db317b356f7dc:
+.. _cid-ssh::channel::requestsendsignal:
+.. _doxid-classssh_1_1_channel_1ac551d84c253489d67fc7df3d415b1238:
+.. _cid-ssh::channel::requestshell:
+.. _doxid-classssh_1_1_channel_1a4b11b239b8e9f0302c5ab2147ad65757:
+.. _cid-ssh::channel::requestsubsystem:
+.. _doxid-classssh_1_1_channel_1a7421cfbdc01d05f999a55e05af9a593c:
+.. _cid-ssh::channel::requestx11:
+.. _doxid-classssh_1_1_channel_1a4767519dc2766ca61a8a8567a0588d80:
+.. _cid-ssh::channel::sendeof:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// construction
+
+	Channel (:ref:`Session<doxid-classssh_1_1_session>`& session)
+
+	// methods
+
+	:ref:`Channel<doxid-classssh_1_1_channel>`*
+	:ref:`acceptX11<doxid-classssh_1_1_channel_1a62000c16999e74525d296f0a1cb19c95>` (int timeout_ms)
+
+	void
+	:ref:`changePtySize<doxid-classssh_1_1_channel_1a196b0eab10bf168330f569ff3881562c>` (
+	    int cols,
+	    int rows
+	    )
+
+	void
+	:ref:`close<doxid-classssh_1_1_channel_1ad14405b4e8c3a8e3d37a49ed793aadde>` ()
+
+	int
+	getExitStatus ()
+
+	:ref:`Session<doxid-classssh_1_1_session>`&
+	getSession ()
+
+	bool
+	:ref:`isClosed<doxid-classssh_1_1_channel_1a38880d18d0fc357be0f4f8b8ef1c92ef>` ()
+
+	bool
+	:ref:`isEof<doxid-classssh_1_1_channel_1a3bb4131d82cc033d75f65a5137053532>` ()
+
+	bool
+	:ref:`isOpen<doxid-classssh_1_1_channel_1aa2794c09f819f3132b241aa6b72b0664>` ()
+
+	int
+	openForward (
+	    const char* remotehost,
+	    int remoteport,
+	    const char* sourcehost = NULL,
+	    int localport = 0
+	    )
+
+	void
+	openSession ()
+
+	int
+	poll (bool is_stderr = false)
+
+	int
+	read (
+	    void* dest,
+	    size_t count,
+	    bool is_stderr
+	    )
+
+	int
+	read (
+	    void* dest,
+	    size_t count,
+	    int timeout
+	    )
+
+	int
+	read (
+	    void* dest,
+	    size_t count,
+	    bool is_stderr = false,
+	    int timeout = -1
+	    )
+
+	int
+	readNonblocking (
+	    void* dest,
+	    size_t count,
+	    bool is_stderr = false
+	    )
+
+	void
+	requestEnv (
+	    const char* name,
+	    const char* value
+	    )
+
+	void
+	requestExec (const char* cmd)
+
+	void
+	requestPty (
+	    const char* term = NULL,
+	    int cols = 0,
+	    int rows = 0
+	    )
+
+	void
+	requestSendSignal (const char* signum)
+
+	void
+	requestShell ()
+
+	void
+	requestSubsystem (const char* subsystem)
+
+	int
+	requestX11 (
+	    bool single_connection,
+	    const char* protocol,
+	    const char* cookie,
+	    int screen_number
+	    )
+
+	void
+	sendEof ()
+
+	int
+	:ref:`write<doxid-classssh_1_1_channel_1a06cf7ffd971eff87783a169444fa09a2>` (
+	    const void* data,
+	    size_t len,
+	    bool is_stderr = false
+	    )
+
+.. _details-doxid-classssh_1_1_channel:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+the :ref:`ssh::Channel <doxid-classssh_1_1_channel>` class describes the state of an SSH channel.
+
+
+
+.. rubric:: See also:
+
+ssh_channel
+
+Methods
+-------
+
+.. _doxid-classssh_1_1_channel_1a62000c16999e74525d296f0a1cb19c95:
+.. _cid-ssh::channel::acceptx11:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`Channel<doxid-classssh_1_1_channel>`*
+	acceptX11 (int timeout_ms)
+
+accept an incoming X11 connection
+
+you have to delete this pointer after use
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - timeout_ms
+
+        - timeout for waiting, in ms
+
+
+
+.. rubric:: Returns:
+
+new :ref:`Channel <doxid-classssh_1_1_channel>` pointer on the X11 connection
+
+NULL in case of error
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_channel_accept_x11 <doxid-group__libssh__channel_1ga548bd0f77a50b7c8180942544b375866>`
+
+:ref:`Channel::requestX11 <doxid-classssh_1_1_channel_1a7421cfbdc01d05f999a55e05af9a593c>`
+
+.. _doxid-classssh_1_1_channel_1a196b0eab10bf168330f569ff3881562c:
+.. _cid-ssh::channel::changeptysize:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void
+	changePtySize (
+	    int cols,
+	    int rows
+	    )
+
+change the size of a pseudoterminal
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - cols
+
+        - number of columns
+
+    *
+        - rows
+
+        - number of rows
+
+    *
+        - :ref:`SshException <doxid-classssh_1_1_ssh_exception>`
+
+        - on error
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_channel_change_pty_size <doxid-group__libssh__channel_1gaf5d55c90f3d98c583df23d21905c1127>`
+
+.. _doxid-classssh_1_1_channel_1ad14405b4e8c3a8e3d37a49ed793aadde:
+.. _cid-ssh::channel::close:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void
+	close ()
+
+closes a channel
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - :ref:`SshException <doxid-classssh_1_1_ssh_exception>`
+
+        - on error
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_channel_close <doxid-group__libssh__channel_1ga238f07e0455456a5bfd8a49ead917732>`
+
+.. _doxid-classssh_1_1_channel_1a38880d18d0fc357be0f4f8b8ef1c92ef:
+.. _cid-ssh::channel::isclosed:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	bool
+	isClosed ()
+
+returns true if channel is in closed state
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_channel_is_closed <doxid-group__libssh__channel_1gab2720b44cb7f1dfe2b38ffe07c2f45c7>`
+
+.. _doxid-classssh_1_1_channel_1a3bb4131d82cc033d75f65a5137053532:
+.. _cid-ssh::channel::iseof:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	bool
+	isEof ()
+
+returns true if channel is in EOF state
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_channel_is_eof <doxid-group__libssh__channel_1gab535264029443d77214c0615a0788b0a>`
+
+.. _doxid-classssh_1_1_channel_1aa2794c09f819f3132b241aa6b72b0664:
+.. _cid-ssh::channel::isopen:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	bool
+	isOpen ()
+
+returns true if channel is in open state
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_channel_is_open <doxid-group__libssh__channel_1gaaafcda943c96ddb91e5c28c0bdee7045>`
+
+.. _doxid-classssh_1_1_channel_1a06cf7ffd971eff87783a169444fa09a2:
+.. _cid-ssh::channel::write:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	write (
+	    const void* data,
+	    size_t len,
+	    bool is_stderr = false
+	    )
+
+Writes on a channel.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - data
+
+        - data to write.
+
+    *
+        - len
+
+        - number of bytes to write.
+
+    *
+        - is_stderr
+
+        - write should be done on the stderr channel (server only)
+
+    *
+        - :ref:`SshException <doxid-classssh_1_1_ssh_exception>`
+
+        - in case of error
+
+
+
+.. rubric:: Returns:
+
+number of bytes written
+
+
+
+.. rubric:: See also:
+
+:ref:`channel_write <doxid-legacy_8c_1ac202e79c44c789daccc66d1ad647ee26>`
+
+:ref:`channel_write_stderr <doxid-group__libssh__server_1ga4df894b92717afb7f8791182f21a9a6c>`
+

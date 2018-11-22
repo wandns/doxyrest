@@ -1,0 +1,23 @@
+.. index:: pair: enum; ssh_pcap_direction
+.. _doxid-pcap_8h_1ac58074c59a320904f6ee0c1b05c65a0b:
+.. _cid-ssh_pcap_direction:
+
+enum ssh_pcap_direction
+=======================
+
+
+
+
+
+.. _doxid-pcap_8h_1ac58074c59a320904f6ee0c1b05c65a0bac211281deca3649bd93b786d2bf0599f:
+.. _cid-ssh_pcap_direction::ssh_pcap_dir_in:
+.. _doxid-pcap_8h_1ac58074c59a320904f6ee0c1b05c65a0baf8914cb5c592ce03139629d528c7ff10:
+.. _cid-ssh_pcap_direction::ssh_pcap_dir_out:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_PCAP_DIR_IN 
+	SSH_PCAP_DIR_OUT 
+

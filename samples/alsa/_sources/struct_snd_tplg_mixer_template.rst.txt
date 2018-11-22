@@ -1,0 +1,107 @@
+.. index:: pair: struct; snd_tplg_mixer_template
+.. _doxid-structsnd__tplg__mixer__template:
+.. _cid-snd_tplg_mixer_template:
+
+struct snd_tplg_mixer_template
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for mixer control objects. :ref:`More...<details-doxid-structsnd__tplg__mixer__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	struct :ref:`snd_tplg_ctl_template<doxid-structsnd__tplg__ctl__template>` :ref:`hdr<doxid-structsnd__tplg__mixer__template_1a47753d107c983bcaa5f45d7b3394acf3>`
+	struct :ref:`snd_tplg_channel_map_template<doxid-structsnd__tplg__channel__map__template>`* :ref:`map<doxid-structsnd__tplg__mixer__template_1ad627bd602b491c441a8a4c9981d1fd0b>`
+	int :ref:`min<doxid-structsnd__tplg__mixer__template_1a653a7de4072039fed489b2f8a2109f7b>`
+	int :ref:`max<doxid-structsnd__tplg__mixer__template_1a70e434e24b7f4ad3fea7285d9bb44d5a>`
+	int :ref:`platform_max<doxid-structsnd__tplg__mixer__template_1aa8e7d9900d359f3b8ecea793ca5f7976>`
+	int :ref:`invert<doxid-structsnd__tplg__mixer__template_1a4b90c9c6c15ea142453f0dc52a8138b5>`
+	struct snd_soc_tplg_private* :ref:`priv<doxid-structsnd__tplg__mixer__template_1a1bccfdefa76cbb03ec73c64b25e0c821>`
+
+.. _details-doxid-structsnd__tplg__mixer__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for mixer control objects.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__mixer__template_1a47753d107c983bcaa5f45d7b3394acf3:
+.. _cid-snd_tplg_mixer_template::hdr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_ctl_template<doxid-structsnd__tplg__ctl__template>` hdr
+
+control type header
+
+.. _doxid-structsnd__tplg__mixer__template_1ad627bd602b491c441a8a4c9981d1fd0b:
+.. _cid-snd_tplg_mixer_template::map:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_channel_map_template<doxid-structsnd__tplg__channel__map__template>`* map
+
+channel map
+
+.. _doxid-structsnd__tplg__mixer__template_1a653a7de4072039fed489b2f8a2109f7b:
+.. _cid-snd_tplg_mixer_template::min:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int min
+
+min value for mixer
+
+.. _doxid-structsnd__tplg__mixer__template_1a70e434e24b7f4ad3fea7285d9bb44d5a:
+.. _cid-snd_tplg_mixer_template::max:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int max
+
+max value for mixer
+
+.. _doxid-structsnd__tplg__mixer__template_1aa8e7d9900d359f3b8ecea793ca5f7976:
+.. _cid-snd_tplg_mixer_template::platform_max:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int platform_max
+
+max value for platform control
+
+.. _doxid-structsnd__tplg__mixer__template_1a4b90c9c6c15ea142453f0dc52a8138b5:
+.. _cid-snd_tplg_mixer_template::invert:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int invert
+
+whether controls bits are inverted
+
+.. _doxid-structsnd__tplg__mixer__template_1a1bccfdefa76cbb03ec73c64b25e0c821:
+.. _cid-snd_tplg_mixer_template::priv:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct snd_soc_tplg_private* priv
+
+control private data
+

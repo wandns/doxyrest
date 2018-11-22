@@ -1,0 +1,62 @@
+.. index:: pair: enum; snd_timer_event_t
+.. _doxid-group___timer_1ga396a3bb020be40c36c9a6de0554145b4:
+.. _cid-snd_timer_event_t:
+
+enum snd_timer_event_t
+======================
+
+
+
+timer read event identification
+
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a7498167cc2bd026779a8551f579b99ca:
+.. _cid-snd_timer_event_t::snd_timer_event_resolution:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4ab01a28a2619f14158f89d16a328b4bfa:
+.. _cid-snd_timer_event_t::snd_timer_event_tick:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4adf9a06c6a1685ac316003661c7604195:
+.. _cid-snd_timer_event_t::snd_timer_event_start:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a48172f6eecf7480915e87f1773afdcb6:
+.. _cid-snd_timer_event_t::snd_timer_event_stop:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a08a0808dffc507082b8b1e1c9017c551:
+.. _cid-snd_timer_event_t::snd_timer_event_continue:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a92c109ae4d8c16d0780cf67e2eb178b5:
+.. _cid-snd_timer_event_t::snd_timer_event_pause:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a3663e674a4e2647c2264318277c25a15:
+.. _cid-snd_timer_event_t::snd_timer_event_early:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a2dabdb958ef6ff997d6dac02654a4189:
+.. _cid-snd_timer_event_t::snd_timer_event_suspend:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a0ecd92f76dcb06a1aab3d7302d218afe:
+.. _cid-snd_timer_event_t::snd_timer_event_resume:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a699e40fac48e0bc946adb5decead48ee:
+.. _cid-snd_timer_event_t::snd_timer_event_mstart:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a4c47c77f0dc2e2ec5f243ca93908f04a:
+.. _cid-snd_timer_event_t::snd_timer_event_mstop:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a22f4dd00e8b985ad6365dc57cc7bafd4:
+.. _cid-snd_timer_event_t::snd_timer_event_mcontinue:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a025800dbc5851b52aebbcc531032f539:
+.. _cid-snd_timer_event_t::snd_timer_event_mpause:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a234cb320c013f5977df5d3a3a7bd8db5:
+.. _cid-snd_timer_event_t::snd_timer_event_msuspend:
+.. _doxid-group___timer_1gga396a3bb020be40c36c9a6de0554145b4a085945c8db82ae947155b5c6b112f38f:
+.. _cid-snd_timer_event_t::snd_timer_event_mresume:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SND_TIMER_EVENT_RESOLUTION = 0
+	SND_TIMER_EVENT_TICK 
+	SND_TIMER_EVENT_START 
+	SND_TIMER_EVENT_STOP 
+	SND_TIMER_EVENT_CONTINUE 
+	SND_TIMER_EVENT_PAUSE 
+	SND_TIMER_EVENT_EARLY 
+	SND_TIMER_EVENT_SUSPEND 
+	SND_TIMER_EVENT_RESUME 
+	SND_TIMER_EVENT_MSTART = SND_TIMER_EVENT_START + 10
+	SND_TIMER_EVENT_MSTOP = SND_TIMER_EVENT_STOP + 10
+	SND_TIMER_EVENT_MCONTINUE = SND_TIMER_EVENT_CONTINUE + 10
+	SND_TIMER_EVENT_MPAUSE = SND_TIMER_EVENT_PAUSE + 10
+	SND_TIMER_EVENT_MSUSPEND = SND_TIMER_EVENT_SUSPEND + 10
+	SND_TIMER_EVENT_MRESUME = SND_TIMER_EVENT_RESUME + 10
+

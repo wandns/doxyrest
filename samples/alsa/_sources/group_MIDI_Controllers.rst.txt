@@ -1,0 +1,763 @@
+.. index:: pair: group; MIDI Controllers
+.. _doxid-group___m_i_d_i___controllers:
+.. _cid-midi_controllers:
+
+MIDI Controllers
+================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+MIDI controller numbers. :ref:`More...<details-doxid-group___m_i_d_i___controllers>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`MIDI_CTL_ALL_NOTES_OFF<doxid-group___m_i_d_i___controllers_1ga1187405eaf1c2321494503670afc5b5f>`
+	#define :ref:`MIDI_CTL_ALL_SOUNDS_OFF<doxid-group___m_i_d_i___controllers_1gaf2682a48d9360382eabd9428ea12b5ba>`
+	#define :ref:`MIDI_CTL_DATA_DECREMENT<doxid-group___m_i_d_i___controllers_1gab348887903ff8d56b0e4ae38aba8c344>`
+	#define :ref:`MIDI_CTL_DATA_INCREMENT<doxid-group___m_i_d_i___controllers_1gaabd8b650e9dde388d45c5fd340760426>`
+	#define :ref:`MIDI_CTL_E1_REVERB_DEPTH<doxid-group___m_i_d_i___controllers_1ga6edb7c38930622917c9d7766b635586b>`
+	#define :ref:`MIDI_CTL_E2_TREMOLO_DEPTH<doxid-group___m_i_d_i___controllers_1ga85dc5d768eea982af8524057a16f4cdd>`
+	#define :ref:`MIDI_CTL_E3_CHORUS_DEPTH<doxid-group___m_i_d_i___controllers_1ga4d5816aa31ddc4eedcfef887adc0dd5a>`
+	#define :ref:`MIDI_CTL_E4_DETUNE_DEPTH<doxid-group___m_i_d_i___controllers_1ga21221aeb674302b8b48ba501d58bff36>`
+	#define :ref:`MIDI_CTL_E5_PHASER_DEPTH<doxid-group___m_i_d_i___controllers_1ga0036583bf655c8581a856821bf470c33>`
+	#define :ref:`MIDI_CTL_GENERAL_PURPOSE5<doxid-group___m_i_d_i___controllers_1ga34cb95b6e734f85b53d431b851f968ab>`
+	#define :ref:`MIDI_CTL_GENERAL_PURPOSE6<doxid-group___m_i_d_i___controllers_1gaebec579f20f016bf00f6f26ae49a94e4>`
+	#define :ref:`MIDI_CTL_GENERAL_PURPOSE7<doxid-group___m_i_d_i___controllers_1ga525bc92d4872a61463de275560517214>`
+	#define :ref:`MIDI_CTL_GENERAL_PURPOSE8<doxid-group___m_i_d_i___controllers_1gabdad6c045138c8be35ebb30f39bce6b8>`
+	#define :ref:`MIDI_CTL_HOLD2<doxid-group___m_i_d_i___controllers_1gaccbcf812ed213a81945c5b111dc7968b>`
+	#define :ref:`MIDI_CTL_LEGATO_FOOTSWITCH<doxid-group___m_i_d_i___controllers_1gadcfb9780249ce4be4232ca24eb332a3d>`
+	#define :ref:`MIDI_CTL_LOCAL_CONTROL_SWITCH<doxid-group___m_i_d_i___controllers_1gac9043790ce09c428e13a7aa391b69750>`
+	#define :ref:`MIDI_CTL_LSB_BALANCE<doxid-group___m_i_d_i___controllers_1ga324facba0ed095532cfcb9d5c5c8b8c5>`
+	#define :ref:`MIDI_CTL_LSB_BANK<doxid-group___m_i_d_i___controllers_1ga950baddcbeb06eb5a7aeb32421ddddb3>`
+	#define :ref:`MIDI_CTL_LSB_BREATH<doxid-group___m_i_d_i___controllers_1gaccb65fb1c7c2eed062dc29222ba3294a>`
+	#define :ref:`MIDI_CTL_LSB_DATA_ENTRY<doxid-group___m_i_d_i___controllers_1ga4c4520fe70087fe5362fb997f6944bec>`
+	#define :ref:`MIDI_CTL_LSB_EFFECT1<doxid-group___m_i_d_i___controllers_1ga81bb32b94f06396ab7b8ae4eb527398e>`
+	#define :ref:`MIDI_CTL_LSB_EFFECT2<doxid-group___m_i_d_i___controllers_1ga72de57abbcfaba1f44661938977620df>`
+	#define :ref:`MIDI_CTL_LSB_EXPRESSION<doxid-group___m_i_d_i___controllers_1gaacf10541517b4190670a51d0a790304d>`
+	#define :ref:`MIDI_CTL_LSB_FOOT<doxid-group___m_i_d_i___controllers_1gae64ae19be43985ecebcff56ba342028f>`
+	#define :ref:`MIDI_CTL_LSB_GENERAL_PURPOSE1<doxid-group___m_i_d_i___controllers_1gab6e92effa93bf92d65f0719d1814c8e8>`
+	#define :ref:`MIDI_CTL_LSB_GENERAL_PURPOSE2<doxid-group___m_i_d_i___controllers_1ga11850784d58515870a4f6b759497ac7a>`
+	#define :ref:`MIDI_CTL_LSB_GENERAL_PURPOSE3<doxid-group___m_i_d_i___controllers_1ga997a1291a8b77f721259170493012b9a>`
+	#define :ref:`MIDI_CTL_LSB_GENERAL_PURPOSE4<doxid-group___m_i_d_i___controllers_1gabcd1808f4511293ee6f18bfacec083e1>`
+	#define :ref:`MIDI_CTL_LSB_MAIN_VOLUME<doxid-group___m_i_d_i___controllers_1ga2268d5b7a8c55e19da862a02181d12a2>`
+	#define :ref:`MIDI_CTL_LSB_MODWHEEL<doxid-group___m_i_d_i___controllers_1gadb2907bb40bd51d2d10575278e87d4d6>`
+	#define :ref:`MIDI_CTL_LSB_PAN<doxid-group___m_i_d_i___controllers_1gaa37a796d5de51bc1991449a0e4ac7b76>`
+	#define :ref:`MIDI_CTL_LSB_PORTAMENTO_TIME<doxid-group___m_i_d_i___controllers_1ga13b30a34853b14d2b5ae6b2812261200>`
+	#define :ref:`MIDI_CTL_MONO1<doxid-group___m_i_d_i___controllers_1gaa193f9a81e9cb798f62e9e3b9850d092>`
+	#define :ref:`MIDI_CTL_MONO2<doxid-group___m_i_d_i___controllers_1gadef1b23fdeb9712a669c7a52e7bfd490>`
+	#define :ref:`MIDI_CTL_MSB_BALANCE<doxid-group___m_i_d_i___controllers_1gaff20d0ff956eab3bb6057caf16757059>`
+	#define :ref:`MIDI_CTL_MSB_BANK<doxid-group___m_i_d_i___controllers_1ga400bb0acabfc671553315a2e481cd73f>`
+	#define :ref:`MIDI_CTL_MSB_BREATH<doxid-group___m_i_d_i___controllers_1ga2eedb2828f216795a53980f585326ea9>`
+	#define :ref:`MIDI_CTL_MSB_DATA_ENTRY<doxid-group___m_i_d_i___controllers_1gae877503bd7e696ef065be7b50e6f9bb3>`
+	#define :ref:`MIDI_CTL_MSB_EFFECT1<doxid-group___m_i_d_i___controllers_1ga0538d196af1bfad5d53baccf2ad88008>`
+	#define :ref:`MIDI_CTL_MSB_EFFECT2<doxid-group___m_i_d_i___controllers_1ga7d71d4505c3e3a2832a4e324591746d4>`
+	#define :ref:`MIDI_CTL_MSB_EXPRESSION<doxid-group___m_i_d_i___controllers_1gaca32fa7d9b65e7dedf52a826eb348abf>`
+	#define :ref:`MIDI_CTL_MSB_FOOT<doxid-group___m_i_d_i___controllers_1ga87018deff0362e3f0c983fb171224d5b>`
+	#define :ref:`MIDI_CTL_MSB_GENERAL_PURPOSE1<doxid-group___m_i_d_i___controllers_1ga037dca38fd660866630669309c2f6e6d>`
+	#define :ref:`MIDI_CTL_MSB_GENERAL_PURPOSE2<doxid-group___m_i_d_i___controllers_1ga782d5a57791a7cb822f2c806e9a386ea>`
+	#define :ref:`MIDI_CTL_MSB_GENERAL_PURPOSE3<doxid-group___m_i_d_i___controllers_1gac26f70d8fd39a132355abe2f9782fbe5>`
+	#define :ref:`MIDI_CTL_MSB_GENERAL_PURPOSE4<doxid-group___m_i_d_i___controllers_1gab2be5312a07276e19f343a5dff6ef63a>`
+	#define :ref:`MIDI_CTL_MSB_MAIN_VOLUME<doxid-group___m_i_d_i___controllers_1ga44c99a6da1d1e8ac1a842283f081c530>`
+	#define :ref:`MIDI_CTL_MSB_MODWHEEL<doxid-group___m_i_d_i___controllers_1gabd7dc0a357a298183546380c2616ae20>`
+	#define :ref:`MIDI_CTL_MSB_PAN<doxid-group___m_i_d_i___controllers_1gacf3587c5a1297acbe3be9bf8fa6863bc>`
+	#define :ref:`MIDI_CTL_MSB_PORTAMENTO_TIME<doxid-group___m_i_d_i___controllers_1ga2750f10696dcc8f4e7b2cee97a0568b0>`
+	#define :ref:`MIDI_CTL_NONREG_PARM_NUM_LSB<doxid-group___m_i_d_i___controllers_1ga1a07fa2ae318897f2d95f65bfdaa5677>`
+	#define :ref:`MIDI_CTL_NONREG_PARM_NUM_MSB<doxid-group___m_i_d_i___controllers_1gada9a33bd765b94ce284ab63299521b43>`
+	#define :ref:`MIDI_CTL_OMNI_OFF<doxid-group___m_i_d_i___controllers_1ga739706673188dcfc5818f45e141fc328>`
+	#define :ref:`MIDI_CTL_OMNI_ON<doxid-group___m_i_d_i___controllers_1gab818d1d0cf1892596ea0c89723fd2e07>`
+	#define :ref:`MIDI_CTL_PORTAMENTO<doxid-group___m_i_d_i___controllers_1ga9ffc2cf5ee42ef664675d21b4d4da4aa>`
+	#define :ref:`MIDI_CTL_PORTAMENTO_CONTROL<doxid-group___m_i_d_i___controllers_1gafa6ca4aa4767eca95b82cca711ac0168>`
+	#define :ref:`MIDI_CTL_REGIST_PARM_NUM_LSB<doxid-group___m_i_d_i___controllers_1gad5995b27c8552e8bb7f8301d617daa29>`
+	#define :ref:`MIDI_CTL_REGIST_PARM_NUM_MSB<doxid-group___m_i_d_i___controllers_1ga19357e16a700d5859167f17c23510ea9>`
+	#define :ref:`MIDI_CTL_RESET_CONTROLLERS<doxid-group___m_i_d_i___controllers_1ga2dfa1eb44ebbd441cc0f10f972a77578>`
+	#define :ref:`MIDI_CTL_SC10<doxid-group___m_i_d_i___controllers_1ga977a4356b53235b1abce324d10c086af>`
+	#define :ref:`MIDI_CTL_SC1_SOUND_VARIATION<doxid-group___m_i_d_i___controllers_1ga7ebc926a176d5e78853d6e05a51cefbc>`
+	#define :ref:`MIDI_CTL_SC2_TIMBRE<doxid-group___m_i_d_i___controllers_1ga55805bb1d899cce61a3db60934e2eca3>`
+	#define :ref:`MIDI_CTL_SC3_RELEASE_TIME<doxid-group___m_i_d_i___controllers_1ga19b65e3983473227b272be82ef9df447>`
+	#define :ref:`MIDI_CTL_SC4_ATTACK_TIME<doxid-group___m_i_d_i___controllers_1gae5788e18205a6bd861f05e241035e06f>`
+	#define :ref:`MIDI_CTL_SC5_BRIGHTNESS<doxid-group___m_i_d_i___controllers_1ga4b92f34f5f4d97953086fad1bac52998>`
+	#define :ref:`MIDI_CTL_SC6<doxid-group___m_i_d_i___controllers_1gaa118fa77cdeacf4230f14a8f5f49634f>`
+	#define :ref:`MIDI_CTL_SC7<doxid-group___m_i_d_i___controllers_1ga82f10092ea135e74586bb970fbaf3176>`
+	#define :ref:`MIDI_CTL_SC8<doxid-group___m_i_d_i___controllers_1ga8781fce1a79c134bf8c41bb73505d551>`
+	#define :ref:`MIDI_CTL_SC9<doxid-group___m_i_d_i___controllers_1ga09779ad81ceda34040afda81decdcbdc>`
+	#define :ref:`MIDI_CTL_SOFT_PEDAL<doxid-group___m_i_d_i___controllers_1ga83f2a22850c2afdf51d58970762751fe>`
+	#define :ref:`MIDI_CTL_SOSTENUTO<doxid-group___m_i_d_i___controllers_1gabf81a9dfc98f01368e68f441607ee345>`
+	#define :ref:`MIDI_CTL_SUSTAIN<doxid-group___m_i_d_i___controllers_1gafe6cec069df7dc4fac5dfe2e2f72c1a5>`
+	#define :ref:`MIDI_CTL_SUSTENUTO<doxid-group___m_i_d_i___controllers_1ga1f474cac456cd3842df188d389f7d7fa>`
+
+.. _details-doxid-group___m_i_d_i___controllers:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+MIDI controller numbers.
+
+Macros
+------
+
+.. _doxid-group___m_i_d_i___controllers_1ga1187405eaf1c2321494503670afc5b5f:
+.. _cid-midi_ctl_all_notes_off:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_ALL_NOTES_OFF
+
+All notes off
+
+.. _doxid-group___m_i_d_i___controllers_1gaf2682a48d9360382eabd9428ea12b5ba:
+.. _cid-midi_ctl_all_sounds_off:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_ALL_SOUNDS_OFF
+
+All sounds off
+
+.. _doxid-group___m_i_d_i___controllers_1gab348887903ff8d56b0e4ae38aba8c344:
+.. _cid-midi_ctl_data_decrement:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_DATA_DECREMENT
+
+Data Decrement
+
+.. _doxid-group___m_i_d_i___controllers_1gaabd8b650e9dde388d45c5fd340760426:
+.. _cid-midi_ctl_data_increment:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_DATA_INCREMENT
+
+Data Increment
+
+.. _doxid-group___m_i_d_i___controllers_1ga6edb7c38930622917c9d7766b635586b:
+.. _cid-midi_ctl_e1_reverb_depth:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_E1_REVERB_DEPTH
+
+E1 Reverb Depth
+
+.. _doxid-group___m_i_d_i___controllers_1ga85dc5d768eea982af8524057a16f4cdd:
+.. _cid-midi_ctl_e2_tremolo_depth:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_E2_TREMOLO_DEPTH
+
+E2 Tremolo Depth
+
+.. _doxid-group___m_i_d_i___controllers_1ga4d5816aa31ddc4eedcfef887adc0dd5a:
+.. _cid-midi_ctl_e3_chorus_depth:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_E3_CHORUS_DEPTH
+
+E3 Chorus Depth
+
+.. _doxid-group___m_i_d_i___controllers_1ga21221aeb674302b8b48ba501d58bff36:
+.. _cid-midi_ctl_e4_detune_depth:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_E4_DETUNE_DEPTH
+
+E4 Detune Depth
+
+.. _doxid-group___m_i_d_i___controllers_1ga0036583bf655c8581a856821bf470c33:
+.. _cid-midi_ctl_e5_phaser_depth:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_E5_PHASER_DEPTH
+
+E5 Phaser Depth
+
+.. _doxid-group___m_i_d_i___controllers_1ga34cb95b6e734f85b53d431b851f968ab:
+.. _cid-midi_ctl_general_purpose5:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_GENERAL_PURPOSE5
+
+General purpose 5
+
+.. _doxid-group___m_i_d_i___controllers_1gaebec579f20f016bf00f6f26ae49a94e4:
+.. _cid-midi_ctl_general_purpose6:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_GENERAL_PURPOSE6
+
+General purpose 6
+
+.. _doxid-group___m_i_d_i___controllers_1ga525bc92d4872a61463de275560517214:
+.. _cid-midi_ctl_general_purpose7:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_GENERAL_PURPOSE7
+
+General purpose 7
+
+.. _doxid-group___m_i_d_i___controllers_1gabdad6c045138c8be35ebb30f39bce6b8:
+.. _cid-midi_ctl_general_purpose8:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_GENERAL_PURPOSE8
+
+General purpose 8
+
+.. _doxid-group___m_i_d_i___controllers_1gaccbcf812ed213a81945c5b111dc7968b:
+.. _cid-midi_ctl_hold2:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_HOLD2
+
+Hold2
+
+.. _doxid-group___m_i_d_i___controllers_1gadcfb9780249ce4be4232ca24eb332a3d:
+.. _cid-midi_ctl_legato_footswitch:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LEGATO_FOOTSWITCH
+
+Legato foot switch
+
+.. _doxid-group___m_i_d_i___controllers_1gac9043790ce09c428e13a7aa391b69750:
+.. _cid-midi_ctl_local_control_switch:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LOCAL_CONTROL_SWITCH
+
+Local control switch
+
+.. _doxid-group___m_i_d_i___controllers_1ga324facba0ed095532cfcb9d5c5c8b8c5:
+.. _cid-midi_ctl_lsb_balance:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_BALANCE
+
+Balance
+
+.. _doxid-group___m_i_d_i___controllers_1ga950baddcbeb06eb5a7aeb32421ddddb3:
+.. _cid-midi_ctl_lsb_bank:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_BANK
+
+Bank selection
+
+.. _doxid-group___m_i_d_i___controllers_1gaccb65fb1c7c2eed062dc29222ba3294a:
+.. _cid-midi_ctl_lsb_breath:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_BREATH
+
+Breath
+
+.. _doxid-group___m_i_d_i___controllers_1ga4c4520fe70087fe5362fb997f6944bec:
+.. _cid-midi_ctl_lsb_data_entry:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_DATA_ENTRY
+
+Data entry
+
+.. _doxid-group___m_i_d_i___controllers_1ga81bb32b94f06396ab7b8ae4eb527398e:
+.. _cid-midi_ctl_lsb_effect1:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_EFFECT1
+
+Effect1
+
+.. _doxid-group___m_i_d_i___controllers_1ga72de57abbcfaba1f44661938977620df:
+.. _cid-midi_ctl_lsb_effect2:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_EFFECT2
+
+Effect2
+
+.. _doxid-group___m_i_d_i___controllers_1gaacf10541517b4190670a51d0a790304d:
+.. _cid-midi_ctl_lsb_expression:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_EXPRESSION
+
+Expression
+
+.. _doxid-group___m_i_d_i___controllers_1gae64ae19be43985ecebcff56ba342028f:
+.. _cid-midi_ctl_lsb_foot:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_FOOT
+
+Foot
+
+.. _doxid-group___m_i_d_i___controllers_1gab6e92effa93bf92d65f0719d1814c8e8:
+.. _cid-midi_ctl_lsb_general_purpose1:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_GENERAL_PURPOSE1
+
+General purpose 1
+
+.. _doxid-group___m_i_d_i___controllers_1ga11850784d58515870a4f6b759497ac7a:
+.. _cid-midi_ctl_lsb_general_purpose2:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_GENERAL_PURPOSE2
+
+General purpose 2
+
+.. _doxid-group___m_i_d_i___controllers_1ga997a1291a8b77f721259170493012b9a:
+.. _cid-midi_ctl_lsb_general_purpose3:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_GENERAL_PURPOSE3
+
+General purpose 3
+
+.. _doxid-group___m_i_d_i___controllers_1gabcd1808f4511293ee6f18bfacec083e1:
+.. _cid-midi_ctl_lsb_general_purpose4:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_GENERAL_PURPOSE4
+
+General purpose 4
+
+.. _doxid-group___m_i_d_i___controllers_1ga2268d5b7a8c55e19da862a02181d12a2:
+.. _cid-midi_ctl_lsb_main_volume:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_MAIN_VOLUME
+
+Main volume
+
+.. _doxid-group___m_i_d_i___controllers_1gadb2907bb40bd51d2d10575278e87d4d6:
+.. _cid-midi_ctl_lsb_modwheel:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_MODWHEEL
+
+Modulation
+
+.. _doxid-group___m_i_d_i___controllers_1gaa37a796d5de51bc1991449a0e4ac7b76:
+.. _cid-midi_ctl_lsb_pan:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_PAN
+
+Panpot
+
+.. _doxid-group___m_i_d_i___controllers_1ga13b30a34853b14d2b5ae6b2812261200:
+.. _cid-midi_ctl_lsb_portamento_time:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_LSB_PORTAMENTO_TIME
+
+Portamento time
+
+.. _doxid-group___m_i_d_i___controllers_1gaa193f9a81e9cb798f62e9e3b9850d092:
+.. _cid-midi_ctl_mono1:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MONO1
+
+Mono1
+
+.. _doxid-group___m_i_d_i___controllers_1gadef1b23fdeb9712a669c7a52e7bfd490:
+.. _cid-midi_ctl_mono2:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MONO2
+
+Mono2
+
+.. _doxid-group___m_i_d_i___controllers_1gaff20d0ff956eab3bb6057caf16757059:
+.. _cid-midi_ctl_msb_balance:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_BALANCE
+
+Balance
+
+.. _doxid-group___m_i_d_i___controllers_1ga400bb0acabfc671553315a2e481cd73f:
+.. _cid-midi_ctl_msb_bank:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_BANK
+
+Bank selection
+
+.. _doxid-group___m_i_d_i___controllers_1ga2eedb2828f216795a53980f585326ea9:
+.. _cid-midi_ctl_msb_breath:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_BREATH
+
+Breath
+
+.. _doxid-group___m_i_d_i___controllers_1gae877503bd7e696ef065be7b50e6f9bb3:
+.. _cid-midi_ctl_msb_data_entry:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_DATA_ENTRY
+
+Data entry
+
+.. _doxid-group___m_i_d_i___controllers_1ga0538d196af1bfad5d53baccf2ad88008:
+.. _cid-midi_ctl_msb_effect1:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_EFFECT1
+
+Effect1
+
+.. _doxid-group___m_i_d_i___controllers_1ga7d71d4505c3e3a2832a4e324591746d4:
+.. _cid-midi_ctl_msb_effect2:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_EFFECT2
+
+Effect2
+
+.. _doxid-group___m_i_d_i___controllers_1gaca32fa7d9b65e7dedf52a826eb348abf:
+.. _cid-midi_ctl_msb_expression:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_EXPRESSION
+
+Expression
+
+.. _doxid-group___m_i_d_i___controllers_1ga87018deff0362e3f0c983fb171224d5b:
+.. _cid-midi_ctl_msb_foot:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_FOOT
+
+Foot
+
+.. _doxid-group___m_i_d_i___controllers_1ga037dca38fd660866630669309c2f6e6d:
+.. _cid-midi_ctl_msb_general_purpose1:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_GENERAL_PURPOSE1
+
+General purpose 1
+
+.. _doxid-group___m_i_d_i___controllers_1ga782d5a57791a7cb822f2c806e9a386ea:
+.. _cid-midi_ctl_msb_general_purpose2:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_GENERAL_PURPOSE2
+
+General purpose 2
+
+.. _doxid-group___m_i_d_i___controllers_1gac26f70d8fd39a132355abe2f9782fbe5:
+.. _cid-midi_ctl_msb_general_purpose3:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_GENERAL_PURPOSE3
+
+General purpose 3
+
+.. _doxid-group___m_i_d_i___controllers_1gab2be5312a07276e19f343a5dff6ef63a:
+.. _cid-midi_ctl_msb_general_purpose4:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_GENERAL_PURPOSE4
+
+General purpose 4
+
+.. _doxid-group___m_i_d_i___controllers_1ga44c99a6da1d1e8ac1a842283f081c530:
+.. _cid-midi_ctl_msb_main_volume:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_MAIN_VOLUME
+
+Main volume
+
+.. _doxid-group___m_i_d_i___controllers_1gabd7dc0a357a298183546380c2616ae20:
+.. _cid-midi_ctl_msb_modwheel:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_MODWHEEL
+
+Modulation
+
+.. _doxid-group___m_i_d_i___controllers_1gacf3587c5a1297acbe3be9bf8fa6863bc:
+.. _cid-midi_ctl_msb_pan:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_PAN
+
+Panpot
+
+.. _doxid-group___m_i_d_i___controllers_1ga2750f10696dcc8f4e7b2cee97a0568b0:
+.. _cid-midi_ctl_msb_portamento_time:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_MSB_PORTAMENTO_TIME
+
+Portamento time
+
+.. _doxid-group___m_i_d_i___controllers_1ga1a07fa2ae318897f2d95f65bfdaa5677:
+.. _cid-midi_ctl_nonreg_parm_num_lsb:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_NONREG_PARM_NUM_LSB
+
+Non-registered parameter number
+
+.. _doxid-group___m_i_d_i___controllers_1gada9a33bd765b94ce284ab63299521b43:
+.. _cid-midi_ctl_nonreg_parm_num_msb:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_NONREG_PARM_NUM_MSB
+
+Non-registered parameter number
+
+.. _doxid-group___m_i_d_i___controllers_1ga739706673188dcfc5818f45e141fc328:
+.. _cid-midi_ctl_omni_off:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_OMNI_OFF
+
+Omni off
+
+.. _doxid-group___m_i_d_i___controllers_1gab818d1d0cf1892596ea0c89723fd2e07:
+.. _cid-midi_ctl_omni_on:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_OMNI_ON
+
+Omni on
+
+.. _doxid-group___m_i_d_i___controllers_1ga9ffc2cf5ee42ef664675d21b4d4da4aa:
+.. _cid-midi_ctl_portamento:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_PORTAMENTO
+
+Portamento
+
+.. _doxid-group___m_i_d_i___controllers_1gafa6ca4aa4767eca95b82cca711ac0168:
+.. _cid-midi_ctl_portamento_control:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_PORTAMENTO_CONTROL
+
+Portamento control
+
+.. _doxid-group___m_i_d_i___controllers_1gad5995b27c8552e8bb7f8301d617daa29:
+.. _cid-midi_ctl_regist_parm_num_lsb:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_REGIST_PARM_NUM_LSB
+
+Registered parameter number
+
+.. _doxid-group___m_i_d_i___controllers_1ga19357e16a700d5859167f17c23510ea9:
+.. _cid-midi_ctl_regist_parm_num_msb:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_REGIST_PARM_NUM_MSB
+
+Registered parameter number
+
+.. _doxid-group___m_i_d_i___controllers_1ga2dfa1eb44ebbd441cc0f10f972a77578:
+.. _cid-midi_ctl_reset_controllers:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_RESET_CONTROLLERS
+
+Reset Controllers
+
+.. _doxid-group___m_i_d_i___controllers_1ga977a4356b53235b1abce324d10c086af:
+.. _cid-midi_ctl_sc10:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC10
+
+SC10
+
+.. _doxid-group___m_i_d_i___controllers_1ga7ebc926a176d5e78853d6e05a51cefbc:
+.. _cid-midi_ctl_sc1_sound_variation:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC1_SOUND_VARIATION
+
+SC1 Sound Variation
+
+.. _doxid-group___m_i_d_i___controllers_1ga55805bb1d899cce61a3db60934e2eca3:
+.. _cid-midi_ctl_sc2_timbre:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC2_TIMBRE
+
+SC2 Timbre
+
+.. _doxid-group___m_i_d_i___controllers_1ga19b65e3983473227b272be82ef9df447:
+.. _cid-midi_ctl_sc3_release_time:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC3_RELEASE_TIME
+
+SC3 Release Time
+
+.. _doxid-group___m_i_d_i___controllers_1gae5788e18205a6bd861f05e241035e06f:
+.. _cid-midi_ctl_sc4_attack_time:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC4_ATTACK_TIME
+
+SC4 Attack Time
+
+.. _doxid-group___m_i_d_i___controllers_1ga4b92f34f5f4d97953086fad1bac52998:
+.. _cid-midi_ctl_sc5_brightness:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC5_BRIGHTNESS
+
+SC5 Brightness
+
+.. _doxid-group___m_i_d_i___controllers_1gaa118fa77cdeacf4230f14a8f5f49634f:
+.. _cid-midi_ctl_sc6:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC6
+
+SC6
+
+.. _doxid-group___m_i_d_i___controllers_1ga82f10092ea135e74586bb970fbaf3176:
+.. _cid-midi_ctl_sc7:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC7
+
+SC7
+
+.. _doxid-group___m_i_d_i___controllers_1ga8781fce1a79c134bf8c41bb73505d551:
+.. _cid-midi_ctl_sc8:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC8
+
+SC8
+
+.. _doxid-group___m_i_d_i___controllers_1ga09779ad81ceda34040afda81decdcbdc:
+.. _cid-midi_ctl_sc9:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SC9
+
+SC9
+
+.. _doxid-group___m_i_d_i___controllers_1ga83f2a22850c2afdf51d58970762751fe:
+.. _cid-midi_ctl_soft_pedal:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SOFT_PEDAL
+
+Soft pedal
+
+.. _doxid-group___m_i_d_i___controllers_1gabf81a9dfc98f01368e68f441607ee345:
+.. _cid-midi_ctl_sostenuto:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SOSTENUTO
+
+Sostenuto
+
+.. _doxid-group___m_i_d_i___controllers_1gafe6cec069df7dc4fac5dfe2e2f72c1a5:
+.. _cid-midi_ctl_sustain:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SUSTAIN
+
+Sustain pedal
+
+.. _doxid-group___m_i_d_i___controllers_1ga1f474cac456cd3842df188d389f7d7fa:
+.. _cid-midi_ctl_sustenuto:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CTL_SUSTENUTO
+
+Sostenuto (a typo in the older version)
+

@@ -1,0 +1,246 @@
+.. index:: pair: group; Sequencer Event Definitions
+.. _doxid-group___seq_events:
+.. _cid-seqevents:
+
+Sequencer Event Definitions
+===========================
+
+.. toctree::
+	:hidden:
+
+	enum_snd_seq_event_type.rst
+	struct_snd_seq_addr_t.rst
+	struct_snd_seq_connect_t.rst
+	struct_snd_seq_ev_ctrl_t.rst
+	struct_snd_seq_ev_ext.rst
+	struct_snd_seq_ev_note_t.rst
+	struct_snd_seq_ev_queue_control_t.rst
+	struct_snd_seq_ev_raw32_t.rst
+	struct_snd_seq_ev_raw8_t.rst
+	struct_snd_seq_event_t.rst
+	struct_snd_seq_queue_skew_t.rst
+	struct_snd_seq_real_time_t.rst
+	struct_snd_seq_result_t.rst
+	union_snd_seq_timestamp_t.rst
+
+
+
+Overview
+~~~~~~~~
+
+Sequencer Event Definitions :ref:`More...<details-doxid-group___seq_events>`
+
+.. _doxid-group___seq_events_1gaff2752f2081810dfe937f387d127cc24:
+.. _cid-__attribute__:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef unsigned char :ref:`snd_seq_event_type_t<doxid-group___seq_events_1ga5effcf3631d53ced009e02b8a9cabf04>`
+	typedef unsigned int :ref:`snd_seq_tick_time_t<doxid-group___seq_events_1gaa6a1e0c4394f9b26cc55e0181a5e2cb8>`
+	typedef :ref:`snd_seq_ev_ext<doxid-structsnd__seq__ev__ext>` :ref:`snd_seq_ev_ext_t<doxid-group___seq_events_1ga4ce65ee70e6d2d346f67b2fe725abb3d>`
+
+	// enums
+
+	enum :ref:`snd_seq_event_type<doxid-group___seq_events_1gaef39e1f267006faf7abc91c3cb32ea40>`
+
+	// structs
+
+	struct :ref:`snd_seq_addr_t<doxid-structsnd__seq__addr__t>` 
+	struct :ref:`snd_seq_connect_t<doxid-structsnd__seq__connect__t>` 
+	struct :ref:`snd_seq_ev_ctrl_t<doxid-structsnd__seq__ev__ctrl__t>` 
+	struct :ref:`snd_seq_ev_ext<doxid-structsnd__seq__ev__ext>` 
+	struct :ref:`snd_seq_ev_note_t<doxid-structsnd__seq__ev__note__t>` 
+	struct :ref:`snd_seq_ev_queue_control_t<doxid-structsnd__seq__ev__queue__control__t>` 
+	struct :ref:`snd_seq_ev_raw32_t<doxid-structsnd__seq__ev__raw32__t>` 
+	struct :ref:`snd_seq_ev_raw8_t<doxid-structsnd__seq__ev__raw8__t>` 
+	struct :ref:`snd_seq_event_t<doxid-structsnd__seq__event__t>` 
+	struct :ref:`snd_seq_queue_skew_t<doxid-structsnd__seq__queue__skew__t>` 
+	struct :ref:`snd_seq_real_time_t<doxid-structsnd__seq__real__time__t>` 
+	struct :ref:`snd_seq_result_t<doxid-structsnd__seq__result__t>` 
+
+	// unions
+
+	union :ref:`snd_seq_timestamp_t<doxid-unionsnd__seq__timestamp__t>` 
+
+	// global functions
+
+	struct :ref:`snd_seq_ev_ext<doxid-structsnd__seq__ev__ext>`
+	__attribute__ ( (packed))
+
+	// macros
+
+	#define :ref:`SND_SEQ_EVENT_LENGTH_FIXED<doxid-group___seq_events_1ga35b6aacb44080053e0ca0eeaefbe8dc2>`
+	#define :ref:`SND_SEQ_EVENT_LENGTH_MASK<doxid-group___seq_events_1ga69fa938ef7ebc12e3d1b8758b39b7967>`
+	#define :ref:`SND_SEQ_EVENT_LENGTH_VARIABLE<doxid-group___seq_events_1ga273f82dce70a0284a4dcabd34f1bfe7d>`
+	#define :ref:`SND_SEQ_EVENT_LENGTH_VARUSR<doxid-group___seq_events_1ga5e38e6cf87f023332b797c30b74223b1>`
+	#define :ref:`SND_SEQ_PRIORITY_HIGH<doxid-group___seq_events_1ga6816c4987d7dc2efe4b9949223964165>`
+	#define :ref:`SND_SEQ_PRIORITY_MASK<doxid-group___seq_events_1gaea7b84a517451282036dad991a45239c>`
+	#define :ref:`SND_SEQ_PRIORITY_NORMAL<doxid-group___seq_events_1gad40a7212be7f3c8b27ad641d7e4210ad>`
+	#define :ref:`SND_SEQ_TIME_MODE_ABS<doxid-group___seq_events_1gaa799f2aa335545bfe9dedc84105b6cf9>`
+	#define :ref:`SND_SEQ_TIME_MODE_MASK<doxid-group___seq_events_1gac7c12b40ede05529ec9a66b938d62aec>`
+	#define :ref:`SND_SEQ_TIME_MODE_REL<doxid-group___seq_events_1ga167d462a14d80b2599470635dd0ee048>`
+	#define :ref:`SND_SEQ_TIME_STAMP_MASK<doxid-group___seq_events_1gac7da1e1965e86a68f663babec22a99ba>`
+	#define :ref:`SND_SEQ_TIME_STAMP_REAL<doxid-group___seq_events_1ga13e36bf2f3341625f6d88858d512f50b>`
+	#define :ref:`SND_SEQ_TIME_STAMP_TICK<doxid-group___seq_events_1gaf3c4c4900893680d95aa722ee6c16d2e>`
+
+.. _details-doxid-group___seq_events:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Sequencer Event Definitions
+
+Typedefs
+--------
+
+.. _doxid-group___seq_events_1ga5effcf3631d53ced009e02b8a9cabf04:
+.. _cid-snd_seq_event_type_t:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	typedef unsigned char snd_seq_event_type_t
+
+Sequencer event data type
+
+.. _doxid-group___seq_events_1gaa6a1e0c4394f9b26cc55e0181a5e2cb8:
+.. _cid-snd_seq_tick_time_t:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	typedef unsigned int snd_seq_tick_time_t
+
+(MIDI) Tick-time data record
+
+.. _doxid-group___seq_events_1ga4ce65ee70e6d2d346f67b2fe725abb3d:
+.. _cid-snd_seq_ev_ext_t:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	typedef :ref:`snd_seq_ev_ext<doxid-structsnd__seq__ev__ext>` snd_seq_ev_ext_t
+
+external stored data
+
+Macros
+------
+
+.. _doxid-group___seq_events_1ga35b6aacb44080053e0ca0eeaefbe8dc2:
+.. _cid-snd_seq_event_length_fixed:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_EVENT_LENGTH_FIXED
+
+fixed event size
+
+.. _doxid-group___seq_events_1ga69fa938ef7ebc12e3d1b8758b39b7967:
+.. _cid-snd_seq_event_length_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_EVENT_LENGTH_MASK
+
+mask for event length bits
+
+.. _doxid-group___seq_events_1ga273f82dce70a0284a4dcabd34f1bfe7d:
+.. _cid-snd_seq_event_length_variable:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_EVENT_LENGTH_VARIABLE
+
+variable event size
+
+.. _doxid-group___seq_events_1ga5e38e6cf87f023332b797c30b74223b1:
+.. _cid-snd_seq_event_length_varusr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_EVENT_LENGTH_VARUSR
+
+variable event size - user memory space
+
+.. _doxid-group___seq_events_1ga6816c4987d7dc2efe4b9949223964165:
+.. _cid-snd_seq_priority_high:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_PRIORITY_HIGH
+
+event should be processed before others
+
+.. _doxid-group___seq_events_1gaea7b84a517451282036dad991a45239c:
+.. _cid-snd_seq_priority_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_PRIORITY_MASK
+
+mask for priority bits
+
+.. _doxid-group___seq_events_1gad40a7212be7f3c8b27ad641d7e4210ad:
+.. _cid-snd_seq_priority_normal:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_PRIORITY_NORMAL
+
+normal priority
+
+.. _doxid-group___seq_events_1gaa799f2aa335545bfe9dedc84105b6cf9:
+.. _cid-snd_seq_time_mode_abs:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_TIME_MODE_ABS
+
+absolute timestamp
+
+.. _doxid-group___seq_events_1gac7c12b40ede05529ec9a66b938d62aec:
+.. _cid-snd_seq_time_mode_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_TIME_MODE_MASK
+
+mask for time mode bits
+
+.. _doxid-group___seq_events_1ga167d462a14d80b2599470635dd0ee048:
+.. _cid-snd_seq_time_mode_rel:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_TIME_MODE_REL
+
+relative to current time
+
+.. _doxid-group___seq_events_1gac7da1e1965e86a68f663babec22a99ba:
+.. _cid-snd_seq_time_stamp_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_TIME_STAMP_MASK
+
+mask for timestamp bits
+
+.. _doxid-group___seq_events_1ga13e36bf2f3341625f6d88858d512f50b:
+.. _cid-snd_seq_time_stamp_real:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_TIME_STAMP_REAL
+
+timestamp in real time
+
+.. _doxid-group___seq_events_1gaf3c4c4900893680d95aa722ee6c16d2e:
+.. _cid-snd_seq_time_stamp_tick:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define SND_SEQ_TIME_STAMP_TICK
+
+Event mode flags
+
+NOTE: only 8 bits available!timestamp in clock ticks
+

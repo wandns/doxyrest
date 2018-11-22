@@ -1,0 +1,93 @@
+.. index:: pair: group; Poll options
+.. _doxid-group__pollopts:
+.. _cid-pollopts:
+
+Poll options
+============
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`APR_POLLERR<doxid-group__pollopts_1ga6f5a72fd9cf3f5dcf174acce0b4b77ee>`
+	#define :ref:`APR_POLLHUP<doxid-group__pollopts_1gace76603c4fa4b56f8b5977ff1ceb6f3b>`
+	#define :ref:`APR_POLLIN<doxid-group__pollopts_1ga746222e6b858bc2fc77328d59f78e788>`
+	#define :ref:`APR_POLLNVAL<doxid-group__pollopts_1ga132da215e207d4685fb467cc64a73f1b>`
+	#define :ref:`APR_POLLOUT<doxid-group__pollopts_1ga6fb703db1d11e2c5f66d8c6146e56053>`
+	#define :ref:`APR_POLLPRI<doxid-group__pollopts_1ga196c38e1914077c4c9a0cf3ce87f1b9c>`
+
+.. _details-doxid-group__pollopts:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Macros
+------
+
+.. _doxid-group__pollopts_1ga6f5a72fd9cf3f5dcf174acce0b4b77ee:
+.. _cid-apr_pollerr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLERR
+
+Pending error
+
+.. _doxid-group__pollopts_1gace76603c4fa4b56f8b5977ff1ceb6f3b:
+.. _cid-apr_pollhup:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLHUP
+
+Hangup occurred
+
+.. _doxid-group__pollopts_1ga746222e6b858bc2fc77328d59f78e788:
+.. _cid-apr_pollin:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLIN
+
+Can read without blocking
+
+.. _doxid-group__pollopts_1ga132da215e207d4685fb467cc64a73f1b:
+.. _cid-apr_pollnval:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLNVAL
+
+Descriptor invalid
+
+.. _doxid-group__pollopts_1ga6fb703db1d11e2c5f66d8c6146e56053:
+.. _cid-apr_pollout:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLOUT
+
+Can write without blocking
+
+.. _doxid-group__pollopts_1ga196c38e1914077c4c9a0cf3ce87f1b9c:
+.. _cid-apr_pollpri:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLPRI
+
+Priority data available
+

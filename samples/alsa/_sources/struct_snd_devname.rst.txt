@@ -1,0 +1,71 @@
+.. index:: pair: struct; snd_devname
+.. _doxid-structsnd__devname:
+.. _cid-snd_devname:
+
+struct snd_devname
+==================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <conf.h>
+
+
+Overview
+~~~~~~~~
+
+Device-name list element (definition)
+
+Device-name list element :ref:`More...<details-doxid-structsnd__devname>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char* :ref:`name<doxid-structsnd__devname_1a662af64d66720b53c3bfbcbf9f49ac1e>`
+	char* :ref:`comment<doxid-structsnd__devname_1a185ee8559a35e7f06b99f0ff1b36ed75>`
+	snd_devname_t* :ref:`next<doxid-structsnd__devname_1a5544e716ce4155fee42b262ccf15c245>`
+
+.. _details-doxid-structsnd__devname:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Device-name list element (definition)
+
+Device-name list element
+
+Fields
+------
+
+.. _doxid-structsnd__devname_1a662af64d66720b53c3bfbcbf9f49ac1e:
+.. _cid-snd_devname::name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char* name
+
+Device name string
+
+.. _doxid-structsnd__devname_1a185ee8559a35e7f06b99f0ff1b36ed75:
+.. _cid-snd_devname::comment:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char* comment
+
+Comments
+
+.. _doxid-structsnd__devname_1a5544e716ce4155fee42b262ccf15c245:
+.. _cid-snd_devname::next:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	snd_devname_t* next
+
+Next pointer
+

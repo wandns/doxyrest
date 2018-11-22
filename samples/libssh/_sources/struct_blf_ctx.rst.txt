@@ -1,0 +1,30 @@
+.. index:: pair: struct; blf_ctx
+.. _doxid-structblf__ctx:
+.. _cid-blf_ctx:
+
+struct blf_ctx
+==============
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/blf.h>
+
+
+
+
+.. _doxid-structblf__ctx_1ac17deb21cc59805cf3cee290f969a559:
+.. _cid-blf_ctx::p:
+.. _doxid-structblf__ctx_1ac9444dd2a0f6b3d978af33a7a27e65cc:
+.. _cid-blf_ctx::s:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t P[16+2]
+	uint32_t S[4][256]
+

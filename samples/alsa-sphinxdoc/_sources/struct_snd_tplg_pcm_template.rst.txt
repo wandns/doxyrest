@@ -1,0 +1,167 @@
+.. index:: pair: struct; snd_tplg_pcm_template
+.. _doxid-structsnd__tplg__pcm__template:
+.. _cid-snd_tplg_pcm_template:
+
+struct snd_tplg_pcm_template
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for PCM (FE DAI & DAI links). :ref:`More...<details-doxid-structsnd__tplg__pcm__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const char* :ref:`pcm_name<doxid-structsnd__tplg__pcm__template_1a37af3b032598a685bb1abe9262eb17fe>`
+	const char* :ref:`dai_name<doxid-structsnd__tplg__pcm__template_1a3ef92a1f767b2ec579bf9a900d00cba0>`
+	unsigned int :ref:`pcm_id<doxid-structsnd__tplg__pcm__template_1af347aca48a61d3ab51496fbd83171b51>`
+	unsigned int :ref:`dai_id<doxid-structsnd__tplg__pcm__template_1abd9e09d11267771903d472c86a4f104e>`
+	unsigned int :ref:`playback<doxid-structsnd__tplg__pcm__template_1a0b20c874ab97aa7e9638ba6bef765395>`
+	unsigned int :ref:`capture<doxid-structsnd__tplg__pcm__template_1a7074892753c00db0c79a5b0a14538038>`
+	unsigned int :ref:`compress<doxid-structsnd__tplg__pcm__template_1ad85ac3b2cf144479b04012a2654048a4>`
+	struct :ref:`snd_tplg_stream_caps_template<doxid-structsnd__tplg__stream__caps__template>`* :ref:`caps<doxid-structsnd__tplg__pcm__template_1a8baa9705e9cecf2d4a35a2f614e9dd61>`[2]
+	unsigned int :ref:`flag_mask<doxid-structsnd__tplg__pcm__template_1ac41d78c2b3e445f71a95d686c1b3c726>`
+	unsigned int :ref:`flags<doxid-structsnd__tplg__pcm__template_1a330cb10c95215d2c4fb733e090a394a3>`
+	struct snd_soc_tplg_private* :ref:`priv<doxid-structsnd__tplg__pcm__template_1aa17cb2cf7b33eaa7aaba9a7c0b7858c4>`
+	int :ref:`num_streams<doxid-structsnd__tplg__pcm__template_1a6230c8e843c6778a1ebc3e5af5aac21e>`
+	struct :ref:`snd_tplg_stream_template<doxid-structsnd__tplg__stream__template>` :ref:`stream<doxid-structsnd__tplg__pcm__template_1aad9e8ff62a714640aa13587897b8b6b1>`[0]
+
+.. _details-doxid-structsnd__tplg__pcm__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for PCM (FE DAI & DAI links).
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__pcm__template_1a37af3b032598a685bb1abe9262eb17fe:
+.. _cid-snd_tplg_pcm_template::pcm_name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* pcm_name
+
+PCM stream name
+
+.. _doxid-structsnd__tplg__pcm__template_1a3ef92a1f767b2ec579bf9a900d00cba0:
+.. _cid-snd_tplg_pcm_template::dai_name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* dai_name
+
+DAI name
+
+.. _doxid-structsnd__tplg__pcm__template_1af347aca48a61d3ab51496fbd83171b51:
+.. _cid-snd_tplg_pcm_template::pcm_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unsigned int pcm_id
+
+unique ID - used to match
+
+.. _doxid-structsnd__tplg__pcm__template_1abd9e09d11267771903d472c86a4f104e:
+.. _cid-snd_tplg_pcm_template::dai_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unsigned int dai_id
+
+unique ID - used to match
+
+.. _doxid-structsnd__tplg__pcm__template_1a0b20c874ab97aa7e9638ba6bef765395:
+.. _cid-snd_tplg_pcm_template::playback:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unsigned int playback
+
+supports playback mode
+
+.. _doxid-structsnd__tplg__pcm__template_1a7074892753c00db0c79a5b0a14538038:
+.. _cid-snd_tplg_pcm_template::capture:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unsigned int capture
+
+supports capture mode
+
+.. _doxid-structsnd__tplg__pcm__template_1ad85ac3b2cf144479b04012a2654048a4:
+.. _cid-snd_tplg_pcm_template::compress:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unsigned int compress
+
+1 = compressed; 0 = PCM
+
+.. _doxid-structsnd__tplg__pcm__template_1a8baa9705e9cecf2d4a35a2f614e9dd61:
+.. _cid-snd_tplg_pcm_template::caps:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_stream_caps_template<doxid-structsnd__tplg__stream__caps__template>`* caps [2]
+
+playback & capture for DAI
+
+.. _doxid-structsnd__tplg__pcm__template_1ac41d78c2b3e445f71a95d686c1b3c726:
+.. _cid-snd_tplg_pcm_template::flag_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unsigned int flag_mask
+
+bitmask of flags to configure
+
+.. _doxid-structsnd__tplg__pcm__template_1a330cb10c95215d2c4fb733e090a394a3:
+.. _cid-snd_tplg_pcm_template::flags:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unsigned int flags
+
+flag value SND_SOC_TPLG_LNK_FLGBIT_\*
+
+.. _doxid-structsnd__tplg__pcm__template_1aa17cb2cf7b33eaa7aaba9a7c0b7858c4:
+.. _cid-snd_tplg_pcm_template::priv:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct snd_soc_tplg_private* priv
+
+private data
+
+.. _doxid-structsnd__tplg__pcm__template_1a6230c8e843c6778a1ebc3e5af5aac21e:
+.. _cid-snd_tplg_pcm_template::num_streams:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int num_streams
+
+number of supported configs
+
+.. _doxid-structsnd__tplg__pcm__template_1aad9e8ff62a714640aa13587897b8b6b1:
+.. _cid-snd_tplg_pcm_template::stream:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_stream_template<doxid-structsnd__tplg__stream__template>` stream [0]
+
+supported configs
+

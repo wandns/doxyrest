@@ -1,0 +1,50 @@
+.. index:: pair: enum; snd_spcm_xrun_type_t
+.. _doxid-group___p_c_m___simple_1gaf89aba8106b8cc46e9f18d91268ec5ba:
+.. _cid-snd_spcm_xrun_type_t:
+
+enum snd_spcm_xrun_type_t
+=========================
+
+
+
+Overview
+~~~~~~~~
+
+Simple PCM xrun type :ref:`More...<details-doxid-group___p_c_m___simple_1gaf89aba8106b8cc46e9f18d91268ec5ba>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_SPCM_XRUN_IGNORE<doxid-group___p_c_m___simple_1ggaf89aba8106b8cc46e9f18d91268ec5baa7ef0dcc10a5e328bc78aa472d882f1f8>` = 0
+	:ref:`SND_SPCM_XRUN_STOP<doxid-group___p_c_m___simple_1ggaf89aba8106b8cc46e9f18d91268ec5baa716f9883b17fe11b35d162a6ff14a96a>` 
+
+.. _details-doxid-group___p_c_m___simple_1gaf89aba8106b8cc46e9f18d91268ec5ba:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Simple PCM xrun type
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m___simple_1ggaf89aba8106b8cc46e9f18d91268ec5baa7ef0dcc10a5e328bc78aa472d882f1f8:
+.. _cid-snd_spcm_xrun_type_t::snd_spcm_xrun_ignore:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_SPCM_XRUN_IGNORE
+
+driver / library will ignore all xruns, the stream runs forever
+
+.. _doxid-group___p_c_m___simple_1ggaf89aba8106b8cc46e9f18d91268ec5baa716f9883b17fe11b35d162a6ff14a96a:
+.. _cid-snd_spcm_xrun_type_t::snd_spcm_xrun_stop:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_SPCM_XRUN_STOP
+
+driver / library stops the stream when an xrun occurs
+

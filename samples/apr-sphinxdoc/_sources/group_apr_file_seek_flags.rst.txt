@@ -1,0 +1,63 @@
+.. index:: pair: group; File Seek Flags
+.. _doxid-group__apr__file__seek__flags:
+.. _cid-apr_file_seek_flags:
+
+File Seek Flags
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`APR_CUR<doxid-group__apr__file__seek__flags_1gae17abc53fea00bfd51e184017113e250>`
+	#define :ref:`APR_END<doxid-group__apr__file__seek__flags_1ga438f3568be799d1e4bbd19492ca47d22>`
+	#define :ref:`APR_SET<doxid-group__apr__file__seek__flags_1ga2fdf78845c897f69451d49e1e2b90ac9>`
+
+.. _details-doxid-group__apr__file__seek__flags:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Macros
+------
+
+.. _doxid-group__apr__file__seek__flags_1gae17abc53fea00bfd51e184017113e250:
+.. _cid-apr_cur:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_CUR
+
+Current
+
+.. _doxid-group__apr__file__seek__flags_1ga438f3568be799d1e4bbd19492ca47d22:
+.. _cid-apr_end:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_END
+
+Go to end of file
+
+.. _doxid-group__apr__file__seek__flags_1ga2fdf78845c897f69451d49e1e2b90ac9:
+.. _cid-apr_set:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SET
+
+Set the file position
+

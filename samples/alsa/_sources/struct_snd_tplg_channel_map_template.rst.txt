@@ -1,0 +1,57 @@
+.. index:: pair: struct; snd_tplg_channel_map_template
+.. _doxid-structsnd__tplg__channel__map__template:
+.. _cid-snd_tplg_channel_map_template:
+
+struct snd_tplg_channel_map_template
+====================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for channel mapping. :ref:`More...<details-doxid-structsnd__tplg__channel__map__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`num_channels<doxid-structsnd__tplg__channel__map__template_1a02ac7ec7cf8cded80d70ceb15806f3aa>`
+	struct :ref:`snd_tplg_channel_elem<doxid-structsnd__tplg__channel__elem>` :ref:`channel<doxid-structsnd__tplg__channel__map__template_1aa22b2a1d1e1bc5bf5660007dbfca7698>`[SND_TPLG_MAX_CHAN]
+
+.. _details-doxid-structsnd__tplg__channel__map__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for channel mapping.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__channel__map__template_1a02ac7ec7cf8cded80d70ceb15806f3aa:
+.. _cid-snd_tplg_channel_map_template::num_channels:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int num_channels
+
+number of channel mappings
+
+.. _doxid-structsnd__tplg__channel__map__template_1aa22b2a1d1e1bc5bf5660007dbfca7698:
+.. _cid-snd_tplg_channel_map_template::channel:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_channel_elem<doxid-structsnd__tplg__channel__elem>` channel [SND_TPLG_MAX_CHAN]
+
+mapping
+

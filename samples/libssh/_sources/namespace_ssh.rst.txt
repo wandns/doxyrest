@@ -1,0 +1,27 @@
+.. index:: pair: namespace; ssh
+.. _doxid-namespacessh:
+.. _cid-ssh:
+
+namespace ssh
+=============
+
+.. toctree::
+	:hidden:
+
+	class_ssh_Channel.rst
+	class_ssh_Session.rst
+	class_ssh_SshException.rst
+
+
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// classes
+
+	class :ref:`Channel<doxid-classssh_1_1_channel>` 
+	class :ref:`Session<doxid-classssh_1_1_session>` 
+	class :ref:`SshException<doxid-classssh_1_1_ssh_exception>` 
+

@@ -1,0 +1,205 @@
+.. index:: pair: group; Socket option definitions
+.. _doxid-group__apr__sockopt:
+.. _cid-apr_sockopt:
+
+Socket option definitions
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`APR_INCOMPLETE_READ<doxid-group__apr__sockopt_1ga73b6c80791c5148c2a416e03a8a1ff8a>`
+	#define :ref:`APR_INCOMPLETE_WRITE<doxid-group__apr__sockopt_1ga0c1544983845bf747b4a2a3facfb45e9>`
+	#define :ref:`APR_IPV6_V6ONLY<doxid-group__apr__sockopt_1gae1126f69a19a23c484e3292b016375df>`
+	#define :ref:`APR_RESET_NODELAY<doxid-group__apr__sockopt_1gac9ee12e841eefaf86fabaae4a298adea>`
+	#define :ref:`APR_SO_BROADCAST<doxid-group__apr__sockopt_1ga6d86c537799f60d68d2016563beef15b>`
+	#define :ref:`APR_SO_DEBUG<doxid-group__apr__sockopt_1ga2b30d26f69059692e97a59ec1d6db73b>`
+	#define :ref:`APR_SO_DISCONNECTED<doxid-group__apr__sockopt_1ga5fd72839e254ddec03ffb624c21fa564>`
+	#define :ref:`APR_SO_KEEPALIVE<doxid-group__apr__sockopt_1ga0c54c5b98593d9ad2f8cc8836da7eae5>`
+	#define :ref:`APR_SO_LINGER<doxid-group__apr__sockopt_1ga6a807e7b78937ab74a4fcd6e99d76669>`
+	#define :ref:`APR_SO_NONBLOCK<doxid-group__apr__sockopt_1gac3bf19cc28b43da9b9dc396c84914a0f>`
+	#define :ref:`APR_SO_RCVBUF<doxid-group__apr__sockopt_1ga4ab9494893075c8db6ac26a997f41f0e>`
+	#define :ref:`APR_SO_REUSEADDR<doxid-group__apr__sockopt_1ga90434074950efa1383d7c5649026a159>`
+	#define :ref:`APR_SO_SNDBUF<doxid-group__apr__sockopt_1ga0e7ef8d3785eec5210ede9fd309db35f>`
+	#define :ref:`APR_TCP_DEFER_ACCEPT<doxid-group__apr__sockopt_1gaa81adac9b40a87f1d4c0c2f037e9af78>`
+	#define :ref:`APR_TCP_NODELAY<doxid-group__apr__sockopt_1ga24db924d850dea792e92be7f8bc45cbd>`
+	#define :ref:`APR_TCP_NOPUSH<doxid-group__apr__sockopt_1ga7679a9e3114815eb6c31d26db707975d>`
+
+.. _details-doxid-group__apr__sockopt:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Macros
+------
+
+.. _doxid-group__apr__sockopt_1ga73b6c80791c5148c2a416e03a8a1ff8a:
+.. _cid-apr_incomplete_read:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_INCOMPLETE_READ
+
+Set on non-blocking sockets (timeout != 0) on which the previous read() did not fill a buffer completely. the next :ref:`apr_socket_recv() <doxid-group__apr__network__io_1gaa6ee00191f197f64b5a5409f4aff53d1>` will first call select()/poll() rather than going straight into read(). (Can also be set by an application to force a select()/poll() call before the next read, in cases where the app expects that an immediate read would fail.)
+
+.. _doxid-group__apr__sockopt_1ga0c1544983845bf747b4a2a3facfb45e9:
+.. _cid-apr_incomplete_write:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_INCOMPLETE_WRITE
+
+like APR_INCOMPLETE_READ, but for write
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_INCOMPLETE_READ <doxid-group__apr__sockopt_1ga73b6c80791c5148c2a416e03a8a1ff8a>`
+
+.. _doxid-group__apr__sockopt_1gae1126f69a19a23c484e3292b016375df:
+.. _cid-apr_ipv6_v6only:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_IPV6_V6ONLY
+
+Don't accept IPv4 connections on an IPv6 listening socket.
+
+.. _doxid-group__apr__sockopt_1gac9ee12e841eefaf86fabaae4a298adea:
+.. _cid-apr_reset_nodelay:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_RESET_NODELAY
+
+This flag is ONLY set internally when we set APR_TCP_NOPUSH with APR_TCP_NODELAY set to tell us that APR_TCP_NODELAY should be turned on again when NOPUSH is turned off
+
+.. _doxid-group__apr__sockopt_1ga6d86c537799f60d68d2016563beef15b:
+.. _cid-apr_so_broadcast:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_BROADCAST
+
+Allow broadcast
+
+.. _doxid-group__apr__sockopt_1ga2b30d26f69059692e97a59ec1d6db73b:
+.. _cid-apr_so_debug:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_DEBUG
+
+Debug
+
+.. _doxid-group__apr__sockopt_1ga5fd72839e254ddec03ffb624c21fa564:
+.. _cid-apr_so_disconnected:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_DISCONNECTED
+
+Disconnected
+
+.. _doxid-group__apr__sockopt_1ga0c54c5b98593d9ad2f8cc8836da7eae5:
+.. _cid-apr_so_keepalive:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_KEEPALIVE
+
+Keepalive
+
+.. _doxid-group__apr__sockopt_1ga6a807e7b78937ab74a4fcd6e99d76669:
+.. _cid-apr_so_linger:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_LINGER
+
+Linger
+
+.. _doxid-group__apr__sockopt_1gac3bf19cc28b43da9b9dc396c84914a0f:
+.. _cid-apr_so_nonblock:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_NONBLOCK
+
+Non-blocking IO
+
+.. _doxid-group__apr__sockopt_1ga4ab9494893075c8db6ac26a997f41f0e:
+.. _cid-apr_so_rcvbuf:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_RCVBUF
+
+Receive buffer
+
+.. _doxid-group__apr__sockopt_1ga90434074950efa1383d7c5649026a159:
+.. _cid-apr_so_reuseaddr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_REUSEADDR
+
+Reuse addresses
+
+.. _doxid-group__apr__sockopt_1ga0e7ef8d3785eec5210ede9fd309db35f:
+.. _cid-apr_so_sndbuf:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_SO_SNDBUF
+
+Send buffer
+
+.. _doxid-group__apr__sockopt_1gaa81adac9b40a87f1d4c0c2f037e9af78:
+.. _cid-apr_tcp_defer_accept:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_TCP_DEFER_ACCEPT
+
+Delay accepting of new connections until data is available.
+
+
+
+.. rubric:: See also:
+
+:ref:`apr_socket_accept_filter <doxid-group__apr__network__io_1ga270b7c0835283fa2b85a05d295dd7ee5>`
+
+.. _doxid-group__apr__sockopt_1ga24db924d850dea792e92be7f8bc45cbd:
+.. _cid-apr_tcp_nodelay:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_TCP_NODELAY
+
+For SCTP sockets, this is mapped to STCP_NODELAY internally.
+
+.. _doxid-group__apr__sockopt_1ga7679a9e3114815eb6c31d26db707975d:
+.. _cid-apr_tcp_nopush:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_TCP_NOPUSH
+
+No push
+

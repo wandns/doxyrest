@@ -1,0 +1,99 @@
+.. index:: pair: struct; libusb_version
+.. _doxid-structlibusb__version:
+.. _cid-libusb_version:
+
+struct libusb_version
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <libusb.h>
+
+
+Overview
+~~~~~~~~
+
+Structure providing the version of the libusb runtime. :ref:`More...<details-doxid-structlibusb__version>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const uint16_t :ref:`major<doxid-structlibusb__version_1a7f80ed3e95566b639fa09380e94f8d59>`
+	const uint16_t :ref:`minor<doxid-structlibusb__version_1ac886b798704bb9ca2b6cd3ae0234591f>`
+	const uint16_t :ref:`micro<doxid-structlibusb__version_1a6a73a21564237c1fa0e6e5b038e98605>`
+	const uint16_t :ref:`nano<doxid-structlibusb__version_1afbe4cf431bea706294667e333878508c>`
+	const char* :ref:`rc<doxid-structlibusb__version_1a99937642131c0559025bad92e7f51f27>`
+	const char* :ref:`describe<doxid-structlibusb__version_1af42453a3421515fa2db3fdf30f2367c3>`
+
+.. _details-doxid-structlibusb__version:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Structure providing the version of the libusb runtime.
+
+Fields
+------
+
+.. _doxid-structlibusb__version_1a7f80ed3e95566b639fa09380e94f8d59:
+.. _cid-libusb_version::major:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const uint16_t major
+
+Library major version.
+
+.. _doxid-structlibusb__version_1ac886b798704bb9ca2b6cd3ae0234591f:
+.. _cid-libusb_version::minor:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const uint16_t minor
+
+Library minor version.
+
+.. _doxid-structlibusb__version_1a6a73a21564237c1fa0e6e5b038e98605:
+.. _cid-libusb_version::micro:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const uint16_t micro
+
+Library micro version.
+
+.. _doxid-structlibusb__version_1afbe4cf431bea706294667e333878508c:
+.. _cid-libusb_version::nano:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const uint16_t nano
+
+Library nano version.
+
+.. _doxid-structlibusb__version_1a99937642131c0559025bad92e7f51f27:
+.. _cid-libusb_version::rc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* rc
+
+Library release candidate suffix string, e.g.
+
+"-rc4".
+
+.. _doxid-structlibusb__version_1af42453a3421515fa2db3fdf30f2367c3:
+.. _cid-libusb_version::describe:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* describe
+
+For ABI compatibility only.
+

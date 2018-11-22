@@ -1,0 +1,47 @@
+.. index:: pair: enum; snd_ctl_ext_access_t
+.. _doxid-group___ctl_plugin___s_d_k_1gaeedd1d7413b3025e9cede1b27e509de5:
+.. _cid-snd_ctl_ext_access_t:
+
+enum snd_ctl_ext_access_t
+=========================
+
+
+
+The access type bits stored in get_attribute callback
+
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5a720c26e4674b9d2d44d011a800cfc72b:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_read:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5a2a93cb677f41f2cceec6957f8abfcf62:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_write:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5a42f6778e5bd587f5360ce772c3c628ad:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_readwrite:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5a417fec750fa78774491ffc567230a71b:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_volatile:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5afa413c9a76b7d65d68b5477a4be2b9d3:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_tlv_read:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5af63c235068aec9c9c6e5618ed91f685f:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_tlv_write:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5ad715518cb6aa24da3a6338351259818a:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_tlv_readwrite:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5a6fa55065370c0dca97820ce47edaaf1c:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_tlv_command:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5a97cbcbaeb28f4c0e46ece630972d5540:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_inactive:
+.. _doxid-group___ctl_plugin___s_d_k_1ggaeedd1d7413b3025e9cede1b27e509de5ac937feb13016550723eaa7de29c32530:
+.. _cid-snd_ctl_ext_access_t::snd_ctl_ext_access_tlv_callback:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SND_CTL_EXT_ACCESS_READ =  (1 < <0)
+	SND_CTL_EXT_ACCESS_WRITE =  (1 < <1)
+	SND_CTL_EXT_ACCESS_READWRITE =  (3 < <0)
+	SND_CTL_EXT_ACCESS_VOLATILE =  (1 < <2)
+	SND_CTL_EXT_ACCESS_TLV_READ =  (1 < <4)
+	SND_CTL_EXT_ACCESS_TLV_WRITE =  (1 < <5)
+	SND_CTL_EXT_ACCESS_TLV_READWRITE =  (3 < <4)
+	SND_CTL_EXT_ACCESS_TLV_COMMAND =  (1 < <6)
+	SND_CTL_EXT_ACCESS_INACTIVE =  (1 < <8)
+	SND_CTL_EXT_ACCESS_TLV_CALLBACK =  (1 < <28)
+

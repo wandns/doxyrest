@@ -1,0 +1,68 @@
+.. index:: pair: enum; ssh_config_opcode_e
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73:
+.. _cid-ssh_config_opcode_e:
+
+enum ssh_config_opcode_e
+========================
+
+
+
+
+
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73ac0e63e31a6899c1ff3c573e1d56f2574:
+.. _cid-ssh_config_opcode_e::soc_unsupported:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a45ba768a47a8bc44244e38b08d87c040:
+.. _cid-ssh_config_opcode_e::soc_host:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73aa30cd9c28b6e377e9fbdc6a5b70c997e:
+.. _cid-ssh_config_opcode_e::soc_hostname:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a46f525bae303f4ab0ef2669659fea85f:
+.. _cid-ssh_config_opcode_e::soc_port:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a5b285e81d3f782279fbdd4756073951f:
+.. _cid-ssh_config_opcode_e::soc_username:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a0bf7d8a41d89dd840ed27b33589b7f48:
+.. _cid-ssh_config_opcode_e::soc_identity:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73adb34bc78481dc3e6af70af9b3bb5e4c6:
+.. _cid-ssh_config_opcode_e::soc_ciphers:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73af77ee80b78bd1326f819c1861ad3f577:
+.. _cid-ssh_config_opcode_e::soc_compression:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a38fa47830c93d32ade25890cdd488fe7:
+.. _cid-ssh_config_opcode_e::soc_timeout:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a62e7c0856b221ca3f9519a08a8b2c9a3:
+.. _cid-ssh_config_opcode_e::soc_protocol:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73aa60659e56703bd4d0db8d0aaf0b92206:
+.. _cid-ssh_config_opcode_e::soc_stricthostkeycheck:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a9ec644c61930e440a00ff155b5c53548:
+.. _cid-ssh_config_opcode_e::soc_knownhosts:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73ad844c30d9f9f7ec2861f5d2407f27953:
+.. _cid-ssh_config_opcode_e::soc_proxycommand:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73aed981ce4bcbbadbf005406813604f3fa:
+.. _cid-ssh_config_opcode_e::soc_gssapiserveridentity:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a0012ec43ac8b729ca0c32c8ade3d085f:
+.. _cid-ssh_config_opcode_e::soc_gssapiclientidentity:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a005dd6d40dbe94209215486f6121a747:
+.. _cid-ssh_config_opcode_e::soc_gssapidelegatecredentials:
+.. _doxid-config_8c_1ac71d5876c650cf51d3a4fee7a1567e73a275b1c0ef6337fdab69bb1f9a512c969:
+.. _cid-ssh_config_opcode_e::soc_end:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SOC_UNSUPPORTED = -1
+	SOC_HOST 
+	SOC_HOSTNAME 
+	SOC_PORT 
+	SOC_USERNAME 
+	SOC_IDENTITY 
+	SOC_CIPHERS 
+	SOC_COMPRESSION 
+	SOC_TIMEOUT 
+	SOC_PROTOCOL 
+	SOC_STRICTHOSTKEYCHECK 
+	SOC_KNOWNHOSTS 
+	SOC_PROXYCOMMAND 
+	SOC_GSSAPISERVERIDENTITY 
+	SOC_GSSAPICLIENTIDENTITY 
+	SOC_GSSAPIDELEGATECREDENTIALS 
+	SOC_END 
+

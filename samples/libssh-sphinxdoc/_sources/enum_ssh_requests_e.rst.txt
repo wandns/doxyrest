@@ -1,0 +1,32 @@
+.. index:: pair: enum; ssh_requests_e
+.. _doxid-libssh_8h_1a9484ca6b9fd0460e31a80fb8d0e81da6:
+.. _cid-ssh_requests_e:
+
+enum ssh_requests_e
+===================
+
+
+
+
+
+.. _doxid-libssh_8h_1a9484ca6b9fd0460e31a80fb8d0e81da6a1c090b9498aea8b24934ba291be6fa78:
+.. _cid-ssh_requests_e::ssh_request_auth:
+.. _doxid-libssh_8h_1a9484ca6b9fd0460e31a80fb8d0e81da6a55349816be9b38f7187447782dcd8d06:
+.. _cid-ssh_requests_e::ssh_request_channel_open:
+.. _doxid-libssh_8h_1a9484ca6b9fd0460e31a80fb8d0e81da6afe34a2aeab2f735c3590510fa9db0261:
+.. _cid-ssh_requests_e::ssh_request_channel:
+.. _doxid-libssh_8h_1a9484ca6b9fd0460e31a80fb8d0e81da6a427a659a7cd20a5cd4a4edf103322fe3:
+.. _cid-ssh_requests_e::ssh_request_service:
+.. _doxid-libssh_8h_1a9484ca6b9fd0460e31a80fb8d0e81da6a7f406af946bb752fc97dc7f801b0d085:
+.. _cid-ssh_requests_e::ssh_request_global:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_REQUEST_AUTH =1
+	SSH_REQUEST_CHANNEL_OPEN 
+	SSH_REQUEST_CHANNEL 
+	SSH_REQUEST_SERVICE 
+	SSH_REQUEST_GLOBAL 
+

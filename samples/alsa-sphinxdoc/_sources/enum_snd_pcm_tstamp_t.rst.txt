@@ -1,0 +1,63 @@
+.. index:: pair: enum; snd_pcm_tstamp_t
+.. _doxid-group___p_c_m_1ga695a9755880cf886c13d07938f92ea77:
+.. _cid-snd_pcm_tstamp_t:
+
+enum snd_pcm_tstamp_t
+=====================
+
+
+
+Overview
+~~~~~~~~
+
+PCM timestamp mode :ref:`More...<details-doxid-group___p_c_m_1ga695a9755880cf886c13d07938f92ea77>`
+
+.. _doxid-group___p_c_m_1gga695a9755880cf886c13d07938f92ea77a0cfbb1f2b6cbd10d81beccdf6be8ae9c:
+.. _cid-snd_pcm_tstamp_t::snd_pcm_tstamp_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_PCM_TSTAMP_NONE<doxid-group___p_c_m_1gga695a9755880cf886c13d07938f92ea77af49a1c378583854b22ed6f6490f3b1ee>` = 0
+	:ref:`SND_PCM_TSTAMP_ENABLE<doxid-group___p_c_m_1gga695a9755880cf886c13d07938f92ea77ac62f4ba2b203d59b8f11074fb12788ae>` 
+	:ref:`SND_PCM_TSTAMP_MMAP<doxid-group___p_c_m_1gga695a9755880cf886c13d07938f92ea77ab09196ab367636c4d365b5b6bcd391d8>` = SND_PCM_TSTAMP_ENABLE
+	SND_PCM_TSTAMP_LAST = SND_PCM_TSTAMP_ENABLE
+
+.. _details-doxid-group___p_c_m_1ga695a9755880cf886c13d07938f92ea77:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+PCM timestamp mode
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m_1gga695a9755880cf886c13d07938f92ea77af49a1c378583854b22ed6f6490f3b1ee:
+.. _cid-snd_pcm_tstamp_t::snd_pcm_tstamp_none:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_TSTAMP_NONE
+
+No timestamp
+
+.. _doxid-group___p_c_m_1gga695a9755880cf886c13d07938f92ea77ac62f4ba2b203d59b8f11074fb12788ae:
+.. _cid-snd_pcm_tstamp_t::snd_pcm_tstamp_enable:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_TSTAMP_ENABLE
+
+Update timestamp at every hardware position update
+
+.. _doxid-group___p_c_m_1gga695a9755880cf886c13d07938f92ea77ab09196ab367636c4d365b5b6bcd391d8:
+.. _cid-snd_pcm_tstamp_t::snd_pcm_tstamp_mmap:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_TSTAMP_MMAP
+
+Equivalent with :ref:`SND_PCM_TSTAMP_ENABLE <doxid-group___p_c_m_1gga695a9755880cf886c13d07938f92ea77ac62f4ba2b203d59b8f11074fb12788ae>` , just for compatibility with older versions
+

@@ -1,0 +1,26 @@
+.. index:: pair: struct; ssh_event_struct
+.. _doxid-structssh__event__struct:
+.. _cid-ssh_event_struct:
+
+struct ssh_event_struct
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structssh__event__struct_1a840832ace9bf0f47f7bf690f5b86cb03:
+.. _cid-ssh_event_struct::ctx:
+.. _doxid-structssh__event__struct_1a7cf64e931da5d0c9e244a5777d195623:
+.. _cid-ssh_event_struct::sessions:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_poll_ctx ctx
+	struct :ref:`ssh_list<doxid-structssh__list>`* sessions
+

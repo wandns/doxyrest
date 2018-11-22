@@ -1,0 +1,32 @@
+.. index:: pair: enum; ssh_channel_type_e
+.. _doxid-libssh_8h_1acc2732b8c54002b0031fa1e40ee60b24:
+.. _cid-ssh_channel_type_e:
+
+enum ssh_channel_type_e
+=======================
+
+
+
+
+
+.. _doxid-libssh_8h_1acc2732b8c54002b0031fa1e40ee60b24aeb4e9c4733e3fed4987021fa24d18c1f:
+.. _cid-ssh_channel_type_e::ssh_channel_unknown:
+.. _doxid-libssh_8h_1acc2732b8c54002b0031fa1e40ee60b24a31eca8286435332ee5ac0e4a8fc9e75e:
+.. _cid-ssh_channel_type_e::ssh_channel_session:
+.. _doxid-libssh_8h_1acc2732b8c54002b0031fa1e40ee60b24a2b55c507edabf8e3a832200e33ad7d7e:
+.. _cid-ssh_channel_type_e::ssh_channel_direct_tcpip:
+.. _doxid-libssh_8h_1acc2732b8c54002b0031fa1e40ee60b24a218aac5de2f3a87265e3bcc8542057ed:
+.. _cid-ssh_channel_type_e::ssh_channel_forwarded_tcpip:
+.. _doxid-libssh_8h_1acc2732b8c54002b0031fa1e40ee60b24aeae4049d38c91066926580f9cbefb3b5:
+.. _cid-ssh_channel_type_e::ssh_channel_x11:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_CHANNEL_UNKNOWN =0
+	SSH_CHANNEL_SESSION 
+	SSH_CHANNEL_DIRECT_TCPIP 
+	SSH_CHANNEL_FORWARDED_TCPIP 
+	SSH_CHANNEL_X11 
+

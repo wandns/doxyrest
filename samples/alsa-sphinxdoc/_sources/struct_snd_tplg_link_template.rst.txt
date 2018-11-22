@@ -1,0 +1,119 @@
+.. index:: pair: struct; snd_tplg_link_template
+.. _doxid-structsnd__tplg__link__template:
+.. _cid-snd_tplg_link_template:
+
+struct snd_tplg_link_template
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for physical DAI Links. :ref:`More...<details-doxid-structsnd__tplg__link__template>`
+
+.. _doxid-structsnd__tplg__link__template_1a898c4e95ceb34fe6d8f40bb9a1f2e7a5:
+.. _cid-snd_tplg_link_template::num_hw_configs:
+.. _doxid-structsnd__tplg__link__template_1a1d2f9de443054093318d7efd42e84ac9:
+.. _cid-snd_tplg_link_template::default_hw_config_id:
+.. _doxid-structsnd__tplg__link__template_1aaba73614984a694d14e0081d8d6c932c:
+.. _cid-snd_tplg_link_template::flag_mask:
+.. _doxid-structsnd__tplg__link__template_1abb548c6de83f4c7f356a4d1ca454110a:
+.. _cid-snd_tplg_link_template::flags:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const char* :ref:`name<doxid-structsnd__tplg__link__template_1a10d5beb2799114b6fe8b837c242faeb1>`
+	int :ref:`id<doxid-structsnd__tplg__link__template_1a2added05dca19575812143e658fbc743>`
+	const char* :ref:`stream_name<doxid-structsnd__tplg__link__template_1a1f298db79d5a4d66e29eb599eb1f23d6>`
+	int :ref:`num_streams<doxid-structsnd__tplg__link__template_1a6c4c04ed502e0bfe550d1bf78f2d8bf2>`
+	struct :ref:`snd_tplg_stream_template<doxid-structsnd__tplg__stream__template>`* :ref:`stream<doxid-structsnd__tplg__link__template_1ad22af2e86c2a06714c50e6dab4ae042d>`
+	struct :ref:`snd_tplg_hw_config_template<doxid-structsnd__tplg__hw__config__template>`* :ref:`hw_config<doxid-structsnd__tplg__link__template_1a0c8c9d7a828ab74e896ffcdd8d4b1dc3>`
+	int num_hw_configs
+	int default_hw_config_id
+	unsigned int flag_mask
+	unsigned int flags
+	struct snd_soc_tplg_private* :ref:`priv<doxid-structsnd__tplg__link__template_1a9844eaaebb064f80cfeb9685c4ebc026>`
+
+.. _details-doxid-structsnd__tplg__link__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for physical DAI Links.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__link__template_1a10d5beb2799114b6fe8b837c242faeb1:
+.. _cid-snd_tplg_link_template::name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* name
+
+link name, used to match
+
+.. _doxid-structsnd__tplg__link__template_1a2added05dca19575812143e658fbc743:
+.. _cid-snd_tplg_link_template::id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int id
+
+unique ID - used to match with existing physical links
+
+.. _doxid-structsnd__tplg__link__template_1a1f298db79d5a4d66e29eb599eb1f23d6:
+.. _cid-snd_tplg_link_template::stream_name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* stream_name
+
+link stream name, used to match
+
+.. _doxid-structsnd__tplg__link__template_1a6c4c04ed502e0bfe550d1bf78f2d8bf2:
+.. _cid-snd_tplg_link_template::num_streams:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int num_streams
+
+number of configs
+
+.. _doxid-structsnd__tplg__link__template_1ad22af2e86c2a06714c50e6dab4ae042d:
+.. _cid-snd_tplg_link_template::stream:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_stream_template<doxid-structsnd__tplg__stream__template>`* stream
+
+supported configs
+
+.. _doxid-structsnd__tplg__link__template_1a0c8c9d7a828ab74e896ffcdd8d4b1dc3:
+.. _cid-snd_tplg_link_template::hw_config:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_hw_config_template<doxid-structsnd__tplg__hw__config__template>`* hw_config
+
+supported HW configs
+
+.. _doxid-structsnd__tplg__link__template_1a9844eaaebb064f80cfeb9685c4ebc026:
+.. _cid-snd_tplg_link_template::priv:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct snd_soc_tplg_private* priv
+
+private data
+

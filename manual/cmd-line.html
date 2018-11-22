@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Command Line Reference &mdash; Doxyrest Manual 1.1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Samples" href="samples.html" />
+    <link rel="prev" title="DocBlock" href="lua_DocBlock.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Doxyrest Manual
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architectural Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frames.html">Lua Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lua_global.html">Lua API Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="samples.html">Samples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Doxyrest Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Command Line Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="command-line-reference">
+<h1>Command Line Reference</h1>
+<p>This chapter provides a reference to Doxyrest command line options.</p>
+<p class="rubric">General form of command-line tool usage:</p>
+<pre class="highlight literal-block">
+<span></span>doxyrest &lt;doxygen-index.xml&gt; &lt;options&gt;...
+</pre>
+<p>When specifying options <em>values</em>, you can use either of the following ways:</p>
+<ul>
+<li><p class="first">Separate with <em>space</em>:</p>
+<blockquote>
+<div><pre class="highlight literal-block">
+<span></span>-o index.rst
+--output index.rst
+</pre>
+</div></blockquote>
+</li>
+<li><p class="first">Separate with <code class="docutils literal notranslate"><span class="pre">=</span></code>:</p>
+<blockquote>
+<div><pre class="highlight literal-block">
+<span></span>-o<span class="o">=</span>index.rst
+--output<span class="o">=</span>index.rst
+</pre>
+</div></blockquote>
+</li>
+<li><p class="first">Concatenate (only for single-char options):</p>
+<blockquote>
+<div><pre class="highlight literal-block">
+<span></span>-oindex.rst
+</pre>
+</div></blockquote>
+</li>
+</ul>
+<div class="section" id="options">
+<h2>Options</h2>
+<dl class="option">
+<dt id="cmdoption-h">
+<code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code></dt>
+<dd></dd></dl>
+
+<p>Prints help screen.</p>
+<dl class="option">
+<dt id="cmdoption-v">
+<code class="descname">-v</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--version</code><code class="descclassname"></code></dt>
+<dd></dd></dl>
+
+<p>Prints version of Doxyrest.</p>
+<dl class="option">
+<dt id="cmdoption-o">
+<code class="descname">-o</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--output</code><code class="descclassname"></code></dt>
+<dd></dd></dl>
+
+<p>Specifies master (index) output file, for example:</p>
+<pre class="highlight literal-block">
+<span></span>-o index.rst
+--output index.rst
+</pre>
+<dl class="option">
+<dt id="cmdoption-f">
+<code class="descname">-f</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--frame</code><code class="descclassname"></code></dt>
+<dd></dd></dl>
+
+<p>Specifies Lua master (index) frame file, for example:</p>
+<pre class="highlight literal-block">
+<span></span>-f index.rst.in
+--frame index.rst.in
+</pre>
+<dl class="option">
+<dt id="cmdoption-frame-dir">
+<code class="descname">-F</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--frame-dir</code><code class="descclassname"></code></dt>
+<dd></dd></dl>
+
+<p>Adds Lua frame directory, for example:</p>
+<pre class="highlight literal-block">
+<span></span>-F ./my-doxyrest-frame
+--frame-dir ./my-doxyrest-frame
+</pre>
+<p>It is allowed to use <code class="docutils literal notranslate"><span class="pre">--frame-dir</span></code> switch multiple times to add multiple directories.</p>
+<dl class="option">
+<dt id="cmdoption-p">
+<code class="descname">-p</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--protection</code><code class="descclassname"></code></dt>
+<dd></dd></dl>
+
+<p>Sets the filter for non-public items, for example:</p>
+<pre class="highlight literal-block">
+<span></span>-p protected
+--protection protected
+</pre>
+<p>Available protection levels:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">public</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">protected</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">private</span></code></li>
+</ul>
+<p>Doxyrest will ignore items with protection level <em>higher</em> than specified. For example, if you specify <code class="docutils literal notranslate"><span class="pre">-p=protected</span></code>, then only <code class="docutils literal notranslate"><span class="pre">public</span></code> and <code class="docutils literal notranslate"><span class="pre">protected</span></code> members will be documented; <code class="docutils literal notranslate"><span class="pre">private</span></code> members will be excluded from documentation.</p>
+<p>By default, only <code class="docutils literal notranslate"><span class="pre">public</span></code> members are documented.</p>
+<dl class="option">
+<dt id="cmdoption-d">
+<code class="descname">-D</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--define</code><code class="descclassname"></code></dt>
+<dd></dd></dl>
+
+<p>Defines a Lua variable, for example:</p>
+<pre class="highlight literal-block">
+<span></span>-D <span class="nv">myvar</span><span class="o">=</span>value
+--define <span class="nv">myvar</span><span class="o">=</span>value
+</pre>
+<p>If <code class="docutils literal notranslate"><span class="pre">value</span></code> if omitted, then it is assumed to be <code class="docutils literal notranslate"><span class="pre">true</span></code>, for example.:</p>
+<pre class="highlight literal-block">
+<span></span>-D myvar
+</pre>
+<p>is equivalent to:</p>
+<pre class="highlight literal-block">
+<span></span>-D <span class="nv">myvar</span><span class="o">=</span>true
+</pre>
+<p>This option allows you to write highly customizable Lua frames which produce different output depending on controlling variables.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="samples.html" class="btn btn-neutral float-right" title="Samples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lua_DocBlock.html" class="btn btn-neutral" title="DocBlock" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Tibbo Technology Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

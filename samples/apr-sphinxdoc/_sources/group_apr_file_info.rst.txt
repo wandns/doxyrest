@@ -1,0 +1,79 @@
+.. index:: pair: group; File Information
+.. _doxid-group__apr__file__info:
+.. _cid-apr_file_info:
+
+File Information
+================
+
+.. toctree::
+	:hidden:
+
+	group_apr_dir.rst
+	group_apr_file_permissions.rst
+	group_apr_file_stat.rst
+	group_apr_filepath.rst
+	enum_apr_filetype_e.rst
+
+
+
+Overview
+~~~~~~~~
+
+
+
+|	:ref:`Directory Manipulation Functions<doxid-group__apr__dir>`
+|	:ref:`File Permissions flags<doxid-group__apr__file__permissions>`
+|	:ref:`Stat Functions<doxid-group__apr__file__stat>`
+|	:ref:`Filepath Manipulation Functions<doxid-group__apr__filepath>`
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef struct :ref:`apr_dir_t<doxid-group__apr__file__info_1ga92ed8cf52cba2abb42cf74087aa74da8>` :ref:`apr_dir_t<doxid-group__apr__file__info_1ga92ed8cf52cba2abb42cf74087aa74da8>`
+	typedef apr_int32_t :ref:`apr_fileperms_t<doxid-group__apr__file__info_1ga3af19c4c47007169064a70f9351bc7d8>`
+	typedef dev_t :ref:`apr_dev_t<doxid-group__apr__file__info_1gae2c25c4b679613081599f776efa96c4a>`
+
+	// enums
+
+	enum :ref:`apr_filetype_e<doxid-group__apr__file__info_1gae3f0ce3014337a52b39852f8bf81ca7c>`
+
+.. _details-doxid-group__apr__file__info:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Typedefs
+--------
+
+.. _doxid-group__apr__file__info_1ga92ed8cf52cba2abb42cf74087aa74da8:
+.. _cid-apr_dir_t:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	typedef struct :ref:`apr_dir_t<doxid-group__apr__file__info_1ga92ed8cf52cba2abb42cf74087aa74da8>` apr_dir_t
+
+Structure for referencing directories.
+
+.. _doxid-group__apr__file__info_1ga3af19c4c47007169064a70f9351bc7d8:
+.. _cid-apr_fileperms_t:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	typedef apr_int32_t apr_fileperms_t
+
+Structure for determining file permissions.
+
+.. _doxid-group__apr__file__info_1gae2c25c4b679613081599f776efa96c4a:
+.. _cid-apr_dev_t:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	typedef dev_t apr_dev_t
+
+Structure for determining the device the file is on.
+

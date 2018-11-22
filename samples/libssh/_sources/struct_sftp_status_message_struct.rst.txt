@@ -1,0 +1,42 @@
+.. index:: pair: struct; sftp_status_message_struct
+.. _doxid-structsftp__status__message__struct:
+.. _cid-sftp_status_message_struct:
+
+struct sftp_status_message_struct
+=================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/sftp.h>
+
+
+
+
+.. _doxid-structsftp__status__message__struct_1af10355c376e7b8ffe808812945b99a27:
+.. _cid-sftp_status_message_struct::error_unused:
+.. _doxid-structsftp__status__message__struct_1ad0710d6357c7e73931ebb0123f8f331e:
+.. _cid-sftp_status_message_struct::errormsg:
+.. _doxid-structsftp__status__message__struct_1a04c3647b5a265c0773d4121a2abf123b:
+.. _cid-sftp_status_message_struct::id:
+.. _doxid-structsftp__status__message__struct_1a1d4abe77adf09c558632c72f56c147ea:
+.. _cid-sftp_status_message_struct::lang_unused:
+.. _doxid-structsftp__status__message__struct_1a450c7b02ef86eec0fefe35340def66c0:
+.. _cid-sftp_status_message_struct::langmsg:
+.. _doxid-structsftp__status__message__struct_1aad23fa1155ddae53ce9693c169c557c8:
+.. _cid-sftp_status_message_struct::status:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_string error_unused
+	char* errormsg
+	uint32_t id
+	ssh_string lang_unused
+	char* langmsg
+	uint32_t status
+

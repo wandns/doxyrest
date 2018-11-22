@@ -1,0 +1,57 @@
+.. index:: pair: struct; snd_tplg_graph_template
+.. _doxid-structsnd__tplg__graph__template:
+.. _cid-snd_tplg_graph_template:
+
+struct snd_tplg_graph_template
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for array of DAPM graph elements. :ref:`More...<details-doxid-structsnd__tplg__graph__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`count<doxid-structsnd__tplg__graph__template_1a2246efb27a440795ee0afd6870c0a048>`
+	struct :ref:`snd_tplg_graph_elem<doxid-structsnd__tplg__graph__elem>` :ref:`elem<doxid-structsnd__tplg__graph__template_1a1600ae422e1746d831b41489df6a6197>`[0]
+
+.. _details-doxid-structsnd__tplg__graph__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for array of DAPM graph elements.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__graph__template_1a2246efb27a440795ee0afd6870c0a048:
+.. _cid-snd_tplg_graph_template::count:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int count
+
+Number of graph elements
+
+.. _doxid-structsnd__tplg__graph__template_1a1600ae422e1746d831b41489df6a6197:
+.. _cid-snd_tplg_graph_template::elem:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_graph_elem<doxid-structsnd__tplg__graph__elem>` elem [0]
+
+graph elements
+

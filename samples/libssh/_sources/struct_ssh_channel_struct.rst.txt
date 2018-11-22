@@ -1,0 +1,84 @@
+.. index:: pair: struct; ssh_channel_struct
+.. _doxid-structssh__channel__struct:
+.. _cid-ssh_channel_struct:
+
+struct ssh_channel_struct
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/channels.h>
+
+
+
+
+.. _doxid-structssh__channel__struct_1a15397bec63f5807d2f0b229b89a480be:
+.. _cid-ssh_channel_struct::callbacks:
+.. _doxid-structssh__channel__struct_1a01c4285adcfc44e288de0f4fa39db87a:
+.. _cid-ssh_channel_struct::counter:
+.. _doxid-structssh__channel__struct_1a68d9617b306eb378edf674eaf5448b0f:
+.. _cid-ssh_channel_struct::delayed_close:
+.. _doxid-structssh__channel__struct_1aab1a32d569d5f6ba14293b5353d8003c:
+.. _cid-ssh_channel_struct::exit_status:
+.. _doxid-structssh__channel__struct_1a9bd924e63f20dfa9af62c4caafa3bff6:
+.. _cid-ssh_channel_struct::flags:
+.. _doxid-structssh__channel__struct_1a8f9d907f8d5faec306e0bca0b2a7b55f:
+.. _cid-ssh_channel_struct::local_channel:
+.. _doxid-structssh__channel__struct_1ae1090ec20bf8483f5372b48589abaa65:
+.. _cid-ssh_channel_struct::local_eof:
+.. _doxid-structssh__channel__struct_1a77f2ac2ab90268fb978b3d3af4b7b22a:
+.. _cid-ssh_channel_struct::local_maxpacket:
+.. _doxid-structssh__channel__struct_1a5e689c7f0b32f73f0f42c9fef43dafca:
+.. _cid-ssh_channel_struct::local_window:
+.. _doxid-structssh__channel__struct_1a0a6d6c57a4873b89400e3c6d939b882d:
+.. _cid-ssh_channel_struct::remote_channel:
+.. _doxid-structssh__channel__struct_1aa31bc93e18f9b9379b739986cef67ff5:
+.. _cid-ssh_channel_struct::remote_eof:
+.. _doxid-structssh__channel__struct_1a5200b341844885b0eae31bf7c51e4c9b:
+.. _cid-ssh_channel_struct::remote_maxpacket:
+.. _doxid-structssh__channel__struct_1ada154aaeabda4011ccbdeb3493d41287:
+.. _cid-ssh_channel_struct::remote_window:
+.. _doxid-structssh__channel__struct_1a90a867d8aa887832d9d71b7f68f429e4:
+.. _cid-ssh_channel_struct::request_state:
+.. _doxid-structssh__channel__struct_1a627685f58eeb44ac4440f829ae8de946:
+.. _cid-ssh_channel_struct::session:
+.. _doxid-structssh__channel__struct_1a19401c9a79db8c55a9bb4d899745bae6:
+.. _cid-ssh_channel_struct::state:
+.. _doxid-structssh__channel__struct_1af9b9ab0b077ac409bc2b0e6ddc166f79:
+.. _cid-ssh_channel_struct::stderr_buffer:
+.. _doxid-structssh__channel__struct_1a5c610bff55765e5d57563c7f182b0498:
+.. _cid-ssh_channel_struct::stdout_buffer:
+.. _doxid-structssh__channel__struct_1ad5ed581a9e87a0e00d9db9ea9d8255eb:
+.. _cid-ssh_channel_struct::userarg:
+.. _doxid-structssh__channel__struct_1a6a0c6ccf3707b3b92b7c8cd4cc6cefe5:
+.. _cid-ssh_channel_struct::version:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_channel_callbacks callbacks
+	ssh_counter counter
+	int delayed_close
+	int exit_status
+	int flags
+	uint32_t local_channel
+	int local_eof
+	uint32_t local_maxpacket
+	uint32_t local_window
+	uint32_t remote_channel
+	int remote_eof
+	uint32_t remote_maxpacket
+	uint32_t remote_window
+	enum :ref:`ssh_channel_request_state_e<doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325>` request_state
+	ssh_session session
+	enum :ref:`ssh_channel_state_e<doxid-channels_8h_1a5a002159e5db31d156bb2a8ce8a10cd1>` state
+	ssh_buffer stderr_buffer
+	ssh_buffer stdout_buffer
+	void* userarg
+	int version
+

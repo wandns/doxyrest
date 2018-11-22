@@ -1,0 +1,32 @@
+.. index:: pair: struct; pcaprec_hdr_s
+.. _doxid-structpcaprec__hdr__s:
+.. _cid-pcaprec_hdr_s:
+
+struct pcaprec_hdr_s
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structpcaprec__hdr__s_1a79cd25b35f9dce4d8aa1616b1aa7c8e2:
+.. _cid-pcaprec_hdr_s::incl_len:
+.. _doxid-structpcaprec__hdr__s_1acea6239ba4cd8087f5ee4daf0a2f96cd:
+.. _cid-pcaprec_hdr_s::orig_len:
+.. _doxid-structpcaprec__hdr__s_1aa88ddb87bf93e44278ff48a4dad133da:
+.. _cid-pcaprec_hdr_s::ts_sec:
+.. _doxid-structpcaprec__hdr__s_1a28fa2562018a1703ddd97d626e000c19:
+.. _cid-pcaprec_hdr_s::ts_usec:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t incl_len
+	uint32_t orig_len
+	uint32_t ts_sec
+	uint32_t ts_usec
+

@@ -1,0 +1,47 @@
+.. index:: pair: struct; snd_tplg_tlv_template
+.. _doxid-structsnd__tplg__tlv__template:
+.. _cid-snd_tplg_tlv_template:
+
+struct snd_tplg_tlv_template
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for all TLV objects. :ref:`More...<details-doxid-structsnd__tplg__tlv__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`type<doxid-structsnd__tplg__tlv__template_1ae387167827b44dd3e98db6910d1f667e>`
+
+.. _details-doxid-structsnd__tplg__tlv__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for all TLV objects.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__tlv__template_1ae387167827b44dd3e98db6910d1f667e:
+.. _cid-snd_tplg_tlv_template::type:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int type
+
+TLV type SNDRV_CTL_TLVT_
+

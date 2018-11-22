@@ -1,0 +1,140 @@
+.. index:: pair: enum; ssh_auth_state_e
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafef:
+.. _cid-ssh_auth_state_e:
+
+enum ssh_auth_state_e
+=====================
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SSH_AUTH_STATE_NONE<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa3ec3c08deba889e791cdca82edeb2ce6>` =0
+	:ref:`SSH_AUTH_STATE_PARTIAL<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa36be1b8a3aec2b226f03077dc1e6f962>` 
+	:ref:`SSH_AUTH_STATE_SUCCESS<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa8e24c237c09404d0c93a1d3b5f8f3945>` 
+	:ref:`SSH_AUTH_STATE_FAILED<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa2274da14b3dc9f07b5fe6493045c356c>` 
+	:ref:`SSH_AUTH_STATE_ERROR<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa331579d75bb0aa08050ca67a12861387>` 
+	:ref:`SSH_AUTH_STATE_INFO<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa97ddb5eeec18ad7d054ec5795e6e16d6>` 
+	:ref:`SSH_AUTH_STATE_PK_OK<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa8d27800e44e1c7e3a5f30594443f78ef>` 
+	:ref:`SSH_AUTH_STATE_KBDINT_SENT<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa6d785d00012593230e88f00debb19179>` 
+	:ref:`SSH_AUTH_STATE_GSSAPI_REQUEST_SENT<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa12492663176bc8d81ec1f5f832ee7250>` 
+	:ref:`SSH_AUTH_STATE_GSSAPI_TOKEN<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa91300865963f77efc3044542fbd6ce36>` 
+	:ref:`SSH_AUTH_STATE_GSSAPI_MIC_SENT<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefab046bd91ca00b04b47ce0c7b670423ba>` 
+
+.. _details-doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafef:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Enum Values
+-----------
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa3ec3c08deba889e791cdca82edeb2ce6:
+.. _cid-ssh_auth_state_e::ssh_auth_state_none:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_NONE
+
+No authentication asked.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa36be1b8a3aec2b226f03077dc1e6f962:
+.. _cid-ssh_auth_state_e::ssh_auth_state_partial:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_PARTIAL
+
+Last authentication response was a partial success.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa8e24c237c09404d0c93a1d3b5f8f3945:
+.. _cid-ssh_auth_state_e::ssh_auth_state_success:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_SUCCESS
+
+Last authentication response was a success.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa2274da14b3dc9f07b5fe6493045c356c:
+.. _cid-ssh_auth_state_e::ssh_auth_state_failed:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_FAILED
+
+Last authentication response was failed.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa331579d75bb0aa08050ca67a12861387:
+.. _cid-ssh_auth_state_e::ssh_auth_state_error:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_ERROR
+
+Last authentication was erroneous.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa97ddb5eeec18ad7d054ec5795e6e16d6:
+.. _cid-ssh_auth_state_e::ssh_auth_state_info:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_INFO
+
+Last state was a keyboard-interactive ask for info.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa8d27800e44e1c7e3a5f30594443f78ef:
+.. _cid-ssh_auth_state_e::ssh_auth_state_pk_ok:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_PK_OK
+
+Last state was a public key accepted for authentication.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa6d785d00012593230e88f00debb19179:
+.. _cid-ssh_auth_state_e::ssh_auth_state_kbdint_sent:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_KBDINT_SENT
+
+We asked for a keyboard-interactive authentication.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa12492663176bc8d81ec1f5f832ee7250:
+.. _cid-ssh_auth_state_e::ssh_auth_state_gssapi_request_sent:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_GSSAPI_REQUEST_SENT
+
+We have sent an userauth request with gssapi-with-mic.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefa91300865963f77efc3044542fbd6ce36:
+.. _cid-ssh_auth_state_e::ssh_auth_state_gssapi_token:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_GSSAPI_TOKEN
+
+We are exchanging tokens until authentication.
+
+.. _doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafefab046bd91ca00b04b47ce0c7b670423ba:
+.. _cid-ssh_auth_state_e::ssh_auth_state_gssapi_mic_sent:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_AUTH_STATE_GSSAPI_MIC_SENT
+
+We have sent the MIC and expecting to be authenticated.
+

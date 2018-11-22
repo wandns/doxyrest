@@ -1,0 +1,67 @@
+.. index:: pair: struct; apr_os_proc_mutex_t
+.. _doxid-structapr__os__proc__mutex__t:
+.. _cid-apr_os_proc_mutex_t:
+
+struct apr_os_proc_mutex_t
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_portable.h>
+
+
+Overview
+~~~~~~~~
+
+Basic OS process mutex structure. :ref:`More...<details-doxid-structapr__os__proc__mutex__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`crossproc<doxid-structapr__os__proc__mutex__t_1ab75e29a654ba0ff0dc491b625308fb79>`
+	pthread_mutex_t* :ref:`pthread_interproc<doxid-structapr__os__proc__mutex__t_1aed588bef2efc836e5a768f32638e89c1>`
+	pthread_mutex_t* :ref:`intraproc<doxid-structapr__os__proc__mutex__t_1aa2e01fa37b652185a0dd3fae80caa4ad>`
+
+.. _details-doxid-structapr__os__proc__mutex__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Basic OS process mutex structure.
+
+Fields
+------
+
+.. _doxid-structapr__os__proc__mutex__t_1ab75e29a654ba0ff0dc491b625308fb79:
+.. _cid-apr_os_proc_mutex_t::crossproc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int crossproc
+
+Value used for SYS V Semaphore, FCNTL and FLOCK serialization
+
+.. _doxid-structapr__os__proc__mutex__t_1aed588bef2efc836e5a768f32638e89c1:
+.. _cid-apr_os_proc_mutex_t::pthread_interproc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	pthread_mutex_t* pthread_interproc
+
+Value used for PTHREAD serialization
+
+.. _doxid-structapr__os__proc__mutex__t_1aa2e01fa37b652185a0dd3fae80caa4ad:
+.. _cid-apr_os_proc_mutex_t::intraproc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	pthread_mutex_t* intraproc
+
+This value is currently unused within APR and Apache
+

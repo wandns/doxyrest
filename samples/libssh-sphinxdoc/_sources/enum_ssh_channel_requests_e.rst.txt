@@ -1,0 +1,41 @@
+.. index:: pair: enum; ssh_channel_requests_e
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127ad:
+.. _cid-ssh_channel_requests_e:
+
+enum ssh_channel_requests_e
+===========================
+
+
+
+
+
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127ada0046e239fac55753a05147c155f4cf1f:
+.. _cid-ssh_channel_requests_e::ssh_channel_request_unknown:
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127ada811fc2598aa0e6331a03328943b2a67e:
+.. _cid-ssh_channel_requests_e::ssh_channel_request_pty:
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127adab78296fe37945413a2727372c76e768c:
+.. _cid-ssh_channel_requests_e::ssh_channel_request_exec:
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127adaca5d52bf516565bc9fb2666a3d6c0b40:
+.. _cid-ssh_channel_requests_e::ssh_channel_request_shell:
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127ada016d0fb8c2ffc024f435279102703dc6:
+.. _cid-ssh_channel_requests_e::ssh_channel_request_env:
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127ada964401cae19320cf49318962b77aa06d:
+.. _cid-ssh_channel_requests_e::ssh_channel_request_subsystem:
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127adadb526a7c5e497b51c72942232e9f1952:
+.. _cid-ssh_channel_requests_e::ssh_channel_request_window_change:
+.. _doxid-libssh_8h_1a818ea00ec54010d2f69ce887881127ada2d7c24b7971bf7b6388ef6b5bb1421d3:
+.. _cid-ssh_channel_requests_e::ssh_channel_request_x11:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_CHANNEL_REQUEST_UNKNOWN =0
+	SSH_CHANNEL_REQUEST_PTY 
+	SSH_CHANNEL_REQUEST_EXEC 
+	SSH_CHANNEL_REQUEST_SHELL 
+	SSH_CHANNEL_REQUEST_ENV 
+	SSH_CHANNEL_REQUEST_SUBSYSTEM 
+	SSH_CHANNEL_REQUEST_WINDOW_CHANGE 
+	SSH_CHANNEL_REQUEST_X11 
+

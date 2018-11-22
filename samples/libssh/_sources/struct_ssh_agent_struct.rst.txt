@@ -1,0 +1,36 @@
+.. index:: pair: struct; ssh_agent_struct
+.. _doxid-structssh__agent__struct:
+.. _cid-ssh_agent_struct:
+
+struct ssh_agent_struct
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/agent.h>
+
+
+
+
+.. _doxid-structssh__agent__struct_1a7e1eb5e8f2195be54eddf0541bf3f7b1:
+.. _cid-ssh_agent_struct::channel:
+.. _doxid-structssh__agent__struct_1a78fe96ed21368baef842c58204839a39:
+.. _cid-ssh_agent_struct::count:
+.. _doxid-structssh__agent__struct_1a810f1557bc6a898bd44b3ae98b7cfc17:
+.. _cid-ssh_agent_struct::ident:
+.. _doxid-structssh__agent__struct_1a6bcc6b25837b15846172da3b223eb570:
+.. _cid-ssh_agent_struct::sock:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_channel channel
+	unsigned int count
+	ssh_buffer ident
+	struct ssh_socket_struct* sock
+

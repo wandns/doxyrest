@@ -1,0 +1,108 @@
+.. index:: pair: group; Sequencer Miscellaneous
+.. _doxid-group___seq_misc:
+.. _cid-seqmisc:
+
+Sequencer Miscellaneous
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+Sequencer Miscellaneous :ref:`More...<details-doxid-group___seq_misc>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// global functions
+
+	void
+	:ref:`snd_seq_set_bit<doxid-group___seq_misc_1ga8ff28fb95b62e6359d2e21c23b2a73a5>` (
+	    int nr,
+	    void* array
+	    )
+
+	void
+	:ref:`snd_seq_unset_bit<doxid-group___seq_misc_1ga74b65393d57f2e8771a801629d6b3528>` (
+	    int nr,
+	    void* array
+	    )
+
+	int
+	:ref:`snd_seq_change_bit<doxid-group___seq_misc_1ga2eb3e010834db5401a6e38c1bd2f23e1>` (
+	    int nr,
+	    void* array
+	    )
+
+	int
+	:ref:`snd_seq_get_bit<doxid-group___seq_misc_1gab9ee8563691ac283aaf93c6bd15ad99b>` (
+	    int nr,
+	    void* array
+	    )
+
+.. _details-doxid-group___seq_misc:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Sequencer Miscellaneous
+
+Global Functions
+----------------
+
+.. _doxid-group___seq_misc_1ga8ff28fb95b62e6359d2e21c23b2a73a5:
+.. _cid-snd_seq_set_bit:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void
+	snd_seq_set_bit (
+	    int nr,
+	    void* array
+	    )
+
+set a bit flag
+
+.. _doxid-group___seq_misc_1ga74b65393d57f2e8771a801629d6b3528:
+.. _cid-snd_seq_unset_bit:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void
+	snd_seq_unset_bit (
+	    int nr,
+	    void* array
+	    )
+
+unset a bit flag
+
+.. _doxid-group___seq_misc_1ga2eb3e010834db5401a6e38c1bd2f23e1:
+.. _cid-snd_seq_change_bit:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	snd_seq_change_bit (
+	    int nr,
+	    void* array
+	    )
+
+change a bit flag
+
+.. _doxid-group___seq_misc_1gab9ee8563691ac283aaf93c6bd15ad99b:
+.. _cid-snd_seq_get_bit:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	snd_seq_get_bit (
+	    int nr,
+	    void* array
+	    )
+
+get a bit flag state
+

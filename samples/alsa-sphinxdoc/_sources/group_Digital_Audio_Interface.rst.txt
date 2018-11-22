@@ -1,0 +1,1433 @@
+.. index:: pair: group; Constants for Digital Audio Interfaces
+.. _doxid-group___digital___audio___interface:
+.. _cid-digital_audio_interface:
+
+Constants for Digital Audio Interfaces
+======================================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+AES/IEC958 channel status bits. :ref:`More...<details-doxid-group___digital___audio___interface>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`IEC958_AES0_CON_EMPHASIS<doxid-group___digital___audio___interface_1ga56437af18b56ae9d3726ec4794f9f972>`
+	#define :ref:`IEC958_AES0_CON_EMPHASIS_5015<doxid-group___digital___audio___interface_1ga82e03cee892fd9f9b7ba34bace351693>`
+	#define :ref:`IEC958_AES0_CON_EMPHASIS_NONE<doxid-group___digital___audio___interface_1gaceb4a50b57361207a9f6b74079113b14>`
+	#define :ref:`IEC958_AES0_CON_MODE<doxid-group___digital___audio___interface_1gad9feb0c82f3518c86ef5972da33bccbe>`
+	#define :ref:`IEC958_AES0_CON_NOT_COPYRIGHT<doxid-group___digital___audio___interface_1gae11f8d6b05ccecc8c4d1b6ed87926e74>`
+	#define :ref:`IEC958_AES0_NONAUDIO<doxid-group___digital___audio___interface_1ga402d9cb929f4b34b15ee68bf58c3090b>`
+	#define :ref:`IEC958_AES0_PROFESSIONAL<doxid-group___digital___audio___interface_1ga97c58195ef5fb340df3e72835ee9e5e4>`
+	#define :ref:`IEC958_AES0_PRO_EMPHASIS<doxid-group___digital___audio___interface_1gaf1a8cbeb6c854e3ad22c780d2fe6d223>`
+	#define :ref:`IEC958_AES0_PRO_EMPHASIS_5015<doxid-group___digital___audio___interface_1gabf51b5af88e18019261c53a9746f78e1>`
+	#define :ref:`IEC958_AES0_PRO_EMPHASIS_CCITT<doxid-group___digital___audio___interface_1gac5d5d6443d27427950a2ae23c24a32e9>`
+	#define :ref:`IEC958_AES0_PRO_EMPHASIS_NONE<doxid-group___digital___audio___interface_1gaf662b1163cd3909990c0feb942f05826>`
+	#define :ref:`IEC958_AES0_PRO_EMPHASIS_NOTID<doxid-group___digital___audio___interface_1ga8026c5c8da4329ede09678cec3ea9e5e>`
+	#define :ref:`IEC958_AES0_PRO_FREQ_UNLOCKED<doxid-group___digital___audio___interface_1ga5c74dda29181e1479d00a972cb26bea9>`
+	#define :ref:`IEC958_AES0_PRO_FS<doxid-group___digital___audio___interface_1ga3b181eebbb9fdf22f732e6de663db463>`
+	#define :ref:`IEC958_AES0_PRO_FS_32000<doxid-group___digital___audio___interface_1gac12894a52ea07dad7e72f82494bc8006>`
+	#define :ref:`IEC958_AES0_PRO_FS_44100<doxid-group___digital___audio___interface_1ga66740e89c8a4cd1b07f6a1d7e13a673e>`
+	#define :ref:`IEC958_AES0_PRO_FS_48000<doxid-group___digital___audio___interface_1ga9562a343db9ceaaccb6cbc271cb01cdd>`
+	#define :ref:`IEC958_AES0_PRO_FS_NOTID<doxid-group___digital___audio___interface_1ga3200c4b6210dccc94b229697f7b19326>`
+	#define :ref:`IEC958_AES1_CON_ADC<doxid-group___digital___audio___interface_1ga6c2ca2e9d69e5e098bf1d6b2bacd25d3>`
+	#define :ref:`IEC958_AES1_CON_ADC_COPYRIGHT<doxid-group___digital___audio___interface_1ga5dc282789fd6b0459263700ae666e357>`
+	#define :ref:`IEC958_AES1_CON_ADC_COPYRIGHT_ID<doxid-group___digital___audio___interface_1ga1e0b7c10f92767978a62e92c1061c90c>`
+	#define :ref:`IEC958_AES1_CON_ADC_COPYRIGHT_MASK<doxid-group___digital___audio___interface_1ga59bbb9a68d11eaebcbf10c5440cfac62>`
+	#define :ref:`IEC958_AES1_CON_ADC_COPYRIGHT_OTHER<doxid-group___digital___audio___interface_1ga4f2c8ea8075b6b3da55b68329932632d>`
+	#define :ref:`IEC958_AES1_CON_ADC_ID<doxid-group___digital___audio___interface_1gae96ddec88024369ffb208ac37896056a>`
+	#define :ref:`IEC958_AES1_CON_ADC_MASK<doxid-group___digital___audio___interface_1gafeb779781b4c579421e7cf147202c262>`
+	#define :ref:`IEC958_AES1_CON_ADC_OTHER<doxid-group___digital___audio___interface_1ga9ef0514a51833b9776b9a996100866f5>`
+	#define :ref:`IEC958_AES1_CON_BROADCAST1_ID<doxid-group___digital___audio___interface_1ga47a74bdfbe9d1e6959d349e8ab80d7e9>`
+	#define :ref:`IEC958_AES1_CON_BROADCAST1_MASK<doxid-group___digital___audio___interface_1ga4ca6b18366f7fde2205edce2999f47ba>`
+	#define :ref:`IEC958_AES1_CON_BROADCAST1_OTHER<doxid-group___digital___audio___interface_1gaf6a21ac22b5f53b76afa8a44d63c0dfc>`
+	#define :ref:`IEC958_AES1_CON_BROADCAST2_ID<doxid-group___digital___audio___interface_1ga64892ac2ecdd6a1996c45e32da8e24bc>`
+	#define :ref:`IEC958_AES1_CON_BROADCAST2_MASK<doxid-group___digital___audio___interface_1ga72aaceaf66179a76bb5d9099c63728e8>`
+	#define :ref:`IEC958_AES1_CON_CATEGORY<doxid-group___digital___audio___interface_1gae842ac365899b386e01bf6942b1cb7b0>`
+	#define :ref:`IEC958_AES1_CON_DAB_EUROPE<doxid-group___digital___audio___interface_1ga4dcf52d3ac3d49910065c354aa414705>`
+	#define :ref:`IEC958_AES1_CON_DAB_JAPAN<doxid-group___digital___audio___interface_1gaacd5b408613d9f71f0c280b5701e2440>`
+	#define :ref:`IEC958_AES1_CON_DAB_USA<doxid-group___digital___audio___interface_1ga2d629fc804ed4919c033c05300099f71>`
+	#define :ref:`IEC958_AES1_CON_DAT<doxid-group___digital___audio___interface_1ga32099784b78ae39e4587af8694d69e4b>`
+	#define :ref:`IEC958_AES1_CON_DCC<doxid-group___digital___audio___interface_1ga16af02aef1db016caecec4f1066836b6>`
+	#define :ref:`IEC958_AES1_CON_DIGDIGCONV_ID<doxid-group___digital___audio___interface_1ga0a26b9dc738e0f46f2b8913b10adcf4e>`
+	#define :ref:`IEC958_AES1_CON_DIGDIGCONV_MASK<doxid-group___digital___audio___interface_1ga02af600c964452ba2548aa10bc39264d>`
+	#define :ref:`IEC958_AES1_CON_DIGDIGCONV_OTHER<doxid-group___digital___audio___interface_1gabfd2f1a82a79b644a8a93ce34184923a>`
+	#define :ref:`IEC958_AES1_CON_DSP<doxid-group___digital___audio___interface_1ga0862a58090e7233db6bcfdd892e3aa98>`
+	#define :ref:`IEC958_AES1_CON_DVD<doxid-group___digital___audio___interface_1gaabf34744bbe8ea896f0b39d61fa3be7f>`
+	#define :ref:`IEC958_AES1_CON_EXPERIMENTAL<doxid-group___digital___audio___interface_1gac4bf15bc084373a97e239e66fd3ba6cf>`
+	#define :ref:`IEC958_AES1_CON_GENERAL<doxid-group___digital___audio___interface_1gae182fcf7f8a1733f2c5e4b5587527283>`
+	#define :ref:`IEC958_AES1_CON_IEC62105<doxid-group___digital___audio___interface_1ga75e5d3da5be611cc78a58daab238b21b>`
+	#define :ref:`IEC958_AES1_CON_IEC908_CD<doxid-group___digital___audio___interface_1ga0c9c45847a8455691605b38f3585853a>`
+	#define :ref:`IEC958_AES1_CON_LASEROPT_ID<doxid-group___digital___audio___interface_1gac82edcac4d1ce308a081274475de4dd7>`
+	#define :ref:`IEC958_AES1_CON_LASEROPT_MASK<doxid-group___digital___audio___interface_1gaf90ddee8292f65124e2fffa30a5a9d19>`
+	#define :ref:`IEC958_AES1_CON_LASTEROPT_OTHER<doxid-group___digital___audio___interface_1ga3a515ec23e25656a7d982150881caecd>`
+	#define :ref:`IEC958_AES1_CON_MAGNETIC_DISC<doxid-group___digital___audio___interface_1gaf123dc5db88df762b11a9185424b1420>`
+	#define :ref:`IEC958_AES1_CON_MAGNETIC_ID<doxid-group___digital___audio___interface_1ga692a8af33eb60c4fe104be7dd7e426a1>`
+	#define :ref:`IEC958_AES1_CON_MAGNETIC_MASK<doxid-group___digital___audio___interface_1ga8537f28c815187771ea66108dae94f75>`
+	#define :ref:`IEC958_AES1_CON_MAGNETIC_OTHER<doxid-group___digital___audio___interface_1gac21e25d4a6813f8fdfe0082560884fae>`
+	#define :ref:`IEC958_AES1_CON_MICROPHONE<doxid-group___digital___audio___interface_1ga811f9cfc2f3d08837287d0cdc2808aed>`
+	#define :ref:`IEC958_AES1_CON_MINI_DISC<doxid-group___digital___audio___interface_1gaac27175ed581307d5757ffd350ba7661>`
+	#define :ref:`IEC958_AES1_CON_MIXER<doxid-group___digital___audio___interface_1gaea7af8b4644f58a5d4c1105359f85988>`
+	#define :ref:`IEC958_AES1_CON_MUSICAL_ID<doxid-group___digital___audio___interface_1gab96cdba31d93e8bc32bc334f2d2b0178>`
+	#define :ref:`IEC958_AES1_CON_MUSICAL_MASK<doxid-group___digital___audio___interface_1ga5a734cc7948c359e625f834ca17d5fe6>`
+	#define :ref:`IEC958_AES1_CON_MUSICAL_OTHER<doxid-group___digital___audio___interface_1ga8722821c881d9bcda9f5ce707feaa9ff>`
+	#define :ref:`IEC958_AES1_CON_NON_IEC908_CD<doxid-group___digital___audio___interface_1gae4c8e119b97cd7eb0de2a0decc09b366>`
+	#define :ref:`IEC958_AES1_CON_ORIGINAL<doxid-group___digital___audio___interface_1gaa263d6ec3b5a616d7a0940f85e4c8501>`
+	#define :ref:`IEC958_AES1_CON_PCM_CODER<doxid-group___digital___audio___interface_1gaf9c2970ac74fe81cb12d83e67b2018fc>`
+	#define :ref:`IEC958_AES1_CON_RATE_CONVERTER<doxid-group___digital___audio___interface_1ga21278dabaf0648061929ca4fdda258af>`
+	#define :ref:`IEC958_AES1_CON_SAMPLER<doxid-group___digital___audio___interface_1ga0fe7eba08e30f91adfcb8b2375053521>`
+	#define :ref:`IEC958_AES1_CON_SOFTWARE<doxid-group___digital___audio___interface_1ga9639133b1ddd2134bd528a7ab4fcb9ff>`
+	#define :ref:`IEC958_AES1_CON_SOLIDMEM_DIGITAL_RECORDER_PLAYER<doxid-group___digital___audio___interface_1ga48d338b34e97374d85a22a78713504a6>`
+	#define :ref:`IEC958_AES1_CON_SOLIDMEM_ID<doxid-group___digital___audio___interface_1ga74c49715f4f185922f257a92ef438a91>`
+	#define :ref:`IEC958_AES1_CON_SOLIDMEM_MASK<doxid-group___digital___audio___interface_1gaabb2e0b9b0f5156a96e1d5be698755cd>`
+	#define :ref:`IEC958_AES1_CON_SOLIDMEM_OTHER<doxid-group___digital___audio___interface_1ga035190360ade18728cc20922af991adf>`
+	#define :ref:`IEC958_AES1_CON_SYNTHESIZER<doxid-group___digital___audio___interface_1ga3b66b47f2d1ef5130326ba66f1232bc1>`
+	#define :ref:`IEC958_AES1_CON_VCR<doxid-group___digital___audio___interface_1ga3a79d0e9622e975fa54de9310f30af19>`
+	#define :ref:`IEC958_AES1_PRO_MODE<doxid-group___digital___audio___interface_1ga540c428bf5e00276772cef111b239230>`
+	#define :ref:`IEC958_AES1_PRO_MODE_BYTE3<doxid-group___digital___audio___interface_1gaee8adbb79b7c60c00c9ffe1e08197c56>`
+	#define :ref:`IEC958_AES1_PRO_MODE_NOTID<doxid-group___digital___audio___interface_1ga641543783d5fa4e66ae6044b8b5d522b>`
+	#define :ref:`IEC958_AES1_PRO_MODE_PRIMARY<doxid-group___digital___audio___interface_1gac679691c061b7640e9237aea2f1f30d0>`
+	#define :ref:`IEC958_AES1_PRO_MODE_SINGLE<doxid-group___digital___audio___interface_1ga6c68916803b33a32cad746568a44bac7>`
+	#define :ref:`IEC958_AES1_PRO_MODE_STEREOPHONIC<doxid-group___digital___audio___interface_1gae946f14befaf6847a0994db2b5ed090a>`
+	#define :ref:`IEC958_AES1_PRO_MODE_TWO<doxid-group___digital___audio___interface_1gacba2d2f55e48b6ae039d9bf88b504e32>`
+	#define :ref:`IEC958_AES1_PRO_USERBITS<doxid-group___digital___audio___interface_1ga3ce0307fe1a8beea424ca307dafae8a6>`
+	#define :ref:`IEC958_AES1_PRO_USERBITS_192<doxid-group___digital___audio___interface_1gab0df701227e3c8e34be4d2ddfa4a8df8>`
+	#define :ref:`IEC958_AES1_PRO_USERBITS_NOTID<doxid-group___digital___audio___interface_1gabd629bd8c560239cf6e8de3eb87e3bca>`
+	#define :ref:`IEC958_AES1_PRO_USERBITS_UDEF<doxid-group___digital___audio___interface_1ga81dbae23918f429b02c9033e16b8e378>`
+	#define :ref:`IEC958_AES2_CON_CHANNEL<doxid-group___digital___audio___interface_1ga1ea33bab0780d90aa9402590952f32de>`
+	#define :ref:`IEC958_AES2_CON_CHANNEL_UNSPEC<doxid-group___digital___audio___interface_1gaed3a633e36b0dd83e5c0ab096a5f0110>`
+	#define :ref:`IEC958_AES2_CON_SOURCE<doxid-group___digital___audio___interface_1ga7348f373085c32e12e1b3662111745d2>`
+	#define :ref:`IEC958_AES2_CON_SOURCE_UNSPEC<doxid-group___digital___audio___interface_1ga38e56580f61fb843890b54b1029a2636>`
+	#define :ref:`IEC958_AES2_PRO_SBITS<doxid-group___digital___audio___interface_1ga955515228f306d77b9fbbba0dcb6af2e>`
+	#define :ref:`IEC958_AES2_PRO_SBITS_20<doxid-group___digital___audio___interface_1ga61a44c8284e22339a93fe89a11f902e4>`
+	#define :ref:`IEC958_AES2_PRO_SBITS_24<doxid-group___digital___audio___interface_1ga2f796cb061365ce054f5f95a617bfd5e>`
+	#define :ref:`IEC958_AES2_PRO_SBITS_UDEF<doxid-group___digital___audio___interface_1gaeaa0821017495062cc52254e07353e73>`
+	#define :ref:`IEC958_AES2_PRO_WORDLEN<doxid-group___digital___audio___interface_1ga6e698ad6e0567020186df2815a0e667a>`
+	#define :ref:`IEC958_AES2_PRO_WORDLEN_20_16<doxid-group___digital___audio___interface_1gac0c6d1ecf87c38e0ed2bce5c295b2542>`
+	#define :ref:`IEC958_AES2_PRO_WORDLEN_22_18<doxid-group___digital___audio___interface_1ga0cbf7583c33befe07f1e30e1d0c51049>`
+	#define :ref:`IEC958_AES2_PRO_WORDLEN_23_19<doxid-group___digital___audio___interface_1gadb22493f9fcca99d94680ce0f3e67173>`
+	#define :ref:`IEC958_AES2_PRO_WORDLEN_24_20<doxid-group___digital___audio___interface_1gaf9ac8295f1b2217d752139d914a219a1>`
+	#define :ref:`IEC958_AES2_PRO_WORDLEN_NOTID<doxid-group___digital___audio___interface_1ga82f26d84cdc05454003479cacab6cc1a>`
+	#define :ref:`IEC958_AES3_CON_CLOCK<doxid-group___digital___audio___interface_1ga01bb79669e104ba331435ac6bdd5adfc>`
+	#define :ref:`IEC958_AES3_CON_CLOCK_1000PPM<doxid-group___digital___audio___interface_1gaca2f253562c14ece6e5c26f257439cf1>`
+	#define :ref:`IEC958_AES3_CON_CLOCK_50PPM<doxid-group___digital___audio___interface_1gac82cc51c466ecd46a86aec627fcb95d4>`
+	#define :ref:`IEC958_AES3_CON_CLOCK_VARIABLE<doxid-group___digital___audio___interface_1ga6191857e900ff5ce0884607224c5e4f1>`
+	#define :ref:`IEC958_AES3_CON_FS<doxid-group___digital___audio___interface_1ga3ad13472b50029f0272689a8bce8e607>`
+	#define :ref:`IEC958_AES3_CON_FS_176400<doxid-group___digital___audio___interface_1gaf800b239d7f6e86b6826c16f372bfebd>`
+	#define :ref:`IEC958_AES3_CON_FS_192000<doxid-group___digital___audio___interface_1ga9901bc1e5e90f2f7cc328d18634cac69>`
+	#define :ref:`IEC958_AES3_CON_FS_22050<doxid-group___digital___audio___interface_1ga60669b8dadf595dc14a3ae0f5e7788b8>`
+	#define :ref:`IEC958_AES3_CON_FS_24000<doxid-group___digital___audio___interface_1ga4eb4272aa2f3544a8a77b960c1e27177>`
+	#define :ref:`IEC958_AES3_CON_FS_32000<doxid-group___digital___audio___interface_1gabcf093b8225ad76e08af8af003bfe166>`
+	#define :ref:`IEC958_AES3_CON_FS_44100<doxid-group___digital___audio___interface_1ga8a3d3c0b08298ecc43e011a936c482d2>`
+	#define :ref:`IEC958_AES3_CON_FS_48000<doxid-group___digital___audio___interface_1gaadb13bb8818fab6d1328138ba8d1d00c>`
+	#define :ref:`IEC958_AES3_CON_FS_768000<doxid-group___digital___audio___interface_1gaa593dda0427d63f95d0db2b0d4b9a256>`
+	#define :ref:`IEC958_AES3_CON_FS_88200<doxid-group___digital___audio___interface_1ga2053e6a6430ff3156008b22b10b6cebc>`
+	#define :ref:`IEC958_AES3_CON_FS_96000<doxid-group___digital___audio___interface_1ga992a47bbf0888233d5128c0ed85acf95>`
+	#define :ref:`IEC958_AES3_CON_FS_NOTID<doxid-group___digital___audio___interface_1ga5221dc78ca1f55a042e167ce1c91cb8e>`
+	#define :ref:`IEC958_AES4_CON_MAX_WORDLEN_24<doxid-group___digital___audio___interface_1ga56bb9b04a55bd0e3956e97dbd82f017a>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS<doxid-group___digital___audio___interface_1gad89c6a706e18b6f425504a78915f7352>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_11025<doxid-group___digital___audio___interface_1gad7d7f4f62bc1b9a7f1243025c134cfcd>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_12000<doxid-group___digital___audio___interface_1ga3beca329332ce84cb5f8b60a6779db6f>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_16000<doxid-group___digital___audio___interface_1ga87d68b79da8b13c222eef8c12363f19e>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_176400<doxid-group___digital___audio___interface_1ga7476b49b1d4617ced4c984ea28ceb381>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_192000<doxid-group___digital___audio___interface_1ga519d879e28f534704c16238f0ce2d9e4>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_22050<doxid-group___digital___audio___interface_1gaf8b2783371b072694d9ae071983e7c1e>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_24000<doxid-group___digital___audio___interface_1gaab4f8c9584593003e49a3eb0b0a5433a>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_32000<doxid-group___digital___audio___interface_1gae6d0be1fcf49859d857a3c73c8016e25>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_44100<doxid-group___digital___audio___interface_1ga972fefc77f659ba6990182906f916df7>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_48000<doxid-group___digital___audio___interface_1ga44e44b55346acd1404ab9672678b535b>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_8000<doxid-group___digital___audio___interface_1ga04ffd70501149edf567f7f5772b32056>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_88200<doxid-group___digital___audio___interface_1ga7f295758be11ee5614b862d92347050e>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_96000<doxid-group___digital___audio___interface_1ga54ad73cd0ea70b03a5552b459487b55d>`
+	#define :ref:`IEC958_AES4_CON_ORIGFS_NOTID<doxid-group___digital___audio___interface_1ga06fc6b7080d5953720585e5d158c5c21>`
+	#define :ref:`IEC958_AES4_CON_WORDLEN<doxid-group___digital___audio___interface_1gad28bf206daee452c44d769e9665455c5>`
+	#define :ref:`IEC958_AES4_CON_WORDLEN_20_16<doxid-group___digital___audio___interface_1ga587b7055ad6e5c5eaecb30f1c12c0520>`
+	#define :ref:`IEC958_AES4_CON_WORDLEN_21_17<doxid-group___digital___audio___interface_1gaf3cb2ff0ccbf443402201f6dd349b18f>`
+	#define :ref:`IEC958_AES4_CON_WORDLEN_22_18<doxid-group___digital___audio___interface_1gac11e04b988aca011aae2e93cfcdc61df>`
+	#define :ref:`IEC958_AES4_CON_WORDLEN_23_19<doxid-group___digital___audio___interface_1ga4c67a2e8aa2b0b60b1ac89750262120c>`
+	#define :ref:`IEC958_AES4_CON_WORDLEN_24_20<doxid-group___digital___audio___interface_1gab105e55680449b82d8156fdc17f30753>`
+	#define :ref:`IEC958_AES4_CON_WORDLEN_NOTID<doxid-group___digital___audio___interface_1ga987aff90a3a7d1d834b96b2b10d9e242>`
+	#define :ref:`IEC958_AES5_CON_CGMSA<doxid-group___digital___audio___interface_1ga7d47fef6131eb61b127f755533f2483d>`
+	#define :ref:`IEC958_AES5_CON_CGMSA_COPYFREELY<doxid-group___digital___audio___interface_1ga2ad44dadd10dba1f0990cd7b80778261>`
+	#define :ref:`IEC958_AES5_CON_CGMSA_COPYNEVER<doxid-group___digital___audio___interface_1ga2ad26c32c5a392cef3c66fa6ed1e6af0>`
+	#define :ref:`IEC958_AES5_CON_CGMSA_COPYNOMORE<doxid-group___digital___audio___interface_1ga13caf34dd818cc7e450dc7c54b365b45>`
+	#define :ref:`IEC958_AES5_CON_CGMSA_COPYONCE<doxid-group___digital___audio___interface_1gab8fdbac028c693f87d8d720608ee14ce>`
+
+.. _details-doxid-group___digital___audio___interface:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+AES/IEC958 channel status bits.
+
+Macros
+------
+
+.. _doxid-group___digital___audio___interface_1ga56437af18b56ae9d3726ec4794f9f972:
+.. _cid-iec958_aes0_con_emphasis:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_CON_EMPHASIS
+
+mask - emphasis
+
+.. _doxid-group___digital___audio___interface_1ga82e03cee892fd9f9b7ba34bace351693:
+.. _cid-iec958_aes0_con_emphasis_5015:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_CON_EMPHASIS_5015
+
+50/15us emphasis
+
+.. _doxid-group___digital___audio___interface_1gaceb4a50b57361207a9f6b74079113b14:
+.. _cid-iec958_aes0_con_emphasis_none:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_CON_EMPHASIS_NONE
+
+no emphasis
+
+.. _doxid-group___digital___audio___interface_1gad9feb0c82f3518c86ef5972da33bccbe:
+.. _cid-iec958_aes0_con_mode:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_CON_MODE
+
+mask - mode
+
+.. _doxid-group___digital___audio___interface_1gae11f8d6b05ccecc8c4d1b6ed87926e74:
+.. _cid-iec958_aes0_con_not_copyright:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_CON_NOT_COPYRIGHT
+
+0 = copyright, 1 = not copyright
+
+.. _doxid-group___digital___audio___interface_1ga402d9cb929f4b34b15ee68bf58c3090b:
+.. _cid-iec958_aes0_nonaudio:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_NONAUDIO
+
+0 = audio, 1 = non-audio
+
+.. _doxid-group___digital___audio___interface_1ga97c58195ef5fb340df3e72835ee9e5e4:
+.. _cid-iec958_aes0_professional:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PROFESSIONAL
+
+0 = consumer, 1 = professional
+
+.. _doxid-group___digital___audio___interface_1gaf1a8cbeb6c854e3ad22c780d2fe6d223:
+.. _cid-iec958_aes0_pro_emphasis:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_EMPHASIS
+
+mask - emphasis
+
+.. _doxid-group___digital___audio___interface_1gabf51b5af88e18019261c53a9746f78e1:
+.. _cid-iec958_aes0_pro_emphasis_5015:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_EMPHASIS_5015
+
+50/15us emphasis
+
+.. _doxid-group___digital___audio___interface_1gac5d5d6443d27427950a2ae23c24a32e9:
+.. _cid-iec958_aes0_pro_emphasis_ccitt:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_EMPHASIS_CCITT
+
+CCITT J.17 emphasis
+
+.. _doxid-group___digital___audio___interface_1gaf662b1163cd3909990c0feb942f05826:
+.. _cid-iec958_aes0_pro_emphasis_none:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_EMPHASIS_NONE
+
+no emphasis
+
+.. _doxid-group___digital___audio___interface_1ga8026c5c8da4329ede09678cec3ea9e5e:
+.. _cid-iec958_aes0_pro_emphasis_notid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_EMPHASIS_NOTID
+
+emphasis not indicated
+
+.. _doxid-group___digital___audio___interface_1ga5c74dda29181e1479d00a972cb26bea9:
+.. _cid-iec958_aes0_pro_freq_unlocked:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_FREQ_UNLOCKED
+
+source sample frequency: 0 = locked, 1 = unlocked
+
+.. _doxid-group___digital___audio___interface_1ga3b181eebbb9fdf22f732e6de663db463:
+.. _cid-iec958_aes0_pro_fs:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_FS
+
+mask - sample frequency
+
+.. _doxid-group___digital___audio___interface_1gac12894a52ea07dad7e72f82494bc8006:
+.. _cid-iec958_aes0_pro_fs_32000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_FS_32000
+
+32kHz
+
+.. _doxid-group___digital___audio___interface_1ga66740e89c8a4cd1b07f6a1d7e13a673e:
+.. _cid-iec958_aes0_pro_fs_44100:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_FS_44100
+
+44.1kHz
+
+.. _doxid-group___digital___audio___interface_1ga9562a343db9ceaaccb6cbc271cb01cdd:
+.. _cid-iec958_aes0_pro_fs_48000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_FS_48000
+
+48kHz
+
+.. _doxid-group___digital___audio___interface_1ga3200c4b6210dccc94b229697f7b19326:
+.. _cid-iec958_aes0_pro_fs_notid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES0_PRO_FS_NOTID
+
+fs not indicated
+
+.. _doxid-group___digital___audio___interface_1ga6c2ca2e9d69e5e098bf1d6b2bacd25d3:
+.. _cid-iec958_aes1_con_adc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ADC
+
+ADC without copyright information
+
+.. _doxid-group___digital___audio___interface_1ga5dc282789fd6b0459263700ae666e357:
+.. _cid-iec958_aes1_con_adc_copyright:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ADC_COPYRIGHT
+
+ADC with copyright information
+
+.. _doxid-group___digital___audio___interface_1ga1e0b7c10f92767978a62e92c1061c90c:
+.. _cid-iec958_aes1_con_adc_copyright_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ADC_COPYRIGHT_ID
+
+ADC Copyright ID
+
+.. _doxid-group___digital___audio___interface_1ga59bbb9a68d11eaebcbf10c5440cfac62:
+.. _cid-iec958_aes1_con_adc_copyright_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ADC_COPYRIGHT_MASK
+
+ADC Copyright mask
+
+.. _doxid-group___digital___audio___interface_1ga4f2c8ea8075b6b3da55b68329932632d:
+.. _cid-iec958_aes1_con_adc_copyright_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ADC_COPYRIGHT_OTHER
+
+Other ADC with copyright information product
+
+.. _doxid-group___digital___audio___interface_1gae96ddec88024369ffb208ac37896056a:
+.. _cid-iec958_aes1_con_adc_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ADC_ID
+
+ADC ID
+
+.. _doxid-group___digital___audio___interface_1gafeb779781b4c579421e7cf147202c262:
+.. _cid-iec958_aes1_con_adc_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ADC_MASK
+
+ADC Mask
+
+.. _doxid-group___digital___audio___interface_1ga9ef0514a51833b9776b9a996100866f5:
+.. _cid-iec958_aes1_con_adc_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ADC_OTHER
+
+Other ADC product (with no copyright information)
+
+.. _doxid-group___digital___audio___interface_1ga47a74bdfbe9d1e6959d349e8ab80d7e9:
+.. _cid-iec958_aes1_con_broadcast1_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_BROADCAST1_ID
+
+Broadcast ID
+
+.. _doxid-group___digital___audio___interface_1ga4ca6b18366f7fde2205edce2999f47ba:
+.. _cid-iec958_aes1_con_broadcast1_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_BROADCAST1_MASK
+
+Broadcast mask
+
+.. _doxid-group___digital___audio___interface_1gaf6a21ac22b5f53b76afa8a44d63c0dfc:
+.. _cid-iec958_aes1_con_broadcast1_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_BROADCAST1_OTHER
+
+Other broadcast product
+
+.. _doxid-group___digital___audio___interface_1ga64892ac2ecdd6a1996c45e32da8e24bc:
+.. _cid-iec958_aes1_con_broadcast2_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_BROADCAST2_ID
+
+Broadcast alternative ID
+
+.. _doxid-group___digital___audio___interface_1ga72aaceaf66179a76bb5d9099c63728e8:
+.. _cid-iec958_aes1_con_broadcast2_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_BROADCAST2_MASK
+
+Broadcast alternative mask
+
+.. _doxid-group___digital___audio___interface_1gae842ac365899b386e01bf6942b1cb7b0:
+.. _cid-iec958_aes1_con_category:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_CATEGORY
+
+consumer category
+
+.. _doxid-group___digital___audio___interface_1ga4dcf52d3ac3d49910065c354aa414705:
+.. _cid-iec958_aes1_con_dab_europe:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DAB_EUROPE
+
+Digital audio broadcast (Europe)
+
+.. _doxid-group___digital___audio___interface_1gaacd5b408613d9f71f0c280b5701e2440:
+.. _cid-iec958_aes1_con_dab_japan:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DAB_JAPAN
+
+Digital audio broadcast (Japan)
+
+.. _doxid-group___digital___audio___interface_1ga2d629fc804ed4919c033c05300099f71:
+.. _cid-iec958_aes1_con_dab_usa:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DAB_USA
+
+Digital audio broadcast (USA)
+
+.. _doxid-group___digital___audio___interface_1ga32099784b78ae39e4587af8694d69e4b:
+.. _cid-iec958_aes1_con_dat:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DAT
+
+Digital Audio Tape
+
+.. _doxid-group___digital___audio___interface_1ga16af02aef1db016caecec4f1066836b6:
+.. _cid-iec958_aes1_con_dcc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DCC
+
+Digital compact cassette
+
+.. _doxid-group___digital___audio___interface_1ga0a26b9dc738e0f46f2b8913b10adcf4e:
+.. _cid-iec958_aes1_con_digdigconv_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DIGDIGCONV_ID
+
+digital<->digital converter id
+
+.. _doxid-group___digital___audio___interface_1ga02af600c964452ba2548aa10bc39264d:
+.. _cid-iec958_aes1_con_digdigconv_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DIGDIGCONV_MASK
+
+digital<->digital converter mask
+
+.. _doxid-group___digital___audio___interface_1gabfd2f1a82a79b644a8a93ce34184923a:
+.. _cid-iec958_aes1_con_digdigconv_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DIGDIGCONV_OTHER
+
+Other digital<->digital product
+
+.. _doxid-group___digital___audio___interface_1ga0862a58090e7233db6bcfdd892e3aa98:
+.. _cid-iec958_aes1_con_dsp:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DSP
+
+Digital sound processor
+
+.. _doxid-group___digital___audio___interface_1gaabf34744bbe8ea896f0b39d61fa3be7f:
+.. _cid-iec958_aes1_con_dvd:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_DVD
+
+DVD device
+
+.. _doxid-group___digital___audio___interface_1gac4bf15bc084373a97e239e66fd3ba6cf:
+.. _cid-iec958_aes1_con_experimental:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_EXPERIMENTAL
+
+experimental category
+
+.. _doxid-group___digital___audio___interface_1gae182fcf7f8a1733f2c5e4b5587527283:
+.. _cid-iec958_aes1_con_general:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_GENERAL
+
+general category
+
+.. _doxid-group___digital___audio___interface_1ga75e5d3da5be611cc78a58daab238b21b:
+.. _cid-iec958_aes1_con_iec62105:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_IEC62105
+
+Used by another standard (IEC 62105)
+
+.. _doxid-group___digital___audio___interface_1ga0c9c45847a8455691605b38f3585853a:
+.. _cid-iec958_aes1_con_iec908_cd:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_IEC908_CD
+
+IEC958 CD compatible device
+
+.. _doxid-group___digital___audio___interface_1gac82edcac4d1ce308a081274475de4dd7:
+.. _cid-iec958_aes1_con_laseropt_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_LASEROPT_ID
+
+Laser-optical ID
+
+.. _doxid-group___digital___audio___interface_1gaf90ddee8292f65124e2fffa30a5a9d19:
+.. _cid-iec958_aes1_con_laseropt_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_LASEROPT_MASK
+
+Laser-optical mask
+
+.. _doxid-group___digital___audio___interface_1ga3a515ec23e25656a7d982150881caecd:
+.. _cid-iec958_aes1_con_lasteropt_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_LASTEROPT_OTHER
+
+Other laser-optical product
+
+.. _doxid-group___digital___audio___interface_1gaf123dc5db88df762b11a9185424b1420:
+.. _cid-iec958_aes1_con_magnetic_disc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MAGNETIC_DISC
+
+Magnetic disc digital audio device
+
+.. _doxid-group___digital___audio___interface_1ga692a8af33eb60c4fe104be7dd7e426a1:
+.. _cid-iec958_aes1_con_magnetic_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MAGNETIC_ID
+
+Magnetic device ID
+
+.. _doxid-group___digital___audio___interface_1ga8537f28c815187771ea66108dae94f75:
+.. _cid-iec958_aes1_con_magnetic_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MAGNETIC_MASK
+
+Magnetic device mask
+
+.. _doxid-group___digital___audio___interface_1gac21e25d4a6813f8fdfe0082560884fae:
+.. _cid-iec958_aes1_con_magnetic_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MAGNETIC_OTHER
+
+Other magnetic device
+
+.. _doxid-group___digital___audio___interface_1ga811f9cfc2f3d08837287d0cdc2808aed:
+.. _cid-iec958_aes1_con_microphone:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MICROPHONE
+
+Microphone
+
+.. _doxid-group___digital___audio___interface_1gaac27175ed581307d5757ffd350ba7661:
+.. _cid-iec958_aes1_con_mini_disc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MINI_DISC
+
+Mini-Disc device
+
+.. _doxid-group___digital___audio___interface_1gaea7af8b4644f58a5d4c1105359f85988:
+.. _cid-iec958_aes1_con_mixer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MIXER
+
+Digital signal mixer
+
+.. _doxid-group___digital___audio___interface_1gab96cdba31d93e8bc32bc334f2d2b0178:
+.. _cid-iec958_aes1_con_musical_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MUSICAL_ID
+
+Musical device ID
+
+.. _doxid-group___digital___audio___interface_1ga5a734cc7948c359e625f834ca17d5fe6:
+.. _cid-iec958_aes1_con_musical_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MUSICAL_MASK
+
+Musical device mask
+
+.. _doxid-group___digital___audio___interface_1ga8722821c881d9bcda9f5ce707feaa9ff:
+.. _cid-iec958_aes1_con_musical_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_MUSICAL_OTHER
+
+Other musical device
+
+.. _doxid-group___digital___audio___interface_1gae4c8e119b97cd7eb0de2a0decc09b366:
+.. _cid-iec958_aes1_con_non_iec908_cd:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_NON_IEC908_CD
+
+non-IEC958 CD compatible device
+
+.. _doxid-group___digital___audio___interface_1gaa263d6ec3b5a616d7a0940f85e4c8501:
+.. _cid-iec958_aes1_con_original:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_ORIGINAL
+
+this bits depends on the category code
+
+.. _doxid-group___digital___audio___interface_1gaf9c2970ac74fe81cb12d83e67b2018fc:
+.. _cid-iec958_aes1_con_pcm_coder:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_PCM_CODER
+
+PCM coder
+
+.. _doxid-group___digital___audio___interface_1ga21278dabaf0648061929ca4fdda258af:
+.. _cid-iec958_aes1_con_rate_converter:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_RATE_CONVERTER
+
+Rate converter
+
+.. _doxid-group___digital___audio___interface_1ga0fe7eba08e30f91adfcb8b2375053521:
+.. _cid-iec958_aes1_con_sampler:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_SAMPLER
+
+PCM sampler
+
+.. _doxid-group___digital___audio___interface_1ga9639133b1ddd2134bd528a7ab4fcb9ff:
+.. _cid-iec958_aes1_con_software:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_SOFTWARE
+
+Electronic software delivery
+
+.. _doxid-group___digital___audio___interface_1ga48d338b34e97374d85a22a78713504a6:
+.. _cid-iec958_aes1_con_solidmem_digital_recorder_player:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_SOLIDMEM_DIGITAL_RECORDER_PLAYER
+
+Digital audio recorder and player using solid state memory
+
+.. _doxid-group___digital___audio___interface_1ga74c49715f4f185922f257a92ef438a91:
+.. _cid-iec958_aes1_con_solidmem_id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_SOLIDMEM_ID
+
+Solid memory based products ID
+
+.. _doxid-group___digital___audio___interface_1gaabb2e0b9b0f5156a96e1d5be698755cd:
+.. _cid-iec958_aes1_con_solidmem_mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_SOLIDMEM_MASK
+
+Solid memory based products mask
+
+.. _doxid-group___digital___audio___interface_1ga035190360ade18728cc20922af991adf:
+.. _cid-iec958_aes1_con_solidmem_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_SOLIDMEM_OTHER
+
+Other solid state memory based product
+
+.. _doxid-group___digital___audio___interface_1ga3b66b47f2d1ef5130326ba66f1232bc1:
+.. _cid-iec958_aes1_con_synthesizer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_SYNTHESIZER
+
+Synthesizer
+
+.. _doxid-group___digital___audio___interface_1ga3a79d0e9622e975fa54de9310f30af19:
+.. _cid-iec958_aes1_con_vcr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_CON_VCR
+
+Video recorder
+
+.. _doxid-group___digital___audio___interface_1ga540c428bf5e00276772cef111b239230:
+.. _cid-iec958_aes1_pro_mode:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_MODE
+
+mask - channel mode
+
+.. _doxid-group___digital___audio___interface_1gaee8adbb79b7c60c00c9ffe1e08197c56:
+.. _cid-iec958_aes1_pro_mode_byte3:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_MODE_BYTE3
+
+vector to byte 3
+
+.. _doxid-group___digital___audio___interface_1ga641543783d5fa4e66ae6044b8b5d522b:
+.. _cid-iec958_aes1_pro_mode_notid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_MODE_NOTID
+
+mode not indicated
+
+.. _doxid-group___digital___audio___interface_1gac679691c061b7640e9237aea2f1f30d0:
+.. _cid-iec958_aes1_pro_mode_primary:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_MODE_PRIMARY
+
+primary/secondary
+
+.. _doxid-group___digital___audio___interface_1ga6c68916803b33a32cad746568a44bac7:
+.. _cid-iec958_aes1_pro_mode_single:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_MODE_SINGLE
+
+single channel
+
+.. _doxid-group___digital___audio___interface_1gae946f14befaf6847a0994db2b5ed090a:
+.. _cid-iec958_aes1_pro_mode_stereophonic:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_MODE_STEREOPHONIC
+
+stereophonic - ch A is left
+
+.. _doxid-group___digital___audio___interface_1gacba2d2f55e48b6ae039d9bf88b504e32:
+.. _cid-iec958_aes1_pro_mode_two:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_MODE_TWO
+
+two channels
+
+.. _doxid-group___digital___audio___interface_1ga3ce0307fe1a8beea424ca307dafae8a6:
+.. _cid-iec958_aes1_pro_userbits:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_USERBITS
+
+mask - user bits
+
+.. _doxid-group___digital___audio___interface_1gab0df701227e3c8e34be4d2ddfa4a8df8:
+.. _cid-iec958_aes1_pro_userbits_192:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_USERBITS_192
+
+192-bit structure
+
+.. _doxid-group___digital___audio___interface_1gabd629bd8c560239cf6e8de3eb87e3bca:
+.. _cid-iec958_aes1_pro_userbits_notid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_USERBITS_NOTID
+
+user bits not indicated
+
+.. _doxid-group___digital___audio___interface_1ga81dbae23918f429b02c9033e16b8e378:
+.. _cid-iec958_aes1_pro_userbits_udef:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES1_PRO_USERBITS_UDEF
+
+user defined application
+
+.. _doxid-group___digital___audio___interface_1ga1ea33bab0780d90aa9402590952f32de:
+.. _cid-iec958_aes2_con_channel:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_CON_CHANNEL
+
+mask - channel number
+
+.. _doxid-group___digital___audio___interface_1gaed3a633e36b0dd83e5c0ab096a5f0110:
+.. _cid-iec958_aes2_con_channel_unspec:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_CON_CHANNEL_UNSPEC
+
+channel number unspecified
+
+.. _doxid-group___digital___audio___interface_1ga7348f373085c32e12e1b3662111745d2:
+.. _cid-iec958_aes2_con_source:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_CON_SOURCE
+
+mask - source number
+
+.. _doxid-group___digital___audio___interface_1ga38e56580f61fb843890b54b1029a2636:
+.. _cid-iec958_aes2_con_source_unspec:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_CON_SOURCE_UNSPEC
+
+source number unspecified
+
+.. _doxid-group___digital___audio___interface_1ga955515228f306d77b9fbbba0dcb6af2e:
+.. _cid-iec958_aes2_pro_sbits:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_SBITS
+
+mask - sample bits
+
+.. _doxid-group___digital___audio___interface_1ga61a44c8284e22339a93fe89a11f902e4:
+.. _cid-iec958_aes2_pro_sbits_20:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_SBITS_20
+
+20-bit - coordination
+
+.. _doxid-group___digital___audio___interface_1ga2f796cb061365ce054f5f95a617bfd5e:
+.. _cid-iec958_aes2_pro_sbits_24:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_SBITS_24
+
+24-bit - main audio
+
+.. _doxid-group___digital___audio___interface_1gaeaa0821017495062cc52254e07353e73:
+.. _cid-iec958_aes2_pro_sbits_udef:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_SBITS_UDEF
+
+user defined application
+
+.. _doxid-group___digital___audio___interface_1ga6e698ad6e0567020186df2815a0e667a:
+.. _cid-iec958_aes2_pro_wordlen:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_WORDLEN
+
+mask - source word length
+
+.. _doxid-group___digital___audio___interface_1gac0c6d1ecf87c38e0ed2bce5c295b2542:
+.. _cid-iec958_aes2_pro_wordlen_20_16:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_WORDLEN_20_16
+
+20-bit or 16-bit
+
+.. _doxid-group___digital___audio___interface_1ga0cbf7583c33befe07f1e30e1d0c51049:
+.. _cid-iec958_aes2_pro_wordlen_22_18:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_WORDLEN_22_18
+
+22-bit or 18-bit
+
+.. _doxid-group___digital___audio___interface_1gadb22493f9fcca99d94680ce0f3e67173:
+.. _cid-iec958_aes2_pro_wordlen_23_19:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_WORDLEN_23_19
+
+23-bit or 19-bit
+
+.. _doxid-group___digital___audio___interface_1gaf9ac8295f1b2217d752139d914a219a1:
+.. _cid-iec958_aes2_pro_wordlen_24_20:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_WORDLEN_24_20
+
+24-bit or 20-bit
+
+.. _doxid-group___digital___audio___interface_1ga82f26d84cdc05454003479cacab6cc1a:
+.. _cid-iec958_aes2_pro_wordlen_notid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES2_PRO_WORDLEN_NOTID
+
+source word length not indicated
+
+.. _doxid-group___digital___audio___interface_1ga01bb79669e104ba331435ac6bdd5adfc:
+.. _cid-iec958_aes3_con_clock:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_CLOCK
+
+mask - clock accuracy
+
+.. _doxid-group___digital___audio___interface_1gaca2f253562c14ece6e5c26f257439cf1:
+.. _cid-iec958_aes3_con_clock_1000ppm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_CLOCK_1000PPM
+
+1000 ppm
+
+.. _doxid-group___digital___audio___interface_1gac82cc51c466ecd46a86aec627fcb95d4:
+.. _cid-iec958_aes3_con_clock_50ppm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_CLOCK_50PPM
+
+50 ppm
+
+.. _doxid-group___digital___audio___interface_1ga6191857e900ff5ce0884607224c5e4f1:
+.. _cid-iec958_aes3_con_clock_variable:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_CLOCK_VARIABLE
+
+variable pitch
+
+.. _doxid-group___digital___audio___interface_1ga3ad13472b50029f0272689a8bce8e607:
+.. _cid-iec958_aes3_con_fs:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS
+
+mask - sample frequency
+
+.. _doxid-group___digital___audio___interface_1gaf800b239d7f6e86b6826c16f372bfebd:
+.. _cid-iec958_aes3_con_fs_176400:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_176400
+
+176.4kHz
+
+.. _doxid-group___digital___audio___interface_1ga9901bc1e5e90f2f7cc328d18634cac69:
+.. _cid-iec958_aes3_con_fs_192000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_192000
+
+192kHz
+
+.. _doxid-group___digital___audio___interface_1ga60669b8dadf595dc14a3ae0f5e7788b8:
+.. _cid-iec958_aes3_con_fs_22050:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_22050
+
+22.05kHz
+
+.. _doxid-group___digital___audio___interface_1ga4eb4272aa2f3544a8a77b960c1e27177:
+.. _cid-iec958_aes3_con_fs_24000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_24000
+
+24kHz
+
+.. _doxid-group___digital___audio___interface_1gabcf093b8225ad76e08af8af003bfe166:
+.. _cid-iec958_aes3_con_fs_32000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_32000
+
+32kHz
+
+.. _doxid-group___digital___audio___interface_1ga8a3d3c0b08298ecc43e011a936c482d2:
+.. _cid-iec958_aes3_con_fs_44100:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_44100
+
+44.1kHz
+
+.. _doxid-group___digital___audio___interface_1gaadb13bb8818fab6d1328138ba8d1d00c:
+.. _cid-iec958_aes3_con_fs_48000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_48000
+
+48kHz
+
+.. _doxid-group___digital___audio___interface_1gaa593dda0427d63f95d0db2b0d4b9a256:
+.. _cid-iec958_aes3_con_fs_768000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_768000
+
+768kHz
+
+.. _doxid-group___digital___audio___interface_1ga2053e6a6430ff3156008b22b10b6cebc:
+.. _cid-iec958_aes3_con_fs_88200:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_88200
+
+88.2kHz
+
+.. _doxid-group___digital___audio___interface_1ga992a47bbf0888233d5128c0ed85acf95:
+.. _cid-iec958_aes3_con_fs_96000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_96000
+
+96kHz
+
+.. _doxid-group___digital___audio___interface_1ga5221dc78ca1f55a042e167ce1c91cb8e:
+.. _cid-iec958_aes3_con_fs_notid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES3_CON_FS_NOTID
+
+sample frequency non indicated
+
+.. _doxid-group___digital___audio___interface_1ga56bb9b04a55bd0e3956e97dbd82f017a:
+.. _cid-iec958_aes4_con_max_wordlen_24:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_MAX_WORDLEN_24
+
+0 = 20-bit, 1 = 24-bit
+
+.. _doxid-group___digital___audio___interface_1gad89c6a706e18b6f425504a78915f7352:
+.. _cid-iec958_aes4_con_origfs:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS
+
+mask - original sample frequency
+
+.. _doxid-group___digital___audio___interface_1gad7d7f4f62bc1b9a7f1243025c134cfcd:
+.. _cid-iec958_aes4_con_origfs_11025:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_11025
+
+11.025kHz
+
+.. _doxid-group___digital___audio___interface_1ga3beca329332ce84cb5f8b60a6779db6f:
+.. _cid-iec958_aes4_con_origfs_12000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_12000
+
+12kHz
+
+.. _doxid-group___digital___audio___interface_1ga87d68b79da8b13c222eef8c12363f19e:
+.. _cid-iec958_aes4_con_origfs_16000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_16000
+
+16kHz
+
+.. _doxid-group___digital___audio___interface_1ga7476b49b1d4617ced4c984ea28ceb381:
+.. _cid-iec958_aes4_con_origfs_176400:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_176400
+
+176.4kHz
+
+.. _doxid-group___digital___audio___interface_1ga519d879e28f534704c16238f0ce2d9e4:
+.. _cid-iec958_aes4_con_origfs_192000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_192000
+
+192kHz
+
+.. _doxid-group___digital___audio___interface_1gaf8b2783371b072694d9ae071983e7c1e:
+.. _cid-iec958_aes4_con_origfs_22050:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_22050
+
+22.05kHz
+
+.. _doxid-group___digital___audio___interface_1gaab4f8c9584593003e49a3eb0b0a5433a:
+.. _cid-iec958_aes4_con_origfs_24000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_24000
+
+24kHz
+
+.. _doxid-group___digital___audio___interface_1gae6d0be1fcf49859d857a3c73c8016e25:
+.. _cid-iec958_aes4_con_origfs_32000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_32000
+
+32kHz
+
+.. _doxid-group___digital___audio___interface_1ga972fefc77f659ba6990182906f916df7:
+.. _cid-iec958_aes4_con_origfs_44100:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_44100
+
+44.1kHz
+
+.. _doxid-group___digital___audio___interface_1ga44e44b55346acd1404ab9672678b535b:
+.. _cid-iec958_aes4_con_origfs_48000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_48000
+
+48kHz
+
+.. _doxid-group___digital___audio___interface_1ga04ffd70501149edf567f7f5772b32056:
+.. _cid-iec958_aes4_con_origfs_8000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_8000
+
+8kHz
+
+.. _doxid-group___digital___audio___interface_1ga7f295758be11ee5614b862d92347050e:
+.. _cid-iec958_aes4_con_origfs_88200:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_88200
+
+88.2kHz
+
+.. _doxid-group___digital___audio___interface_1ga54ad73cd0ea70b03a5552b459487b55d:
+.. _cid-iec958_aes4_con_origfs_96000:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_96000
+
+96kHz
+
+.. _doxid-group___digital___audio___interface_1ga06fc6b7080d5953720585e5d158c5c21:
+.. _cid-iec958_aes4_con_origfs_notid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_ORIGFS_NOTID
+
+original sample frequency not indicated
+
+.. _doxid-group___digital___audio___interface_1gad28bf206daee452c44d769e9665455c5:
+.. _cid-iec958_aes4_con_wordlen:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_WORDLEN
+
+mask - sample word length
+
+.. _doxid-group___digital___audio___interface_1ga587b7055ad6e5c5eaecb30f1c12c0520:
+.. _cid-iec958_aes4_con_wordlen_20_16:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_WORDLEN_20_16
+
+20-bit or 16-bit
+
+.. _doxid-group___digital___audio___interface_1gaf3cb2ff0ccbf443402201f6dd349b18f:
+.. _cid-iec958_aes4_con_wordlen_21_17:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_WORDLEN_21_17
+
+21-bit or 17-bit
+
+.. _doxid-group___digital___audio___interface_1gac11e04b988aca011aae2e93cfcdc61df:
+.. _cid-iec958_aes4_con_wordlen_22_18:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_WORDLEN_22_18
+
+22-bit or 18-bit
+
+.. _doxid-group___digital___audio___interface_1ga4c67a2e8aa2b0b60b1ac89750262120c:
+.. _cid-iec958_aes4_con_wordlen_23_19:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_WORDLEN_23_19
+
+23-bit or 19-bit
+
+.. _doxid-group___digital___audio___interface_1gab105e55680449b82d8156fdc17f30753:
+.. _cid-iec958_aes4_con_wordlen_24_20:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_WORDLEN_24_20
+
+24-bit or 20-bit
+
+.. _doxid-group___digital___audio___interface_1ga987aff90a3a7d1d834b96b2b10d9e242:
+.. _cid-iec958_aes4_con_wordlen_notid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES4_CON_WORDLEN_NOTID
+
+not indicated
+
+.. _doxid-group___digital___audio___interface_1ga7d47fef6131eb61b127f755533f2483d:
+.. _cid-iec958_aes5_con_cgmsa:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES5_CON_CGMSA
+
+mask - CGMS-A
+
+.. _doxid-group___digital___audio___interface_1ga2ad44dadd10dba1f0990cd7b80778261:
+.. _cid-iec958_aes5_con_cgmsa_copyfreely:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES5_CON_CGMSA_COPYFREELY
+
+copying is permitted without restriction
+
+.. _doxid-group___digital___audio___interface_1ga2ad26c32c5a392cef3c66fa6ed1e6af0:
+.. _cid-iec958_aes5_con_cgmsa_copynever:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES5_CON_CGMSA_COPYNEVER
+
+no copying is permitted
+
+.. _doxid-group___digital___audio___interface_1ga13caf34dd818cc7e450dc7c54b365b45:
+.. _cid-iec958_aes5_con_cgmsa_copynomore:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES5_CON_CGMSA_COPYNOMORE
+
+condition not be used
+
+.. _doxid-group___digital___audio___interface_1gab8fdbac028c693f87d8d720608ee14ce:
+.. _cid-iec958_aes5_con_cgmsa_copyonce:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define IEC958_AES5_CON_CGMSA_COPYONCE
+
+one generation of copies may be made
+

@@ -1,0 +1,53 @@
+.. index:: pair: enum; snd_pcm_stream_t
+.. _doxid-group___p_c_m_1gac23b43ff55add78638e503b9cc892c24:
+.. _cid-snd_pcm_stream_t:
+
+enum snd_pcm_stream_t
+=====================
+
+
+
+Overview
+~~~~~~~~
+
+PCM stream (direction) :ref:`More...<details-doxid-group___p_c_m_1gac23b43ff55add78638e503b9cc892c24>`
+
+.. _doxid-group___p_c_m_1ggac23b43ff55add78638e503b9cc892c24a0f3a6097ab0ecf17fb33304e713a3a44:
+.. _cid-snd_pcm_stream_t::snd_pcm_stream_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_PCM_STREAM_PLAYBACK<doxid-group___p_c_m_1ggac23b43ff55add78638e503b9cc892c24a57a2b920dbc34173479fc9036cfc78a1>` = 0
+	:ref:`SND_PCM_STREAM_CAPTURE<doxid-group___p_c_m_1ggac23b43ff55add78638e503b9cc892c24af07834f756b4f95cb61987f4811073c4>` 
+	SND_PCM_STREAM_LAST = SND_PCM_STREAM_CAPTURE
+
+.. _details-doxid-group___p_c_m_1gac23b43ff55add78638e503b9cc892c24:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+PCM stream (direction)
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m_1ggac23b43ff55add78638e503b9cc892c24a57a2b920dbc34173479fc9036cfc78a1:
+.. _cid-snd_pcm_stream_t::snd_pcm_stream_playback:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STREAM_PLAYBACK
+
+Playback stream
+
+.. _doxid-group___p_c_m_1ggac23b43ff55add78638e503b9cc892c24af07834f756b4f95cb61987f4811073c4:
+.. _cid-snd_pcm_stream_t::snd_pcm_stream_capture:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STREAM_CAPTURE
+
+Capture stream
+

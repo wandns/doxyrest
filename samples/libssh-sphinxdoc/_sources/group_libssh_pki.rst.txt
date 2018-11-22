@@ -1,0 +1,1024 @@
+.. index:: pair: group; The SSH Public Key Infrastructure
+.. _doxid-group__libssh__pki:
+.. _cid-libssh_pki:
+
+The SSH Public Key Infrastructure
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+Functions for the creation, importation and manipulation of public and private keys in the context of the SSH protocol. :ref:`More...<details-doxid-group__libssh__pki>`
+
+.. _doxid-group__libssh__pki_1ga44009d2912430773ef2d4fc8a27eec3a:
+.. _cid-_ssh_pki_log:
+.. _doxid-group__libssh__pki_1ga47e989e47acf6d577c805910e688a21f:
+.. _cid-pki_import_pubkey_buffer:
+.. _doxid-group__libssh__pki_1ga7e7a133a35452b9ffe494848aa347cd1:
+.. _cid-pki_privatekey_type_from_string:
+.. _doxid-group__libssh__pki_1gae0944d085d1a63c73b7eaf78924ddca8:
+.. _cid-ssh_key_dup:
+.. _doxid-group__libssh__pki_1gacf3c14fbfaa1e0b1aa3d4129bad07fb8:
+.. _cid-ssh_pki_convert_key_to_privatekey:
+.. _doxid-group__libssh__pki_1ga2fb166991a033adb5540b66f407e2db4:
+.. _cid-ssh_pki_convert_key_to_publickey:
+.. _doxid-group__libssh__pki_1ga7e1830d2e6eaf10d4fdfb5954bf718eb:
+.. _cid-ssh_pki_do_sign:
+.. _doxid-group__libssh__pki_1ga030b5e767d97bd26053a5644b083c133:
+.. _cid-ssh_pki_do_sign_agent:
+.. _doxid-group__libssh__pki_1gaadeaf6dc35e99214de0af82c3c431649:
+.. _cid-ssh_pki_export_pubkey_blob:
+.. _doxid-group__libssh__pki_1ga576cb3a5c7f40a0e20a88b14a023613d:
+.. _cid-ssh_pki_export_pubkey_file:
+.. _doxid-group__libssh__pki_1ga9fe9fefc705e7ea8acc8dc809cea1076:
+.. _cid-ssh_pki_export_pubkey_rsa1:
+.. _doxid-group__libssh__pki_1ga302c3e762e3268e3971df86784688013:
+.. _cid-ssh_pki_export_signature_blob:
+.. _doxid-group__libssh__pki_1ga942b96ee72b13655952c87efe938e6ee:
+.. _cid-ssh_pki_import_pubkey_blob:
+.. _doxid-group__libssh__pki_1ga02ef62122b1d2c3065e86413cc673704:
+.. _cid-ssh_pki_import_signature_blob:
+.. _doxid-group__libssh__pki_1ga03fdd0bce9e259365736555abb0ed571:
+.. _cid-ssh_pki_signature_verify_blob:
+.. _doxid-group__libssh__pki_1ga428f0c9a085999e3e28e672d23a5bc55:
+.. _cid-ssh_signature_free:
+.. _doxid-group__libssh__pki_1gae69bb1e43ad83f808cc0ce4b89727bad:
+.. _cid-ssh_signature_new:
+.. _doxid-group__libssh__pki_1ga7f7b8ba203dc93fd0ffdfb4bacb0f0e4:
+.. _cid-ssh_srv_pki_do_sign_sessionid:
+.. _doxid-group__libssh__pki_1gaf157c1df451c718d42a3db69443acf12:
+.. _cid-ssh_pki_openssh_privkey_import:
+.. _doxid-group__libssh__pki_1gae31fc9d1d7202ca99b444d6b8159cabb:
+.. _cid-pki_openssh_export_privkey_blob:
+.. _doxid-group__libssh__pki_1gad2addfee75214413f07493a89638350f:
+.. _cid-pki_private_key_encrypt:
+.. _doxid-group__libssh__pki_1ga0a1b01b666de3e4f433660761c7658ad:
+.. _cid-ssh_pki_openssh_privkey_export:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// global functions
+
+	int
+	:ref:`ssh_key_cmp<doxid-group__libssh__pki_1ga4dc33945294c2bbd671365a9d3db8e2f>` (
+	    const ssh_key k1,
+	    const ssh_key k2,
+	    enum :ref:`ssh_keycmp_e<doxid-libssh_8h_1ad6ae03e8cb7f93c664a1af5d5a899f62>` what
+	    )
+
+	void
+	:ref:`ssh_key_free<doxid-group__libssh__pki_1ga08808beb83a42ccd6f1c710ddeb1b4c2>` (ssh_key key)
+
+	int
+	:ref:`ssh_key_is_private<doxid-group__libssh__pki_1ga09de68aba0a7c4e31d8ba7df43b637c5>` (const ssh_key k)
+
+	int
+	:ref:`ssh_key_is_public<doxid-group__libssh__pki_1ga9bc688b5cbc400320ac44896eba21924>` (const ssh_key k)
+
+	ssh_key
+	:ref:`ssh_key_new<doxid-group__libssh__pki_1gabfebce03474a4d014aa779d5dbf057b0>` (void)
+
+	enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>`
+	:ref:`ssh_key_type<doxid-group__libssh__pki_1ga9cb4a857f8e510f80cfc38e46c476490>` (const ssh_key key)
+
+	enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>`
+	:ref:`ssh_key_type_from_name<doxid-group__libssh__pki_1ga44584f2316c6ccd40e9939454335d8bc>` (const char* name)
+
+	const char*
+	:ref:`ssh_key_type_to_char<doxid-group__libssh__pki_1ga302919f046a4af504e5a2a9924b031c1>` (enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>` type)
+
+	int
+	:ref:`ssh_pki_export_privkey_file<doxid-group__libssh__pki_1ga3b294c44e2280c935cb0b82ede5c42ee>` (
+	    const ssh_key privkey,
+	    const char* passphrase,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data,
+	    const char* filename
+	    )
+
+	int
+	:ref:`ssh_pki_export_privkey_to_pubkey<doxid-group__libssh__pki_1ga5777bc537da6a447b2a9aa9eceff9877>` (
+	    const ssh_key privkey,
+	    ssh_key* pkey
+	    )
+
+	int
+	:ref:`ssh_pki_export_pubkey_base64<doxid-group__libssh__pki_1ga2caa40cbd9620e9f7e3e7ab654b256c5>` (
+	    const ssh_key key,
+	    char** b64_key
+	    )
+
+	int
+	:ref:`ssh_pki_generate<doxid-group__libssh__pki_1gae038fa1b34f9427c7ba84082a1a20bad>` (
+	    enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>` type,
+	    int parameter,
+	    ssh_key* pkey
+	    )
+
+	int
+	:ref:`ssh_pki_import_privkey_base64<doxid-group__libssh__pki_1ga5f2a2ca4b9b711d1c1af8020dfbd4a53>` (
+	    const char* b64_key,
+	    const char* passphrase,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data,
+	    ssh_key* pkey
+	    )
+
+	int
+	:ref:`ssh_pki_import_privkey_file<doxid-group__libssh__pki_1ga1c8f84137606b1585006302499100ee0>` (
+	    const char* filename,
+	    const char* passphrase,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data,
+	    ssh_key* pkey
+	    )
+
+	int
+	:ref:`ssh_pki_import_pubkey_base64<doxid-group__libssh__pki_1gac8d7d3fa88b93d8b059b6b5b2f457913>` (
+	    const char* b64_key,
+	    enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>` type,
+	    ssh_key* pkey
+	    )
+
+	int
+	:ref:`ssh_pki_import_pubkey_file<doxid-group__libssh__pki_1gaffb08168b870fb9e86cc7649c8987eb0>` (
+	    const char* filename,
+	    ssh_key* pkey
+	    )
+
+	const char*
+	:ref:`ssh_pki_key_ecdsa_name<doxid-group__libssh__pki_1gaf9ba4d3e3cd2a8b61fabe33b5b7e59c2>` (const ssh_key key)
+
+	void
+	:ref:`ssh_key_clean<doxid-group__libssh__pki_1ga9ee6aacb86cb7f4e8f3b5ec582040d3a>` (ssh_key key)
+
+	void
+	_ssh_pki_log (
+	    const char* function,
+	    const char* format,
+	    ...
+	    )
+
+	static
+	int
+	pki_import_pubkey_buffer (
+	    ssh_buffer buffer,
+	    enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>` type,
+	    ssh_key* pkey
+	    )
+
+	enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>`
+	pki_privatekey_type_from_string (const char* privkey)
+
+	ssh_key
+	ssh_key_dup (const ssh_key key)
+
+	ssh_private_key
+	ssh_pki_convert_key_to_privatekey (const ssh_key key)
+
+	ssh_public_key
+	ssh_pki_convert_key_to_publickey (const ssh_key key)
+
+	ssh_string
+	ssh_pki_do_sign (
+	    ssh_session session,
+	    ssh_buffer sigbuf,
+	    const ssh_key privkey
+	    )
+
+	ssh_string
+	ssh_pki_do_sign_agent (
+	    ssh_session session,
+	    struct :ref:`ssh_buffer_struct<doxid-structssh__buffer__struct>`* buf,
+	    const ssh_key pubkey
+	    )
+
+	int
+	ssh_pki_export_pubkey_blob (
+	    const ssh_key key,
+	    ssh_string* pblob
+	    )
+
+	int
+	ssh_pki_export_pubkey_file (
+	    const ssh_key key,
+	    const char* filename
+	    )
+
+	int
+	ssh_pki_export_pubkey_rsa1 (
+	    const ssh_key key,
+	    const char* host,
+	    char* rsa1,
+	    size_t rsa1_len
+	    )
+
+	int
+	ssh_pki_export_signature_blob (
+	    const ssh_signature sig,
+	    ssh_string* sig_blob
+	    )
+
+	int
+	ssh_pki_import_pubkey_blob (
+	    const ssh_string key_blob,
+	    ssh_key* pkey
+	    )
+
+	int
+	ssh_pki_import_signature_blob (
+	    const ssh_string sig_blob,
+	    const ssh_key pubkey,
+	    ssh_signature* psig
+	    )
+
+	int
+	ssh_pki_signature_verify_blob (
+	    ssh_session session,
+	    ssh_string sig_blob,
+	    const ssh_key key,
+	    unsigned char* digest,
+	    size_t dlen
+	    )
+
+	void
+	ssh_signature_free (ssh_signature sig)
+
+	ssh_signature
+	ssh_signature_new (void)
+
+	ssh_string
+	ssh_srv_pki_do_sign_sessionid (
+	    ssh_session session,
+	    const ssh_key privkey
+	    )
+
+	static
+	int
+	:ref:`pki_openssh_import_privkey_blob<doxid-group__libssh__pki_1ga5a513e1a553cbfc5301138f52bcd5881>` (
+	    ssh_buffer key_blob_buffer,
+	    ssh_key* pkey
+	    )
+
+	static
+	int
+	:ref:`pki_private_key_decrypt<doxid-group__libssh__pki_1gae8b8a710eea5b5c36c9e2416cc0734d7>` (
+	    ssh_string blob,
+	    const char* passphrase,
+	    const char* ciphername,
+	    const char* kdfname,
+	    ssh_string kdfoptions,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data
+	    )
+
+	ssh_key
+	ssh_pki_openssh_privkey_import (
+	    const char* text_key,
+	    const char* passphrase,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data
+	    )
+
+	static
+	int
+	pki_openssh_export_privkey_blob (
+	    const ssh_key privkey,
+	    ssh_buffer buffer
+	    )
+
+	static
+	int
+	pki_private_key_encrypt (
+	    ssh_buffer privkey_buffer,
+	    const char* passphrase,
+	    const char* ciphername,
+	    const char* kdfname,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data,
+	    uint32_t rounds,
+	    ssh_string salt
+	    )
+
+	ssh_string
+	ssh_pki_openssh_privkey_export (
+	    const ssh_key privkey,
+	    const char* passphrase,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data
+	    )
+
+.. _details-doxid-group__libssh__pki:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Functions for the creation, importation and manipulation of public and private keys in the context of the SSH protocol.
+
+Global Functions
+----------------
+
+.. _doxid-group__libssh__pki_1ga4dc33945294c2bbd671365a9d3db8e2f:
+.. _cid-ssh_key_cmp:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_key_cmp (
+	    const ssh_key k1,
+	    const ssh_key k2,
+	    enum :ref:`ssh_keycmp_e<doxid-libssh_8h_1ad6ae03e8cb7f93c664a1af5d5a899f62>` what
+	    )
+
+Compare keys if they are equal.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - k1
+
+        - The first key to compare.
+
+    *
+        - k2
+
+        - The second key to compare.
+
+    *
+        - what
+
+        - What part or type of the key do you want to compare.
+
+
+
+.. rubric:: Returns:
+
+0 if equal, 1 if not.
+
+.. _doxid-group__libssh__pki_1ga08808beb83a42ccd6f1c710ddeb1b4c2:
+.. _cid-ssh_key_free:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void
+	ssh_key_free (ssh_key key)
+
+deallocate a SSH key
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - key
+
+        - ssh_key handle to free
+
+.. _doxid-group__libssh__pki_1ga09de68aba0a7c4e31d8ba7df43b637c5:
+.. _cid-ssh_key_is_private:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_key_is_private (const ssh_key k)
+
+Check if the key is a private key.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - k
+
+        - The key to check.
+
+
+
+.. rubric:: Returns:
+
+1 if it is a private key, 0 if not.
+
+.. _doxid-group__libssh__pki_1ga9bc688b5cbc400320ac44896eba21924:
+.. _cid-ssh_key_is_public:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_key_is_public (const ssh_key k)
+
+Check if the key has/is a public key.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - k
+
+        - The key to check.
+
+
+
+.. rubric:: Returns:
+
+1 if it is a public key, 0 if not.
+
+.. _doxid-group__libssh__pki_1gabfebce03474a4d014aa779d5dbf057b0:
+.. _cid-ssh_key_new:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	ssh_key
+	ssh_key_new (void)
+
+creates a new empty SSH key
+
+
+
+.. rubric:: Returns:
+
+an empty ssh_key handle, or NULL on error.
+
+.. _doxid-group__libssh__pki_1ga9cb4a857f8e510f80cfc38e46c476490:
+.. _cid-ssh_key_type:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>`
+	ssh_key_type (const ssh_key key)
+
+returns the type of a ssh key
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - key
+
+        - the ssh_key handle
+
+
+
+.. rubric:: Returns:
+
+one of SSH_KEYTYPE_RSA,SSH_KEYTYPE_DSS,SSH_KEYTYPE_RSA1
+
+SSH_KEYTYPE_UNKNOWN if the type is unknown
+
+.. _doxid-group__libssh__pki_1ga44584f2316c6ccd40e9939454335d8bc:
+.. _cid-ssh_key_type_from_name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>`
+	ssh_key_type_from_name (const char* name)
+
+Convert a ssh key name to a ssh key type.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - name
+
+        - The name to convert.
+
+
+
+.. rubric:: Returns:
+
+The enum ssh key type.
+
+.. _doxid-group__libssh__pki_1ga302919f046a4af504e5a2a9924b031c1:
+.. _cid-ssh_key_type_to_char:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char*
+	ssh_key_type_to_char (enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>` type)
+
+Convert a key type to a string.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - type
+
+        - The type to convert.
+
+
+
+.. rubric:: Returns:
+
+A string for the keytype or NULL if unknown.
+
+.. _doxid-group__libssh__pki_1ga3b294c44e2280c935cb0b82ede5c42ee:
+.. _cid-ssh_pki_export_privkey_file:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_pki_export_privkey_file (
+	    const ssh_key privkey,
+	    const char* passphrase,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data,
+	    const char* filename
+	    )
+
+Export a private key to a pem file on disk, or OpenSSH format for keytype ssh-ed25519.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - privkey
+
+        - The private key to export.
+
+    *
+        - passphrase
+
+        - The passphrase to use to encrypt the key with or NULL. An empty string means no passphrase.
+
+    *
+        - auth_fn
+
+        - An auth function you may want to use or NULL.
+
+    *
+        - auth_data
+
+        - Private data passed to the auth function.
+
+    *
+        - filename
+
+        - The path where to store the pem file.
+
+
+
+.. rubric:: Returns:
+
+SSH_OK on success, SSH_ERROR on error.
+
+.. _doxid-group__libssh__pki_1ga5777bc537da6a447b2a9aa9eceff9877:
+.. _cid-ssh_pki_export_privkey_to_pubkey:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_pki_export_privkey_to_pubkey (
+	    const ssh_key privkey,
+	    ssh_key* pkey
+	    )
+
+Create a public key from a private key.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - privkey
+
+        - The private key to get the public key from.
+
+    *
+        - pkey
+
+        - A pointer to store the newly allocated public key. You NEED to free the key.
+
+
+
+.. rubric:: Returns:
+
+SSH_OK on success, SSH_ERROR on error.
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_key_free() <doxid-group__libssh__pki_1ga08808beb83a42ccd6f1c710ddeb1b4c2>`
+
+.. _doxid-group__libssh__pki_1ga2caa40cbd9620e9f7e3e7ab654b256c5:
+.. _cid-ssh_pki_export_pubkey_base64:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_pki_export_pubkey_base64 (
+	    const ssh_key key,
+	    char** b64_key
+	    )
+
+Convert a public key to a base64 encoded key.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - key
+
+        - The key to hash
+
+    *
+        - b64_key
+
+        - A pointer to store the allocated base64 encoded key. You need to free the buffer.
+
+
+
+.. rubric:: Returns:
+
+SSH_OK on success, SSH_ERROR on error.
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_string_free_char() <doxid-group__libssh__string_1gafc10700722d6cafc468c2ee97585449a>`
+
+.. _doxid-group__libssh__pki_1gae038fa1b34f9427c7ba84082a1a20bad:
+.. _cid-ssh_pki_generate:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_pki_generate (
+	    enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>` type,
+	    int parameter,
+	    ssh_key* pkey
+	    )
+
+Generates a keypair.
+
+Generating a key pair may take some time.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - type
+
+        - Type of key to create
+
+    *
+        - parameter
+
+        - Parameter to the creation of key: rsa : length of the key in bits (e.g. 1024, 2048, 4096) dsa : length of the key in bits (e.g. 1024, 2048, 3072) ecdsa : bits of the key (e.g. 256, 384, 512)
+
+    *
+        - pkey
+
+        - A pointer to store the allocated private key. You need to free the memory.
+
+
+
+.. rubric:: Returns:
+
+SSH_OK on success, SSH_ERROR on error.
+
+.. _doxid-group__libssh__pki_1ga5f2a2ca4b9b711d1c1af8020dfbd4a53:
+.. _cid-ssh_pki_import_privkey_base64:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_pki_import_privkey_base64 (
+	    const char* b64_key,
+	    const char* passphrase,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data,
+	    ssh_key* pkey
+	    )
+
+import a base64 formated key from a memory c-string
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - b64_key
+
+        - The c-string holding the base64 encoded key
+
+    *
+        - passphrase
+
+        - The passphrase to decrypt the key, or NULL
+
+    *
+        - auth_fn
+
+        - An auth function you may want to use or NULL.
+
+    *
+        - auth_data
+
+        - Private data passed to the auth function.
+
+    *
+        - pkey
+
+        - A pointer where the allocated key can be stored. You need to free the memory.
+
+
+
+.. rubric:: Returns:
+
+SSH_ERROR in case of error, SSH_OK otherwise.
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_key_free() <doxid-group__libssh__pki_1ga08808beb83a42ccd6f1c710ddeb1b4c2>`
+
+.. _doxid-group__libssh__pki_1ga1c8f84137606b1585006302499100ee0:
+.. _cid-ssh_pki_import_privkey_file:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_pki_import_privkey_file (
+	    const char* filename,
+	    const char* passphrase,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data,
+	    ssh_key* pkey
+	    )
+
+Import a key from a file.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - filename
+
+        - The filename of the the private key.
+
+    *
+        - passphrase
+
+        - The passphrase to decrypt the private key. Set to NULL if none is needed or it is unknown.
+
+    *
+        - auth_fn
+
+        - An auth function you may want to use or NULL.
+
+    *
+        - auth_data
+
+        - Private data passed to the auth function.
+
+    *
+        - pkey
+
+        - A pointer to store the allocated ssh_key. You need to free the key.
+
+
+
+.. rubric:: Returns:
+
+SSH_OK on success, SSH_EOF if the file doesn't exist or permission denied, SSH_ERROR otherwise.
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_key_free() <doxid-group__libssh__pki_1ga08808beb83a42ccd6f1c710ddeb1b4c2>`
+
+.. _doxid-group__libssh__pki_1gac8d7d3fa88b93d8b059b6b5b2f457913:
+.. _cid-ssh_pki_import_pubkey_base64:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_pki_import_pubkey_base64 (
+	    const char* b64_key,
+	    enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>` type,
+	    ssh_key* pkey
+	    )
+
+Import a base64 formated public key from a memory c-string.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - b64_key
+
+        - The base64 key to format.
+
+    *
+        - type
+
+        - The type of the key to format.
+
+    *
+        - pkey
+
+        - A pointer where the allocated key can be stored. You need to free the memory.
+
+
+
+.. rubric:: Returns:
+
+SSH_OK on success, SSH_ERROR on error.
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_key_free() <doxid-group__libssh__pki_1ga08808beb83a42ccd6f1c710ddeb1b4c2>`
+
+.. _doxid-group__libssh__pki_1gaffb08168b870fb9e86cc7649c8987eb0:
+.. _cid-ssh_pki_import_pubkey_file:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_pki_import_pubkey_file (
+	    const char* filename,
+	    ssh_key* pkey
+	    )
+
+Import a public key from the given filename.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - filename
+
+        - The path to the public key.
+
+    *
+        - pkey
+
+        - A pointer to store the allocated public key. You need to free the memory.
+
+
+
+.. rubric:: Returns:
+
+SSH_OK on success, SSH_EOF if the file doesn't exist or permission denied, SSH_ERROR otherwise.
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_key_free() <doxid-group__libssh__pki_1ga08808beb83a42ccd6f1c710ddeb1b4c2>`
+
+.. _doxid-group__libssh__pki_1gaf9ba4d3e3cd2a8b61fabe33b5b7e59c2:
+.. _cid-ssh_pki_key_ecdsa_name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char*
+	ssh_pki_key_ecdsa_name (const ssh_key key)
+
+returns the ECDSA key name ("ecdsa-sha2-nistp256" for example)
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - key
+
+        - the ssh_key whose ECDSA name to get
+
+
+
+.. rubric:: Returns:
+
+the ECDSA key name ("ecdsa-sha2-nistp256" for example)
+
+"unknown" if the ECDSA key name is not known
+
+.. _doxid-group__libssh__pki_1ga9ee6aacb86cb7f4e8f3b5ec582040d3a:
+.. _cid-ssh_key_clean:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void
+	ssh_key_clean (ssh_key key)
+
+clean up the key and deallocate all existing keys
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - key
+
+        - ssh_key to clean
+
+.. _doxid-group__libssh__pki_1ga5a513e1a553cbfc5301138f52bcd5881:
+.. _cid-pki_openssh_import_privkey_blob:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	static
+	int
+	pki_openssh_import_privkey_blob (
+	    ssh_buffer key_blob_buffer,
+	    ssh_key* pkey
+	    )
+
+*
+
+.. _doxid-group__libssh__pki_1gae8b8a710eea5b5c36c9e2416cc0734d7:
+.. _cid-pki_private_key_decrypt:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	static
+	int
+	pki_private_key_decrypt (
+	    ssh_string blob,
+	    const char* passphrase,
+	    const char* ciphername,
+	    const char* kdfname,
+	    ssh_string kdfoptions,
+	    :ref:`ssh_auth_callback<doxid-libssh_8h_1a3b54d7be70dcc98a107e41e11000a3e1>` auth_fn,
+	    void* auth_data
+	    )
+
+decrypts an encrypted ed25519 private key blob
+

@@ -1,0 +1,223 @@
+.. index:: pair: group; MIDI Commands
+.. _doxid-group___m_i_d_i___commands:
+.. _cid-midi_commands:
+
+MIDI Commands
+=============
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+MIDI command codes. :ref:`More...<details-doxid-group___m_i_d_i___commands>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`MIDI_CMD_BENDER<doxid-group___m_i_d_i___commands_1ga9c7761339374918c7aee48d8a4d9bb60>`
+	#define :ref:`MIDI_CMD_CHANNEL_PRESSURE<doxid-group___m_i_d_i___commands_1gaf74bf6a4f7d689e0cea7f4c9d733fa8b>`
+	#define :ref:`MIDI_CMD_COMMON_CLOCK<doxid-group___m_i_d_i___commands_1ga30fe06aa54e1d2706350227a7bf89d09>`
+	#define :ref:`MIDI_CMD_COMMON_CONTINUE<doxid-group___m_i_d_i___commands_1ga0d5702548b66077ffe89cda211ce8032>`
+	#define :ref:`MIDI_CMD_COMMON_MTC_QUARTER<doxid-group___m_i_d_i___commands_1ga9f99648472bf5144fe98c21e7102b229>`
+	#define :ref:`MIDI_CMD_COMMON_RESET<doxid-group___m_i_d_i___commands_1gab723772ef26d943f583897803d9e4838>`
+	#define :ref:`MIDI_CMD_COMMON_SENSING<doxid-group___m_i_d_i___commands_1gaa0e4e48484ea0ad2a96be8e5bfd436dc>`
+	#define :ref:`MIDI_CMD_COMMON_SONG_POS<doxid-group___m_i_d_i___commands_1gae5eadd56cbd44b03d56abf0b34b1f3c4>`
+	#define :ref:`MIDI_CMD_COMMON_SONG_SELECT<doxid-group___m_i_d_i___commands_1ga7548ca8555174ae0bd7146af9118c285>`
+	#define :ref:`MIDI_CMD_COMMON_START<doxid-group___m_i_d_i___commands_1gac31229378c6f7622ef52464d2c755cca>`
+	#define :ref:`MIDI_CMD_COMMON_STOP<doxid-group___m_i_d_i___commands_1ga24f8716f924930edb61521e334a8d9a5>`
+	#define :ref:`MIDI_CMD_COMMON_SYSEX<doxid-group___m_i_d_i___commands_1gaa638aafe78574c77acfeed7cef777dba>`
+	#define :ref:`MIDI_CMD_COMMON_SYSEX_END<doxid-group___m_i_d_i___commands_1ga1ebfef94aaefeb67343e8ba03d714db6>`
+	#define :ref:`MIDI_CMD_COMMON_TUNE_REQUEST<doxid-group___m_i_d_i___commands_1gad0c86118dcadf84393dc063a02c28feb>`
+	#define :ref:`MIDI_CMD_CONTROL<doxid-group___m_i_d_i___commands_1gabdc476e199b757e06d94cac18734e423>`
+	#define :ref:`MIDI_CMD_NOTE_OFF<doxid-group___m_i_d_i___commands_1gafb4313c1ed19a4e91ebf7baa2b64b4bc>`
+	#define :ref:`MIDI_CMD_NOTE_ON<doxid-group___m_i_d_i___commands_1ga837edb2383446176b3cc7894653ffaff>`
+	#define :ref:`MIDI_CMD_NOTE_PRESSURE<doxid-group___m_i_d_i___commands_1ga0c11a776c4031db664b3f95dea6fac26>`
+	#define :ref:`MIDI_CMD_PGM_CHANGE<doxid-group___m_i_d_i___commands_1gaaea4cbac7d447bba2b4d8fdb9d7c7c24>`
+
+.. _details-doxid-group___m_i_d_i___commands:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+MIDI command codes.
+
+Macros
+------
+
+.. _doxid-group___m_i_d_i___commands_1ga9c7761339374918c7aee48d8a4d9bb60:
+.. _cid-midi_cmd_bender:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_BENDER
+
+pitch bender
+
+.. _doxid-group___m_i_d_i___commands_1gaf74bf6a4f7d689e0cea7f4c9d733fa8b:
+.. _cid-midi_cmd_channel_pressure:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_CHANNEL_PRESSURE
+
+channel pressure
+
+.. _doxid-group___m_i_d_i___commands_1ga30fe06aa54e1d2706350227a7bf89d09:
+.. _cid-midi_cmd_common_clock:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_CLOCK
+
+clock
+
+.. _doxid-group___m_i_d_i___commands_1ga0d5702548b66077ffe89cda211ce8032:
+.. _cid-midi_cmd_common_continue:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_CONTINUE
+
+continue
+
+.. _doxid-group___m_i_d_i___commands_1ga9f99648472bf5144fe98c21e7102b229:
+.. _cid-midi_cmd_common_mtc_quarter:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_MTC_QUARTER
+
+MTC quarter frame
+
+.. _doxid-group___m_i_d_i___commands_1gab723772ef26d943f583897803d9e4838:
+.. _cid-midi_cmd_common_reset:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_RESET
+
+reset
+
+.. _doxid-group___m_i_d_i___commands_1gaa0e4e48484ea0ad2a96be8e5bfd436dc:
+.. _cid-midi_cmd_common_sensing:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_SENSING
+
+active sensing
+
+.. _doxid-group___m_i_d_i___commands_1gae5eadd56cbd44b03d56abf0b34b1f3c4:
+.. _cid-midi_cmd_common_song_pos:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_SONG_POS
+
+song position
+
+.. _doxid-group___m_i_d_i___commands_1ga7548ca8555174ae0bd7146af9118c285:
+.. _cid-midi_cmd_common_song_select:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_SONG_SELECT
+
+song select
+
+.. _doxid-group___m_i_d_i___commands_1gac31229378c6f7622ef52464d2c755cca:
+.. _cid-midi_cmd_common_start:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_START
+
+start
+
+.. _doxid-group___m_i_d_i___commands_1ga24f8716f924930edb61521e334a8d9a5:
+.. _cid-midi_cmd_common_stop:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_STOP
+
+stop
+
+.. _doxid-group___m_i_d_i___commands_1gaa638aafe78574c77acfeed7cef777dba:
+.. _cid-midi_cmd_common_sysex:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_SYSEX
+
+sysex (system exclusive) begin
+
+.. _doxid-group___m_i_d_i___commands_1ga1ebfef94aaefeb67343e8ba03d714db6:
+.. _cid-midi_cmd_common_sysex_end:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_SYSEX_END
+
+end of sysex
+
+.. _doxid-group___m_i_d_i___commands_1gad0c86118dcadf84393dc063a02c28feb:
+.. _cid-midi_cmd_common_tune_request:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_COMMON_TUNE_REQUEST
+
+tune request
+
+.. _doxid-group___m_i_d_i___commands_1gabdc476e199b757e06d94cac18734e423:
+.. _cid-midi_cmd_control:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_CONTROL
+
+control change
+
+.. _doxid-group___m_i_d_i___commands_1gafb4313c1ed19a4e91ebf7baa2b64b4bc:
+.. _cid-midi_cmd_note_off:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_NOTE_OFF
+
+note off
+
+.. _doxid-group___m_i_d_i___commands_1ga837edb2383446176b3cc7894653ffaff:
+.. _cid-midi_cmd_note_on:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_NOTE_ON
+
+note on
+
+.. _doxid-group___m_i_d_i___commands_1ga0c11a776c4031db664b3f95dea6fac26:
+.. _cid-midi_cmd_note_pressure:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_NOTE_PRESSURE
+
+key pressure
+
+.. _doxid-group___m_i_d_i___commands_1gaaea4cbac7d447bba2b4d8fdb9d7c7c24:
+.. _cid-midi_cmd_pgm_change:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define MIDI_CMD_PGM_CHANGE
+
+program change
+

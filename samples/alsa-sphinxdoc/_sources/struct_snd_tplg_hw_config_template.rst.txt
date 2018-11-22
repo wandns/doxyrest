@@ -1,0 +1,84 @@
+.. index:: pair: struct; snd_tplg_hw_config_template
+.. _doxid-structsnd__tplg__hw__config__template:
+.. _cid-snd_tplg_hw_config_template:
+
+struct snd_tplg_hw_config_template
+==================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Template type to describe a physical link runtime supported hardware config, i.e. hardware audio formats.
+
+.. _doxid-structsnd__tplg__hw__config__template_1aacfb2ffd163655e67cb56f005cb38eb2:
+.. _cid-snd_tplg_hw_config_template::id:
+.. _doxid-structsnd__tplg__hw__config__template_1a6c72e0aefe8a2a95d6f371491fb1a93a:
+.. _cid-snd_tplg_hw_config_template::fmt:
+.. _doxid-structsnd__tplg__hw__config__template_1aa07cbbc5a95e7bc6506fb90851a11616:
+.. _cid-snd_tplg_hw_config_template::clock_gated:
+.. _doxid-structsnd__tplg__hw__config__template_1a944641f3dc29420c8b928279783d5188:
+.. _cid-snd_tplg_hw_config_template::invert_bclk:
+.. _doxid-structsnd__tplg__hw__config__template_1aede8ad129afee8b7abe07df4eb5537fc:
+.. _cid-snd_tplg_hw_config_template::invert_fsync:
+.. _doxid-structsnd__tplg__hw__config__template_1aeaaf0a6f1676080b25f1448511e055ac:
+.. _cid-snd_tplg_hw_config_template::bclk_master:
+.. _doxid-structsnd__tplg__hw__config__template_1aee5b63f0d28554192308457bfe6f4ee9:
+.. _cid-snd_tplg_hw_config_template::fsync_master:
+.. _doxid-structsnd__tplg__hw__config__template_1aabf75a3be3557ee04bec4e6769c1541b:
+.. _cid-snd_tplg_hw_config_template::mclk_direction:
+.. _doxid-structsnd__tplg__hw__config__template_1a99e372f903769a7babd85eb11915b838:
+.. _cid-snd_tplg_hw_config_template::reserved:
+.. _doxid-structsnd__tplg__hw__config__template_1a7271f2c5f83286f2d5c9f7b3e07dc94b:
+.. _cid-snd_tplg_hw_config_template::mclk_rate:
+.. _doxid-structsnd__tplg__hw__config__template_1a7b3210dcfff7fc8264f66e80a716cc9c:
+.. _cid-snd_tplg_hw_config_template::bclk_rate:
+.. _doxid-structsnd__tplg__hw__config__template_1acec4c3d9f06288005d80e92f3619f2e3:
+.. _cid-snd_tplg_hw_config_template::fsync_rate:
+.. _doxid-structsnd__tplg__hw__config__template_1a77210ff1a17eb20c17bdb36e63713504:
+.. _cid-snd_tplg_hw_config_template::tdm_slots:
+.. _doxid-structsnd__tplg__hw__config__template_1a632f27d6bf41fb3a22404fc3ed02abbf:
+.. _cid-snd_tplg_hw_config_template::tdm_slot_width:
+.. _doxid-structsnd__tplg__hw__config__template_1adadbe94c73df59a5b2addad877e557ec:
+.. _cid-snd_tplg_hw_config_template::tx_slots:
+.. _doxid-structsnd__tplg__hw__config__template_1a4cec576fe48b15380bb9e2f14995d32d:
+.. _cid-snd_tplg_hw_config_template::rx_slots:
+.. _doxid-structsnd__tplg__hw__config__template_1a2ec67f8ea615e314da15d33e5601df11:
+.. _cid-snd_tplg_hw_config_template::tx_channels:
+.. _doxid-structsnd__tplg__hw__config__template_1aa3d9e536da7f04aa687bf0244a0b8142:
+.. _cid-snd_tplg_hw_config_template::tx_chanmap:
+.. _doxid-structsnd__tplg__hw__config__template_1a88d7d9fcfae920eb074499517e210463:
+.. _cid-snd_tplg_hw_config_template::rx_channels:
+.. _doxid-structsnd__tplg__hw__config__template_1a133b6c9f691dc8531582b0ffb0ca2c6f:
+.. _cid-snd_tplg_hw_config_template::rx_chanmap:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int id
+	unsigned int fmt
+	unsigned char clock_gated
+	unsigned char invert_bclk
+	unsigned char invert_fsync
+	unsigned char bclk_master
+	unsigned char fsync_master
+	unsigned char mclk_direction
+	unsigned short reserved
+	unsigned int mclk_rate
+	unsigned int bclk_rate
+	unsigned int fsync_rate
+	unsigned int tdm_slots
+	unsigned int tdm_slot_width
+	unsigned int tx_slots
+	unsigned int rx_slots
+	unsigned int tx_channels
+	unsigned int* tx_chanmap
+	unsigned int rx_channels
+	unsigned int* rx_chanmap
+

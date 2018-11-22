@@ -1,0 +1,157 @@
+.. index:: pair: struct; libusb_config_descriptor
+.. _doxid-structlibusb__config__descriptor:
+.. _cid-libusb_config_descriptor:
+
+struct libusb_config_descriptor
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <libusb.h>
+
+
+Overview
+~~~~~~~~
+
+A structure representing the standard USB configuration descriptor. :ref:`More...<details-doxid-structlibusb__config__descriptor>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint8_t :ref:`bLength<doxid-structlibusb__config__descriptor_1a18ccd46a86328fd9c849e17ca8f01738>`
+	uint8_t :ref:`bDescriptorType<doxid-structlibusb__config__descriptor_1abc4f9a751c5b2ed968b045cb17528f74>`
+	uint16_t :ref:`wTotalLength<doxid-structlibusb__config__descriptor_1a819c160c66c1bd7b569399e6a6fc278f>`
+	uint8_t :ref:`bNumInterfaces<doxid-structlibusb__config__descriptor_1a2c89b2d0a9ec0440801b97a8f8145792>`
+	uint8_t :ref:`bConfigurationValue<doxid-structlibusb__config__descriptor_1a04549d99d38080857e0256fcad8dcce7>`
+	uint8_t :ref:`iConfiguration<doxid-structlibusb__config__descriptor_1a06dbb2e068b3999dd23954e63640d953>`
+	uint8_t :ref:`bmAttributes<doxid-structlibusb__config__descriptor_1adb65fe86ce28394110caad982c566525>`
+	uint8_t :ref:`MaxPower<doxid-structlibusb__config__descriptor_1a527518147a0c7321a195f2d8dac2ea01>`
+	const struct :ref:`libusb_interface<doxid-structlibusb__interface>`* :ref:`interface<doxid-structlibusb__config__descriptor_1afe04b70611b0ac83866639103d27df76>`
+	const unsigned char* :ref:`extra<doxid-structlibusb__config__descriptor_1acc982e6c82f7183dfa41076d28d991f7>`
+	int :ref:`extra_length<doxid-structlibusb__config__descriptor_1a18439e83e8f46606a13d70c00a48a9d9>`
+
+.. _details-doxid-structlibusb__config__descriptor:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+A structure representing the standard USB configuration descriptor.
+
+This descriptor is documented in section 9.6.3 of the USB 3.0 specification. All multiple-byte fields are represented in host-endian format.
+
+Fields
+------
+
+.. _doxid-structlibusb__config__descriptor_1a18ccd46a86328fd9c849e17ca8f01738:
+.. _cid-libusb_config_descriptor::blength:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bLength
+
+Size of this descriptor (in bytes)
+
+.. _doxid-structlibusb__config__descriptor_1abc4f9a751c5b2ed968b045cb17528f74:
+.. _cid-libusb_config_descriptor::bdescriptortype:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bDescriptorType
+
+Descriptor type.
+
+Will have value :ref:`libusb_descriptor_type::LIBUSB_DT_CONFIG <doxid-group__libusb__desc_1gga0a2e8a25dfdebf29fdd4764dcdbc1a9ca2a3f906d7755932ab67f39701da0b508>` LIBUSB_DT_CONFIG in this context.
+
+.. _doxid-structlibusb__config__descriptor_1a819c160c66c1bd7b569399e6a6fc278f:
+.. _cid-libusb_config_descriptor::wtotallength:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint16_t wTotalLength
+
+Total length of data returned for this configuration.
+
+.. _doxid-structlibusb__config__descriptor_1a2c89b2d0a9ec0440801b97a8f8145792:
+.. _cid-libusb_config_descriptor::bnuminterfaces:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bNumInterfaces
+
+Number of interfaces supported by this configuration.
+
+.. _doxid-structlibusb__config__descriptor_1a04549d99d38080857e0256fcad8dcce7:
+.. _cid-libusb_config_descriptor::bconfigurationvalue:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bConfigurationValue
+
+Identifier value for this configuration.
+
+.. _doxid-structlibusb__config__descriptor_1a06dbb2e068b3999dd23954e63640d953:
+.. _cid-libusb_config_descriptor::iconfiguration:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t iConfiguration
+
+Index of string descriptor describing this configuration.
+
+.. _doxid-structlibusb__config__descriptor_1adb65fe86ce28394110caad982c566525:
+.. _cid-libusb_config_descriptor::bmattributes:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bmAttributes
+
+Configuration characteristics.
+
+.. _doxid-structlibusb__config__descriptor_1a527518147a0c7321a195f2d8dac2ea01:
+.. _cid-libusb_config_descriptor::maxpower:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t MaxPower
+
+Maximum power consumption of the USB device from this bus in this configuration when the device is fully operation.
+
+Expressed in units of 2 mA when the device is operating in high-speed mode and in units of 8 mA when the device is operating in super-speed mode.
+
+.. _doxid-structlibusb__config__descriptor_1afe04b70611b0ac83866639103d27df76:
+.. _cid-libusb_config_descriptor::interface:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const struct :ref:`libusb_interface<doxid-structlibusb__interface>`* interface
+
+Array of interfaces supported by this configuration.
+
+The length of this array is determined by the bNumInterfaces field.
+
+.. _doxid-structlibusb__config__descriptor_1acc982e6c82f7183dfa41076d28d991f7:
+.. _cid-libusb_config_descriptor::extra:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const unsigned char* extra
+
+Extra descriptors.
+
+If libusb encounters unknown configuration descriptors, it will store them here, should you wish to parse them.
+
+.. _doxid-structlibusb__config__descriptor_1a18439e83e8f46606a13d70c00a48a9d9:
+.. _cid-libusb_config_descriptor::extra_length:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int extra_length
+
+Length of the extra descriptors, in bytes.
+

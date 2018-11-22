@@ -1,0 +1,18 @@
+.. index:: pair: struct; snd_tplg_obj_template
+.. _doxid-structsnd__tplg__obj__template:
+.. _cid-snd_tplg_obj_template:
+
+struct snd_tplg_obj_template
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Generic Template Object.
+

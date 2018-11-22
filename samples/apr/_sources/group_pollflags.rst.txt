@@ -1,0 +1,73 @@
+.. index:: pair: group; Pollset Flags
+.. _doxid-group__pollflags:
+.. _cid-pollflags:
+
+Pollset Flags
+=============
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`APR_POLLSET_NOCOPY<doxid-group__pollflags_1ga0febaf4378d2705bf1256b22fe8dfd24>`
+	#define :ref:`APR_POLLSET_NODEFAULT<doxid-group__pollflags_1gaa46a9cbb23b2e8e71dd3ba88e69fdf13>`
+	#define :ref:`APR_POLLSET_THREADSAFE<doxid-group__pollflags_1gabdfaccfd394c847f692351dee2e5ef7f>`
+	#define :ref:`APR_POLLSET_WAKEABLE<doxid-group__pollflags_1ga552d7f28d442602e6c9bb6931f183493>`
+
+.. _details-doxid-group__pollflags:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Macros
+------
+
+.. _doxid-group__pollflags_1ga0febaf4378d2705bf1256b22fe8dfd24:
+.. _cid-apr_pollset_nocopy:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLSET_NOCOPY
+
+Descriptors passed to :ref:`apr_pollset_add() <doxid-group__apr__poll_1ga4ec50bf9a11c6b60927c51b81412f5b9>` are not copied
+
+.. _doxid-group__pollflags_1gaa46a9cbb23b2e8e71dd3ba88e69fdf13:
+.. _cid-apr_pollset_nodefault:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLSET_NODEFAULT
+
+Do not try to use the default method if the specified non-default method cannot be used
+
+.. _doxid-group__pollflags_1gabdfaccfd394c847f692351dee2e5ef7f:
+.. _cid-apr_pollset_threadsafe:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLSET_THREADSAFE
+
+Adding or removing a descriptor is thread-safe
+
+.. _doxid-group__pollflags_1ga552d7f28d442602e6c9bb6931f183493:
+.. _cid-apr_pollset_wakeable:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_POLLSET_WAKEABLE
+
+Poll operations are interruptable by :ref:`apr_pollset_wakeup() <doxid-group__apr__poll_1gac5e86828143e169e18b2a6eab94be531>`
+

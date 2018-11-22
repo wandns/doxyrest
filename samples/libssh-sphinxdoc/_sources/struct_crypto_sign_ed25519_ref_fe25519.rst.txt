@@ -1,0 +1,27 @@
+.. index:: pair: struct; crypto_sign_ed25519_ref_fe25519
+.. _doxid-structcrypto__sign__ed25519__ref__fe25519:
+.. _cid-crypto_sign_ed25519_ref_fe25519:
+
+struct crypto_sign_ed25519_ref_fe25519
+======================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/fe25519.h>
+
+
+
+
+.. _doxid-structcrypto__sign__ed25519__ref__fe25519_1a1ac2bcaa4428fe106bf028ca3ffe4c89:
+.. _cid-crypto_sign_ed25519_ref_fe25519::v:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t v[32]
+

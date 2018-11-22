@@ -1,0 +1,77 @@
+.. index:: pair: struct; apr_hdtr_t
+.. _doxid-structapr__hdtr__t:
+.. _cid-apr_hdtr_t:
+
+struct apr_hdtr_t
+=================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_network_io.h>
+
+
+Overview
+~~~~~~~~
+
+A structure to encapsulate headers and trailers for apr_socket_sendfile :ref:`More...<details-doxid-structapr__hdtr__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	struct iovec* :ref:`headers<doxid-structapr__hdtr__t_1afc2035a3ef314f9aa6ae3aabe7c0dc72>`
+	int :ref:`numheaders<doxid-structapr__hdtr__t_1a8915ade68ef06f4d23005ec0f81e9305>`
+	struct iovec* :ref:`trailers<doxid-structapr__hdtr__t_1a538387cfa0065abc2bfa6ba7393fa3ee>`
+	int :ref:`numtrailers<doxid-structapr__hdtr__t_1a9468659de891a5672b0b84cf442e9c7b>`
+
+.. _details-doxid-structapr__hdtr__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+A structure to encapsulate headers and trailers for apr_socket_sendfile
+
+Fields
+------
+
+.. _doxid-structapr__hdtr__t_1afc2035a3ef314f9aa6ae3aabe7c0dc72:
+.. _cid-apr_hdtr_t::headers:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct iovec* headers
+
+An iovec to store the headers sent before the file.
+
+.. _doxid-structapr__hdtr__t_1a8915ade68ef06f4d23005ec0f81e9305:
+.. _cid-apr_hdtr_t::numheaders:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int numheaders
+
+number of headers in the iovec
+
+.. _doxid-structapr__hdtr__t_1a538387cfa0065abc2bfa6ba7393fa3ee:
+.. _cid-apr_hdtr_t::trailers:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct iovec* trailers
+
+An iovec to store the trailers sent after the file.
+
+.. _doxid-structapr__hdtr__t_1a9468659de891a5672b0b84cf442e9c7b:
+.. _cid-apr_hdtr_t::numtrailers:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int numtrailers
+
+number of trailers in the iovec
+

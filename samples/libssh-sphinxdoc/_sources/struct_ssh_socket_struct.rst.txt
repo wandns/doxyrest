@@ -1,0 +1,62 @@
+.. index:: pair: struct; ssh_socket_struct
+.. _doxid-structssh__socket__struct:
+.. _cid-ssh_socket_struct:
+
+struct ssh_socket_struct
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structssh__socket__struct_1a9593e371269cd523f4fca20816644c9c:
+.. _cid-ssh_socket_struct::callbacks:
+.. _doxid-structssh__socket__struct_1ab0607595bd3fa24b7b1d070d3bce8801:
+.. _cid-ssh_socket_struct::data_except:
+.. _doxid-structssh__socket__struct_1a3e6bc9266740768866ff43bebaf9811e:
+.. _cid-ssh_socket_struct::fd_in:
+.. _doxid-structssh__socket__struct_1aa3c021783eeb0500ac5048b302b92e44:
+.. _cid-ssh_socket_struct::fd_is_socket:
+.. _doxid-structssh__socket__struct_1a672ab48d0890b4c8be6bff50493deb9b:
+.. _cid-ssh_socket_struct::fd_out:
+.. _doxid-structssh__socket__struct_1ad6707696603e8965be7765d82ec4df28:
+.. _cid-ssh_socket_struct::in_buffer:
+.. _doxid-structssh__socket__struct_1a45afdc537311649bc15a7aa1db983c10:
+.. _cid-ssh_socket_struct::last_errno:
+.. _doxid-structssh__socket__struct_1ac2f9e87f077edcf891bd78b1afdab882:
+.. _cid-ssh_socket_struct::out_buffer:
+.. _doxid-structssh__socket__struct_1ac469c3e57c14f59d692e9a7c536b5862:
+.. _cid-ssh_socket_struct::poll_in:
+.. _doxid-structssh__socket__struct_1af0cb92d463dccb7366dbecde94334d12:
+.. _cid-ssh_socket_struct::poll_out:
+.. _doxid-structssh__socket__struct_1a40cc4b42ad78f31047bfc1664ede1dbb:
+.. _cid-ssh_socket_struct::read_wontblock:
+.. _doxid-structssh__socket__struct_1ae17b1e98be7284734b9c8f23f25fdf76:
+.. _cid-ssh_socket_struct::session:
+.. _doxid-structssh__socket__struct_1aed0c90d0d991b64ef0df4c860b408f46:
+.. _cid-ssh_socket_struct::state:
+.. _doxid-structssh__socket__struct_1a3465ccb2ae4bfd94fa3b6781a9fadf10:
+.. _cid-ssh_socket_struct::write_wontblock:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_socket_callbacks callbacks
+	int data_except
+	:ref:`socket_t<doxid-libssh_8h_1a30353f381f5fccbb956eea1f3a110b6c>` fd_in
+	int fd_is_socket
+	:ref:`socket_t<doxid-libssh_8h_1a30353f381f5fccbb956eea1f3a110b6c>` fd_out
+	ssh_buffer in_buffer
+	int last_errno
+	ssh_buffer out_buffer
+	ssh_poll_handle poll_in
+	ssh_poll_handle poll_out
+	int read_wontblock
+	ssh_session session
+	enum :ref:`ssh_socket_states_e<doxid-socket_8c_1aa201846b09f7fb2b31e6602151e88ee3>` state
+	int write_wontblock
+

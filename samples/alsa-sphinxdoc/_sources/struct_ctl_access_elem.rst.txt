@@ -1,0 +1,26 @@
+.. index:: pair: struct; ctl_access_elem
+.. _doxid-structctl__access__elem:
+.. _cid-ctl_access_elem:
+
+struct ctl_access_elem
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structctl__access__elem_1ae6f9ddb59972889a4d35a65f3a7f97ff:
+.. _cid-ctl_access_elem::name:
+.. _doxid-structctl__access__elem_1a9b154f7816c04088151489596e0ba70b:
+.. _cid-ctl_access_elem::value:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const char* name
+	unsigned int value
+

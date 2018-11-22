@@ -1,0 +1,52 @@
+.. index:: pair: enum; libusb_hotplug_flag
+.. _doxid-group__libusb__hotplug_1ga95ce2ec85dec177854c423cea2853c52:
+.. _cid-libusb_hotplug_flag:
+
+enum libusb_hotplug_flag
+========================
+
+
+
+Overview
+~~~~~~~~
+
+Since version 1.0.16, :ref:`LIBUSB_API_VERSION <doxid-group__libusb__misc_1gaabe4bc36a83358685d36a6c853cbb4de>` >= 0x01000102. :ref:`More...<details-doxid-group__libusb__hotplug_1ga95ce2ec85dec177854c423cea2853c52>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`LIBUSB_HOTPLUG_NO_FLAGS<doxid-group__libusb__hotplug_1gga95ce2ec85dec177854c423cea2853c52a2522bd2268865687cbfe8e7e0d8e4c10>` = 0
+	:ref:`LIBUSB_HOTPLUG_ENUMERATE<doxid-group__libusb__hotplug_1gga95ce2ec85dec177854c423cea2853c52a01a1c0c9f4e6852cb6df713f2e8a7f6b>` = 1 < <0
+
+.. _details-doxid-group__libusb__hotplug_1ga95ce2ec85dec177854c423cea2853c52:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Since version 1.0.16, :ref:`LIBUSB_API_VERSION <doxid-group__libusb__misc_1gaabe4bc36a83358685d36a6c853cbb4de>` >= 0x01000102.
+
+Flags for hotplug events
+
+Enum Values
+-----------
+
+.. _doxid-group__libusb__hotplug_1gga95ce2ec85dec177854c423cea2853c52a2522bd2268865687cbfe8e7e0d8e4c10:
+.. _cid-libusb_hotplug_flag::libusb_hotplug_no_flags:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_HOTPLUG_NO_FLAGS
+
+Default value when not using any flags.
+
+.. _doxid-group__libusb__hotplug_1gga95ce2ec85dec177854c423cea2853c52a01a1c0c9f4e6852cb6df713f2e8a7f6b:
+.. _cid-libusb_hotplug_flag::libusb_hotplug_enumerate:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_HOTPLUG_ENUMERATE
+
+Arm the callback and fire it for all matching currently attached devices.
+

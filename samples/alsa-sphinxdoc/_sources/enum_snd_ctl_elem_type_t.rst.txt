@@ -1,0 +1,103 @@
+.. index:: pair: enum; snd_ctl_elem_type_t
+.. _doxid-group___control_1gac42e0ed6713b62711af5e80b4b3bcfec:
+.. _cid-snd_ctl_elem_type_t:
+
+enum snd_ctl_elem_type_t
+========================
+
+
+
+Overview
+~~~~~~~~
+
+CTL element type :ref:`More...<details-doxid-group___control_1gac42e0ed6713b62711af5e80b4b3bcfec>`
+
+.. _doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca257de96b57bae6f291b36eff3ab0ecb5:
+.. _cid-snd_ctl_elem_type_t::snd_ctl_elem_type_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_CTL_ELEM_TYPE_NONE<doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca4721b8bec7a22580ce81b91c6b7a0ae1>` = 0
+	:ref:`SND_CTL_ELEM_TYPE_BOOLEAN<doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfecaa4ff1a96936c11b81e12ecd5a9dfa307>` 
+	:ref:`SND_CTL_ELEM_TYPE_INTEGER<doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca4248a1a1ea07ebfaf61f3b6675868519>` 
+	:ref:`SND_CTL_ELEM_TYPE_ENUMERATED<doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfecabfb38dcb8ca021f3f3a09261b3b8cb43>` 
+	:ref:`SND_CTL_ELEM_TYPE_BYTES<doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfecade553acbddf022bcdd9123e71c942be9>` 
+	:ref:`SND_CTL_ELEM_TYPE_IEC958<doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca7fb78bfbbfb14c7653e1dcc3c5706454>` 
+	:ref:`SND_CTL_ELEM_TYPE_INTEGER64<doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca49b30ff41d10d784a98b9bb8636dce81>` 
+	SND_CTL_ELEM_TYPE_LAST = SND_CTL_ELEM_TYPE_INTEGER64
+
+.. _details-doxid-group___control_1gac42e0ed6713b62711af5e80b4b3bcfec:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+CTL element type
+
+Enum Values
+-----------
+
+.. _doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca4721b8bec7a22580ce81b91c6b7a0ae1:
+.. _cid-snd_ctl_elem_type_t::snd_ctl_elem_type_none:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_TYPE_NONE
+
+Invalid type
+
+.. _doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfecaa4ff1a96936c11b81e12ecd5a9dfa307:
+.. _cid-snd_ctl_elem_type_t::snd_ctl_elem_type_boolean:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_TYPE_BOOLEAN
+
+Boolean contents
+
+.. _doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca4248a1a1ea07ebfaf61f3b6675868519:
+.. _cid-snd_ctl_elem_type_t::snd_ctl_elem_type_integer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_TYPE_INTEGER
+
+Integer contents
+
+.. _doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfecabfb38dcb8ca021f3f3a09261b3b8cb43:
+.. _cid-snd_ctl_elem_type_t::snd_ctl_elem_type_enumerated:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_TYPE_ENUMERATED
+
+Enumerated contents
+
+.. _doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfecade553acbddf022bcdd9123e71c942be9:
+.. _cid-snd_ctl_elem_type_t::snd_ctl_elem_type_bytes:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_TYPE_BYTES
+
+Bytes contents
+
+.. _doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca7fb78bfbbfb14c7653e1dcc3c5706454:
+.. _cid-snd_ctl_elem_type_t::snd_ctl_elem_type_iec958:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_TYPE_IEC958
+
+IEC958 (S/PDIF) setting content
+
+.. _doxid-group___control_1ggac42e0ed6713b62711af5e80b4b3bcfeca49b30ff41d10d784a98b9bb8636dce81:
+.. _cid-snd_ctl_elem_type_t::snd_ctl_elem_type_integer64:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_TYPE_INTEGER64
+
+64-bit integer contents
+

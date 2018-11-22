@@ -1,0 +1,143 @@
+.. index:: pair: enum; snd_mixer_selem_channel_id_t
+.. _doxid-group___simple_mixer_1gaf01a92f33cc46d0b3878d65afcc41b97:
+.. _cid-snd_mixer_selem_channel_id_t:
+
+enum snd_mixer_selem_channel_id_t
+=================================
+
+
+
+Overview
+~~~~~~~~
+
+Mixer simple element channel identifier :ref:`More...<details-doxid-group___simple_mixer_1gaf01a92f33cc46d0b3878d65afcc41b97>`
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a89404ee2c2284ee3b18da54af53f2479:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_MIXER_SCHN_UNKNOWN<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a91369fd97c7cb996647c1993136b70ff>` = -1
+	:ref:`SND_MIXER_SCHN_FRONT_LEFT<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97afabaaa694a14ab17e1c03ed0a4ff6f43>` = 0
+	:ref:`SND_MIXER_SCHN_FRONT_RIGHT<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97ab9310897c48a0aa06c822d92970b77a7>` 
+	:ref:`SND_MIXER_SCHN_REAR_LEFT<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97ad72538d298df9240b9b776f7019e9c2d>` 
+	:ref:`SND_MIXER_SCHN_REAR_RIGHT<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97afa66c007bd5deda0b6acb7516c483c62>` 
+	:ref:`SND_MIXER_SCHN_FRONT_CENTER<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a796f68400623ee579ce3d0a913d7ffbd>` 
+	:ref:`SND_MIXER_SCHN_WOOFER<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97ae8b2cde33cdb6ba8b7a2f58a69d37e19>` 
+	:ref:`SND_MIXER_SCHN_SIDE_LEFT<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97aa50f3dbd34b82d2634c0dba82a85080d>` 
+	:ref:`SND_MIXER_SCHN_SIDE_RIGHT<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97ae95813ea4f45d4fb8c3827adc7d36e7b>` 
+	:ref:`SND_MIXER_SCHN_REAR_CENTER<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a709e466b14161e3aba70717b2fc528bd>` 
+	SND_MIXER_SCHN_LAST = 31
+	:ref:`SND_MIXER_SCHN_MONO<doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a6f894eb8b9532977e29e99122e995833>` = SND_MIXER_SCHN_FRONT_LEFT
+
+.. _details-doxid-group___simple_mixer_1gaf01a92f33cc46d0b3878d65afcc41b97:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Mixer simple element channel identifier
+
+Enum Values
+-----------
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a91369fd97c7cb996647c1993136b70ff:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_unknown:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_UNKNOWN
+
+Unknown
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97afabaaa694a14ab17e1c03ed0a4ff6f43:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_front_left:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_FRONT_LEFT
+
+Front left
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97ab9310897c48a0aa06c822d92970b77a7:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_front_right:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_FRONT_RIGHT
+
+Front right
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97ad72538d298df9240b9b776f7019e9c2d:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_rear_left:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_REAR_LEFT
+
+Rear left
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97afa66c007bd5deda0b6acb7516c483c62:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_rear_right:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_REAR_RIGHT
+
+Rear right
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a796f68400623ee579ce3d0a913d7ffbd:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_front_center:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_FRONT_CENTER
+
+Front center
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97ae8b2cde33cdb6ba8b7a2f58a69d37e19:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_woofer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_WOOFER
+
+Woofer
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97aa50f3dbd34b82d2634c0dba82a85080d:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_side_left:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_SIDE_LEFT
+
+Side Left
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97ae95813ea4f45d4fb8c3827adc7d36e7b:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_side_right:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_SIDE_RIGHT
+
+Side Right
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a709e466b14161e3aba70717b2fc528bd:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_rear_center:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_REAR_CENTER
+
+Rear Center
+
+.. _doxid-group___simple_mixer_1ggaf01a92f33cc46d0b3878d65afcc41b97a6f894eb8b9532977e29e99122e995833:
+.. _cid-snd_mixer_selem_channel_id_t::snd_mixer_schn_mono:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_MIXER_SCHN_MONO
+
+Mono (Front left alias)
+

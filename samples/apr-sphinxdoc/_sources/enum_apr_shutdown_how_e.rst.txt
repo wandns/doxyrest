@@ -1,0 +1,60 @@
+.. index:: pair: enum; apr_shutdown_how_e
+.. _doxid-group__apr__network__io_1gae2130f1fa2d0db58c5c3c9c73d9b4009:
+.. _cid-apr_shutdown_how_e:
+
+enum apr_shutdown_how_e
+=======================
+
+
+
+Overview
+~~~~~~~~
+
+Define what type of socket shutdown should occur. :ref:`More...<details-doxid-group__apr__network__io_1gae2130f1fa2d0db58c5c3c9c73d9b4009>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`APR_SHUTDOWN_READ<doxid-group__apr__network__io_1ggae2130f1fa2d0db58c5c3c9c73d9b4009a88d0661d35eea5319715d6ca69265b01>` 
+	:ref:`APR_SHUTDOWN_WRITE<doxid-group__apr__network__io_1ggae2130f1fa2d0db58c5c3c9c73d9b4009a5e335b392088e14df65d1bd5e0db7c46>` 
+	:ref:`APR_SHUTDOWN_READWRITE<doxid-group__apr__network__io_1ggae2130f1fa2d0db58c5c3c9c73d9b4009add172f55ff5ee7b930683a3903c99768>` 
+
+.. _details-doxid-group__apr__network__io_1gae2130f1fa2d0db58c5c3c9c73d9b4009:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Define what type of socket shutdown should occur.
+
+Enum Values
+-----------
+
+.. _doxid-group__apr__network__io_1ggae2130f1fa2d0db58c5c3c9c73d9b4009a88d0661d35eea5319715d6ca69265b01:
+.. _cid-apr_shutdown_how_e::apr_shutdown_read:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	APR_SHUTDOWN_READ
+
+no longer allow read request
+
+.. _doxid-group__apr__network__io_1ggae2130f1fa2d0db58c5c3c9c73d9b4009a5e335b392088e14df65d1bd5e0db7c46:
+.. _cid-apr_shutdown_how_e::apr_shutdown_write:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	APR_SHUTDOWN_WRITE
+
+no longer allow write requests
+
+.. _doxid-group__apr__network__io_1ggae2130f1fa2d0db58c5c3c9c73d9b4009add172f55ff5ee7b930683a3903c99768:
+.. _cid-apr_shutdown_how_e::apr_shutdown_readwrite:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	APR_SHUTDOWN_READWRITE
+
+no longer allow read or write requests
+

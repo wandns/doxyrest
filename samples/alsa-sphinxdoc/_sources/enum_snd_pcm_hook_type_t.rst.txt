@@ -1,0 +1,29 @@
+.. index:: pair: enum; snd_pcm_hook_type_t
+.. _doxid-group___p_c_m___hook_1ga57b6ba407d293017e116fa1b462a2411:
+.. _cid-snd_pcm_hook_type_t:
+
+enum snd_pcm_hook_type_t
+========================
+
+
+
+type of pcm hook
+
+.. _doxid-group___p_c_m___hook_1gga57b6ba407d293017e116fa1b462a2411a3423cebaf5c4c207e1764bf771d39173:
+.. _cid-snd_pcm_hook_type_t::snd_pcm_hook_type_hw_params:
+.. _doxid-group___p_c_m___hook_1gga57b6ba407d293017e116fa1b462a2411a1911e7b3a68fadf2f8486f4214e9034c:
+.. _cid-snd_pcm_hook_type_t::snd_pcm_hook_type_hw_free:
+.. _doxid-group___p_c_m___hook_1gga57b6ba407d293017e116fa1b462a2411a0e368fb6edd6f221af14c6043064abb4:
+.. _cid-snd_pcm_hook_type_t::snd_pcm_hook_type_close:
+.. _doxid-group___p_c_m___hook_1gga57b6ba407d293017e116fa1b462a2411af3887f3a9c71485c1b0444222cc1fc4b:
+.. _cid-snd_pcm_hook_type_t::snd_pcm_hook_type_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SND_PCM_HOOK_TYPE_HW_PARAMS = 0
+	SND_PCM_HOOK_TYPE_HW_FREE 
+	SND_PCM_HOOK_TYPE_CLOSE 
+	SND_PCM_HOOK_TYPE_LAST = SND_PCM_HOOK_TYPE_CLOSE
+

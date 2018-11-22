@@ -1,0 +1,29 @@
+.. index:: pair: enum; ssh_mac_e
+.. _doxid-wrapper_8h_1aeabf1e8690f469b96f9a8d0e5cce606d:
+.. _cid-ssh_mac_e:
+
+enum ssh_mac_e
+==============
+
+
+
+
+
+.. _doxid-wrapper_8h_1aeabf1e8690f469b96f9a8d0e5cce606dacb24bde784404d49421d5b22da13cde2:
+.. _cid-ssh_mac_e::ssh_mac_sha1:
+.. _doxid-wrapper_8h_1aeabf1e8690f469b96f9a8d0e5cce606da7b33ea6313db37669ce7f9fb42024e8a:
+.. _cid-ssh_mac_e::ssh_mac_sha256:
+.. _doxid-wrapper_8h_1aeabf1e8690f469b96f9a8d0e5cce606da8a2a7db71609331459a6d27a38ca925d:
+.. _cid-ssh_mac_e::ssh_mac_sha384:
+.. _doxid-wrapper_8h_1aeabf1e8690f469b96f9a8d0e5cce606dae049d3865ee7b6da879d48842ba31691:
+.. _cid-ssh_mac_e::ssh_mac_sha512:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_MAC_SHA1 =1
+	SSH_MAC_SHA256 
+	SSH_MAC_SHA384 
+	SSH_MAC_SHA512 
+

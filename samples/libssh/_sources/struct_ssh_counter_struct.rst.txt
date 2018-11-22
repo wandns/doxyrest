@@ -1,0 +1,36 @@
+.. index:: pair: struct; ssh_counter_struct
+.. _doxid-structssh__counter__struct:
+.. _cid-ssh_counter_struct:
+
+struct ssh_counter_struct
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/libssh.h>
+
+
+
+
+.. _doxid-structssh__counter__struct_1a7dc5edb28e443b162a1811f6a81ca798:
+.. _cid-ssh_counter_struct::in_bytes:
+.. _doxid-structssh__counter__struct_1a2d1a31e82b0ee7321e5b25ca2cce70ae:
+.. _cid-ssh_counter_struct::in_packets:
+.. _doxid-structssh__counter__struct_1a777d5a7c2adcf3b441ff7a5dfca9ecb7:
+.. _cid-ssh_counter_struct::out_bytes:
+.. _doxid-structssh__counter__struct_1a9a7105948d6a581d3eddf8ad58e5d3ce:
+.. _cid-ssh_counter_struct::out_packets:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint64_t in_bytes
+	uint64_t in_packets
+	uint64_t out_bytes
+	uint64_t out_packets
+

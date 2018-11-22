@@ -1,0 +1,90 @@
+.. index:: pair: enum; snd_config_type_t
+.. _doxid-group___config_1gaa41083e55d19c7755c5d624030e06887:
+.. _cid-snd_config_type_t:
+
+enum snd_config_type_t
+======================
+
+
+
+Overview
+~~~~~~~~
+
+Configuration node type. :ref:`More...<details-doxid-group___config_1gaa41083e55d19c7755c5d624030e06887>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_CONFIG_TYPE_INTEGER<doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887aaa9d6e02cd0eb42db96122c925c023e7>` 
+	:ref:`SND_CONFIG_TYPE_INTEGER64<doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887a710f962ebb93e3824ddee2d833f735a2>` 
+	:ref:`SND_CONFIG_TYPE_REAL<doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887a0a938daae4006e204150082ab9c73508>` 
+	:ref:`SND_CONFIG_TYPE_STRING<doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887a99eed49f50d4f62a7fc0c95301918f49>` 
+	:ref:`SND_CONFIG_TYPE_POINTER<doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887ab0b5d34e2f16e81d4eb5f933c30158fe>` 
+	:ref:`SND_CONFIG_TYPE_COMPOUND<doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887a82b5c1a9dbadaa4e36815fc1f01fc2f7>` = 1024
+
+.. _details-doxid-group___config_1gaa41083e55d19c7755c5d624030e06887:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Configuration node type.
+
+Enum Values
+-----------
+
+.. _doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887aaa9d6e02cd0eb42db96122c925c023e7:
+.. _cid-snd_config_type_t::snd_config_type_integer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CONFIG_TYPE_INTEGER
+
+Integer number.
+
+.. _doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887a710f962ebb93e3824ddee2d833f735a2:
+.. _cid-snd_config_type_t::snd_config_type_integer64:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CONFIG_TYPE_INTEGER64
+
+64-bit integer number.
+
+.. _doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887a0a938daae4006e204150082ab9c73508:
+.. _cid-snd_config_type_t::snd_config_type_real:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CONFIG_TYPE_REAL
+
+Real number.
+
+.. _doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887a99eed49f50d4f62a7fc0c95301918f49:
+.. _cid-snd_config_type_t::snd_config_type_string:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CONFIG_TYPE_STRING
+
+Character string.
+
+.. _doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887ab0b5d34e2f16e81d4eb5f933c30158fe:
+.. _cid-snd_config_type_t::snd_config_type_pointer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CONFIG_TYPE_POINTER
+
+Pointer (runtime only, cannot be saved).
+
+.. _doxid-group___config_1ggaa41083e55d19c7755c5d624030e06887a82b5c1a9dbadaa4e36815fc1f01fc2f7:
+.. _cid-snd_config_type_t::snd_config_type_compound:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CONFIG_TYPE_COMPOUND
+
+Compound node.
+

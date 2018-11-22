@@ -1,0 +1,77 @@
+.. index:: pair: struct; apr_getopt_option_t
+.. _doxid-structapr__getopt__option__t:
+.. _cid-apr_getopt_option_t:
+
+struct apr_getopt_option_t
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_getopt.h>
+
+
+Overview
+~~~~~~~~
+
+Structure used to describe options that getopt should search for. :ref:`More...<details-doxid-structapr__getopt__option__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const char* :ref:`name<doxid-structapr__getopt__option__t_1a7e623913c9761495c5d37adf6ff1ee69>`
+	int :ref:`optch<doxid-structapr__getopt__option__t_1a476e67c4dde620fe5b4f5952238c6e94>`
+	int :ref:`has_arg<doxid-structapr__getopt__option__t_1aac65dae93f6d35f4848b91f6f9d66278>`
+	const char* :ref:`description<doxid-structapr__getopt__option__t_1a8fd515c0a9e621f6c0d058772429ab98>`
+
+.. _details-doxid-structapr__getopt__option__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Structure used to describe options that getopt should search for.
+
+Fields
+------
+
+.. _doxid-structapr__getopt__option__t_1a7e623913c9761495c5d37adf6ff1ee69:
+.. _cid-apr_getopt_option_t::name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* name
+
+long option name, or NULL if option has no long name
+
+.. _doxid-structapr__getopt__option__t_1a476e67c4dde620fe5b4f5952238c6e94:
+.. _cid-apr_getopt_option_t::optch:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int optch
+
+option letter, or a value greater than 255 if option has no letter
+
+.. _doxid-structapr__getopt__option__t_1aac65dae93f6d35f4848b91f6f9d66278:
+.. _cid-apr_getopt_option_t::has_arg:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int has_arg
+
+nonzero if option takes an argument
+
+.. _doxid-structapr__getopt__option__t_1a8fd515c0a9e621f6c0d058772429ab98:
+.. _cid-apr_getopt_option_t::description:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* description
+
+a description of the option
+

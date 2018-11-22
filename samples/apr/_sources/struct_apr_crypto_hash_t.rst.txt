@@ -1,0 +1,35 @@
+.. index:: pair: struct; apr_crypto_hash_t
+.. _doxid-structapr__crypto__hash__t:
+.. _cid-apr_crypto_hash_t:
+
+struct apr_crypto_hash_t
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structapr__crypto__hash__t_1a3b0a8b85bc2207235024a9e64febab69:
+.. _cid-apr_crypto_hash_t::init:
+.. _doxid-structapr__crypto__hash__t_1a60c77281aca26fdb500c3ef899908abb:
+.. _cid-apr_crypto_hash_t::add:
+.. _doxid-structapr__crypto__hash__t_1abd6933f64b61c595788ddf0f16d5b48c:
+.. _cid-apr_crypto_hash_t::finish:
+.. _doxid-structapr__crypto__hash__t_1ade59f47b349e3a9eef98097fb87fbf72:
+.. _cid-apr_crypto_hash_t::size:
+.. _doxid-structapr__crypto__hash__t_1a0211f5be5ddce65dee1ea0720d39e8e3:
+.. _cid-apr_crypto_hash_t::data:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	apr_crypto_hash_init_t* init
+	apr_crypto_hash_add_t* add
+	apr_crypto_hash_finish_t* finish
+	apr_size_t size
+	void* data
+

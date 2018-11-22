@@ -1,0 +1,24 @@
+.. index:: pair: page; To be done
+.. _doxid-libssh_tutor_todo:
+
+To be done
+==========
+
+.. code-block:: none
+
+    To be written ***
+
+.. _doxid-libssh_tutor_todo_1sshd:
+.. rubric:: Writing a libssh-based server:
+
+.. code-block:: none
+
+    To be written ***
+
+.. _doxid-libssh_tutor_todo_1cpp:
+.. rubric:: The libssh C++ wrapper:
+
+.. code-block:: none
+
+    To be written ***
+

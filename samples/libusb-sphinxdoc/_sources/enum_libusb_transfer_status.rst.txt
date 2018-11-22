@@ -1,0 +1,104 @@
+.. index:: pair: enum; libusb_transfer_status
+.. _doxid-group__libusb__asyncio_1ga9fcb2aa23d342060ebda1d0cf7478856:
+.. _cid-libusb_transfer_status:
+
+enum libusb_transfer_status
+===========================
+
+
+
+Overview
+~~~~~~~~
+
+Transfer status codes. :ref:`More...<details-doxid-group__libusb__asyncio_1ga9fcb2aa23d342060ebda1d0cf7478856>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`LIBUSB_TRANSFER_COMPLETED<doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856a4595f6532aab12352a58a0fd4ce48363>` 
+	:ref:`LIBUSB_TRANSFER_ERROR<doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856aa8852ed719d03c2a3cc6f0312d919398>` 
+	:ref:`LIBUSB_TRANSFER_TIMED_OUT<doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856ac2b7626d7b51cb980f83933b6ada1ddf>` 
+	:ref:`LIBUSB_TRANSFER_CANCELLED<doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856a8af1f19e46cccafdcf3feadce47e880b>` 
+	:ref:`LIBUSB_TRANSFER_STALL<doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856a23cdfd929f5fe82cca9654f8075eeebb>` 
+	:ref:`LIBUSB_TRANSFER_NO_DEVICE<doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856ab7dcb24f313ace407e0c070d6b2c5f13>` 
+	:ref:`LIBUSB_TRANSFER_OVERFLOW<doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856ab1b9cbcb1de27a8fbeceb3427fb2fb14>` 
+
+.. _details-doxid-group__libusb__asyncio_1ga9fcb2aa23d342060ebda1d0cf7478856:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Transfer status codes.
+
+Enum Values
+-----------
+
+.. _doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856a4595f6532aab12352a58a0fd4ce48363:
+.. _cid-libusb_transfer_status::libusb_transfer_completed:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_TRANSFER_COMPLETED
+
+Transfer completed without error.
+
+Note that this does not indicate that the entire amount of requested data was transferred.
+
+.. _doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856aa8852ed719d03c2a3cc6f0312d919398:
+.. _cid-libusb_transfer_status::libusb_transfer_error:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_TRANSFER_ERROR
+
+Transfer failed.
+
+.. _doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856ac2b7626d7b51cb980f83933b6ada1ddf:
+.. _cid-libusb_transfer_status::libusb_transfer_timed_out:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_TRANSFER_TIMED_OUT
+
+Transfer timed out.
+
+.. _doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856a8af1f19e46cccafdcf3feadce47e880b:
+.. _cid-libusb_transfer_status::libusb_transfer_cancelled:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_TRANSFER_CANCELLED
+
+Transfer was cancelled.
+
+.. _doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856a23cdfd929f5fe82cca9654f8075eeebb:
+.. _cid-libusb_transfer_status::libusb_transfer_stall:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_TRANSFER_STALL
+
+For bulk/interrupt endpoints: halt condition detected (endpoint stalled).
+
+For control endpoints: control request not supported.
+
+.. _doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856ab7dcb24f313ace407e0c070d6b2c5f13:
+.. _cid-libusb_transfer_status::libusb_transfer_no_device:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_TRANSFER_NO_DEVICE
+
+Device was disconnected.
+
+.. _doxid-group__libusb__asyncio_1gga9fcb2aa23d342060ebda1d0cf7478856ab1b9cbcb1de27a8fbeceb3427fb2fb14:
+.. _cid-libusb_transfer_status::libusb_transfer_overflow:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_TRANSFER_OVERFLOW
+
+Device sent more data than requested.
+

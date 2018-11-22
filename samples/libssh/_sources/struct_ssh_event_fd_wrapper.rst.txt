@@ -1,0 +1,26 @@
+.. index:: pair: struct; ssh_event_fd_wrapper
+.. _doxid-structssh__event__fd__wrapper:
+.. _cid-ssh_event_fd_wrapper:
+
+struct ssh_event_fd_wrapper
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structssh__event__fd__wrapper_1a789c29c2768c435dae97d3026033ec3f:
+.. _cid-ssh_event_fd_wrapper::cb:
+.. _doxid-structssh__event__fd__wrapper_1a590fefd91fe9398463796d2ca04ab3d9:
+.. _cid-ssh_event_fd_wrapper::userdata:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`ssh_event_callback<doxid-libssh_8h_1ad86976ea739d21a91265820921ee123c>` cb
+	void* userdata
+

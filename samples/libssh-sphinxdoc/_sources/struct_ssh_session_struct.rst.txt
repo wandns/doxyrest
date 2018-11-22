@@ -1,0 +1,261 @@
+.. index:: pair: struct; ssh_session_struct
+.. _doxid-structssh__session__struct:
+.. _cid-ssh_session_struct:
+
+struct ssh_session_struct
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/session.h>
+
+
+
+
+.. _doxid-structssh__session__struct_1a7aba7d433c98d757d3747702af1cff44:
+.. _cid-ssh_session_struct::agent:
+.. _doxid-structssh__session__struct_1a9bf2b6b1501a483cdd3d2ba9995a5fa3:
+.. _cid-ssh_session_struct::agent_state:
+.. _doxid-structssh__session__struct_1a1ec3c1fe8dc39665e92b7ff919c8b9b1:
+.. _cid-ssh_session_struct::alive:
+.. _doxid-structssh__session__struct_1a40de0ea02038f0fa406e253df8130522:
+.. _cid-ssh_session_struct::auth_auto_state:
+.. _doxid-structssh__session__struct_1a58f99b5eac69cfec2c9da6328b38baf4:
+.. _cid-ssh_session_struct::auth_methods:
+.. _doxid-structssh__session__struct_1ac3b1934105c6cee07c5c5462d0909fac:
+.. _cid-ssh_session_struct::auth_service_state:
+.. _doxid-structssh__session__struct_1a7a6a36f15d9bd3f12c20b7473aeaa18f:
+.. _cid-ssh_session_struct::auth_state:
+.. _doxid-structssh__session__struct_1a68f995f433f877e39526bb0a12a928e3:
+.. _cid-ssh_session_struct::banner:
+.. _doxid-structssh__session__struct_1a1c7d0b347a65fb9ece745d9b65edcea0:
+.. _cid-ssh_session_struct::bindaddr:
+.. _doxid-structssh__session__struct_1aebf6da9b412110e30efdb3ffcfd87aa4:
+.. _cid-ssh_session_struct::channels:
+.. _doxid-structssh__session__struct_1ab035af11bfbcdbfdb47aa99163ae324f:
+.. _cid-ssh_session_struct::client:
+.. _doxid-structssh__session__struct_1a5d66b592afd7ebc27a95dfbcda71923c:
+.. _cid-ssh_session_struct::clientbanner:
+.. _doxid-structssh__session__struct_1a6d7d1073143b01a071e1decc924e91e7:
+.. _cid-ssh_session_struct::common:
+.. _doxid-structssh__session__struct_1a9976662ffad1851d6ea4232b0a87b35f:
+.. _cid-ssh_session_struct::compressionlevel:
+.. _doxid-structssh__session__struct_1a6dec03bcbce1afbf014a5a77812f6eb6:
+.. _cid-ssh_session_struct::connected:
+.. _doxid-structssh__session__struct_1ac683c4472fb046fd98cef72b63c2592a:
+.. _cid-ssh_session_struct::current_crypto:
+.. _doxid-structssh__session__struct_1a6c9cee509db6f78da8c23649d9e10f85:
+.. _cid-ssh_session_struct::custombanner:
+.. _doxid-structssh__session__struct_1ac93eeab9d8105c5c7166ae218e4bc2a1:
+.. _cid-ssh_session_struct::default_packet_callbacks:
+.. _doxid-structssh__session__struct_1a69284b4aa90c938c249d940a532a1d3e:
+.. _cid-ssh_session_struct::default_poll_ctx:
+.. _doxid-structssh__session__struct_1afd26edf5633d6cb3239c526d6790ad13:
+.. _cid-ssh_session_struct::dh_handshake_state:
+.. _doxid-structssh__session__struct_1ac170a270cee805f44d0226878deee8fc:
+.. _cid-ssh_session_struct::discon_msg:
+.. _doxid-structssh__session__struct_1a0bb358c3bc5c1a165d0dee0aceeaab33:
+.. _cid-ssh_session_struct::dsa_key:
+.. _doxid-structssh__session__struct_1ac9abe8bd78eb4e2a284f80581fb4ddd8:
+.. _cid-ssh_session_struct::ecdsa_key:
+.. _doxid-structssh__session__struct_1a7c138316cc0f21f146978006ae681fbf:
+.. _cid-ssh_session_struct::ed25519_key:
+.. _doxid-structssh__session__struct_1a7462b050134693147157b35dfc7062ad:
+.. _cid-ssh_session_struct::exec_channel_opened:
+.. _doxid-structssh__session__struct_1a418fd0e2633f209b8df5c11b084bad41:
+.. _cid-ssh_session_struct::fd:
+.. _doxid-structssh__session__struct_1ae5943483a461f6635228af82636f0e9a:
+.. _cid-ssh_session_struct::first_kex_follows_guess_wrong:
+.. _doxid-structssh__session__struct_1a71ad3dbfc17033bfa1820050e3368142:
+.. _cid-ssh_session_struct::flags:
+.. _doxid-structssh__session__struct_1a13053f9f07bc40672b9ed204dcf894bb:
+.. _cid-ssh_session_struct::global_req_state:
+.. _doxid-structssh__session__struct_1a8676f3e1221a36a56f6553492f41500f:
+.. _cid-ssh_session_struct::gss_client_identity:
+.. _doxid-structssh__session__struct_1a23de85daadba458921abeabeb0c7eed5:
+.. _cid-ssh_session_struct::gss_delegate_creds:
+.. _doxid-structssh__session__struct_1a85f533c7d7399efc977324a4b0577543:
+.. _cid-ssh_session_struct::gss_server_identity:
+.. _doxid-structssh__session__struct_1a77882ecfeab879e5418e1bebceb1fbb7:
+.. _cid-ssh_session_struct::gssapi:
+.. _doxid-structssh__session__struct_1adb43056340513c191cc792b7677de1d9:
+.. _cid-ssh_session_struct::host:
+.. _doxid-structssh__session__struct_1a886c98f042ae259ac60d162311618a6f:
+.. _cid-ssh_session_struct::hostkey:
+.. _doxid-structssh__session__struct_1ae8c367b26de63af74e41894b5e264472:
+.. _cid-ssh_session_struct::identity:
+.. _doxid-structssh__session__struct_1a79db9a967faf390a8ebf73151666d08e:
+.. _cid-ssh_session_struct::in_buffer:
+.. _doxid-structssh__session__struct_1a2c30d34eae93e9354091681ee8ebcfed:
+.. _cid-ssh_session_struct::in_hashbuf:
+.. _doxid-structssh__session__struct_1a5caf0b1c3a00718e64e1c88d353b2f00:
+.. _cid-ssh_session_struct::in_packet:
+.. _doxid-structssh__session__struct_1a107be6a70b7c48d36ff2dcef1608cf3b:
+.. _cid-ssh_session_struct::kbdint:
+.. _doxid-structssh__session__struct_1a3462a9bd3aef25138bcf661251d0edba:
+.. _cid-ssh_session_struct::knownhosts:
+.. _doxid-structssh__session__struct_1a67bf8661ca5499848a3627bef66bc3f2:
+.. _cid-ssh_session_struct::maxchannel:
+.. _doxid-structssh__session__struct_1a3e1d248d61cb510cf853eb7c3fbce5cd:
+.. _cid-ssh_session_struct::next_crypto:
+.. _doxid-structssh__session__struct_1a46a311b4ebe17c03c88e273969abf8a9:
+.. _cid-ssh_session_struct::openssh:
+.. _doxid-structssh__session__struct_1ae938458d81b2abbe581f2310dae78e71:
+.. _cid-ssh_session_struct::opts:
+.. _doxid-structssh__session__struct_1a9b28a6956acbd832f0a60bcb06eb036d:
+.. _cid-ssh_session_struct::out_buffer:
+.. _doxid-structssh__session__struct_1a44a41db6e889b995ef64c2c6c01f520a:
+.. _cid-ssh_session_struct::out_hashbuf:
+.. _doxid-structssh__session__struct_1a5b9cc2a95dfbc034fd0d1fa81e45f98c:
+.. _cid-ssh_session_struct::packet_callbacks:
+.. _doxid-structssh__session__struct_1a5623bc005641742710e976e312cb1663:
+.. _cid-ssh_session_struct::packet_state:
+.. _doxid-structssh__session__struct_1a39af745f906312cd30f637d2fe0def7d:
+.. _cid-ssh_session_struct::pcap_ctx:
+.. _doxid-structssh__session__struct_1aa29c743d055717982980cc5d98a71cdd:
+.. _cid-ssh_session_struct::pending_call_state:
+.. _doxid-structssh__session__struct_1acdb83f76adc05530fcc22f4f67269f68:
+.. _cid-ssh_session_struct::port:
+.. _doxid-structssh__session__struct_1abb2d29a95020d3973794786377f8a9f7:
+.. _cid-ssh_session_struct::protoversion:
+.. _doxid-structssh__session__struct_1a70355b0db60b3f9276f6cbf01affd253:
+.. _cid-ssh_session_struct::proxycommand:
+.. _doxid-structssh__session__struct_1a815c1a64bac6415303f9e5c217e2ac14:
+.. _cid-ssh_session_struct::raw_counter:
+.. _doxid-structssh__session__struct_1a49231dbf2df2170255f7b6000a5bf914:
+.. _cid-ssh_session_struct::recv_seq:
+.. _doxid-structssh__session__struct_1a08fa41178e8a7178f73346c772f5d1cd:
+.. _cid-ssh_session_struct::rsa_key:
+.. _doxid-structssh__session__struct_1a4f1e4c87cf0e580691442a3671bc1f9d:
+.. _cid-ssh_session_struct::send_seq:
+.. _doxid-structssh__session__struct_1a747b7c9e449bc3513256d0475bf495e7:
+.. _cid-ssh_session_struct::server:
+.. _doxid-structssh__session__struct_1acff6b81d59dbfdc7a23ff85924a0c4a8:
+.. _cid-ssh_session_struct::server_callbacks:
+.. _doxid-structssh__session__struct_1a9173c673463b8336f88095c9c87a6cae:
+.. _cid-ssh_session_struct::serverbanner:
+.. _doxid-structssh__session__struct_1a22e8ebb632802fb2b34b1c71fd860f42:
+.. _cid-ssh_session_struct::session_state:
+.. _doxid-structssh__session__struct_1a49ffc566b4eadf252aa06678ffb3cfb8:
+.. _cid-ssh_session_struct::socket:
+.. _doxid-structssh__session__struct_1aea1ee46299572cc86b3cb285126f011c:
+.. _cid-ssh_session_struct::socket_callbacks:
+.. _doxid-structssh__session__struct_1abea974131bada11ec36e4ebf7ed8fab7:
+.. _cid-ssh_session_struct::socket_counter:
+.. _doxid-structssh__session__struct_1a5f87328d4893b8e7a5627bcabf7929ad:
+.. _cid-ssh_session_struct::srv:
+.. _doxid-structssh__session__struct_1a26f67ea9c5c696221ef05c4313858393:
+.. _cid-ssh_session_struct::ssh1:
+.. _doxid-structssh__session__struct_1a3aa9fba459ab2eb9de5896955d010cab:
+.. _cid-ssh_session_struct::ssh2:
+.. _doxid-structssh__session__struct_1a7e523331256096dd61e1a302fc58c96d:
+.. _cid-ssh_session_struct::ssh_connection_callback:
+.. _doxid-structssh__session__struct_1a4afa1c0dc0f1a8638338493aa8088f7e:
+.. _cid-ssh_session_struct::ssh_message_callback:
+.. _doxid-structssh__session__struct_1a9e3d923eb47ea8e0984274136c8504bc:
+.. _cid-ssh_session_struct::ssh_message_callback_data:
+.. _doxid-structssh__session__struct_1a51e139d9a5137ff93fc774f3834a878f:
+.. _cid-ssh_session_struct::ssh_message_list:
+.. _doxid-structssh__session__struct_1ab29048256b94dc08979f9c182342014a:
+.. _cid-ssh_session_struct::sshdir:
+.. _doxid-structssh__session__struct_1a96406814307c1ffe5cc0f4db5b0c002b:
+.. _cid-ssh_session_struct::stricthostkeychecking:
+.. _doxid-structssh__session__struct_1ad0817ada1f407b2f0521e70192222206:
+.. _cid-ssh_session_struct::timeout:
+.. _doxid-structssh__session__struct_1ad0b87f00ad590637212eda6e262395fa:
+.. _cid-ssh_session_struct::timeout_usec:
+.. _doxid-structssh__session__struct_1aa1f4d91aa6bdac23df53cf4bcfbf8f83:
+.. _cid-ssh_session_struct::username:
+.. _doxid-structssh__session__struct_1a09fcb470f76b0c258a84c4e507b32693:
+.. _cid-ssh_session_struct::version:
+.. _doxid-structssh__session__struct_1ac642b82067ef24fe5fd7ae9aee98c001:
+.. _cid-ssh_session_struct::wanted_methods:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_agent agent
+	struct ssh_agent_state_struct* agent_state
+	int alive
+	struct ssh_auth_auto_state_struct* auth_auto_state
+	int auth_methods
+	enum :ref:`ssh_auth_service_state_e<doxid-auth_8h_1a6bb5186805ab418bffe24b2aee8b7bc7>` auth_service_state
+	enum :ref:`ssh_auth_state_e<doxid-auth_8h_1a0d3114986a741a14dc3ac03f7d8eafef>` auth_state
+	ssh_string banner
+	char* bindaddr
+	struct :ref:`ssh_list<doxid-structssh__list>`* channels
+	int client
+	char* clientbanner
+	struct :ref:`ssh_common_struct<doxid-structssh__common__struct>` common
+	char compressionlevel
+	int connected
+	struct :ref:`ssh_crypto_struct<doxid-structssh__crypto__struct>`* current_crypto
+	char* custombanner
+	struct :ref:`ssh_packet_callbacks_struct<doxid-structssh__packet__callbacks__struct>` default_packet_callbacks
+	ssh_poll_ctx default_poll_ctx
+	enum :ref:`ssh_dh_state_e<doxid-session_8h_1a52a640f6094e9b3d1a88c7da7d08c802>` dh_handshake_state
+	char* discon_msg
+	ssh_key dsa_key
+	ssh_key ecdsa_key
+	ssh_key ed25519_key
+	int exec_channel_opened
+	:ref:`socket_t<doxid-libssh_8h_1a30353f381f5fccbb956eea1f3a110b6c>` fd
+	int first_kex_follows_guess_wrong
+	int flags
+	enum :ref:`ssh_channel_request_state_e<doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325>` global_req_state
+	char* gss_client_identity
+	int gss_delegate_creds
+	char* gss_server_identity
+	struct ssh_gssapi_struct* gssapi
+	char* host
+	enum :ref:`ssh_keytypes_e<doxid-libssh_8h_1a244b017e5993fde29fe9e9b1f04a7bce>` hostkey
+	struct :ref:`ssh_list<doxid-structssh__list>`* identity
+	ssh_buffer in_buffer
+	ssh_buffer in_hashbuf
+	:ref:`PACKET<doxid-struct_p_a_c_k_e_t>` in_packet
+	struct :ref:`ssh_kbdint_struct<doxid-structssh__kbdint__struct>`* kbdint
+	char* knownhosts
+	int maxchannel
+	struct :ref:`ssh_crypto_struct<doxid-structssh__crypto__struct>`* next_crypto
+	int openssh
+	struct ssh_session_struct::@3 opts
+	ssh_buffer out_buffer
+	ssh_buffer out_hashbuf
+	struct :ref:`ssh_list<doxid-structssh__list>`* packet_callbacks
+	int packet_state
+	ssh_pcap_context pcap_ctx
+	enum :ref:`ssh_pending_call_e<doxid-session_8h_1abb7a4342b889601983497b3f094957e1>` pending_call_state
+	unsigned int port
+	int protoversion
+	char* ProxyCommand
+	ssh_counter raw_counter
+	uint32_t recv_seq
+	ssh_key rsa_key
+	uint32_t send_seq
+	int server
+	ssh_server_callbacks server_callbacks
+	char* serverbanner
+	enum :ref:`ssh_session_state_e<doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992c>` session_state
+	struct ssh_socket_struct* socket
+	struct :ref:`ssh_socket_callbacks_struct<doxid-structssh__socket__callbacks__struct>` socket_callbacks
+	ssh_counter socket_counter
+	struct ssh_session_struct::@2 srv
+	int ssh1
+	int ssh2
+	void (* ssh_connection_callback)(struct ssh_session_struct *session)
+	int (* ssh_message_callback)(struct ssh_session_struct *session, ssh_message msg, void *userdata)
+	void* ssh_message_callback_data
+	struct :ref:`ssh_list<doxid-structssh__list>`* ssh_message_list
+	char* sshdir
+	int StrictHostKeyChecking
+	unsigned long timeout
+	unsigned long timeout_usec
+	char* username
+	int version
+	char* wanted_methods[10]
+

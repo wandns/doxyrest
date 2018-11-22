@@ -1,0 +1,52 @@
+.. index:: pair: enum; libusb_log_level
+.. _doxid-group__libusb__lib_1ga2d6144203f0fc6d373677f6e2e89d2d2:
+.. _cid-libusb_log_level:
+
+enum libusb_log_level
+=====================
+
+
+
+Overview
+~~~~~~~~
+
+Log message levels. :ref:`More...<details-doxid-group__libusb__lib_1ga2d6144203f0fc6d373677f6e2e89d2d2>`
+
+.. _doxid-group__libusb__lib_1gga2d6144203f0fc6d373677f6e2e89d2d2af431dbe84c85599526cc0103f8178270:
+.. _cid-libusb_log_level::libusb_log_level_none:
+.. _doxid-group__libusb__lib_1gga2d6144203f0fc6d373677f6e2e89d2d2ace959b4b99f6c460dfa929b6152e49a8:
+.. _cid-libusb_log_level::libusb_log_level_error:
+.. _doxid-group__libusb__lib_1gga2d6144203f0fc6d373677f6e2e89d2d2a1d141f7a981d9fcd4bc12e41a1a14e78:
+.. _cid-libusb_log_level::libusb_log_level_warning:
+.. _doxid-group__libusb__lib_1gga2d6144203f0fc6d373677f6e2e89d2d2ab942d780c83ba4f30b9dd2e338002a07:
+.. _cid-libusb_log_level::libusb_log_level_info:
+.. _doxid-group__libusb__lib_1gga2d6144203f0fc6d373677f6e2e89d2d2afabee6826e913933f5d6fe4040bd7b9c:
+.. _cid-libusb_log_level::libusb_log_level_debug:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	LIBUSB_LOG_LEVEL_NONE = 0
+	LIBUSB_LOG_LEVEL_ERROR 
+	LIBUSB_LOG_LEVEL_WARNING 
+	LIBUSB_LOG_LEVEL_INFO 
+	LIBUSB_LOG_LEVEL_DEBUG 
+
+.. _details-doxid-group__libusb__lib_1ga2d6144203f0fc6d373677f6e2e89d2d2:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Log message levels.
+
+* LIBUSB_LOG_LEVEL_NONE (0) : no messages ever printed by the library (default)
+
+* LIBUSB_LOG_LEVEL_ERROR (1) : error messages are printed to stderr
+
+* LIBUSB_LOG_LEVEL_WARNING (2) : warning and error messages are printed to stderr
+
+* LIBUSB_LOG_LEVEL_INFO (3) : informational messages are printed to stdout, warning and error messages are printed to stderr
+
+* LIBUSB_LOG_LEVEL_DEBUG (4) : debug and informational messages are printed to stdout, warnings and errors to stderr
+

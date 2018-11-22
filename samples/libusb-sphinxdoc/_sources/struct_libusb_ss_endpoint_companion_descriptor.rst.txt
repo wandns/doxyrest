@@ -1,0 +1,95 @@
+.. index:: pair: struct; libusb_ss_endpoint_companion_descriptor
+.. _doxid-structlibusb__ss__endpoint__companion__descriptor:
+.. _cid-libusb_ss_endpoint_companion_descriptor:
+
+struct libusb_ss_endpoint_companion_descriptor
+==============================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <libusb.h>
+
+
+Overview
+~~~~~~~~
+
+A structure representing the superspeed endpoint companion descriptor. :ref:`More...<details-doxid-structlibusb__ss__endpoint__companion__descriptor>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint8_t :ref:`bLength<doxid-structlibusb__ss__endpoint__companion__descriptor_1a576f037f393bf45926a2d45a80c3c3ce>`
+	uint8_t :ref:`bDescriptorType<doxid-structlibusb__ss__endpoint__companion__descriptor_1a85344cb4f4d8d03014d9cc2cf90c748f>`
+	uint8_t :ref:`bMaxBurst<doxid-structlibusb__ss__endpoint__companion__descriptor_1a85b999ffaff20e9e1518597339e0a7dc>`
+	uint8_t :ref:`bmAttributes<doxid-structlibusb__ss__endpoint__companion__descriptor_1aa7097b478f5e46e8cdd160fb4aaccc1f>`
+	uint16_t :ref:`wBytesPerInterval<doxid-structlibusb__ss__endpoint__companion__descriptor_1a13605afcfe00291bc86ebb415226ece6>`
+
+.. _details-doxid-structlibusb__ss__endpoint__companion__descriptor:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+A structure representing the superspeed endpoint companion descriptor.
+
+This descriptor is documented in section 9.6.7 of the USB 3.0 specification. All multiple-byte fields are represented in host-endian format.
+
+Fields
+------
+
+.. _doxid-structlibusb__ss__endpoint__companion__descriptor_1a576f037f393bf45926a2d45a80c3c3ce:
+.. _cid-libusb_ss_endpoint_companion_descriptor::blength:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bLength
+
+Size of this descriptor (in bytes)
+
+.. _doxid-structlibusb__ss__endpoint__companion__descriptor_1a85344cb4f4d8d03014d9cc2cf90c748f:
+.. _cid-libusb_ss_endpoint_companion_descriptor::bdescriptortype:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bDescriptorType
+
+Descriptor type.
+
+Will have value :ref:`libusb_descriptor_type::LIBUSB_DT_SS_ENDPOINT_COMPANION <doxid-group__libusb__desc_1gga0a2e8a25dfdebf29fdd4764dcdbc1a9ca9bdd0a16eb0647330c2b7085520db533>` in this context.
+
+.. _doxid-structlibusb__ss__endpoint__companion__descriptor_1a85b999ffaff20e9e1518597339e0a7dc:
+.. _cid-libusb_ss_endpoint_companion_descriptor::bmaxburst:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bMaxBurst
+
+The maximum number of packets the endpoint can send or receive as part of a burst.
+
+.. _doxid-structlibusb__ss__endpoint__companion__descriptor_1aa7097b478f5e46e8cdd160fb4aaccc1f:
+.. _cid-libusb_ss_endpoint_companion_descriptor::bmattributes:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bmAttributes
+
+In bulk EP: bits 4:0 represents the maximum number of streams the EP supports.
+
+In isochronous EP: bits 1:0 represents the Mult - a zero based value that determines the maximum number of packets within a service interval
+
+.. _doxid-structlibusb__ss__endpoint__companion__descriptor_1a13605afcfe00291bc86ebb415226ece6:
+.. _cid-libusb_ss_endpoint_companion_descriptor::wbytesperinterval:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint16_t wBytesPerInterval
+
+The total number of bytes this EP will transfer every service interval.
+
+valid only for periodic EPs.
+

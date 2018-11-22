@@ -1,0 +1,266 @@
+.. index:: pair: enum; snd_hwdep_iface_t
+.. _doxid-group___hw_dep_1ga288eb9342aaea8317a7bfa03b22feaca:
+.. _cid-snd_hwdep_iface_t:
+
+enum snd_hwdep_iface_t
+======================
+
+
+
+Overview
+~~~~~~~~
+
+HwDep interface :ref:`More...<details-doxid-group___hw_dep_1ga288eb9342aaea8317a7bfa03b22feaca>`
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaad89a7259fc1b050419086162abf3012c:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_fw_digi00x:
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaabde2d47e3412b03920179cd5c5ca7c0d:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_fw_tascam:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_HWDEP_IFACE_OPL2<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa06892f4442380329139dfd755454b3d1>` = 0
+	:ref:`SND_HWDEP_IFACE_OPL3<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa952e48f4f4fc5fb7f2472c5d0c679b36>` 
+	:ref:`SND_HWDEP_IFACE_OPL4<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa122462f3f79578ac7408b476313ffa72>` 
+	:ref:`SND_HWDEP_IFACE_SB16CSP<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa1043d86e7c1b34d3b844892674406aa4>` 
+	:ref:`SND_HWDEP_IFACE_EMU10K1<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa805de2b442f7da96cea9d3864df67f14>` 
+	:ref:`SND_HWDEP_IFACE_YSS225<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa469940712513383aeb94e239e3388efb>` 
+	:ref:`SND_HWDEP_IFACE_ICS2115<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaafcd56e8aff83d4be3a9708f7d9f74204>` 
+	:ref:`SND_HWDEP_IFACE_SSCAPE<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaad85f235cbfcb8ba4300d3ef6252ea62c>` 
+	:ref:`SND_HWDEP_IFACE_VX<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa4a96dcd5734fe382cbfe8545522fa7e8>` 
+	:ref:`SND_HWDEP_IFACE_MIXART<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa47cfeee8ec9532f213b2151c9f411990>` 
+	:ref:`SND_HWDEP_IFACE_USX2Y<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaae7f996ad6c0601e558353404e32c4366>` 
+	:ref:`SND_HWDEP_IFACE_EMUX_WAVETABLE<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa01f290961f48f4981d91b158f517000f>` 
+	:ref:`SND_HWDEP_IFACE_BLUETOOTH<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaaa644270f5423d396c973f32c82d489bf>` 
+	:ref:`SND_HWDEP_IFACE_USX2Y_PCM<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa72513cceee36da63f12514742d491a29>` 
+	:ref:`SND_HWDEP_IFACE_PCXHR<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa1871ee51a3434c7cf0e1afdff93c5775>` 
+	:ref:`SND_HWDEP_IFACE_SB_RC<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa517dcdf103a96fab2aad10e8df123afc>` 
+	:ref:`SND_HWDEP_IFACE_HDA<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaaf386ce97ea4a4bc1ae73be55da7e1b6d>` 
+	:ref:`SND_HWDEP_IFACE_USB_STREAM<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa9dc5977a60b6d155fc6f6689f5208cab>` 
+	:ref:`SND_HWDEP_IFACE_FW_DICE<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaad82269a7bf2ea4c8ea69511292071ae8>` 
+	:ref:`SND_HWDEP_IFACE_FW_FIREWORKS<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa98638b800a2d27eca5e70a63571e8c65>` 
+	:ref:`SND_HWDEP_IFACE_FW_BEBOB<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa6fdaff4ff3d98b2d74815ee058fd574e>` 
+	:ref:`SND_HWDEP_IFACE_FW_OXFW<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaab405c3453e2ec2c437945b2aeac92d09>` 
+	SND_HWDEP_IFACE_FW_DIGI00X 
+	SND_HWDEP_IFACE_FW_TASCAM 
+	:ref:`SND_HWDEP_IFACE_LAST<doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa08d49aeea9f376daf523a8f7b2825744>` = SND_HWDEP_IFACE_FW_TASCAM
+
+.. _details-doxid-group___hw_dep_1ga288eb9342aaea8317a7bfa03b22feaca:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+HwDep interface
+
+Enum Values
+-----------
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa06892f4442380329139dfd755454b3d1:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_opl2:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_OPL2
+
+OPL2 raw driver
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa952e48f4f4fc5fb7f2472c5d0c679b36:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_opl3:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_OPL3
+
+OPL3 raw driver
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa122462f3f79578ac7408b476313ffa72:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_opl4:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_OPL4
+
+OPL4 raw driver
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa1043d86e7c1b34d3b844892674406aa4:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_sb16csp:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_SB16CSP
+
+SB16CSP driver
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa805de2b442f7da96cea9d3864df67f14:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_emu10k1:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_EMU10K1
+
+EMU10K1 driver
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa469940712513383aeb94e239e3388efb:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_yss225:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_YSS225
+
+YSS225 driver
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaafcd56e8aff83d4be3a9708f7d9f74204:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_ics2115:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_ICS2115
+
+ICS2115 driver
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaad85f235cbfcb8ba4300d3ef6252ea62c:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_sscape:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_SSCAPE
+
+Ensoniq SoundScape ISA card (MC68EC000)
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa4a96dcd5734fe382cbfe8545522fa7e8:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_vx:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_VX
+
+Digigram VX cards
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa47cfeee8ec9532f213b2151c9f411990:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_mixart:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_MIXART
+
+Digigram miXart cards
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaae7f996ad6c0601e558353404e32c4366:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_usx2y:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_USX2Y
+
+Tascam US122, US224 & US428 usb
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa01f290961f48f4981d91b158f517000f:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_emux_wavetable:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_EMUX_WAVETABLE
+
+EmuX wavetable
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaaa644270f5423d396c973f32c82d489bf:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_bluetooth:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_BLUETOOTH
+
+Bluetooth audio
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa72513cceee36da63f12514742d491a29:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_usx2y_pcm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_USX2Y_PCM
+
+Tascam US122, US224 & US428 raw USB PCM
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa1871ee51a3434c7cf0e1afdff93c5775:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_pcxhr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_PCXHR
+
+Digigram PCXHR
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa517dcdf103a96fab2aad10e8df123afc:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_sb_rc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_SB_RC
+
+SB Extigy/Audigy2NX remote control
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaaf386ce97ea4a4bc1ae73be55da7e1b6d:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_hda:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_HDA
+
+HD-audio
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa9dc5977a60b6d155fc6f6689f5208cab:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_usb_stream:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_USB_STREAM
+
+direct access to usb stream
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaad82269a7bf2ea4c8ea69511292071ae8:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_fw_dice:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_FW_DICE
+
+TC DICE FireWire device
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa98638b800a2d27eca5e70a63571e8c65:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_fw_fireworks:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_FW_FIREWORKS
+
+Echo Audio Fireworks based device
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa6fdaff4ff3d98b2d74815ee058fd574e:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_fw_bebob:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_FW_BEBOB
+
+BridgeCo BeBoB based device
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaab405c3453e2ec2c437945b2aeac92d09:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_fw_oxfw:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_FW_OXFW
+
+Oxford OXFW970/971 based device
+
+.. _doxid-group___hw_dep_1gga288eb9342aaea8317a7bfa03b22feacaa08d49aeea9f376daf523a8f7b2825744:
+.. _cid-snd_hwdep_iface_t::snd_hwdep_iface_last:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_HWDEP_IFACE_LAST
+
+last known hwdep interface
+

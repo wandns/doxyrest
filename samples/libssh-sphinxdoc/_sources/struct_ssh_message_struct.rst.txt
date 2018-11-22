@@ -1,0 +1,45 @@
+.. index:: pair: struct; ssh_message_struct
+.. _doxid-structssh__message__struct:
+.. _cid-ssh_message_struct:
+
+struct ssh_message_struct
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/messages.h>
+
+
+
+
+.. _doxid-structssh__message__struct_1acc19584a6b433d5cb88e710645edc6ee:
+.. _cid-ssh_message_struct::auth_request:
+.. _doxid-structssh__message__struct_1a76844853531862b5699d278528b046d9:
+.. _cid-ssh_message_struct::channel_request:
+.. _doxid-structssh__message__struct_1ae49142bf39a0f329ef1c2033276a3cd2:
+.. _cid-ssh_message_struct::channel_request_open:
+.. _doxid-structssh__message__struct_1afdda68b2bf76b2f1b634acb2e0db295a:
+.. _cid-ssh_message_struct::global_request:
+.. _doxid-structssh__message__struct_1ad603f6d38c51e250b90b300e57ca56f2:
+.. _cid-ssh_message_struct::service_request:
+.. _doxid-structssh__message__struct_1a9d21009b13e4a7bf63d6005bb81e8945:
+.. _cid-ssh_message_struct::session:
+.. _doxid-structssh__message__struct_1a05048f9fa968eea1a9b19893ac87c192:
+.. _cid-ssh_message_struct::type:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	struct :ref:`ssh_auth_request<doxid-structssh__auth__request>` auth_request
+	struct :ref:`ssh_channel_request<doxid-structssh__channel__request>` channel_request
+	struct :ref:`ssh_channel_request_open<doxid-structssh__channel__request__open>` channel_request_open
+	struct :ref:`ssh_global_request<doxid-structssh__global__request>` global_request
+	struct :ref:`ssh_service_request<doxid-structssh__service__request>` service_request
+	ssh_session session
+	int type
+

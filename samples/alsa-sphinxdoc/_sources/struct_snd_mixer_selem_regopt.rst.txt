@@ -1,0 +1,87 @@
+.. index:: pair: struct; snd_mixer_selem_regopt
+.. _doxid-structsnd__mixer__selem__regopt:
+.. _cid-snd_mixer_selem_regopt:
+
+struct snd_mixer_selem_regopt
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <mixer.h>
+
+
+Overview
+~~~~~~~~
+
+Mixer simple element - register options :ref:`More...<details-doxid-structsnd__mixer__selem__regopt>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`ver<doxid-structsnd__mixer__selem__regopt_1a27a098833de8ddd7434870f301e6355b>`
+	enum :ref:`snd_mixer_selem_regopt_abstract<doxid-group___simple_mixer_1gab7031d53c3876396c9880631813979c2>` :ref:`abstract<doxid-structsnd__mixer__selem__regopt_1a62d43bde34692931ead4ad14b5ad9821>`
+	const char* :ref:`device<doxid-structsnd__mixer__selem__regopt_1a7af8bc55a0c72c20649f4cb4d05030ab>`
+	:ref:`snd_pcm_t<doxid-group___p_c_m_1ga919e634deecd855b6e2e15174e70d3ea>`* :ref:`playback_pcm<doxid-structsnd__mixer__selem__regopt_1a61bee8b451175ef0aa5ae5a40c6a8c9b>`
+	:ref:`snd_pcm_t<doxid-group___p_c_m_1ga919e634deecd855b6e2e15174e70d3ea>`* :ref:`capture_pcm<doxid-structsnd__mixer__selem__regopt_1a86b26f666adf984c55fd4fb488a4ab37>`
+
+.. _details-doxid-structsnd__mixer__selem__regopt:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Mixer simple element - register options
+
+Fields
+------
+
+.. _doxid-structsnd__mixer__selem__regopt_1a27a098833de8ddd7434870f301e6355b:
+.. _cid-snd_mixer_selem_regopt::ver:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int ver
+
+structure version
+
+.. _doxid-structsnd__mixer__selem__regopt_1a62d43bde34692931ead4ad14b5ad9821:
+.. _cid-snd_mixer_selem_regopt::abstract:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	enum :ref:`snd_mixer_selem_regopt_abstract<doxid-group___simple_mixer_1gab7031d53c3876396c9880631813979c2>` abstract
+
+v1: abstract layer selection
+
+.. _doxid-structsnd__mixer__selem__regopt_1a7af8bc55a0c72c20649f4cb4d05030ab:
+.. _cid-snd_mixer_selem_regopt::device:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* device
+
+v1: device name (must be NULL when playback_pcm or capture_pcm != NULL)
+
+.. _doxid-structsnd__mixer__selem__regopt_1a61bee8b451175ef0aa5ae5a40c6a8c9b:
+.. _cid-snd_mixer_selem_regopt::playback_pcm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_t<doxid-group___p_c_m_1ga919e634deecd855b6e2e15174e70d3ea>`* playback_pcm
+
+v1: playback PCM connected to mixer device (NULL == none)
+
+.. _doxid-structsnd__mixer__selem__regopt_1a86b26f666adf984c55fd4fb488a4ab37:
+.. _cid-snd_mixer_selem_regopt::capture_pcm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_t<doxid-group___p_c_m_1ga919e634deecd855b6e2e15174e70d3ea>`* capture_pcm
+
+v1: capture PCM connected to mixer device (NULL == none)
+

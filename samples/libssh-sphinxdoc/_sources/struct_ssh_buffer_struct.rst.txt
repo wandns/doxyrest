@@ -1,0 +1,39 @@
+.. index:: pair: struct; ssh_buffer_struct
+.. _doxid-structssh__buffer__struct:
+.. _cid-ssh_buffer_struct:
+
+struct ssh_buffer_struct
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/buffer.h>
+
+
+
+
+.. _doxid-structssh__buffer__struct_1a1c84d87b720f87f188a51f2101e14ce4:
+.. _cid-ssh_buffer_struct::allocated:
+.. _doxid-structssh__buffer__struct_1a9c63a74b2719a112c2329b9ab40d01b4:
+.. _cid-ssh_buffer_struct::data:
+.. _doxid-structssh__buffer__struct_1a6550781dd29ec3585a221256338552fa:
+.. _cid-ssh_buffer_struct::pos:
+.. _doxid-structssh__buffer__struct_1a52ef06033c9cf184af75d7e1e8d7933a:
+.. _cid-ssh_buffer_struct::secure:
+.. _doxid-structssh__buffer__struct_1a87773cf851b3b3f58f43bbe5a8096b7b:
+.. _cid-ssh_buffer_struct::used:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t allocated
+	char* data
+	uint32_t pos
+	int secure
+	uint32_t used
+

@@ -1,0 +1,73 @@
+.. index:: pair: enum; snd_pcm_class_t
+.. _doxid-group___p_c_m_1gad0e95dc8a590d8f9915fec237d7a28a5:
+.. _cid-snd_pcm_class_t:
+
+enum snd_pcm_class_t
+====================
+
+
+
+Overview
+~~~~~~~~
+
+PCM class :ref:`More...<details-doxid-group___p_c_m_1gad0e95dc8a590d8f9915fec237d7a28a5>`
+
+.. _doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a59360955ed5c52870d37476cc800f8de:
+.. _cid-snd_pcm_class_t::snd_pcm_class_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_PCM_CLASS_GENERIC<doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a3899ef7b0fa4a9717abe5587e9110514>` = 0
+	:ref:`SND_PCM_CLASS_MULTI<doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a223f6ffeb72c72144f4f680998fbedb3>` 
+	:ref:`SND_PCM_CLASS_MODEM<doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a79cdb236d774a3a5e17cf4929a16936b>` 
+	:ref:`SND_PCM_CLASS_DIGITIZER<doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a69f4d2c8aa3195c6fc140b6d4c2f25ea>` 
+	SND_PCM_CLASS_LAST = SND_PCM_CLASS_DIGITIZER
+
+.. _details-doxid-group___p_c_m_1gad0e95dc8a590d8f9915fec237d7a28a5:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+PCM class
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a3899ef7b0fa4a9717abe5587e9110514:
+.. _cid-snd_pcm_class_t::snd_pcm_class_generic:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_CLASS_GENERIC
+
+standard device
+
+.. _doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a223f6ffeb72c72144f4f680998fbedb3:
+.. _cid-snd_pcm_class_t::snd_pcm_class_multi:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_CLASS_MULTI
+
+multichannel device
+
+.. _doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a79cdb236d774a3a5e17cf4929a16936b:
+.. _cid-snd_pcm_class_t::snd_pcm_class_modem:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_CLASS_MODEM
+
+software modem device
+
+.. _doxid-group___p_c_m_1ggad0e95dc8a590d8f9915fec237d7a28a5a69f4d2c8aa3195c6fc140b6d4c2f25ea:
+.. _cid-snd_pcm_class_t::snd_pcm_class_digitizer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_CLASS_DIGITIZER
+
+digitizer device
+

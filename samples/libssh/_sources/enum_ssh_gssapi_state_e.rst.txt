@@ -1,0 +1,26 @@
+.. index:: pair: enum; ssh_gssapi_state_e
+.. _doxid-gssapi_8c_1aef091f60e6c6e54f4c2d357d8bf001f3:
+.. _cid-ssh_gssapi_state_e:
+
+enum ssh_gssapi_state_e
+=======================
+
+
+
+current state of an GSSAPI authentication
+
+.. _doxid-gssapi_8c_1aef091f60e6c6e54f4c2d357d8bf001f3a083925dc39902da224abab40be1d1de3:
+.. _cid-ssh_gssapi_state_e::ssh_gssapi_state_none:
+.. _doxid-gssapi_8c_1aef091f60e6c6e54f4c2d357d8bf001f3aea737528f8af36b2ef2e21d17370e74b:
+.. _cid-ssh_gssapi_state_e::ssh_gssapi_state_rcv_token:
+.. _doxid-gssapi_8c_1aef091f60e6c6e54f4c2d357d8bf001f3a2816686dc6608977e3dce7ca4a3da3b5:
+.. _cid-ssh_gssapi_state_e::ssh_gssapi_state_rcv_mic:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_GSSAPI_STATE_NONE 
+	SSH_GSSAPI_STATE_RCV_TOKEN 
+	SSH_GSSAPI_STATE_RCV_MIC 
+

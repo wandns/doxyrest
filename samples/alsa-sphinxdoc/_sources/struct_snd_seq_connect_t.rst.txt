@@ -1,0 +1,57 @@
+.. index:: pair: struct; snd_seq_connect_t
+.. _doxid-structsnd__seq__connect__t:
+.. _cid-snd_seq_connect_t:
+
+struct snd_seq_connect_t
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <seq_event.h>
+
+
+Overview
+~~~~~~~~
+
+Connection (subscription) between ports :ref:`More...<details-doxid-structsnd__seq__connect__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`snd_seq_addr_t<doxid-structsnd__seq__addr__t>` :ref:`sender<doxid-structsnd__seq__connect__t_1ae2cf2bca3746f3209cb977d7e489f9cb>`
+	:ref:`snd_seq_addr_t<doxid-structsnd__seq__addr__t>` :ref:`dest<doxid-structsnd__seq__connect__t_1a330ff64e8768594e1798db90db37d9f2>`
+
+.. _details-doxid-structsnd__seq__connect__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Connection (subscription) between ports
+
+Fields
+------
+
+.. _doxid-structsnd__seq__connect__t_1ae2cf2bca3746f3209cb977d7e489f9cb:
+.. _cid-snd_seq_connect_t::sender:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_seq_addr_t<doxid-structsnd__seq__addr__t>` sender
+
+sender address
+
+.. _doxid-structsnd__seq__connect__t_1a330ff64e8768594e1798db90db37d9f2:
+.. _cid-snd_seq_connect_t::dest:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_seq_addr_t<doxid-structsnd__seq__addr__t>` dest
+
+destination address
+

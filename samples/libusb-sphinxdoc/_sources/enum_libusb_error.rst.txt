@@ -1,0 +1,172 @@
+.. index:: pair: enum; libusb_error
+.. _doxid-group__libusb__misc_1gab2323aa0f04bc22038e7e1740b2f29ef:
+.. _cid-libusb_error:
+
+enum libusb_error
+=================
+
+
+
+Overview
+~~~~~~~~
+
+Error codes. :ref:`More...<details-doxid-group__libusb__misc_1gab2323aa0f04bc22038e7e1740b2f29ef>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`LIBUSB_SUCCESS<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa576d8d63f6e24b2e57cb2ca63b304f15>` = 0
+	:ref:`LIBUSB_ERROR_IO<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa790feab8b45d8c323038f4d7d15eceec>` = -1
+	:ref:`LIBUSB_ERROR_INVALID_PARAM<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa680e4bf39b66a36be3182be3ebf58062>` = -2
+	:ref:`LIBUSB_ERROR_ACCESS<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa131f3c2f6f2bb40bc6fb60ccb6f3152f>` = -3
+	:ref:`LIBUSB_ERROR_NO_DEVICE<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efaf8d98f464314a8e202507a0e5c67336f>` = -4
+	:ref:`LIBUSB_ERROR_NOT_FOUND<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa28214194dc4399e51777408b2c27f03f>` = -5
+	:ref:`LIBUSB_ERROR_BUSY<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa34ede1140a8a16022f730ac80875ed3b>` = -6
+	:ref:`LIBUSB_ERROR_TIMEOUT<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa9b000ac2e6dc4ac864c59579dd08c8bd>` = -7
+	:ref:`LIBUSB_ERROR_OVERFLOW<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efaf00ae4b8772fda64263ae6e4d6569af0>` = -8
+	:ref:`LIBUSB_ERROR_PIPE<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa1406e98370900156484f5fe609270837>` = -9
+	:ref:`LIBUSB_ERROR_INTERRUPTED<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa39c9284a18fb3277696d84d65f50dbea>` = -10
+	:ref:`LIBUSB_ERROR_NO_MEM<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efaff885c8ef4522f22f6673059c7b9edec>` = -11
+	:ref:`LIBUSB_ERROR_NOT_SUPPORTED<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa01b43115484f435627be755d5dc9509b>` = -12
+	:ref:`LIBUSB_ERROR_OTHER<doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa9705eb232d1a5e249926d4e76599672e>` = -99
+
+.. _details-doxid-group__libusb__misc_1gab2323aa0f04bc22038e7e1740b2f29ef:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Error codes.
+
+Most libusb functions return 0 on success or one of these codes on failure. You can call :ref:`libusb_error_name() <doxid-group__libusb__misc_1gacf319b823a1a1a25cc934d80db2f28c7>` to retrieve a string representation of an error code or :ref:`libusb_strerror() <doxid-group__libusb__misc_1gab977153d03d867a8b228a5921edaf457>` to get an end-user suitable description of an error code.
+
+Enum Values
+-----------
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa576d8d63f6e24b2e57cb2ca63b304f15:
+.. _cid-libusb_error::libusb_success:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_SUCCESS
+
+Success (no error)
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa790feab8b45d8c323038f4d7d15eceec:
+.. _cid-libusb_error::libusb_error_io:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_IO
+
+Input/output error.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa680e4bf39b66a36be3182be3ebf58062:
+.. _cid-libusb_error::libusb_error_invalid_param:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_INVALID_PARAM
+
+Invalid parameter.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa131f3c2f6f2bb40bc6fb60ccb6f3152f:
+.. _cid-libusb_error::libusb_error_access:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_ACCESS
+
+Access denied (insufficient permissions)
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efaf8d98f464314a8e202507a0e5c67336f:
+.. _cid-libusb_error::libusb_error_no_device:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_NO_DEVICE
+
+No such device (it may have been disconnected)
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa28214194dc4399e51777408b2c27f03f:
+.. _cid-libusb_error::libusb_error_not_found:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_NOT_FOUND
+
+Entity not found.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa34ede1140a8a16022f730ac80875ed3b:
+.. _cid-libusb_error::libusb_error_busy:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_BUSY
+
+Resource busy.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa9b000ac2e6dc4ac864c59579dd08c8bd:
+.. _cid-libusb_error::libusb_error_timeout:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_TIMEOUT
+
+Operation timed out.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efaf00ae4b8772fda64263ae6e4d6569af0:
+.. _cid-libusb_error::libusb_error_overflow:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_OVERFLOW
+
+Overflow.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa1406e98370900156484f5fe609270837:
+.. _cid-libusb_error::libusb_error_pipe:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_PIPE
+
+Pipe error.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa39c9284a18fb3277696d84d65f50dbea:
+.. _cid-libusb_error::libusb_error_interrupted:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_INTERRUPTED
+
+System call interrupted (perhaps due to signal)
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efaff885c8ef4522f22f6673059c7b9edec:
+.. _cid-libusb_error::libusb_error_no_mem:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_NO_MEM
+
+Insufficient memory.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa01b43115484f435627be755d5dc9509b:
+.. _cid-libusb_error::libusb_error_not_supported:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_NOT_SUPPORTED
+
+Operation not supported or unimplemented on this platform.
+
+.. _doxid-group__libusb__misc_1ggab2323aa0f04bc22038e7e1740b2f29efa9705eb232d1a5e249926d4e76599672e:
+.. _cid-libusb_error::libusb_error_other:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_ERROR_OTHER
+
+Other error.
+

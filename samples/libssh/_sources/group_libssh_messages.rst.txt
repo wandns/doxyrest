@@ -1,0 +1,270 @@
+.. index:: pair: group; The SSH message functions
+.. _doxid-group__libssh__messages:
+.. _cid-libssh_messages:
+
+The SSH message functions
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+This file contains the message parsing utilities for client and server programs using libssh. :ref:`More...<details-doxid-group__libssh__messages>`
+
+.. _doxid-group__libssh__messages_1ga4106ecfcf06e97ee249403e2e735ab1b:
+.. _cid-ssh_execute_client_request:
+.. _doxid-group__libssh__messages_1ga898cca8358efe581fe2432a14007e56c:
+.. _cid-ssh_execute_message_callback:
+.. _doxid-group__libssh__messages_1ga7bf415bf27473bca7e3422847c43deeb:
+.. _cid-ssh_execute_server_callbacks:
+.. _doxid-group__libssh__messages_1ga16e8540da0d8e8b1bbdec0ad28b7f2df:
+.. _cid-ssh_execute_server_request:
+.. _doxid-group__libssh__messages_1gaf9afe350861a5085901b37c5ff9b7702:
+.. _cid-ssh_message_channel_request_open_reply_accept:
+.. _doxid-group__libssh__messages_1gabf37c510c2ba4f05bfc201b652af896c:
+.. _cid-ssh_message_channel_request_open_reply_accept_channel:
+.. _doxid-group__libssh__messages_1ga4e277170f19e464918281cfe177df7e0:
+.. _cid-ssh_message_channel_request_reply_success:
+.. _doxid-group__libssh__messages_1gad4f7f7dc02ac8dd0f07492b104a0dd7e:
+.. _cid-ssh_message_handle_channel_request:
+.. _doxid-group__libssh__messages_1ga6b8f6b70c116b2b2f7f772727b374535:
+.. _cid-ssh_message_new:
+.. _doxid-group__libssh__messages_1gad2854ea69cec390707b167fa66864152:
+.. _cid-ssh_message_pop_head:
+.. _doxid-group__libssh__messages_1gaa8d676f3cbaf3898e3b496362ea821d3:
+.. _cid-ssh_message_queue:
+.. _doxid-group__libssh__messages_1ga0cfad25d199cf155b3f6f90cd421f855:
+.. _cid-ssh_message_termination:
+.. _doxid-group__libssh__messages_1ga909fd59bb78211c8965a78daa6186c10:
+.. _cid-ssh_msg_userauth_build_digest:
+.. _doxid-group__libssh__messages_1gaacddbbafc3b803d243327d3a88c4ba3e:
+.. _cid-ssh_packet_callback-19:
+.. _doxid-group__libssh__messages_1ga0462a2eaacb68eb1ca6150609c2a16be:
+.. _cid-ssh_packet_callback-20:
+.. _doxid-group__libssh__messages_1gae753f55b34e97870675edf58a368f0b2:
+.. _cid-ssh_packet_callback-21:
+.. _doxid-group__libssh__messages_1ga2b5ba8f6d536906f29dcfa26a16e8855:
+.. _cid-ssh_packet_callback-22:
+.. _doxid-group__libssh__messages_1ga14ebc1688a779a2bf0b1c1699ab6204e:
+.. _cid-ssh_packet_callback-23:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// global functions
+
+	void
+	:ref:`ssh_message_free<doxid-group__libssh__messages_1ga9d1b1d2279c6be3539f2b630960759c3>` (ssh_message msg)
+
+	ssh_message
+	:ref:`ssh_message_get<doxid-group__libssh__messages_1ga8e536b6f1c824b7ca43d0e8f954b3bd4>` (ssh_session session)
+
+	int
+	:ref:`ssh_message_subtype<doxid-group__libssh__messages_1ga7aa19d51c443b779fe454f0be3c666d4>` (ssh_message msg)
+
+	int
+	:ref:`ssh_message_type<doxid-group__libssh__messages_1ga20fc6e536f170b98c7d62ce3675d8cdb>` (ssh_message msg)
+
+	static
+	int
+	ssh_execute_client_request (
+	    ssh_session session,
+	    ssh_message msg
+	    )
+
+	static
+	int
+	ssh_execute_message_callback (
+	    ssh_session session,
+	    ssh_message msg
+	    )
+
+	static
+	int
+	ssh_execute_server_callbacks (
+	    ssh_session session,
+	    ssh_message msg
+	    )
+
+	static
+	int
+	ssh_execute_server_request (
+	    ssh_session session,
+	    ssh_message msg
+	    )
+
+	ssh_channel
+	ssh_message_channel_request_open_reply_accept (ssh_message msg)
+
+	int
+	ssh_message_channel_request_open_reply_accept_channel (
+	    ssh_message msg,
+	    ssh_channel chan
+	    )
+
+	int
+	ssh_message_channel_request_reply_success (ssh_message msg)
+
+	int
+	ssh_message_handle_channel_request (
+	    ssh_session session,
+	    ssh_channel channel,
+	    ssh_buffer packet,
+	    const char* request,
+	    uint8_t want_reply
+	    )
+
+	static
+	ssh_message
+	ssh_message_new (ssh_session session)
+
+	ssh_message
+	ssh_message_pop_head (ssh_session session)
+
+	void
+	ssh_message_queue (
+	    ssh_session session,
+	    ssh_message message
+	    )
+
+	static
+	int
+	ssh_message_termination (void* s)
+
+	static
+	ssh_buffer
+	ssh_msg_userauth_build_digest (
+	    ssh_session session,
+	    ssh_message msg,
+	    const char* service
+	    )
+
+	SSH_PACKET_CALLBACK (ssh_packet_service_request)
+	SSH_PACKET_CALLBACK (ssh_packet_userauth_request)
+	SSH_PACKET_CALLBACK (ssh_packet_userauth_info_response)
+	SSH_PACKET_CALLBACK (ssh_packet_channel_open)
+	SSH_PACKET_CALLBACK (ssh_packet_global_request)
+
+.. _details-doxid-group__libssh__messages:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+This file contains the message parsing utilities for client and server programs using libssh.
+
+On the server the the main loop of the program will call ssh_message_get(session) to get messages as they come. They are not 1-1 with the protocol messages. Then, the user will know what kind of a message it is and use the appropriate functions to handle it (or use the default handlers if you don't know what to do).
+
+Global Functions
+----------------
+
+.. _doxid-group__libssh__messages_1ga9d1b1d2279c6be3539f2b630960759c3:
+.. _cid-ssh_message_free:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void
+	ssh_message_free (ssh_message msg)
+
+Free a SSH message.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - msg
+
+        - The message to release the memory.
+
+.. _doxid-group__libssh__messages_1ga8e536b6f1c824b7ca43d0e8f954b3bd4:
+.. _cid-ssh_message_get:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	ssh_message
+	ssh_message_get (ssh_session session)
+
+Retrieve a SSH message from a SSH session.
+
+This function blocks until a message has been received. Betterset up a callback if this behavior is unwanted.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - session
+
+        - The SSH session to get the message.
+
+
+
+.. rubric:: Returns:
+
+The SSH message received, NULL in case of error, or timeout elapsed.
+
+.. _doxid-group__libssh__messages_1ga7aa19d51c443b779fe454f0be3c666d4:
+.. _cid-ssh_message_subtype:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_message_subtype (ssh_message msg)
+
+Get the subtype of the message.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - msg
+
+        - The message to get the subtype from.
+
+
+
+.. rubric:: Returns:
+
+The message type or -1 on error.
+
+.. _doxid-group__libssh__messages_1ga20fc6e536f170b98c7d62ce3675d8cdb:
+.. _cid-ssh_message_type:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int
+	ssh_message_type (ssh_message msg)
+
+Get the type of the message.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - msg
+
+        - The message to get the type from.
+
+
+
+.. rubric:: Returns:
+
+The message type or -1 on error.
+

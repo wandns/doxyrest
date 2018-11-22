@@ -1,0 +1,97 @@
+.. index:: pair: struct; snd_tplg_stream_template
+.. _doxid-structsnd__tplg__stream__template:
+.. _cid-snd_tplg_stream_template:
+
+struct snd_tplg_stream_template
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Stream configurations. :ref:`More...<details-doxid-structsnd__tplg__stream__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const char* :ref:`name<doxid-structsnd__tplg__stream__template_1a8c683c2bfc0f6f81a13e9b17c8032905>`
+	int :ref:`format<doxid-structsnd__tplg__stream__template_1aa020a51c90d9c940fc370d6cfe8cb222>`
+	int :ref:`rate<doxid-structsnd__tplg__stream__template_1acae6d898504ccf7413491988f2acb5ab>`
+	int :ref:`period_bytes<doxid-structsnd__tplg__stream__template_1a0ab0be7080dd51570018c95e774107f7>`
+	int :ref:`buffer_bytes<doxid-structsnd__tplg__stream__template_1acc03d35ac9685afcdf44a4d1332d5284>`
+	int :ref:`channels<doxid-structsnd__tplg__stream__template_1ac61dcb6e9419a2eb36b3c634ff2e1dc9>`
+
+.. _details-doxid-structsnd__tplg__stream__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Stream configurations.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__stream__template_1a8c683c2bfc0f6f81a13e9b17c8032905:
+.. _cid-snd_tplg_stream_template::name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* name
+
+name of the stream config
+
+.. _doxid-structsnd__tplg__stream__template_1aa020a51c90d9c940fc370d6cfe8cb222:
+.. _cid-snd_tplg_stream_template::format:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int format
+
+SNDRV_PCM_FMTBIT_\*
+
+.. _doxid-structsnd__tplg__stream__template_1acae6d898504ccf7413491988f2acb5ab:
+.. _cid-snd_tplg_stream_template::rate:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int rate
+
+SNDRV_PCM_RATE_\*
+
+.. _doxid-structsnd__tplg__stream__template_1a0ab0be7080dd51570018c95e774107f7:
+.. _cid-snd_tplg_stream_template::period_bytes:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int period_bytes
+
+size of period in bytes
+
+.. _doxid-structsnd__tplg__stream__template_1acc03d35ac9685afcdf44a4d1332d5284:
+.. _cid-snd_tplg_stream_template::buffer_bytes:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int buffer_bytes
+
+size of buffer in bytes.
+
+.. _doxid-structsnd__tplg__stream__template_1ac61dcb6e9419a2eb36b3c634ff2e1dc9:
+.. _cid-snd_tplg_stream_template::channels:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int channels
+
+number of channels
+

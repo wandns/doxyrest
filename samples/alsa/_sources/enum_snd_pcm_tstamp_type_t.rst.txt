@@ -1,0 +1,63 @@
+.. index:: pair: enum; snd_pcm_tstamp_type_t
+.. _doxid-group___p_c_m_1ga6e7869809e23ed1a3595e94fbd9a275c:
+.. _cid-snd_pcm_tstamp_type_t:
+
+enum snd_pcm_tstamp_type_t
+==========================
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. _doxid-group___p_c_m_1gga6e7869809e23ed1a3595e94fbd9a275ca339d5d7a1338cc436f4d0cb55ee366bc:
+.. _cid-snd_pcm_tstamp_type_t::snd_pcm_tstamp_type_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_PCM_TSTAMP_TYPE_GETTIMEOFDAY<doxid-group___p_c_m_1gga6e7869809e23ed1a3595e94fbd9a275ca363906e727cdee56da82cab964ac3ad9>` = 0
+	:ref:`SND_PCM_TSTAMP_TYPE_MONOTONIC<doxid-group___p_c_m_1gga6e7869809e23ed1a3595e94fbd9a275ca649eaa23a8ba59ef31b7cb1582a9d2b2>` 
+	:ref:`SND_PCM_TSTAMP_TYPE_MONOTONIC_RAW<doxid-group___p_c_m_1gga6e7869809e23ed1a3595e94fbd9a275caaf1a88d034848bf2154be94ace1f8cef>` 
+	SND_PCM_TSTAMP_TYPE_LAST = SND_PCM_TSTAMP_TYPE_MONOTONIC_RAW
+
+.. _details-doxid-group___p_c_m_1ga6e7869809e23ed1a3595e94fbd9a275c:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m_1gga6e7869809e23ed1a3595e94fbd9a275ca363906e727cdee56da82cab964ac3ad9:
+.. _cid-snd_pcm_tstamp_type_t::snd_pcm_tstamp_type_gettimeofday:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_TSTAMP_TYPE_GETTIMEOFDAY
+
+gettimeofday equivalent
+
+.. _doxid-group___p_c_m_1gga6e7869809e23ed1a3595e94fbd9a275ca649eaa23a8ba59ef31b7cb1582a9d2b2:
+.. _cid-snd_pcm_tstamp_type_t::snd_pcm_tstamp_type_monotonic:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_TSTAMP_TYPE_MONOTONIC
+
+posix_clock_monotonic equivalent
+
+.. _doxid-group___p_c_m_1gga6e7869809e23ed1a3595e94fbd9a275caaf1a88d034848bf2154be94ace1f8cef:
+.. _cid-snd_pcm_tstamp_type_t::snd_pcm_tstamp_type_monotonic_raw:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_TSTAMP_TYPE_MONOTONIC_RAW
+
+monotonic_raw (no NTP)
+

@@ -1,0 +1,185 @@
+.. index:: pair: struct; libusb_device_descriptor
+.. _doxid-structlibusb__device__descriptor:
+.. _cid-libusb_device_descriptor:
+
+struct libusb_device_descriptor
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <libusb.h>
+
+
+Overview
+~~~~~~~~
+
+A structure representing the standard USB device descriptor. :ref:`More...<details-doxid-structlibusb__device__descriptor>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint8_t :ref:`bLength<doxid-structlibusb__device__descriptor_1affda0be3fe1c37092ddc7cb120428f30>`
+	uint8_t :ref:`bDescriptorType<doxid-structlibusb__device__descriptor_1a63c4b109725ce829fc81c5c9cad8c87a>`
+	uint16_t :ref:`bcdUSB<doxid-structlibusb__device__descriptor_1af0682f293291db942b5d253092d472e4>`
+	uint8_t :ref:`bDeviceClass<doxid-structlibusb__device__descriptor_1ab86c8f43e75d4d54fccbc199cfa9703b>`
+	uint8_t :ref:`bDeviceSubClass<doxid-structlibusb__device__descriptor_1a9c3a91102d3d53d9414d0dda0191c5ab>`
+	uint8_t :ref:`bDeviceProtocol<doxid-structlibusb__device__descriptor_1a480a0b5345a2e59987e20fa7247c3f0e>`
+	uint8_t :ref:`bMaxPacketSize0<doxid-structlibusb__device__descriptor_1a3b60170f077c9b26fc9f86e0cdb1d28a>`
+	uint16_t :ref:`idVendor<doxid-structlibusb__device__descriptor_1ad26c5e2fbd16ce3ee143f4bac5d49bda>`
+	uint16_t :ref:`idProduct<doxid-structlibusb__device__descriptor_1a568d479fb0b76ea572a739c961fd3047>`
+	uint16_t :ref:`bcdDevice<doxid-structlibusb__device__descriptor_1afb5e0fc6f0cfe51de900d35506fb9317>`
+	uint8_t :ref:`iManufacturer<doxid-structlibusb__device__descriptor_1ab9e9a064265f2833d1d3f216f15a487a>`
+	uint8_t :ref:`iProduct<doxid-structlibusb__device__descriptor_1a20082f9e03f1cbffef3d9472a8dcfd64>`
+	uint8_t :ref:`iSerialNumber<doxid-structlibusb__device__descriptor_1a327e8ede51268b38955ef035cf6de875>`
+	uint8_t :ref:`bNumConfigurations<doxid-structlibusb__device__descriptor_1a0f3f80cd931628a0531a815b59d067dd>`
+
+.. _details-doxid-structlibusb__device__descriptor:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+A structure representing the standard USB device descriptor.
+
+This descriptor is documented in section 9.6.1 of the USB 3.0 specification. All multiple-byte fields are represented in host-endian format.
+
+Fields
+------
+
+.. _doxid-structlibusb__device__descriptor_1affda0be3fe1c37092ddc7cb120428f30:
+.. _cid-libusb_device_descriptor::blength:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bLength
+
+Size of this descriptor (in bytes)
+
+.. _doxid-structlibusb__device__descriptor_1a63c4b109725ce829fc81c5c9cad8c87a:
+.. _cid-libusb_device_descriptor::bdescriptortype:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bDescriptorType
+
+Descriptor type.
+
+Will have value :ref:`libusb_descriptor_type::LIBUSB_DT_DEVICE <doxid-group__libusb__desc_1gga0a2e8a25dfdebf29fdd4764dcdbc1a9ca486e222e9f3053502ce4954a5bd89ba2>` LIBUSB_DT_DEVICE in this context.
+
+.. _doxid-structlibusb__device__descriptor_1af0682f293291db942b5d253092d472e4:
+.. _cid-libusb_device_descriptor::bcdusb:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint16_t bcdUSB
+
+USB specification release number in binary-coded decimal.
+
+A value of 0x0200 indicates USB 2.0, 0x0110 indicates USB 1.1, etc.
+
+.. _doxid-structlibusb__device__descriptor_1ab86c8f43e75d4d54fccbc199cfa9703b:
+.. _cid-libusb_device_descriptor::bdeviceclass:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bDeviceClass
+
+USB-IF class code for the device.
+
+See :ref:`libusb_class_code <doxid-group__libusb__desc_1gac529888effbefef8af4f9d17ebc903a1>` .
+
+.. _doxid-structlibusb__device__descriptor_1a9c3a91102d3d53d9414d0dda0191c5ab:
+.. _cid-libusb_device_descriptor::bdevicesubclass:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bDeviceSubClass
+
+USB-IF subclass code for the device, qualified by the bDeviceClass value.
+
+.. _doxid-structlibusb__device__descriptor_1a480a0b5345a2e59987e20fa7247c3f0e:
+.. _cid-libusb_device_descriptor::bdeviceprotocol:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bDeviceProtocol
+
+USB-IF protocol code for the device, qualified by the bDeviceClass and bDeviceSubClass values.
+
+.. _doxid-structlibusb__device__descriptor_1a3b60170f077c9b26fc9f86e0cdb1d28a:
+.. _cid-libusb_device_descriptor::bmaxpacketsize0:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bMaxPacketSize0
+
+Maximum packet size for endpoint 0.
+
+.. _doxid-structlibusb__device__descriptor_1ad26c5e2fbd16ce3ee143f4bac5d49bda:
+.. _cid-libusb_device_descriptor::idvendor:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint16_t idVendor
+
+USB-IF vendor ID.
+
+.. _doxid-structlibusb__device__descriptor_1a568d479fb0b76ea572a739c961fd3047:
+.. _cid-libusb_device_descriptor::idproduct:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint16_t idProduct
+
+USB-IF product ID.
+
+.. _doxid-structlibusb__device__descriptor_1afb5e0fc6f0cfe51de900d35506fb9317:
+.. _cid-libusb_device_descriptor::bcddevice:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint16_t bcdDevice
+
+Device release number in binary-coded decimal.
+
+.. _doxid-structlibusb__device__descriptor_1ab9e9a064265f2833d1d3f216f15a487a:
+.. _cid-libusb_device_descriptor::imanufacturer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t iManufacturer
+
+Index of string descriptor describing manufacturer.
+
+.. _doxid-structlibusb__device__descriptor_1a20082f9e03f1cbffef3d9472a8dcfd64:
+.. _cid-libusb_device_descriptor::iproduct:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t iProduct
+
+Index of string descriptor describing product.
+
+.. _doxid-structlibusb__device__descriptor_1a327e8ede51268b38955ef035cf6de875:
+.. _cid-libusb_device_descriptor::iserialnumber:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t iSerialNumber
+
+Index of string descriptor containing device serial number.
+
+.. _doxid-structlibusb__device__descriptor_1a0f3f80cd931628a0531a815b59d067dd:
+.. _cid-libusb_device_descriptor::bnumconfigurations:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	uint8_t bNumConfigurations
+
+Number of possible configurations.
+

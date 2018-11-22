@@ -1,0 +1,77 @@
+.. index:: pair: struct; apr_version_t
+.. _doxid-structapr__version__t:
+.. _cid-apr_version_t:
+
+struct apr_version_t
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_version.h>
+
+
+Overview
+~~~~~~~~
+
+The numeric version information is broken out into fields within this structure. :ref:`More...<details-doxid-structapr__version__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`major<doxid-structapr__version__t_1a0ae64fee85387834ab76d9f9288373ab>`
+	int :ref:`minor<doxid-structapr__version__t_1aab0a1e8362517416389631bceeeedbad>`
+	int :ref:`patch<doxid-structapr__version__t_1a98a629a88e776642d6e527d7535e0791>`
+	int :ref:`is_dev<doxid-structapr__version__t_1aadc878af1010faa53e365e1142c81ced>`
+
+.. _details-doxid-structapr__version__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+The numeric version information is broken out into fields within this structure.
+
+Fields
+------
+
+.. _doxid-structapr__version__t_1a0ae64fee85387834ab76d9f9288373ab:
+.. _cid-apr_version_t::major:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int major
+
+major number
+
+.. _doxid-structapr__version__t_1aab0a1e8362517416389631bceeeedbad:
+.. _cid-apr_version_t::minor:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int minor
+
+minor number
+
+.. _doxid-structapr__version__t_1a98a629a88e776642d6e527d7535e0791:
+.. _cid-apr_version_t::patch:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int patch
+
+patch number
+
+.. _doxid-structapr__version__t_1aadc878af1010faa53e365e1142c81ced:
+.. _cid-apr_version_t::is_dev:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int is_dev
+
+is development (1 or 0)
+

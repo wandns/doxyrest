@@ -1,0 +1,47 @@
+.. index:: pair: enum; ssh_bind_options_e
+.. _doxid-group__libssh__server_1ga4c8b5efd4d5e280d59fb680cb7c5d3b8:
+.. _cid-ssh_bind_options_e:
+
+enum ssh_bind_options_e
+=======================
+
+
+
+
+
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8a8e8c977e8e36dacf2e201cc23676276a:
+.. _cid-ssh_bind_options_e::ssh_bind_options_bindaddr:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8a7aa510c399d2f7760657c643f9057271:
+.. _cid-ssh_bind_options_e::ssh_bind_options_bindport:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8a92818fd916f09f3d7bd49bfd8405db0d:
+.. _cid-ssh_bind_options_e::ssh_bind_options_bindport_str:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8ae77da31d38bc5ed42085f38ff2b83d85:
+.. _cid-ssh_bind_options_e::ssh_bind_options_hostkey:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8a774bda12cf0f9116d270c3b2ff8046d6:
+.. _cid-ssh_bind_options_e::ssh_bind_options_dsakey:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8a1d0f9a21e9c265587b2e63ef73adfa7b:
+.. _cid-ssh_bind_options_e::ssh_bind_options_rsakey:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8abbf080850a5ca29463515d089fcbf1a5:
+.. _cid-ssh_bind_options_e::ssh_bind_options_banner:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8ac3c29bccf06ec4de2d6c529761da6f85:
+.. _cid-ssh_bind_options_e::ssh_bind_options_log_verbosity:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8afe55cd745cf47eff7da6e1d5188946b7:
+.. _cid-ssh_bind_options_e::ssh_bind_options_log_verbosity_str:
+.. _doxid-group__libssh__server_1gga4c8b5efd4d5e280d59fb680cb7c5d3b8a3f65d490316ddd6e27c668ee30f99093:
+.. _cid-ssh_bind_options_e::ssh_bind_options_ecdsakey:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_BIND_OPTIONS_BINDADDR 
+	SSH_BIND_OPTIONS_BINDPORT 
+	SSH_BIND_OPTIONS_BINDPORT_STR 
+	SSH_BIND_OPTIONS_HOSTKEY 
+	SSH_BIND_OPTIONS_DSAKEY 
+	SSH_BIND_OPTIONS_RSAKEY 
+	SSH_BIND_OPTIONS_BANNER 
+	SSH_BIND_OPTIONS_LOG_VERBOSITY 
+	SSH_BIND_OPTIONS_LOG_VERBOSITY_STR 
+	SSH_BIND_OPTIONS_ECDSAKEY 
+

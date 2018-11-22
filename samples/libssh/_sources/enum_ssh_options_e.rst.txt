@@ -1,0 +1,110 @@
+.. index:: pair: enum; ssh_options_e
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46c:
+.. _cid-ssh_options_e:
+
+enum ssh_options_e
+==================
+
+
+
+
+
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca6560e124c042153de507732d489e5564:
+.. _cid-ssh_options_e::ssh_options_host:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46cadbd41b9859a59935c597cb4ffc01d224:
+.. _cid-ssh_options_e::ssh_options_port:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca43f5dd7726729b4b4ef70ac2cf729a90:
+.. _cid-ssh_options_e::ssh_options_port_str:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca66d8a74748f5ce744c7475876b7195cd:
+.. _cid-ssh_options_e::ssh_options_fd:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca41a41401297578b6a88df70b50a3cd21:
+.. _cid-ssh_options_e::ssh_options_user:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46cab6f7ef3b251c5f7398ec3de73d881218:
+.. _cid-ssh_options_e::ssh_options_ssh_dir:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46caa5986025cf4a64e8adcda3242989990c:
+.. _cid-ssh_options_e::ssh_options_identity:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca950bb20d17288a1a3748bdd13a5ad594:
+.. _cid-ssh_options_e::ssh_options_add_identity:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46cac047647e175ee39f50f48964df670649:
+.. _cid-ssh_options_e::ssh_options_knownhosts:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca878146ad2e21ee8a79c21bbee58250ad:
+.. _cid-ssh_options_e::ssh_options_timeout:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca7c8a9d18818ed0fdbda806d19a2cc817:
+.. _cid-ssh_options_e::ssh_options_timeout_usec:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca98035bbcf8fe8b8e6fd83dc3b829a8cb:
+.. _cid-ssh_options_e::ssh_options_ssh1:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca1a31b0aa8a89dc2b9101d867dbadd39d:
+.. _cid-ssh_options_e::ssh_options_ssh2:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46caaad9d185338d90669d96cfee24cce677:
+.. _cid-ssh_options_e::ssh_options_log_verbosity:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca35b7834ff7585ccbb28a141c060fa724:
+.. _cid-ssh_options_e::ssh_options_log_verbosity_str:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca68b35bccdc3c62a9806c961af8dbcd1f:
+.. _cid-ssh_options_e::ssh_options_ciphers_c_s:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca41d6ad083136f9109d767deaf4cd9b3b:
+.. _cid-ssh_options_e::ssh_options_ciphers_s_c:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46caa3c00d6dac2d913f6d01ee1b0470ee3b:
+.. _cid-ssh_options_e::ssh_options_compression_c_s:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca6bb18017317c7e01a46770e2c7de0bfd:
+.. _cid-ssh_options_e::ssh_options_compression_s_c:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca32efaa3cf66ae2c42d9f979472086d3b:
+.. _cid-ssh_options_e::ssh_options_proxycommand:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca8dd95282b035febffe4c293bd3cd7017:
+.. _cid-ssh_options_e::ssh_options_bindaddr:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46cac089d4fcafc54cb0a638e8b989a2662f:
+.. _cid-ssh_options_e::ssh_options_stricthostkeycheck:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca7b37206d5e98fc5e8b062a5df36849ed:
+.. _cid-ssh_options_e::ssh_options_compression:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca4a2841805b2228b123fee53d2611b0a1:
+.. _cid-ssh_options_e::ssh_options_compression_level:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46cada1844bdde7490e4a83d7e9074dfc255:
+.. _cid-ssh_options_e::ssh_options_key_exchange:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46cac6f764f9209ce6af66ee7e438b8d46b2:
+.. _cid-ssh_options_e::ssh_options_hostkeys:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca458e06048fa54625f0b2d65a09acc7d6:
+.. _cid-ssh_options_e::ssh_options_gssapi_server_identity:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca548902dd9c92ad1b3511d87c0ebd2a3e:
+.. _cid-ssh_options_e::ssh_options_gssapi_client_identity:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca2fc797856e7694548304f57bb77986ff:
+.. _cid-ssh_options_e::ssh_options_gssapi_delegate_credentials:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca80d3b19e3af46441f8a48bce47913f36:
+.. _cid-ssh_options_e::ssh_options_hmac_c_s:
+.. _doxid-libssh_8h_1af7093adacb08e7ee1e9b16e9c8b0f46ca13afe977507032794e542a0fd0b54b1a:
+.. _cid-ssh_options_e::ssh_options_hmac_s_c:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_OPTIONS_HOST 
+	SSH_OPTIONS_PORT 
+	SSH_OPTIONS_PORT_STR 
+	SSH_OPTIONS_FD 
+	SSH_OPTIONS_USER 
+	SSH_OPTIONS_SSH_DIR 
+	SSH_OPTIONS_IDENTITY 
+	SSH_OPTIONS_ADD_IDENTITY 
+	SSH_OPTIONS_KNOWNHOSTS 
+	SSH_OPTIONS_TIMEOUT 
+	SSH_OPTIONS_TIMEOUT_USEC 
+	SSH_OPTIONS_SSH1 
+	SSH_OPTIONS_SSH2 
+	SSH_OPTIONS_LOG_VERBOSITY 
+	SSH_OPTIONS_LOG_VERBOSITY_STR 
+	SSH_OPTIONS_CIPHERS_C_S 
+	SSH_OPTIONS_CIPHERS_S_C 
+	SSH_OPTIONS_COMPRESSION_C_S 
+	SSH_OPTIONS_COMPRESSION_S_C 
+	SSH_OPTIONS_PROXYCOMMAND 
+	SSH_OPTIONS_BINDADDR 
+	SSH_OPTIONS_STRICTHOSTKEYCHECK 
+	SSH_OPTIONS_COMPRESSION 
+	SSH_OPTIONS_COMPRESSION_LEVEL 
+	SSH_OPTIONS_KEY_EXCHANGE 
+	SSH_OPTIONS_HOSTKEYS 
+	SSH_OPTIONS_GSSAPI_SERVER_IDENTITY 
+	SSH_OPTIONS_GSSAPI_CLIENT_IDENTITY 
+	SSH_OPTIONS_GSSAPI_DELEGATE_CREDENTIALS 
+	SSH_OPTIONS_HMAC_C_S 
+	SSH_OPTIONS_HMAC_S_C 
+

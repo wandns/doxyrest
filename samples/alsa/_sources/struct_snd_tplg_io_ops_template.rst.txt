@@ -1,0 +1,67 @@
+.. index:: pair: struct; snd_tplg_io_ops_template
+.. _doxid-structsnd__tplg__io__ops__template:
+.. _cid-snd_tplg_io_ops_template:
+
+struct snd_tplg_io_ops_template
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for object operations mapping. :ref:`More...<details-doxid-structsnd__tplg__io__ops__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`get<doxid-structsnd__tplg__io__ops__template_1a954cfcdc65427888bdfa54b6ada8fc50>`
+	int :ref:`put<doxid-structsnd__tplg__io__ops__template_1af1f9a46547467dcc560769e35e1c041e>`
+	int :ref:`info<doxid-structsnd__tplg__io__ops__template_1a6c49bcef09fec6edb7526e396ab7be0c>`
+
+.. _details-doxid-structsnd__tplg__io__ops__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for object operations mapping.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__io__ops__template_1a954cfcdc65427888bdfa54b6ada8fc50:
+.. _cid-snd_tplg_io_ops_template::get:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int get
+
+get callback ID
+
+.. _doxid-structsnd__tplg__io__ops__template_1af1f9a46547467dcc560769e35e1c041e:
+.. _cid-snd_tplg_io_ops_template::put:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int put
+
+put callback ID
+
+.. _doxid-structsnd__tplg__io__ops__template_1a6c49bcef09fec6edb7526e396ab7be0c:
+.. _cid-snd_tplg_io_ops_template::info:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int info
+
+info callback ID
+

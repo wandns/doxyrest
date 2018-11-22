@@ -1,0 +1,36 @@
+.. index:: pair: struct; ssh_global_request
+.. _doxid-structssh__global__request:
+.. _cid-ssh_global_request:
+
+struct ssh_global_request
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/messages.h>
+
+
+
+
+.. _doxid-structssh__global__request_1a668bc0814fc7a3035172a4ce3b36c769:
+.. _cid-ssh_global_request::bind_address:
+.. _doxid-structssh__global__request_1a599709a2aca163c961c8d224292a13b5:
+.. _cid-ssh_global_request::bind_port:
+.. _doxid-structssh__global__request_1a8eddd04a65fd218bac1e40488091b7fd:
+.. _cid-ssh_global_request::type:
+.. _doxid-structssh__global__request_1ac649e9fb0003f8161f6ea366c2b320a2:
+.. _cid-ssh_global_request::want_reply:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char* bind_address
+	uint16_t bind_port
+	int type
+	uint8_t want_reply
+

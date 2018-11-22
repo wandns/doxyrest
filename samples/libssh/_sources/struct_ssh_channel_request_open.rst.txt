@@ -1,0 +1,48 @@
+.. index:: pair: struct; ssh_channel_request_open
+.. _doxid-structssh__channel__request__open:
+.. _cid-ssh_channel_request_open:
+
+struct ssh_channel_request_open
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/messages.h>
+
+
+
+
+.. _doxid-structssh__channel__request__open_1a5d418a8cb36e803cb46ecf44d29a85a3:
+.. _cid-ssh_channel_request_open::destination:
+.. _doxid-structssh__channel__request__open_1a855a0ab9192961301638a007eed1a2ba:
+.. _cid-ssh_channel_request_open::destination_port:
+.. _doxid-structssh__channel__request__open_1af98380c43eb905a05c172510a3f26c72:
+.. _cid-ssh_channel_request_open::originator:
+.. _doxid-structssh__channel__request__open_1ad5e4f2672dcdf76b544d7a414af57a73:
+.. _cid-ssh_channel_request_open::originator_port:
+.. _doxid-structssh__channel__request__open_1a047c7d7fff6afddd281f20543e16bf80:
+.. _cid-ssh_channel_request_open::packet_size:
+.. _doxid-structssh__channel__request__open_1a2ac8ee1b20572c9b13d3ccd3007d364d:
+.. _cid-ssh_channel_request_open::sender:
+.. _doxid-structssh__channel__request__open_1ae0c9859c5fb95c7e8b82bf9a6b61c123:
+.. _cid-ssh_channel_request_open::type:
+.. _doxid-structssh__channel__request__open_1aff8f35591f09df7a5b5370d75e535e47:
+.. _cid-ssh_channel_request_open::window:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char* destination
+	uint16_t destination_port
+	char* originator
+	uint16_t originator_port
+	uint32_t packet_size
+	uint32_t sender
+	int type
+	uint32_t window
+

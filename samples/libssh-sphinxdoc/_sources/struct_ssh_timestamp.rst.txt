@@ -1,0 +1,30 @@
+.. index:: pair: struct; ssh_timestamp
+.. _doxid-structssh__timestamp:
+.. _cid-ssh_timestamp:
+
+struct ssh_timestamp
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/misc.h>
+
+
+
+
+.. _doxid-structssh__timestamp_1a6d92f08504f05cb9bb6677b2ead9657c:
+.. _cid-ssh_timestamp::seconds:
+.. _doxid-structssh__timestamp_1a10f353b431cf1f19eed7948d9e0ed85f:
+.. _cid-ssh_timestamp::useconds:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	long seconds
+	long useconds
+

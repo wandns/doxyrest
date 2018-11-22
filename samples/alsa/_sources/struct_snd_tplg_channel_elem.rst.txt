@@ -1,0 +1,73 @@
+.. index:: pair: struct; snd_tplg_channel_elem
+.. _doxid-structsnd__tplg__channel__elem:
+.. _cid-snd_tplg_channel_elem:
+
+struct snd_tplg_channel_elem
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`size<doxid-structsnd__tplg__channel__elem_1a36364828c2bdee77a96cf1819b0aec3c>`
+	int :ref:`reg<doxid-structsnd__tplg__channel__elem_1af374c95d02af421cbc69464f54cec8e5>`
+	int :ref:`shift<doxid-structsnd__tplg__channel__elem_1a6f76c415ba4b2c074da2cf11ac7cd5d0>`
+	int :ref:`id<doxid-structsnd__tplg__channel__elem_1a898d38fbbec2ca83ce3475c314a323a0>`
+
+.. _details-doxid-structsnd__tplg__channel__elem:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__channel__elem_1a36364828c2bdee77a96cf1819b0aec3c:
+.. _cid-snd_tplg_channel_elem::size:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int size
+
+size in bytes of this structure
+
+.. _doxid-structsnd__tplg__channel__elem_1af374c95d02af421cbc69464f54cec8e5:
+.. _cid-snd_tplg_channel_elem::reg:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int reg
+
+channel control register
+
+.. _doxid-structsnd__tplg__channel__elem_1a6f76c415ba4b2c074da2cf11ac7cd5d0:
+.. _cid-snd_tplg_channel_elem::shift:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int shift
+
+channel shift for control bits
+
+.. _doxid-structsnd__tplg__channel__elem_1a898d38fbbec2ca83ce3475c314a323a0:
+.. _cid-snd_tplg_channel_elem::id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int id
+
+ID maps to Left, Right, LFE etc
+

@@ -1,0 +1,41 @@
+.. index:: pair: enum; sftp_longname_field_e
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9d:
+.. _cid-sftp_longname_field_e:
+
+enum sftp_longname_field_e
+==========================
+
+
+
+
+
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9da9cbe1bb8d0103a519d19f7988071c1e4:
+.. _cid-sftp_longname_field_e::sftp_longname_perm:
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9da2d7f7387dd13100e5f903c1649c23bd8:
+.. _cid-sftp_longname_field_e::sftp_longname_fixme:
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9da305f1d4bc5e5fc0c861a0d7d072fdb71:
+.. _cid-sftp_longname_field_e::sftp_longname_owner:
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9da22ea77489ed29596e072bc5684747815:
+.. _cid-sftp_longname_field_e::sftp_longname_group:
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9daa9867f6ae39ee0387a21704728a5a21e:
+.. _cid-sftp_longname_field_e::sftp_longname_size:
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9daf97d078e794819e2603c65a47e4017a0:
+.. _cid-sftp_longname_field_e::sftp_longname_date:
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9da16b955656140d4e2705902a6c706e97f:
+.. _cid-sftp_longname_field_e::sftp_longname_time:
+.. _doxid-sftp_8c_1a21a635086b382293fbf2ec476038bd9dac9fe4e22560896af113b65495608110c:
+.. _cid-sftp_longname_field_e::sftp_longname_name:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SFTP_LONGNAME_PERM = 0
+	SFTP_LONGNAME_FIXME 
+	SFTP_LONGNAME_OWNER 
+	SFTP_LONGNAME_GROUP 
+	SFTP_LONGNAME_SIZE 
+	SFTP_LONGNAME_DATE 
+	SFTP_LONGNAME_TIME 
+	SFTP_LONGNAME_NAME 
+

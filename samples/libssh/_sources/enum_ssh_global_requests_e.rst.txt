@@ -1,0 +1,26 @@
+.. index:: pair: enum; ssh_global_requests_e
+.. _doxid-libssh_8h_1a7b5a4b48ef3802d694bea0a5eae4d7e4:
+.. _cid-ssh_global_requests_e:
+
+enum ssh_global_requests_e
+==========================
+
+
+
+
+
+.. _doxid-libssh_8h_1a7b5a4b48ef3802d694bea0a5eae4d7e4afdf4ecd1b9e9adb7a0fa946d294af193:
+.. _cid-ssh_global_requests_e::ssh_global_request_unknown:
+.. _doxid-libssh_8h_1a7b5a4b48ef3802d694bea0a5eae4d7e4ac06ca985ccb40b3d3d365b36ef4f8142:
+.. _cid-ssh_global_requests_e::ssh_global_request_tcpip_forward:
+.. _doxid-libssh_8h_1a7b5a4b48ef3802d694bea0a5eae4d7e4ad8d19e52f080ab42e3a7982e68d88dba:
+.. _cid-ssh_global_requests_e::ssh_global_request_cancel_tcpip_forward:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_GLOBAL_REQUEST_UNKNOWN =0
+	SSH_GLOBAL_REQUEST_TCPIP_FORWARD 
+	SSH_GLOBAL_REQUEST_CANCEL_TCPIP_FORWARD 
+

@@ -1,0 +1,29 @@
+.. index:: pair: enum; ssh_dh_state_e
+.. _doxid-session_8h_1a52a640f6094e9b3d1a88c7da7d08c802:
+.. _cid-ssh_dh_state_e:
+
+enum ssh_dh_state_e
+===================
+
+
+
+
+
+.. _doxid-session_8h_1a52a640f6094e9b3d1a88c7da7d08c802a90a6f45fd750c65a3cb58157b89150c9:
+.. _cid-ssh_dh_state_e::dh_state_init:
+.. _doxid-session_8h_1a52a640f6094e9b3d1a88c7da7d08c802abc3336ecef076e78410a10365dd3f7df:
+.. _cid-ssh_dh_state_e::dh_state_init_sent:
+.. _doxid-session_8h_1a52a640f6094e9b3d1a88c7da7d08c802acdc6747ed91e2aa051a384618a831897:
+.. _cid-ssh_dh_state_e::dh_state_newkeys_sent:
+.. _doxid-session_8h_1a52a640f6094e9b3d1a88c7da7d08c802a01abdeced4b17007ee1ffdb54f5d70e2:
+.. _cid-ssh_dh_state_e::dh_state_finished:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	DH_STATE_INIT =0
+	DH_STATE_INIT_SENT 
+	DH_STATE_NEWKEYS_SENT 
+	DH_STATE_FINISHED 
+

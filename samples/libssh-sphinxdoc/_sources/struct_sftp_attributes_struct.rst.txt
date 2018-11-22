@@ -1,0 +1,90 @@
+.. index:: pair: struct; sftp_attributes_struct
+.. _doxid-structsftp__attributes__struct:
+.. _cid-sftp_attributes_struct:
+
+struct sftp_attributes_struct
+=============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/sftp.h>
+
+
+
+
+.. _doxid-structsftp__attributes__struct_1a4a811485bcd32da71da4a16963ab3c4b:
+.. _cid-sftp_attributes_struct::acl:
+.. _doxid-structsftp__attributes__struct_1aecf3cff2a20cc50c71ea03c7efb058e0:
+.. _cid-sftp_attributes_struct::atime:
+.. _doxid-structsftp__attributes__struct_1a742250866f8125165a16ad640d80818d:
+.. _cid-sftp_attributes_struct::atime64:
+.. _doxid-structsftp__attributes__struct_1ad741a53beaa74b57ca8d7fd46a7cb6ec:
+.. _cid-sftp_attributes_struct::atime_nseconds:
+.. _doxid-structsftp__attributes__struct_1a460d97dec531f8af7883cf24956249d2:
+.. _cid-sftp_attributes_struct::createtime:
+.. _doxid-structsftp__attributes__struct_1a7acaae5d7423dd1b0affc0d1d89e3232:
+.. _cid-sftp_attributes_struct::createtime_nseconds:
+.. _doxid-structsftp__attributes__struct_1a8a8c02354ac37f232482272b2323a4c3:
+.. _cid-sftp_attributes_struct::extended_count:
+.. _doxid-structsftp__attributes__struct_1a264719f85f0526f3ad8f6adeda86e7a0:
+.. _cid-sftp_attributes_struct::extended_data:
+.. _doxid-structsftp__attributes__struct_1a9bd23d9b435a3653babbf8df8b4efee5:
+.. _cid-sftp_attributes_struct::extended_type:
+.. _doxid-structsftp__attributes__struct_1a6a5010126bd9cb41e6ff5b044ca7c447:
+.. _cid-sftp_attributes_struct::flags:
+.. _doxid-structsftp__attributes__struct_1acb229921bfd6b21e856737cfe7a8ac1b:
+.. _cid-sftp_attributes_struct::gid:
+.. _doxid-structsftp__attributes__struct_1ae21aaef618f589f1901d582a14d8904c:
+.. _cid-sftp_attributes_struct::group:
+.. _doxid-structsftp__attributes__struct_1a80109a85db993ea1ce153f696c280edf:
+.. _cid-sftp_attributes_struct::longname:
+.. _doxid-structsftp__attributes__struct_1ab1ad0bddff77f77cd7a1e385f90cb18b:
+.. _cid-sftp_attributes_struct::mtime:
+.. _doxid-structsftp__attributes__struct_1a6fe6593fb31c294ffe226715bf24178a:
+.. _cid-sftp_attributes_struct::mtime64:
+.. _doxid-structsftp__attributes__struct_1adc942f839f9c6d2cb8c594e80e3f1f57:
+.. _cid-sftp_attributes_struct::mtime_nseconds:
+.. _doxid-structsftp__attributes__struct_1a2079da754fdf0e4f17027a76ac6a9926:
+.. _cid-sftp_attributes_struct::name:
+.. _doxid-structsftp__attributes__struct_1a49095844a9dc93fce85dc779dab0d0ce:
+.. _cid-sftp_attributes_struct::owner:
+.. _doxid-structsftp__attributes__struct_1af86f8e2957e7289f1e2baa0d42a53799:
+.. _cid-sftp_attributes_struct::permissions:
+.. _doxid-structsftp__attributes__struct_1a667403007bfa511740ed56928223c1dd:
+.. _cid-sftp_attributes_struct::size:
+.. _doxid-structsftp__attributes__struct_1a63dff3668afb6829f40490d65d20c183:
+.. _cid-sftp_attributes_struct::type:
+.. _doxid-structsftp__attributes__struct_1a7ee1fb615b702aa6be584549027516c7:
+.. _cid-sftp_attributes_struct::uid:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_string acl
+	uint32_t atime
+	uint64_t atime64
+	uint32_t atime_nseconds
+	uint64_t createtime
+	uint32_t createtime_nseconds
+	uint32_t extended_count
+	ssh_string extended_data
+	ssh_string extended_type
+	uint32_t flags
+	uint32_t gid
+	char* group
+	char* longname
+	uint32_t mtime
+	uint64_t mtime64
+	uint32_t mtime_nseconds
+	char* name
+	char* owner
+	uint32_t permissions
+	uint64_t size
+	uint8_t type
+	uint32_t uid
+

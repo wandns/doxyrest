@@ -1,0 +1,123 @@
+.. index:: pair: enum; snd_pcm_state_t
+.. _doxid-group___p_c_m_1ga61ac499cb3701ce536d4d83725908860:
+.. _cid-snd_pcm_state_t:
+
+enum snd_pcm_state_t
+====================
+
+
+
+Overview
+~~~~~~~~
+
+PCM state :ref:`More...<details-doxid-group___p_c_m_1ga61ac499cb3701ce536d4d83725908860>`
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a4ddd9705bc92c46869d2af8b0335688e:
+.. _cid-snd_pcm_state_t::snd_pcm_state_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_PCM_STATE_OPEN<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a56cf8033b50561b57437232e243f3007>` = 0
+	:ref:`SND_PCM_STATE_SETUP<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a58d9a0501aa1b2bd2607e1084c335672>` 
+	:ref:`SND_PCM_STATE_PREPARED<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a3eb4a3b75c7d2adb22f1829f3f738b27>` 
+	:ref:`SND_PCM_STATE_RUNNING<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a86f6fbc796881f19fde0e1957f878147>` 
+	:ref:`SND_PCM_STATE_XRUN<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860ab63b5b90201110cd586b686355fd5d83>` 
+	:ref:`SND_PCM_STATE_DRAINING<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a86f88c2a4c8eedb5c91f3b6cb4879cfe>` 
+	:ref:`SND_PCM_STATE_PAUSED<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a9fa0c5b43e5c924f87b50e22878a8952>` 
+	:ref:`SND_PCM_STATE_SUSPENDED<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a79a05b6b619f88e153d50d9daf2e84bf>` 
+	:ref:`SND_PCM_STATE_DISCONNECTED<doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860aa0cbad634a40383eed6059d1b49c215a>` 
+	SND_PCM_STATE_LAST = SND_PCM_STATE_DISCONNECTED
+
+.. _details-doxid-group___p_c_m_1ga61ac499cb3701ce536d4d83725908860:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+PCM state
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a56cf8033b50561b57437232e243f3007:
+.. _cid-snd_pcm_state_t::snd_pcm_state_open:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_OPEN
+
+Open
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a58d9a0501aa1b2bd2607e1084c335672:
+.. _cid-snd_pcm_state_t::snd_pcm_state_setup:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_SETUP
+
+Setup installed
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a3eb4a3b75c7d2adb22f1829f3f738b27:
+.. _cid-snd_pcm_state_t::snd_pcm_state_prepared:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_PREPARED
+
+Ready to start
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a86f6fbc796881f19fde0e1957f878147:
+.. _cid-snd_pcm_state_t::snd_pcm_state_running:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_RUNNING
+
+Running
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860ab63b5b90201110cd586b686355fd5d83:
+.. _cid-snd_pcm_state_t::snd_pcm_state_xrun:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_XRUN
+
+Stopped: underrun (playback) or overrun (capture) detected
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a86f88c2a4c8eedb5c91f3b6cb4879cfe:
+.. _cid-snd_pcm_state_t::snd_pcm_state_draining:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_DRAINING
+
+Draining: running (playback) or stopped (capture)
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a9fa0c5b43e5c924f87b50e22878a8952:
+.. _cid-snd_pcm_state_t::snd_pcm_state_paused:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_PAUSED
+
+Paused
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860a79a05b6b619f88e153d50d9daf2e84bf:
+.. _cid-snd_pcm_state_t::snd_pcm_state_suspended:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_SUSPENDED
+
+Hardware is suspended
+
+.. _doxid-group___p_c_m_1gga61ac499cb3701ce536d4d83725908860aa0cbad634a40383eed6059d1b49c215a:
+.. _cid-snd_pcm_state_t::snd_pcm_state_disconnected:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_STATE_DISCONNECTED
+
+Hardware is disconnected
+

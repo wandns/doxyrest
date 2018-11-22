@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Member &mdash; Doxyrest Manual 1.1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="EnumValue" href="lua_EnumValue.html" />
+    <link rel="prev" title="Compound" href="lua_Compound.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Doxyrest Manual
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="architecture.html">Architectural Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frames.html">Lua Frames</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="lua_global.html">Lua API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lua_Compound.html">Compound</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lua_EnumValue.html">EnumValue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lua_Param.html">Param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lua_LinkedText.html">LinkedText</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lua_RefText.html">RefText</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lua_Description.html">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lua_DocBlock.html">DocBlock</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmd-line.html">Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="samples.html">Samples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Doxyrest Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="lua_global.html">Lua API Reference</a> &raquo;</li>
+        
+      <li>Member</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="member">
+<span id="cid-member"></span><h1>Member</h1>
+<p>Table of this type describes a Doxygen <em>member</em> such as <em>variable</em>, <em>function</em>, <em>typedef</em> etc.</p>
+<div class="section" id="overview-of-members">
+<h2>Overview of Members</h2>
+<pre class="highlight overview-code-block literal-block">
+<a class="reference internal" href="#cid-member-m-parent"><span class="std std-ref">m_parent</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-memberkind"><span class="std std-ref">m_memberKind</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-protectionkind"><span class="std std-ref">m_protectionKind</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-virtualkind"><span class="std std-ref">m_virtualKind</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-flags"><span class="std std-ref">m_flags</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-id"><span class="std std-ref">m_id</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-name"><span class="std std-ref">m_name</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-path"><span class="std std-ref">m_path</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-modifiers"><span class="std std-ref">m_modifiers</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-type"><span class="std std-ref">m_type</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-returntype"><span class="std std-ref">m_returnType</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-argstring"><span class="std std-ref">m_argString</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-paramarray"><span class="std std-ref">m_paramArray</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-templateparamarray"><span class="std std-ref">m_templateParamArray</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-templatespecparamarray"><span class="std std-ref">m_templateSpecParamArray</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-exceptions"><span class="std std-ref">m_exceptions</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-enumvaluearray"><span class="std std-ref">m_enumValueArray</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-bitfield"><span class="std std-ref">m_bitField</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-initializer"><span class="std std-ref">m_initializer</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-briefdescription"><span class="std std-ref">m_briefDescription</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-detaileddescription"><span class="std std-ref">m_detailedDescription</span></a><span></span>
+<a class="reference internal" href="#cid-member-m-inbodydescription"><span class="std std-ref">m_inBodyDescription</span></a>
+</pre>
+</div>
+<div class="section" id="detailed-description-of-members">
+<h2>Detailed Description of Members</h2>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-parent">
+<span></span><span class="n">m_parent</span>
+</pre>
+<p>Holds a back-pointer to parent <code class="docutils literal notranslate"><span class="pre">Compound</span></code> table.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-memberkind">
+<span></span><span class="n">m_memberKind</span>
+</pre>
+<p>Holds a string describing member type. Must be one of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">&lt;undefined&gt;</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">define</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">property</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">event</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">variable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">typedef</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">enum</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">enumvalue</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">function</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">signal</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">prototype</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">friend</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">dcop</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">slot</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">interface</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">service</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">alias</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">footnote</span></code></div>
+</div>
+</div></blockquote>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-protectionkind">
+<span></span><span class="n">m_protectionkind</span>
+</pre>
+<p>Holds a string describing protection of the member. Must be one of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">&lt;undefined&gt;</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">public</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">protected</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">private</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">package</span></code></div>
+</div>
+</div></blockquote>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-virtualkind">
+<span></span><span class="n">m_virtualKind</span>
+</pre>
+<p>Holds a string describing whether this member is virtual or not. Must be one of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">&lt;undefined&gt;</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">non-virtual</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">virtual</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">pure-virtual</span></code></div>
+</div>
+</div></blockquote>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-flags">
+<span></span><span class="n">m_flags</span>
+</pre>
+<p>An empty string or a space-delimited combination of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">static</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">const</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">explicit</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">inline</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">volatile</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">mutable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">readable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">writable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">initonly</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">settable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">gettable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">final</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">sealed</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">new</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">add</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">remove</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">raise</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">optional</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">required</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">accessor</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">attribute</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">property</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">readonly</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">bound</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">removable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">contrained</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">transient</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">maybevoid</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">maybedefault</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">maybeambiguous</span></code></div>
+</div>
+</div></blockquote>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-id">
+<span></span><span class="n">m_id</span>
+</pre>
+<p>Holds Doxygen identifier string, e.g. <code class="docutils literal notranslate"><span class="pre">structjnc___guid_1aec4f3165bbae5d72881b0d216e4ff15c</span></code>.</p>
+<p>This string can be used as a unique identifier for creating labels and reference links.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-name">
+<span></span><span class="n">m_name</span>
+</pre>
+<p>Holds a string with the name of the member.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-path">
+<span></span><span class="n">m_path</span>
+</pre>
+<p>Holds a string with a forward-slash-separated path to the enum starting from the global namespace. For example, C++ enum <code class="docutils literal notranslate"><span class="pre">io::NetworkAdapterType</span></code> will have its path encoded as <code class="docutils literal notranslate"><span class="pre">io/NetworkAdapterType</span></code>.</p>
+<p>This field can be used to reconstruct a fully qualified name of the enum.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is <code class="docutils literal notranslate"><span class="pre">enum</span></code>.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-modifiers">
+<span></span><span class="n">m_modifiers</span>
+</pre>
+<p>Holds a string with space-separated list of language-specific modifiers applied to the member.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-type">
+<span></span><span class="n">m_type</span>
+</pre>
+<p>Holds a <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_LinkedText.html#cid-linkedtext"><span class="std std-ref"><span class="pre">LinkedText</span></span></a></code> table describing the type of the member.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-returntype">
+<span></span><span class="n">m_returnType</span>
+</pre>
+<p>Holds a <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_LinkedText.html#cid-linkedtext"><span class="std std-ref"><span class="pre">LinkedText</span></span></a></code> table describing the return type of the member.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is one of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">function</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">property</span></code></div>
+</div>
+</div></blockquote>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-argstring">
+<span></span><span class="n">m_argString</span>
+</pre>
+<p>Holds a string describing type suffix (function parameters, array dimensions, etc)</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is one of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">typedef</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">variable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">function</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">property</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">event</span></code></div>
+</div>
+</div></blockquote>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-paramarray">
+<span></span><span class="n">m_paramArray</span>
+</pre>
+<p>Holds an array table with detailed description of all parameters of the member.</p>
+<p>Type of each element of the array is <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_Param.html#cid-param"><span class="std std-ref"><span class="pre">Param</span></span></a></code>.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is one of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">typedef</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">variable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">function</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">property</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">event</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">define</span></code></div>
+</div>
+</div></blockquote>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-templateparamarray">
+<span></span><span class="n">m_templateParamArray</span>
+</pre>
+<p>Holds a table containing an array of <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_Param.html#cid-param"><span class="std std-ref"><span class="pre">Param</span></span></a></code> elements describing template parameters of the function.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is <code class="docutils literal notranslate"><span class="pre">function</span></code>.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-templatespecparamarray">
+<span></span><span class="n">m_templateSpecParamArray</span>
+</pre>
+<p>Holds a table containing an array of <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_Param.html#cid-param"><span class="std std-ref"><span class="pre">Param</span></span></a></code> elements describing template specialization parameters of the function.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is <code class="docutils literal notranslate"><span class="pre">function</span></code>.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-exceptions">
+<span></span><span class="n">m_exceptions</span>
+</pre>
+<p>Holds a <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_LinkedText.html#cid-linkedtext"><span class="std std-ref"><span class="pre">LinkedText</span></span></a></code> table describing which exception could be thrown by the function.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is <code class="docutils literal notranslate"><span class="pre">function</span></code>.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-enumvaluearray">
+<span></span><span class="n">m_enumValueArray</span>
+</pre>
+<p>Holds an array table with detailed description of all enum values of the enum.</p>
+<p>Type of each element of the array is <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_EnumValue.html#cid-enumvalue"><span class="std std-ref"><span class="pre">EnumValue</span></span></a></code>.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is <code class="docutils literal notranslate"><span class="pre">enum</span></code>.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-bitfield">
+<span></span><span class="n">m_bitField</span>
+</pre>
+<p>Holds a string with bit field suffix of the struct or union field.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is <code class="docutils literal notranslate"><span class="pre">variable</span></code>.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-initializer">
+<span></span><span class="n">m_initializer</span>
+</pre>
+<p>Holds a <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_LinkedText.html#cid-linkedtext"><span class="std std-ref"><span class="pre">LinkedText</span></span></a></code> table with the member initializer.</p>
+<p>This field is only set when <code class="docutils literal notranslate"><span class="pre">m_memberKind</span></code> is one of:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">variable</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">alias</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">define</span></code></div>
+</div>
+</div></blockquote>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-briefdescription">
+<span></span><span class="n">m_briefDescription</span>
+</pre>
+<p>Holds a <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_Description.html#cid-description"><span class="std std-ref"><span class="pre">Description</span></span></a></code> table with the brief description of the member.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-detaileddescription">
+<span></span><span class="n">m_detailedDescription</span>
+</pre>
+<p>Holds a <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_Description.html#cid-description"><span class="std std-ref"><span class="pre">Description</span></span></a></code> table with the detailed description of the member.</p>
+<pre class="highlight title-code-block literal-block" id="cid-member-m-inbodydescription">
+<span></span><span class="n">m_inBodyDescription</span>
+</pre>
+<p>Holds a <code class="cref docutils literal notranslate"><a class="reference internal" href="lua_Description.html#cid-description"><span class="std std-ref"><span class="pre">Description</span></span></a></code> table with the in-body description of the member.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="lua_EnumValue.html" class="btn btn-neutral float-right" title="EnumValue" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lua_Compound.html" class="btn btn-neutral" title="Compound" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Tibbo Technology Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

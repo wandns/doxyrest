@@ -1,0 +1,83 @@
+.. index:: pair: enum; snd_pcm_access_t
+.. _doxid-group___p_c_m_1ga661221ba5e8f1d6eaf4ab8e2da57cc1a:
+.. _cid-snd_pcm_access_t:
+
+enum snd_pcm_access_t
+=====================
+
+
+
+Overview
+~~~~~~~~
+
+PCM access type :ref:`More...<details-doxid-group___p_c_m_1ga661221ba5e8f1d6eaf4ab8e2da57cc1a>`
+
+.. _doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aad57e116e80d0e3362751e6e075961f2b:
+.. _cid-snd_pcm_access_t::snd_pcm_access_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_PCM_ACCESS_MMAP_INTERLEAVED<doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aa90a5dea527c5ae9a53f1448beb2dee6f>` = 0
+	:ref:`SND_PCM_ACCESS_MMAP_NONINTERLEAVED<doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aa7de225785e05dd1d538203c5ece9036e>` 
+	:ref:`SND_PCM_ACCESS_MMAP_COMPLEX<doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aa26a4f161364cb539df4de5eeb9949121>` 
+	:ref:`SND_PCM_ACCESS_RW_INTERLEAVED<doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aa72a970ed6e676ab0fd9f3c3d36737e0a>` 
+	:ref:`SND_PCM_ACCESS_RW_NONINTERLEAVED<doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aae7ab128d10c32667f396933190435071>` 
+	SND_PCM_ACCESS_LAST = SND_PCM_ACCESS_RW_NONINTERLEAVED
+
+.. _details-doxid-group___p_c_m_1ga661221ba5e8f1d6eaf4ab8e2da57cc1a:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+PCM access type
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aa90a5dea527c5ae9a53f1448beb2dee6f:
+.. _cid-snd_pcm_access_t::snd_pcm_access_mmap_interleaved:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_ACCESS_MMAP_INTERLEAVED
+
+mmap access with simple interleaved channels
+
+.. _doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aa7de225785e05dd1d538203c5ece9036e:
+.. _cid-snd_pcm_access_t::snd_pcm_access_mmap_noninterleaved:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_ACCESS_MMAP_NONINTERLEAVED
+
+mmap access with simple non interleaved channels
+
+.. _doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aa26a4f161364cb539df4de5eeb9949121:
+.. _cid-snd_pcm_access_t::snd_pcm_access_mmap_complex:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_ACCESS_MMAP_COMPLEX
+
+mmap access with complex placement
+
+.. _doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aa72a970ed6e676ab0fd9f3c3d36737e0a:
+.. _cid-snd_pcm_access_t::snd_pcm_access_rw_interleaved:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_ACCESS_RW_INTERLEAVED
+
+snd_pcm_readi/snd_pcm_writei access
+
+.. _doxid-group___p_c_m_1gga661221ba5e8f1d6eaf4ab8e2da57cc1aae7ab128d10c32667f396933190435071:
+.. _cid-snd_pcm_access_t::snd_pcm_access_rw_noninterleaved:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_ACCESS_RW_NONINTERLEAVED
+
+snd_pcm_readn/snd_pcm_writen access
+

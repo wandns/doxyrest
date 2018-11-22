@@ -1,0 +1,610 @@
+.. index:: pair: group; Platform Definitions
+.. _doxid-group__apr__platform:
+.. _cid-apr_platform:
+
+Platform Definitions
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+The actual values of macros and typedefs on this page
+
+are platform specific and should NOT be relied upon! :ref:`More...<details-doxid-group__apr__platform>`
+
+.. _doxid-group__apr__platform_1gadcfa334915b4605a0052cb4ca542eb3a:
+.. _cid-apr_byte_t:
+.. _doxid-group__apr__platform_1ga43c359f64f6c84d8af869539e0737df4:
+.. _cid-apr_int16_t:
+.. _doxid-group__apr__platform_1ga3fb87c977e28a526d872d1081411b129:
+.. _cid-apr_uint16_t:
+.. _doxid-group__apr__platform_1ga21ef1e35fd3ff9be386f3cb20164ff02:
+.. _cid-apr_int32_t:
+.. _doxid-group__apr__platform_1ga558548a135d8a816c4787250744ea147:
+.. _cid-apr_uint32_t:
+.. _doxid-group__apr__platform_1ga4b75afbf973dc6c8aea4ae75b044aa08:
+.. _cid-apr_int64_t:
+.. _doxid-group__apr__platform_1ga722b277a42230f3fd41cb5be7a76cfb4:
+.. _cid-apr_uint64_t:
+.. _doxid-group__apr__platform_1gaaa72b2253f6f3032cefea5712a27540e:
+.. _cid-apr_size_t:
+.. _doxid-group__apr__platform_1ga215ebb88932bee220b766263ebbfe6fa:
+.. _cid-apr_ssize_t:
+.. _doxid-group__apr__platform_1ga6938af9075cec15c88299109381aa984:
+.. _cid-apr_off_t:
+.. _doxid-group__apr__platform_1gab613b0701b7a8b0ccd1a3c157a800f27:
+.. _cid-apr_socklen_t:
+.. _doxid-group__apr__platform_1ga0a5ae63884288a9f69f4e384a23bad68:
+.. _cid-apr_ino_t:
+.. _doxid-group__apr__platform_1gabf3268b941400de57926ee0f0ca56aa2:
+.. _cid-apr_uintptr_t:
+.. _doxid-group__apr__platform_1ga8c71221bae49df0b88a0f725e96c681f:
+.. _cid-apr_charset_ebcdic:
+.. _doxid-group__apr__platform_1ga2eb8121bd28ad578c3cbca3a68f6d823:
+.. _cid-apr_dsopath:
+.. _doxid-group__apr__platform_1ga32d22bd9e118350c750a9c9c05bdeef8:
+.. _cid-apr_end_decls:
+.. _doxid-group__apr__platform_1ga20953ff75ca59692aac949acfdaa25f6:
+.. _cid-apr_eol_str:
+.. _doxid-group__apr__platform_1gace899f1ccb69c00ae7c65212ca5890b1:
+.. _cid-apr_files_as_sockets:
+.. _doxid-group__apr__platform_1gae41e3d3c78f6937ea2de78b03629494a:
+.. _cid-apr_has_dso:
+.. _doxid-group__apr__platform_1ga372220e70e4da519ebcaaf8476525227:
+.. _cid-apr_has_fcntl_serialize:
+.. _doxid-group__apr__platform_1ga3cdde1dc287da276eb56d7c5ed351713:
+.. _cid-apr_has_flock_serialize:
+.. _doxid-group__apr__platform_1ga3261ef06837fa5dc1a0164f7b0f16fab:
+.. _cid-apr_has_fork:
+.. _doxid-group__apr__platform_1ga1bfff486847c3fe487884bca79cb21fd:
+.. _cid-apr_has_inline:
+.. _doxid-group__apr__platform_1gab5019720a44a0a412b053bd4c8275ac0:
+.. _cid-apr_has_large_files:
+.. _doxid-group__apr__platform_1ga4f63ee64cebd015823f922c7ff98eadf:
+.. _cid-apr_has_mmap:
+.. _doxid-group__apr__platform_1gae5e245b691c1f1765e547480de321731:
+.. _cid-apr_has_os_uuid:
+.. _doxid-group__apr__platform_1ga082384ec95907197e41f546570e06a69:
+.. _cid-apr_has_other_child:
+.. _doxid-group__apr__platform_1ga100a44703cbec87774ad3ba78ce4372a:
+.. _cid-apr_has_posixsem_serialize:
+.. _doxid-group__apr__platform_1gacd61f2c191c71203833599e8caee3e79:
+.. _cid-apr_has_proc_invoked:
+.. _doxid-group__apr__platform_1gabc09d4599769b9cef0e972b0050c9e11:
+.. _cid-apr_has_proc_pthread_serialize:
+.. _doxid-group__apr__platform_1ga1a277e1905ab841d2979eff95816f8fb:
+.. _cid-apr_has_random:
+.. _doxid-group__apr__platform_1ga653f9e26ef4064c7daaad1bb126b5d1f:
+.. _cid-apr_has_sendfile:
+.. _doxid-group__apr__platform_1ga88684cc5f8a23bc2cd6a4b63e5943e05:
+.. _cid-apr_has_shared_memory:
+.. _doxid-group__apr__platform_1gaa6797fde63363c83c54c97a2a873e84d:
+.. _cid-apr_has_so_acceptfilter:
+.. _doxid-group__apr__platform_1ga3b4f7591d97f21818b51b793752fa5fe:
+.. _cid-apr_has_sysvsem_serialize:
+.. _doxid-group__apr__platform_1ga8f98cbf61cd2ac1fada71fe486b04a34:
+.. _cid-apr_has_threads:
+.. _doxid-group__apr__platform_1gae1e6a359fe305ed4ede275f404e61cfe:
+.. _cid-apr_has_unicode_fs:
+.. _doxid-group__apr__platform_1ga9d8d5646ade1d3d29e456d8df29a656a:
+.. _cid-apr_has_user:
+.. _doxid-group__apr__platform_1ga98aef4781225d1713d088283f4abd8f2:
+.. _cid-apr_has_xthread_files:
+.. _doxid-group__apr__platform_1gaa6740450eabc6384924801d569e89742:
+.. _cid-apr_have_arpa_inet_h:
+.. _doxid-group__apr__platform_1ga24eb6d10ed0942ee4a4228df697fd5bb:
+.. _cid-apr_have_conio_h:
+.. _doxid-group__apr__platform_1gab841a4b1a92684a089fbab9e7bce737a:
+.. _cid-apr_have_corkable_tcp:
+.. _doxid-group__apr__platform_1ga38a75f33c3096b153d5302c0370e9e38:
+.. _cid-apr_have_crypt_h:
+.. _doxid-group__apr__platform_1gad0fe0c5bffd8073cb57178ceb9761933:
+.. _cid-apr_have_ctype_h:
+.. _doxid-group__apr__platform_1ga87b424528fd6448c5aabc6cc61024c9a:
+.. _cid-apr_have_dirent_h:
+.. _doxid-group__apr__platform_1gabb48338e636d4184f28d8fb08f449f6b:
+.. _cid-apr_have_errno_h:
+.. _doxid-group__apr__platform_1ga40e3ceafec2098262742573bb28797cf:
+.. _cid-apr_have_fcntl_h:
+.. _doxid-group__apr__platform_1ga58025dd20776cbc5a5e7a18f1ac6d5ad:
+.. _cid-apr_have_getrlimit:
+.. _doxid-group__apr__platform_1ga0c38cccb121e483045a2564bb1ae61ec:
+.. _cid-apr_have_inet_addr:
+.. _doxid-group__apr__platform_1gaadacfca3c1cbae0447c1b4d4ea499d57:
+.. _cid-apr_have_inet_network:
+.. _doxid-group__apr__platform_1ga2713eb83fc527f0b262b58c0c449cdcb:
+.. _cid-apr_have_in_addr:
+.. _doxid-group__apr__platform_1gafb25c8af133971c391c18193e67a5f4f:
+.. _cid-apr_have_iovec:
+.. _doxid-group__apr__platform_1ga2cf42c89ca9d5682dba7b12377342cc0:
+.. _cid-apr_have_io_h:
+.. _doxid-group__apr__platform_1gab42a2abcd9e58a79b4bf40e8f02e57a2:
+.. _cid-apr_have_ipv6:
+.. _doxid-group__apr__platform_1ga449046121ca29eda9759cb2d30442e80:
+.. _cid-apr_have_limits_h:
+.. _doxid-group__apr__platform_1ga510e98c8dd8ef45a6c902b8daaedc3a4:
+.. _cid-apr_have_memchr:
+.. _doxid-group__apr__platform_1ga0aff7b8d78dc6cea94892a3738bc0edf:
+.. _cid-apr_have_memmove:
+.. _doxid-group__apr__platform_1gac92f65f1d27253f3af6d9714e4604550:
+.. _cid-apr_have_netdb_h:
+.. _doxid-group__apr__platform_1gab7a6381062416846012d9a0676e0f35c:
+.. _cid-apr_have_netinet_in_h:
+.. _doxid-group__apr__platform_1ga933a3c59c351de4f17cfb8601649fd91:
+.. _cid-apr_have_netinet_sctp_h:
+.. _doxid-group__apr__platform_1ga1bb6606091cafba71be8c37796d36e8a:
+.. _cid-apr_have_netinet_sctp_uio_h:
+.. _doxid-group__apr__platform_1ga2cf9c403892bb0830f24e58b614b8bce:
+.. _cid-apr_have_netinet_tcp_h:
+.. _doxid-group__apr__platform_1ga793aedef0bacf93838d7dc12304e4db1:
+.. _cid-apr_have_process_h:
+.. _doxid-group__apr__platform_1ga4275921ca7165eb1b2a3732a40f1b4ec:
+.. _cid-apr_have_pthread_h:
+.. _doxid-group__apr__platform_1ga57c4c6c8a22aeef21db29093f2f648f9:
+.. _cid-apr_have_sa_storage:
+.. _doxid-group__apr__platform_1ga06b60866b89f9881de1022d193a7f126:
+.. _cid-apr_have_sctp:
+.. _doxid-group__apr__platform_1ga9080d52aaa134fdefc9a03275c7ac4a6:
+.. _cid-apr_have_semaphore_h:
+.. _doxid-group__apr__platform_1ga4a858c53da127087a9bef6105531ce54:
+.. _cid-apr_have_setrlimit:
+.. _doxid-group__apr__platform_1ga158aa4bb703689e01adced53d16ae503:
+.. _cid-apr_have_shmem_beos:
+.. _doxid-group__apr__platform_1ga8237055d9f5700fdccfd173da26ff614:
+.. _cid-apr_have_shmem_mmap_anon:
+.. _doxid-group__apr__platform_1gaae95d5ab380a1519c849b3f54f53dbdb:
+.. _cid-apr_have_shmem_mmap_shm:
+.. _doxid-group__apr__platform_1gaac072bb1db885925d1d426a1650aee18:
+.. _cid-apr_have_shmem_mmap_tmp:
+.. _doxid-group__apr__platform_1gae77c5864ac1e978b5cdc4613efe874b9:
+.. _cid-apr_have_shmem_mmap_zero:
+.. _doxid-group__apr__platform_1ga35d1fadddb8c1e83a5548946d169da2a:
+.. _cid-apr_have_shmem_shmget:
+.. _doxid-group__apr__platform_1ga3c0e8fc59b8891eeacac290bca9df09b:
+.. _cid-apr_have_shmem_shmget_anon:
+.. _doxid-group__apr__platform_1ga2ed59eb76fdfc4d332a1ef5583206f05:
+.. _cid-apr_have_sigaction:
+.. _doxid-group__apr__platform_1ga124a7e90c6c2c74fc54f995e025f694e:
+.. _cid-apr_have_signal_h:
+.. _doxid-group__apr__platform_1ga661ccf871e31f9e8e4adc75dbfd67951:
+.. _cid-apr_have_sigsuspend:
+.. _doxid-group__apr__platform_1ga0117237934a6095a050a9d39ff152a26:
+.. _cid-apr_have_sigwait:
+.. _doxid-group__apr__platform_1gaece8f1d70792f3b735fd63cb2233b6a3:
+.. _cid-apr_have_stdarg_h:
+.. _doxid-group__apr__platform_1ga967df26603971704f396b0ec776ed86f:
+.. _cid-apr_have_stdint_h:
+.. _doxid-group__apr__platform_1ga3b5b55be7a0839f63e0ff1d60a3354ff:
+.. _cid-apr_have_stdio_h:
+.. _doxid-group__apr__platform_1ga1c8c763f1a54be0d960e0bfa838ee0fb:
+.. _cid-apr_have_stdlib_h:
+.. _doxid-group__apr__platform_1ga4da5b6343c5b896efb3695c94f8dd374:
+.. _cid-apr_have_strcasecmp:
+.. _doxid-group__apr__platform_1ga73cf943f6399274e71979e902b3030a0:
+.. _cid-apr_have_strdup:
+.. _doxid-group__apr__platform_1ga07a4215d05bb012f8ff9c4c681b2f9a3:
+.. _cid-apr_have_stricmp:
+.. _doxid-group__apr__platform_1ga9c3381ac9d13a54181f0f0db44edb9da:
+.. _cid-apr_have_strings_h:
+.. _doxid-group__apr__platform_1ga0bc16ef0942f44f579dc8027d50f780a:
+.. _cid-apr_have_string_h:
+.. _doxid-group__apr__platform_1ga8f45d52206b5d6ee37dc05e53d9bd93c:
+.. _cid-apr_have_strncasecmp:
+.. _doxid-group__apr__platform_1gadc5209ed6b80ac6734ce2a13a3a2273d:
+.. _cid-apr_have_strnicmp:
+.. _doxid-group__apr__platform_1ga2850a7c280e08a629d2b0bc2eeb97b41:
+.. _cid-apr_have_strstr:
+.. _doxid-group__apr__platform_1ga2519340ecb3c313c81d36d70335430f9:
+.. _cid-apr_have_struct_rlimit:
+.. _doxid-group__apr__platform_1gaa770dc014bd3652af53e0b5007bacbba:
+.. _cid-apr_have_sys_ioctl_h:
+.. _doxid-group__apr__platform_1gadad28590d1ed5f6417d364da8d224c32:
+.. _cid-apr_have_sys_sendfile_h:
+.. _doxid-group__apr__platform_1ga8fcdcf3453badd12e7690ef1d3633524:
+.. _cid-apr_have_sys_signal_h:
+.. _doxid-group__apr__platform_1ga355cce8fb6a675d1608a249e80943cd1:
+.. _cid-apr_have_sys_socket_h:
+.. _doxid-group__apr__platform_1ga66930e9c37ff249fac4f04660e0b4658:
+.. _cid-apr_have_sys_sockio_h:
+.. _doxid-group__apr__platform_1ga5f63518e601ff8db2435aac44aa1f5f1:
+.. _cid-apr_have_sys_syslimits_h:
+.. _doxid-group__apr__platform_1ga9c3c283b26dc4a611e0e90586940d988:
+.. _cid-apr_have_sys_time_h:
+.. _doxid-group__apr__platform_1gad364bcfd0d4403388881ae74f30ae870:
+.. _cid-apr_have_sys_types_h:
+.. _doxid-group__apr__platform_1gabaeaf82b82e76979dfbe64a43e02b23f:
+.. _cid-apr_have_sys_uio_h:
+.. _doxid-group__apr__platform_1ga342802d31427d75aa8d9508fc42862f1:
+.. _cid-apr_have_sys_un_h:
+.. _doxid-group__apr__platform_1ga4358584279b9bef5e9befef3e70be3a0:
+.. _cid-apr_have_sys_wait_h:
+.. _doxid-group__apr__platform_1gad8de7d46efa8bf6404fcb105cb9fec66:
+.. _cid-apr_have_time_h:
+.. _doxid-group__apr__platform_1ga40fd92f709fa181dee59734f4564ead1:
+.. _cid-apr_have_union_semun:
+.. _doxid-group__apr__platform_1ga5027a53811b56363639e832027752456:
+.. _cid-apr_have_unistd_h:
+.. _doxid-group__apr__platform_1ga129087a39c180d855be6585c9efe2ff2:
+.. _cid-apr_have_windows_h:
+.. _doxid-group__apr__platform_1ga46a930f2ecfa34bfa627a8f18532bceb:
+.. _cid-apr_have_winsock2_h:
+.. _doxid-group__apr__platform_1gaada0f3e7bf27ea51795c2c27c20aee84:
+.. _cid-apr_inline:
+.. _doxid-group__apr__platform_1gac4180108ae7cfe8b7f636183368c89c5:
+.. _cid-apr_int16_max:
+.. _doxid-group__apr__platform_1ga93b69f6b2d426b30c991a74f55be5308:
+.. _cid-apr_int16_min:
+.. _doxid-group__apr__platform_1ga0966ef0d235765d9fe1b9900fbe04faa:
+.. _cid-apr_int32_max:
+.. _doxid-group__apr__platform_1gaa99bd633c3478131fa672559601a76e7:
+.. _cid-apr_int32_min:
+.. _doxid-group__apr__platform_1gaae749817bb595cd5dcb9c17c119ddb13:
+.. _cid-apr_int64_c:
+.. _doxid-group__apr__platform_1ga3b25669924dcfa853cd6ea3395c8717f:
+.. _cid-apr_int64_max:
+.. _doxid-group__apr__platform_1gaf371ae92dbf0fed20801cf279cd85f1a:
+.. _cid-apr_int64_min:
+.. _doxid-group__apr__platform_1ga41cc6dfe3d69cd66cffc8aae4b59bd08:
+.. _cid-apr_int64_t_fmt:
+.. _doxid-group__apr__platform_1gabf5174c5d522e1a149cbb38a4310743f:
+.. _cid-apr_is_bigendian:
+.. _doxid-group__apr__platform_1gad71d0d5a325d1aedeb6328d6bdacac76:
+.. _cid-apr_off_t_fmt:
+.. _doxid-group__apr__platform_1gac6a178e9f749311c8f3a98da3dfd321d:
+.. _cid-apr_o_nonblock_inherited:
+.. _doxid-group__apr__platform_1ga6c8e5aeab20eeaed373e3dd65cd33689:
+.. _cid-apr_pid_t_fmt:
+.. _doxid-group__apr__platform_1ga0108ca8b595e62174e8b42cce0d063f5:
+.. _cid-apr_procattr_user_set_requires_password:
+.. _doxid-group__apr__platform_1ga2faf50198d02b5f6e21c32429ca1c5b4:
+.. _cid-apr_process_lock_is_global:
+.. _doxid-group__apr__platform_1ga90ebe3e3537fdff1e66c6baf4b560de8:
+.. _cid-apr_proc_mutex_is_global:
+.. _doxid-group__apr__platform_1gaa7a2a1de7949f09e29edae60b0d4c27f:
+.. _cid-apr_sizeof_voidp:
+.. _doxid-group__apr__platform_1gab5865d64b134a3924014837dd44627a7:
+.. _cid-apr_size_max:
+.. _doxid-group__apr__platform_1ga86928aa34fa77f8e7855d69050e3a27a:
+.. _cid-apr_size_t_fmt:
+.. _doxid-group__apr__platform_1gabac6108769f9b7deded82e73f3cd4060:
+.. _cid-apr_ssize_t_fmt:
+.. _doxid-group__apr__platform_1ga22df092ebdce7f9f8c6611d974a4ae82:
+.. _cid-apr_tcp_nodelay_inherited:
+.. _doxid-group__apr__platform_1ga6e74a453e90a6495a981f5f312ec6beb:
+.. _cid-apr_tcp_nopush_flag:
+.. _doxid-group__apr__platform_1ga2b7a0eb7506ac0bfc4d711929f9a3a48:
+.. _cid-apr_uint16_max:
+.. _doxid-group__apr__platform_1ga239c26656c361f627f7db619997abaac:
+.. _cid-apr_uint32_max:
+.. _doxid-group__apr__platform_1gaede133b7384b6a7a08c51cf1fa9c4001:
+.. _cid-apr_uint64_c:
+.. _doxid-group__apr__platform_1ga2d20379176b15b8b0598992df3def796:
+.. _cid-apr_uint64_max:
+.. _doxid-group__apr__platform_1ga7fc21e56e167a47d7478600dee7ab502:
+.. _cid-apr_uint64_t_fmt:
+.. _doxid-group__apr__platform_1ga528bc9f3c6f3500b35e97c4b25566b48:
+.. _cid-apr_uint64_t_hex_fmt:
+.. _doxid-group__apr__platform_1ga66b87d9b0c7e5b97b8fb21f55a0714d7:
+.. _cid-apr_use_fcntl_serialize:
+.. _doxid-group__apr__platform_1ga627ab3fb1738314c7e50616e7e4e9370:
+.. _cid-apr_use_flock_serialize:
+.. _doxid-group__apr__platform_1gab41840f9559a2eda0aed18e24911d4fa:
+.. _cid-apr_use_posixsem_serialize:
+.. _doxid-group__apr__platform_1ga2738f508b5926ec10a966d2bdb348452:
+.. _cid-apr_use_proc_pthread_serialize:
+.. _doxid-group__apr__platform_1ga28fb90a0db4bd6c6f677b269fc743cda:
+.. _cid-apr_use_pthread_serialize:
+.. _doxid-group__apr__platform_1ga964a36a0d15537eb89733bd92e1159cd:
+.. _cid-apr_use_shmem_beos:
+.. _doxid-group__apr__platform_1ga7b556f92b8b710978339dc827d2a7a22:
+.. _cid-apr_use_shmem_mmap_anon:
+.. _doxid-group__apr__platform_1ga38ed6a0607f8fbbe977843d84c42b02a:
+.. _cid-apr_use_shmem_mmap_shm:
+.. _doxid-group__apr__platform_1ga165e27e6100d65b6893d1c9b7e808536:
+.. _cid-apr_use_shmem_mmap_tmp:
+.. _doxid-group__apr__platform_1gad75204199cfa3631263fb1f1ea8abc94:
+.. _cid-apr_use_shmem_mmap_zero:
+.. _doxid-group__apr__platform_1ga04fb6b9c97e668cef00645dd05c45079:
+.. _cid-apr_use_shmem_shmget:
+.. _doxid-group__apr__platform_1gaeaedd6e1272ded14f16701b96a3ad14c:
+.. _cid-apr_use_shmem_shmget_anon:
+.. _doxid-group__apr__platform_1ga91ab4154618c08a76cc688ec3f384a27:
+.. _cid-apr_use_sysvsem_serialize:
+.. _doxid-group__apr__platform_1ga77f17ed4771a558a0f16e5f3aecee222:
+.. _cid-wexitstatus:
+.. _doxid-group__apr__platform_1ga94ec02a12424092a8391069adcd2ff73:
+.. _cid-wtermsig:
+.. _doxid-group__apr__platform_1ga13fae72fec73474a6b35ed86b9104bf5:
+.. _cid-apr_wait_t:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// typedefs
+
+	typedef unsigned char apr_byte_t
+	typedef short apr_int16_t
+	typedef unsigned short apr_uint16_t
+	typedef int apr_int32_t
+	typedef unsigned int apr_uint32_t
+	typedef long apr_int64_t
+	typedef unsigned long apr_uint64_t
+	typedef size_t apr_size_t
+	typedef ssize_t apr_ssize_t
+	typedef off_t apr_off_t
+	typedef socklen_t apr_socklen_t
+	typedef ino_t apr_ino_t
+	typedef apr_uint64_t apr_uintptr_t
+
+	// macros
+
+	#define :ref:`APR_BEGIN_DECLS<doxid-group__apr__platform_1gaa046c9c51a1af394db3a34dec1972630>`
+	#define APR_CHARSET_EBCDIC
+	#define :ref:`APR_DECLARE<doxid-group__apr__platform_1gad7b91b811a172bfa802603c2fb688f98>`(type)
+	#define :ref:`APR_DECLARE_DATA<doxid-group__apr__platform_1ga16a1a3d65c57ce052fffb63190b1cadc>`
+	#define :ref:`APR_DECLARE_NONSTD<doxid-group__apr__platform_1ga3ad5e45fabbda0ec5f106c334f1a0ae5>`(type)
+	#define APR_DSOPATH
+	#define APR_END_DECLS
+	#define APR_EOL_STR
+	#define APR_FILES_AS_SOCKETS
+	#define APR_HAS_DSO
+	#define APR_HAS_FCNTL_SERIALIZE
+	#define APR_HAS_FLOCK_SERIALIZE
+	#define APR_HAS_FORK
+	#define APR_HAS_INLINE
+	#define APR_HAS_LARGE_FILES
+	#define APR_HAS_MMAP
+	#define APR_HAS_OS_UUID
+	#define APR_HAS_OTHER_CHILD
+	#define APR_HAS_POSIXSEM_SERIALIZE
+	#define APR_HAS_PROC_INVOKED
+	#define APR_HAS_PROC_PTHREAD_SERIALIZE
+	#define APR_HAS_RANDOM
+	#define APR_HAS_SENDFILE
+	#define APR_HAS_SHARED_MEMORY
+	#define APR_HAS_SO_ACCEPTFILTER
+	#define APR_HAS_SYSVSEM_SERIALIZE
+	#define APR_HAS_THREADS
+	#define APR_HAS_UNICODE_FS
+	#define APR_HAS_USER
+	#define APR_HAS_XTHREAD_FILES
+	#define APR_HAVE_ARPA_INET_H
+	#define APR_HAVE_CONIO_H
+	#define APR_HAVE_CORKABLE_TCP
+	#define APR_HAVE_CRYPT_H
+	#define APR_HAVE_CTYPE_H
+	#define APR_HAVE_DIRENT_H
+	#define APR_HAVE_ERRNO_H
+	#define APR_HAVE_FCNTL_H
+	#define APR_HAVE_GETRLIMIT
+	#define APR_HAVE_INET_ADDR
+	#define APR_HAVE_INET_NETWORK
+	#define APR_HAVE_IN_ADDR
+	#define APR_HAVE_IOVEC
+	#define APR_HAVE_IO_H
+	#define APR_HAVE_IPV6
+	#define APR_HAVE_LIMITS_H
+	#define APR_HAVE_MEMCHR
+	#define APR_HAVE_MEMMOVE
+	#define APR_HAVE_NETDB_H
+	#define APR_HAVE_NETINET_IN_H
+	#define APR_HAVE_NETINET_SCTP_H
+	#define APR_HAVE_NETINET_SCTP_UIO_H
+	#define APR_HAVE_NETINET_TCP_H
+	#define APR_HAVE_PROCESS_H
+	#define APR_HAVE_PTHREAD_H
+	#define APR_HAVE_SA_STORAGE
+	#define APR_HAVE_SCTP
+	#define APR_HAVE_SEMAPHORE_H
+	#define APR_HAVE_SETRLIMIT
+	#define APR_HAVE_SHMEM_BEOS
+	#define APR_HAVE_SHMEM_MMAP_ANON
+	#define APR_HAVE_SHMEM_MMAP_SHM
+	#define APR_HAVE_SHMEM_MMAP_TMP
+	#define APR_HAVE_SHMEM_MMAP_ZERO
+	#define APR_HAVE_SHMEM_SHMGET
+	#define APR_HAVE_SHMEM_SHMGET_ANON
+	#define APR_HAVE_SIGACTION
+	#define APR_HAVE_SIGNAL_H
+	#define APR_HAVE_SIGSUSPEND
+	#define APR_HAVE_SIGWAIT
+	#define APR_HAVE_STDARG_H
+	#define APR_HAVE_STDINT_H
+	#define APR_HAVE_STDIO_H
+	#define APR_HAVE_STDLIB_H
+	#define APR_HAVE_STRCASECMP
+	#define APR_HAVE_STRDUP
+	#define APR_HAVE_STRICMP
+	#define APR_HAVE_STRINGS_H
+	#define APR_HAVE_STRING_H
+	#define APR_HAVE_STRNCASECMP
+	#define APR_HAVE_STRNICMP
+	#define APR_HAVE_STRSTR
+	#define APR_HAVE_STRUCT_RLIMIT
+	#define APR_HAVE_SYS_IOCTL_H
+	#define APR_HAVE_SYS_SENDFILE_H
+	#define APR_HAVE_SYS_SIGNAL_H
+	#define APR_HAVE_SYS_SOCKET_H
+	#define APR_HAVE_SYS_SOCKIO_H
+	#define APR_HAVE_SYS_SYSLIMITS_H
+	#define APR_HAVE_SYS_TIME_H
+	#define APR_HAVE_SYS_TYPES_H
+	#define APR_HAVE_SYS_UIO_H
+	#define APR_HAVE_SYS_UN_H
+	#define APR_HAVE_SYS_WAIT_H
+	#define APR_HAVE_TIME_H
+	#define APR_HAVE_UNION_SEMUN
+	#define APR_HAVE_UNISTD_H
+	#define APR_HAVE_WINDOWS_H
+	#define APR_HAVE_WINSOCK2_H
+	#define APR_INLINE
+	#define APR_INT16_MAX
+	#define APR_INT16_MIN
+	#define APR_INT32_MAX
+	#define APR_INT32_MIN
+	#define APR_INT64_C(val)
+	#define APR_INT64_MAX
+	#define APR_INT64_MIN
+	#define APR_INT64_T_FMT
+	#define APR_IS_BIGENDIAN
+	#define APR_OFF_T_FMT
+	#define APR_O_NONBLOCK_INHERITED
+	#define APR_PID_T_FMT
+	#define APR_PROCATTR_USER_SET_REQUIRES_PASSWORD
+	#define APR_PROCESS_LOCK_IS_GLOBAL
+	#define APR_PROC_MUTEX_IS_GLOBAL
+	#define APR_SIZEOF_VOIDP
+	#define APR_SIZE_MAX
+	#define APR_SIZE_T_FMT
+	#define APR_SSIZE_T_FMT
+	#define APR_TCP_NODELAY_INHERITED
+	#define APR_TCP_NOPUSH_FLAG
+	#define :ref:`APR_THREAD_FUNC<doxid-group__apr__platform_1gade8f829f9bd98fd4386894acf72edd7c>`
+	#define APR_UINT16_MAX
+	#define APR_UINT32_MAX
+	#define APR_UINT64_C(val)
+	#define APR_UINT64_MAX
+	#define APR_UINT64_T_FMT
+	#define APR_UINT64_T_HEX_FMT
+	#define APR_USE_FCNTL_SERIALIZE
+	#define APR_USE_FLOCK_SERIALIZE
+	#define APR_USE_POSIXSEM_SERIALIZE
+	#define APR_USE_PROC_PTHREAD_SERIALIZE
+	#define APR_USE_PTHREAD_SERIALIZE
+	#define APR_USE_SHMEM_BEOS
+	#define APR_USE_SHMEM_MMAP_ANON
+	#define APR_USE_SHMEM_MMAP_SHM
+	#define APR_USE_SHMEM_MMAP_TMP
+	#define APR_USE_SHMEM_MMAP_ZERO
+	#define APR_USE_SHMEM_SHMGET
+	#define APR_USE_SHMEM_SHMGET_ANON
+	#define APR_USE_SYSVSEM_SERIALIZE
+	#define WEXITSTATUS(status)
+	#define WTERMSIG(status)
+	#define apr_wait_t
+
+.. _details-doxid-group__apr__platform:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+The actual values of macros and typedefs on this page
+
+are platform specific and should NOT be relied upon!
+
+Macros
+------
+
+.. _doxid-group__apr__platform_1gaa046c9c51a1af394db3a34dec1972630:
+.. _cid-apr_begin_decls:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_BEGIN_DECLS
+
+APR public API wrap for C++ compilers.
+
+.. _doxid-group__apr__platform_1gad7b91b811a172bfa802603c2fb688f98:
+.. _cid-apr_declare:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_DECLARE(type)
+
+The public APR functions are declared with :ref:`APR_DECLARE() <doxid-group__apr__platform_1gad7b91b811a172bfa802603c2fb688f98>` , so they may use the most appropriate calling convention. Public APR functions with variable arguments must use :ref:`APR_DECLARE_NONSTD() <doxid-group__apr__platform_1ga3ad5e45fabbda0ec5f106c334f1a0ae5>` .
+
+Both the declaration and implementations must use the same macro.
+
+
+
+.. code-block:: none
+
+    
+    APR_DECLARE(rettype) apr_func(args)
+
+Note that when APR compiles the library itself, it passes the symbol -DAPR_DECLARE_EXPORT to the compiler on some platforms (e.g. Win32) to export public symbols from the dynamic library build.
+
+The user must define the APR_DECLARE_STATIC when compiling to target the static APR library on some platforms (e.g. Win32.) The public symbols are neither exported nor imported when APR_DECLARE_STATIC is defined.
+
+By default, compiling an application and including the APR public headers, without defining APR_DECLARE_STATIC, will prepare the code to be linked to the dynamic library.
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_DECLARE_NONSTD <doxid-group__apr__platform_1ga3ad5e45fabbda0ec5f106c334f1a0ae5>`
+
+:ref:`APR_DECLARE_DATA <doxid-group__apr__platform_1ga16a1a3d65c57ce052fffb63190b1cadc>`
+
+.. _doxid-group__apr__platform_1ga16a1a3d65c57ce052fffb63190b1cadc:
+.. _cid-apr_declare_data:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_DECLARE_DATA
+
+The public APR variables are declared with AP_MODULE_DECLARE_DATA. This assures the appropriate indirection is invoked at compile time. Note that the declaration and implementations use different forms, but both must include the macro.
+
+
+
+.. code-block:: none
+
+.. code-block:: none
+
+    extern APR_DECLARE_DATA type apr_variable;
+    APR_DECLARE_DATA type apr_variable = value;
+
+.. code-block:: none
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_DECLARE <doxid-group__apr__platform_1gad7b91b811a172bfa802603c2fb688f98>`
+
+:ref:`APR_DECLARE_NONSTD <doxid-group__apr__platform_1ga3ad5e45fabbda0ec5f106c334f1a0ae5>`
+
+.. _doxid-group__apr__platform_1ga3ad5e45fabbda0ec5f106c334f1a0ae5:
+.. _cid-apr_declare_nonstd:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_DECLARE_NONSTD(type)
+
+The public APR functions using variable arguments are declared with :ref:`APR_DECLARE_NONSTD() <doxid-group__apr__platform_1ga3ad5e45fabbda0ec5f106c334f1a0ae5>` , as they must follow the C language calling convention. Both the declaration and implementations must use the same macro.
+
+.. code-block:: none
+
+:ref:`APR_DECLARE_NONSTD(rettype) <doxid-group__apr__platform_1ga3ad5e45fabbda0ec5f106c334f1a0ae5>` apr_func(args, ...);
+
+.. code-block:: none
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_DECLARE <doxid-group__apr__platform_1gad7b91b811a172bfa802603c2fb688f98>`
+
+:ref:`APR_DECLARE_DATA <doxid-group__apr__platform_1ga16a1a3d65c57ce052fffb63190b1cadc>`
+
+.. _doxid-group__apr__platform_1gade8f829f9bd98fd4386894acf72edd7c:
+.. _cid-apr_thread_func:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_THREAD_FUNC
+
+Thread callbacks from APR functions must be declared with APR_THREAD_FUNC, so that they follow the platform's calling convention.
+
+.. code-block:: none
+
+.. code-block:: none
+
+    void* APR_THREAD_FUNC my_thread_entry_fn(apr_thread_t *thd, void *data);
+
+.. code-block:: none
+

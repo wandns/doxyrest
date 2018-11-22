@@ -1,0 +1,29 @@
+.. index:: pair: enum; ssh_auth_auto_state_e
+.. _doxid-group__libssh__auth_1gac65f4923889fe6f2b91021872463b4c4:
+.. _cid-ssh_auth_auto_state_e:
+
+enum ssh_auth_auto_state_e
+==========================
+
+
+
+
+
+.. _doxid-group__libssh__auth_1ggac65f4923889fe6f2b91021872463b4c4a7423bce4e2477ab036c8ce272fd7642f:
+.. _cid-ssh_auth_auto_state_e::ssh_auth_auto_state_none:
+.. _doxid-group__libssh__auth_1ggac65f4923889fe6f2b91021872463b4c4a82677b8f55353fe73bdd8ddb9958d367:
+.. _cid-ssh_auth_auto_state_e::ssh_auth_auto_state_pubkey:
+.. _doxid-group__libssh__auth_1ggac65f4923889fe6f2b91021872463b4c4a0f73343ecb44ed535c5d53cede05485a:
+.. _cid-ssh_auth_auto_state_e::ssh_auth_auto_state_key_imported:
+.. _doxid-group__libssh__auth_1ggac65f4923889fe6f2b91021872463b4c4ad484a042d380c408bc75ef844e8e0e9c:
+.. _cid-ssh_auth_auto_state_e::ssh_auth_auto_state_pubkey_accepted:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_AUTH_AUTO_STATE_NONE =0
+	SSH_AUTH_AUTO_STATE_PUBKEY 
+	SSH_AUTH_AUTO_STATE_KEY_IMPORTED 
+	SSH_AUTH_AUTO_STATE_PUBKEY_ACCEPTED 
+

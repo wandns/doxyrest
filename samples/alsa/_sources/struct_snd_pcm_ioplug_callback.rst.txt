@@ -1,0 +1,237 @@
+.. index:: pair: struct; snd_pcm_ioplug_callback
+.. _doxid-structsnd__pcm__ioplug__callback:
+.. _cid-snd_pcm_ioplug_callback:
+
+struct snd_pcm_ioplug_callback
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <pcm_ioplug.h>
+
+
+Overview
+~~~~~~~~
+
+Callback table of ioplug :ref:`More...<details-doxid-structsnd__pcm__ioplug__callback>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int (* :ref:`start<doxid-structsnd__pcm__ioplug__callback_1a7468068dda785aa176ff26e5133411bc>`)(snd_pcm_ioplug_t *io)
+	int (* :ref:`stop<doxid-structsnd__pcm__ioplug__callback_1ab1bb5494c38ee557129df62afdfb49bb>`)(snd_pcm_ioplug_t *io)
+	:ref:`snd_pcm_sframes_t<doxid-group___p_c_m_1ga71cdfa37e258d2210b8bd0216bf0c36c>` (* :ref:`pointer<doxid-structsnd__pcm__ioplug__callback_1a4845417f0aebd54219185c7efaede2c0>`)(snd_pcm_ioplug_t *io)
+	:ref:`snd_pcm_sframes_t<doxid-group___p_c_m_1ga71cdfa37e258d2210b8bd0216bf0c36c>` (* :ref:`transfer<doxid-structsnd__pcm__ioplug__callback_1ad7dbd481a29d2f92c26d12695ae1d4ac>`)(snd_pcm_ioplug_t *io, const snd_pcm_channel_area_t *areas, snd_pcm_uframes_t offset, snd_pcm_uframes_t size)
+	int (* :ref:`close<doxid-structsnd__pcm__ioplug__callback_1a3e82606488e2ccb5148dbe1b39cb4f88>`)(snd_pcm_ioplug_t *io)
+	int (* :ref:`hw_params<doxid-structsnd__pcm__ioplug__callback_1a57381783ffd6f0cea8836a151b0eaa87>`)(snd_pcm_ioplug_t *io, snd_pcm_hw_params_t *params)
+	int (* :ref:`hw_free<doxid-structsnd__pcm__ioplug__callback_1aaf77cc71c899d58b9a9348c5efeab72f>`)(snd_pcm_ioplug_t *io)
+	int (* :ref:`sw_params<doxid-structsnd__pcm__ioplug__callback_1a8688847dcfab7d4e8a091f81aa351965>`)(snd_pcm_ioplug_t *io, snd_pcm_sw_params_t *params)
+	int (* :ref:`prepare<doxid-structsnd__pcm__ioplug__callback_1a071405a306b66091c61039b7997d8685>`)(snd_pcm_ioplug_t *io)
+	int (* :ref:`drain<doxid-structsnd__pcm__ioplug__callback_1a5bc9a5f9d0be0f284458a94e44b5fdb3>`)(snd_pcm_ioplug_t *io)
+	int (* :ref:`pause<doxid-structsnd__pcm__ioplug__callback_1a68f7c891a62620fb90bfd929313e56b3>`)(snd_pcm_ioplug_t *io, int enable)
+	int (* :ref:`resume<doxid-structsnd__pcm__ioplug__callback_1a1176d8570c78351ed5b957b7c6c5884f>`)(snd_pcm_ioplug_t *io)
+	int (* :ref:`poll_descriptors_count<doxid-structsnd__pcm__ioplug__callback_1a5c32d0aee17ebea124b3e8f11dad68e9>`)(snd_pcm_ioplug_t *io)
+	int (* :ref:`poll_descriptors<doxid-structsnd__pcm__ioplug__callback_1a6793d36d985acd08ca95776e59763b3a>`)(snd_pcm_ioplug_t *io, struct pollfd *pfd, unsigned int space)
+	int (* :ref:`poll_revents<doxid-structsnd__pcm__ioplug__callback_1a7b8c4cab575b38ed24371b1afdc5c6b9>`)(snd_pcm_ioplug_t *io, struct pollfd *pfd, unsigned int nfds, unsigned short *revents)
+	void (* :ref:`dump<doxid-structsnd__pcm__ioplug__callback_1a839c05869c4dfd5e9b81224fe21c66fd>`)(snd_pcm_ioplug_t *io, snd_output_t *out)
+	int (* :ref:`delay<doxid-structsnd__pcm__ioplug__callback_1a4ae1a94b5a4e1946750c2fc71c0197ba>`)(snd_pcm_ioplug_t *io, snd_pcm_sframes_t *delayp)
+	:ref:`snd_pcm_chmap_query_t<doxid-structsnd__pcm__chmap__query__t>`** (* :ref:`query_chmaps<doxid-structsnd__pcm__ioplug__callback_1aadaf669911046e91fdba3b15fe2a4839>`)(snd_pcm_ioplug_t *io)
+	:ref:`snd_pcm_chmap_t<doxid-structsnd__pcm__chmap__t>`* (* :ref:`get_chmap<doxid-structsnd__pcm__ioplug__callback_1a364feac16fc31f508ea67525c42e26dc>`)(snd_pcm_ioplug_t *io)
+	int (* :ref:`set_chmap<doxid-structsnd__pcm__ioplug__callback_1a8eb02dcaecc9b5120e6c29359167efa6>`)(snd_pcm_ioplug_t *io, const snd_pcm_chmap_t *map)
+
+.. _details-doxid-structsnd__pcm__ioplug__callback:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Callback table of ioplug
+
+Fields
+------
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a7468068dda785aa176ff26e5133411bc:
+.. _cid-snd_pcm_ioplug_callback::start:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* start )(snd_pcm_ioplug_t *io)
+
+start the PCM; required, called inside mutex lock
+
+.. _doxid-structsnd__pcm__ioplug__callback_1ab1bb5494c38ee557129df62afdfb49bb:
+.. _cid-snd_pcm_ioplug_callback::stop:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* stop )(snd_pcm_ioplug_t *io)
+
+stop the PCM; required, called inside mutex lock
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a4845417f0aebd54219185c7efaede2c0:
+.. _cid-snd_pcm_ioplug_callback::pointer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_sframes_t<doxid-group___p_c_m_1ga71cdfa37e258d2210b8bd0216bf0c36c>` (* pointer )(snd_pcm_ioplug_t *io)
+
+get the current DMA position; required, called inside mutex lock
+
+.. _doxid-structsnd__pcm__ioplug__callback_1ad7dbd481a29d2f92c26d12695ae1d4ac:
+.. _cid-snd_pcm_ioplug_callback::transfer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_sframes_t<doxid-group___p_c_m_1ga71cdfa37e258d2210b8bd0216bf0c36c>` (* transfer )(snd_pcm_ioplug_t *io, const snd_pcm_channel_area_t *areas, snd_pcm_uframes_t offset, snd_pcm_uframes_t size)
+
+transfer the data; optional, called inside mutex lock
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a3e82606488e2ccb5148dbe1b39cb4f88:
+.. _cid-snd_pcm_ioplug_callback::close:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* close )(snd_pcm_ioplug_t *io)
+
+close the PCM; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a57381783ffd6f0cea8836a151b0eaa87:
+.. _cid-snd_pcm_ioplug_callback::hw_params:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* hw_params )(snd_pcm_ioplug_t *io, snd_pcm_hw_params_t *params)
+
+hw_params; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1aaf77cc71c899d58b9a9348c5efeab72f:
+.. _cid-snd_pcm_ioplug_callback::hw_free:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* hw_free )(snd_pcm_ioplug_t *io)
+
+hw_free; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a8688847dcfab7d4e8a091f81aa351965:
+.. _cid-snd_pcm_ioplug_callback::sw_params:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* sw_params )(snd_pcm_ioplug_t *io, snd_pcm_sw_params_t *params)
+
+sw_params; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a071405a306b66091c61039b7997d8685:
+.. _cid-snd_pcm_ioplug_callback::prepare:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* prepare )(snd_pcm_ioplug_t *io)
+
+prepare; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a5bc9a5f9d0be0f284458a94e44b5fdb3:
+.. _cid-snd_pcm_ioplug_callback::drain:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* drain )(snd_pcm_ioplug_t *io)
+
+drain; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a68f7c891a62620fb90bfd929313e56b3:
+.. _cid-snd_pcm_ioplug_callback::pause:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* pause )(snd_pcm_ioplug_t *io, int enable)
+
+toggle pause; optional, called inside mutex lock
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a1176d8570c78351ed5b957b7c6c5884f:
+.. _cid-snd_pcm_ioplug_callback::resume:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* resume )(snd_pcm_ioplug_t *io)
+
+resume; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a5c32d0aee17ebea124b3e8f11dad68e9:
+.. _cid-snd_pcm_ioplug_callback::poll_descriptors_count:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* poll_descriptors_count )(snd_pcm_ioplug_t *io)
+
+poll descriptors count; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a6793d36d985acd08ca95776e59763b3a:
+.. _cid-snd_pcm_ioplug_callback::poll_descriptors:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* poll_descriptors )(snd_pcm_ioplug_t *io, struct pollfd *pfd, unsigned int space)
+
+poll descriptors; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a7b8c4cab575b38ed24371b1afdc5c6b9:
+.. _cid-snd_pcm_ioplug_callback::poll_revents:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* poll_revents )(snd_pcm_ioplug_t *io, struct pollfd *pfd, unsigned int nfds, unsigned short *revents)
+
+mangle poll events; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a839c05869c4dfd5e9b81224fe21c66fd:
+.. _cid-snd_pcm_ioplug_callback::dump:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void (* dump )(snd_pcm_ioplug_t *io, snd_output_t *out)
+
+dump; optional
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a4ae1a94b5a4e1946750c2fc71c0197ba:
+.. _cid-snd_pcm_ioplug_callback::delay:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* delay )(snd_pcm_ioplug_t *io, snd_pcm_sframes_t *delayp)
+
+get the delay for the running PCM; optional; since v1.0.1
+
+.. _doxid-structsnd__pcm__ioplug__callback_1aadaf669911046e91fdba3b15fe2a4839:
+.. _cid-snd_pcm_ioplug_callback::query_chmaps:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_chmap_query_t<doxid-structsnd__pcm__chmap__query__t>`** (* query_chmaps )(snd_pcm_ioplug_t *io)
+
+query the channel maps; optional; since v1.0.2
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a364feac16fc31f508ea67525c42e26dc:
+.. _cid-snd_pcm_ioplug_callback::get_chmap:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_chmap_t<doxid-structsnd__pcm__chmap__t>`* (* get_chmap )(snd_pcm_ioplug_t *io)
+
+get the channel map; optional; since v1.0.2
+
+.. _doxid-structsnd__pcm__ioplug__callback_1a8eb02dcaecc9b5120e6c29359167efa6:
+.. _cid-snd_pcm_ioplug_callback::set_chmap:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* set_chmap )(snd_pcm_ioplug_t *io, const snd_pcm_chmap_t *map)
+
+set the channel map; optional; since v1.0.2
+

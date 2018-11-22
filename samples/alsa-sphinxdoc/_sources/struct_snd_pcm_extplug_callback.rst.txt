@@ -1,0 +1,127 @@
+.. index:: pair: struct; snd_pcm_extplug_callback
+.. _doxid-structsnd__pcm__extplug__callback:
+.. _cid-snd_pcm_extplug_callback:
+
+struct snd_pcm_extplug_callback
+===============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <pcm_extplug.h>
+
+
+Overview
+~~~~~~~~
+
+Callback table of extplug :ref:`More...<details-doxid-structsnd__pcm__extplug__callback>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`snd_pcm_sframes_t<doxid-group___p_c_m_1ga71cdfa37e258d2210b8bd0216bf0c36c>` (* :ref:`transfer<doxid-structsnd__pcm__extplug__callback_1a05d30fcfe8fa57535c6eeadfb062ad8f>`)(snd_pcm_extplug_t *ext, const snd_pcm_channel_area_t *dst_areas, snd_pcm_uframes_t dst_offset, const snd_pcm_channel_area_t *src_areas, snd_pcm_uframes_t src_offset, snd_pcm_uframes_t size)
+	int (* :ref:`close<doxid-structsnd__pcm__extplug__callback_1a06f994b29889eae8f00b74248eb254cf>`)(snd_pcm_extplug_t *ext)
+	int (* :ref:`hw_params<doxid-structsnd__pcm__extplug__callback_1ab25bf52043d5e06885b6edcdb8269776>`)(snd_pcm_extplug_t *ext, snd_pcm_hw_params_t *params)
+	int (* :ref:`hw_free<doxid-structsnd__pcm__extplug__callback_1ad4d8fe041ed09e8b855c5ca45cb6899e>`)(snd_pcm_extplug_t *ext)
+	void (* :ref:`dump<doxid-structsnd__pcm__extplug__callback_1a14901a03219c050a7980b18fe62265ed>`)(snd_pcm_extplug_t *ext, snd_output_t *out)
+	int (* :ref:`init<doxid-structsnd__pcm__extplug__callback_1a7a12bd150cd2a09922c14e885f5c058b>`)(snd_pcm_extplug_t *ext)
+	:ref:`snd_pcm_chmap_query_t<doxid-structsnd__pcm__chmap__query__t>`** (* :ref:`query_chmaps<doxid-structsnd__pcm__extplug__callback_1a433980d04f76d65305f119915f1f2cc6>`)(snd_pcm_extplug_t *ext)
+	:ref:`snd_pcm_chmap_t<doxid-structsnd__pcm__chmap__t>`* (* :ref:`get_chmap<doxid-structsnd__pcm__extplug__callback_1a6b4c18d63bea69970d88af52ea205f6e>`)(snd_pcm_extplug_t *ext)
+	int (* :ref:`set_chmap<doxid-structsnd__pcm__extplug__callback_1a6865a675c9aa9632afa8889bd01a578a>`)(snd_pcm_extplug_t *ext, const snd_pcm_chmap_t *map)
+
+.. _details-doxid-structsnd__pcm__extplug__callback:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Callback table of extplug
+
+Fields
+------
+
+.. _doxid-structsnd__pcm__extplug__callback_1a05d30fcfe8fa57535c6eeadfb062ad8f:
+.. _cid-snd_pcm_extplug_callback::transfer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_sframes_t<doxid-group___p_c_m_1ga71cdfa37e258d2210b8bd0216bf0c36c>` (* transfer )(snd_pcm_extplug_t *ext, const snd_pcm_channel_area_t *dst_areas, snd_pcm_uframes_t dst_offset, const snd_pcm_channel_area_t *src_areas, snd_pcm_uframes_t src_offset, snd_pcm_uframes_t size)
+
+transfer between source and destination; this is a required callback
+
+.. _doxid-structsnd__pcm__extplug__callback_1a06f994b29889eae8f00b74248eb254cf:
+.. _cid-snd_pcm_extplug_callback::close:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* close )(snd_pcm_extplug_t *ext)
+
+close the PCM; optional
+
+.. _doxid-structsnd__pcm__extplug__callback_1ab25bf52043d5e06885b6edcdb8269776:
+.. _cid-snd_pcm_extplug_callback::hw_params:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* hw_params )(snd_pcm_extplug_t *ext, snd_pcm_hw_params_t *params)
+
+hw_params; optional
+
+.. _doxid-structsnd__pcm__extplug__callback_1ad4d8fe041ed09e8b855c5ca45cb6899e:
+.. _cid-snd_pcm_extplug_callback::hw_free:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* hw_free )(snd_pcm_extplug_t *ext)
+
+hw_free; optional
+
+.. _doxid-structsnd__pcm__extplug__callback_1a14901a03219c050a7980b18fe62265ed:
+.. _cid-snd_pcm_extplug_callback::dump:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void (* dump )(snd_pcm_extplug_t *ext, snd_output_t *out)
+
+dump; optional
+
+.. _doxid-structsnd__pcm__extplug__callback_1a7a12bd150cd2a09922c14e885f5c058b:
+.. _cid-snd_pcm_extplug_callback::init:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* init )(snd_pcm_extplug_t *ext)
+
+init; optional initialization called at prepare or reset
+
+.. _doxid-structsnd__pcm__extplug__callback_1a433980d04f76d65305f119915f1f2cc6:
+.. _cid-snd_pcm_extplug_callback::query_chmaps:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_chmap_query_t<doxid-structsnd__pcm__chmap__query__t>`** (* query_chmaps )(snd_pcm_extplug_t *ext)
+
+query the channel maps; optional; since v1.0.2
+
+.. _doxid-structsnd__pcm__extplug__callback_1a6b4c18d63bea69970d88af52ea205f6e:
+.. _cid-snd_pcm_extplug_callback::get_chmap:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_pcm_chmap_t<doxid-structsnd__pcm__chmap__t>`* (* get_chmap )(snd_pcm_extplug_t *ext)
+
+get the channel map; optional; since v1.0.2
+
+.. _doxid-structsnd__pcm__extplug__callback_1a6865a675c9aa9632afa8889bd01a578a:
+.. _cid-snd_pcm_extplug_callback::set_chmap:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* set_chmap )(snd_pcm_extplug_t *ext, const snd_pcm_chmap_t *map)
+
+set the channel map; optional; since v1.0.2
+

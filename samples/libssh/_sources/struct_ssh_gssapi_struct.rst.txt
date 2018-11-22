@@ -1,0 +1,65 @@
+.. index:: pair: struct; ssh_gssapi_struct
+.. _doxid-structssh__gssapi__struct:
+.. _cid-ssh_gssapi_struct:
+
+struct ssh_gssapi_struct
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structssh__gssapi__struct_1a4deca9d3400908bbcd4e529bfac024ab:
+.. _cid-ssh_gssapi_struct::canonic_user:
+.. _doxid-structssh__gssapi__struct_1ad339bf22fe4933c4f508d72f939a262b:
+.. _cid-ssh_gssapi_struct::client:
+.. _doxid-structssh__gssapi__struct_1a647f2ab54a60c1309015435ef3ac7b0c:
+.. _cid-ssh_gssapi_struct::client_creds:
+.. _doxid-structssh__gssapi__struct_1a4e765c6d795647ac993d99fc853ea3b0:
+.. _cid-ssh_gssapi_struct::client_deleg_creds:
+.. _doxid-structssh__gssapi__struct_1a863d7c985bd01e0dfc1d246f528ff2f6:
+.. _cid-ssh_gssapi_struct::client_name:
+.. _doxid-structssh__gssapi__struct_1a8ae8b30ba8f01506142653ad03376c22:
+.. _cid-ssh_gssapi_struct::creds:
+.. _doxid-structssh__gssapi__struct_1a6fbf35e8c31e5933c1a2e8e26b06e60c:
+.. _cid-ssh_gssapi_struct::ctx:
+.. _doxid-structssh__gssapi__struct_1a81bb75a8b5ff2d1173f666a9bb84c9cd:
+.. _cid-ssh_gssapi_struct::flags:
+.. _doxid-structssh__gssapi__struct_1a89b963d1e55e061b3bc3d54cdfc35501:
+.. _cid-ssh_gssapi_struct::mech:
+.. _doxid-structssh__gssapi__struct_1aeadf882fd23eea19689d124b6a24ac36:
+.. _cid-ssh_gssapi_struct::oid:
+.. _doxid-structssh__gssapi__struct_1a3566e45f8cc9c5d9dbaecdb9ab9a7b32:
+.. _cid-ssh_gssapi_struct::server_creds:
+.. _doxid-structssh__gssapi__struct_1ae67ce3ebb31e06f21a0a916b2aefa127:
+.. _cid-ssh_gssapi_struct::server_name:
+.. _doxid-structssh__gssapi__struct_1aae0885c421b76aef11628e7925a12287:
+.. _cid-ssh_gssapi_struct::service:
+.. _doxid-structssh__gssapi__struct_1ac2aad0d6f8f3f4425a53c9345731e815:
+.. _cid-ssh_gssapi_struct::state:
+.. _doxid-structssh__gssapi__struct_1aa1c8b3a1c83171fde124f8a411cf4736:
+.. _cid-ssh_gssapi_struct::user:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char* canonic_user
+	struct ssh_gssapi_struct::@4 client
+	gss_cred_id_t client_creds
+	gss_cred_id_t client_deleg_creds
+	gss_name_t client_name
+	gss_cred_id_t creds
+	gss_ctx_id_t ctx
+	OM_uint32 flags
+	struct gss_OID_desc_struct mech
+	gss_OID oid
+	gss_cred_id_t server_creds
+	gss_name_t server_name
+	char* service
+	enum :ref:`ssh_gssapi_state_e<doxid-gssapi_8c_1aef091f60e6c6e54f4c2d357d8bf001f3>` state
+	char* user
+

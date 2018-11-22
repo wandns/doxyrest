@@ -1,0 +1,26 @@
+.. index:: pair: struct; ge25519_aff
+.. _doxid-structge25519__aff:
+.. _cid-ge25519_aff:
+
+struct ge25519_aff
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structge25519__aff_1a467f1918507d1bca42ca1d6003db7544:
+.. _cid-ge25519_aff::x:
+.. _doxid-structge25519__aff_1ab9a15feff0edbb3a131ff532f1899cd0:
+.. _cid-ge25519_aff::y:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`fe25519<doxid-fe25519_8h_1ac6f430aaee12b04ecacd9a404f2e922c>` x
+	:ref:`fe25519<doxid-fe25519_8h_1ac6f430aaee12b04ecacd9a404f2e922c>` y
+

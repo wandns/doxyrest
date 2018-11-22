@@ -1,0 +1,103 @@
+.. index:: pair: enum; snd_ctl_elem_iface_t
+.. _doxid-group___control_1ga14baa0febb91cc4c5d72dcc825acf518:
+.. _cid-snd_ctl_elem_iface_t:
+
+enum snd_ctl_elem_iface_t
+=========================
+
+
+
+Overview
+~~~~~~~~
+
+CTL related interface :ref:`More...<details-doxid-group___control_1ga14baa0febb91cc4c5d72dcc825acf518>`
+
+.. _doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518ad923e429ee1fe8233094ecd7d49fc499:
+.. _cid-snd_ctl_elem_iface_t::snd_ctl_elem_iface_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_CTL_ELEM_IFACE_CARD<doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518a13ed37a91e6ea81175f9bf61411eccca>` = 0
+	:ref:`SND_CTL_ELEM_IFACE_HWDEP<doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518aebbef1ae0db15ec3c2f4f2afd63c4a82>` 
+	:ref:`SND_CTL_ELEM_IFACE_MIXER<doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518af7d7a7f5af771a7cdbec7424b2510060>` 
+	:ref:`SND_CTL_ELEM_IFACE_PCM<doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518a701d786e4a50e0931c27660a877ee7ae>` 
+	:ref:`SND_CTL_ELEM_IFACE_RAWMIDI<doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518aeb930ace203532c3a8ca399a3f3b03a7>` 
+	:ref:`SND_CTL_ELEM_IFACE_TIMER<doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518aed953d644672e4e2d36e5d77607cea28>` 
+	:ref:`SND_CTL_ELEM_IFACE_SEQUENCER<doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518a86942df032bda20d3b14d8d32d95ca6e>` 
+	SND_CTL_ELEM_IFACE_LAST = SND_CTL_ELEM_IFACE_SEQUENCER
+
+.. _details-doxid-group___control_1ga14baa0febb91cc4c5d72dcc825acf518:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+CTL related interface
+
+Enum Values
+-----------
+
+.. _doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518a13ed37a91e6ea81175f9bf61411eccca:
+.. _cid-snd_ctl_elem_iface_t::snd_ctl_elem_iface_card:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_IFACE_CARD
+
+Card level
+
+.. _doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518aebbef1ae0db15ec3c2f4f2afd63c4a82:
+.. _cid-snd_ctl_elem_iface_t::snd_ctl_elem_iface_hwdep:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_IFACE_HWDEP
+
+Hardware dependent device
+
+.. _doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518af7d7a7f5af771a7cdbec7424b2510060:
+.. _cid-snd_ctl_elem_iface_t::snd_ctl_elem_iface_mixer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_IFACE_MIXER
+
+Mixer
+
+.. _doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518a701d786e4a50e0931c27660a877ee7ae:
+.. _cid-snd_ctl_elem_iface_t::snd_ctl_elem_iface_pcm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_IFACE_PCM
+
+PCM
+
+.. _doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518aeb930ace203532c3a8ca399a3f3b03a7:
+.. _cid-snd_ctl_elem_iface_t::snd_ctl_elem_iface_rawmidi:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_IFACE_RAWMIDI
+
+RawMidi
+
+.. _doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518aed953d644672e4e2d36e5d77607cea28:
+.. _cid-snd_ctl_elem_iface_t::snd_ctl_elem_iface_timer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_IFACE_TIMER
+
+Timer
+
+.. _doxid-group___control_1gga14baa0febb91cc4c5d72dcc825acf518a86942df032bda20d3b14d8d32d95ca6e:
+.. _cid-snd_ctl_elem_iface_t::snd_ctl_elem_iface_sequencer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_ELEM_IFACE_SEQUENCER
+
+Sequencer
+

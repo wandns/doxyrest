@@ -1,0 +1,80 @@
+.. index:: pair: enum; ssh_channel_request_state_e
+.. _doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325:
+.. _cid-ssh_channel_request_state_e:
+
+enum ssh_channel_request_state_e
+================================
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SSH_CHANNEL_REQ_STATE_NONE<doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a98c7a3dcf02759118261e2bac4d6e421>` = 0
+	:ref:`SSH_CHANNEL_REQ_STATE_PENDING<doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a1229a4614fb5d58a7bcd4d6b0bd4816e>` 
+	:ref:`SSH_CHANNEL_REQ_STATE_ACCEPTED<doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a4054be6a6327c97579cb9dce89c90590>` 
+	:ref:`SSH_CHANNEL_REQ_STATE_DENIED<doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a4947de111ac917be11de88f4e9147d14>` 
+	:ref:`SSH_CHANNEL_REQ_STATE_ERROR<doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a7d2c1ea4f49536c9bea8c1187d950378>` 
+
+.. _details-doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Enum Values
+-----------
+
+.. _doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a98c7a3dcf02759118261e2bac4d6e421:
+.. _cid-ssh_channel_request_state_e::ssh_channel_req_state_none:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_CHANNEL_REQ_STATE_NONE
+
+No request has been made.
+
+.. _doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a1229a4614fb5d58a7bcd4d6b0bd4816e:
+.. _cid-ssh_channel_request_state_e::ssh_channel_req_state_pending:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_CHANNEL_REQ_STATE_PENDING
+
+A request has been made and answer is pending.
+
+.. _doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a4054be6a6327c97579cb9dce89c90590:
+.. _cid-ssh_channel_request_state_e::ssh_channel_req_state_accepted:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_CHANNEL_REQ_STATE_ACCEPTED
+
+A request has been replied and accepted.
+
+.. _doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a4947de111ac917be11de88f4e9147d14:
+.. _cid-ssh_channel_request_state_e::ssh_channel_req_state_denied:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_CHANNEL_REQ_STATE_DENIED
+
+A request has been replied and refused.
+
+.. _doxid-channels_8h_1a774597eb1605e8b48cd065965fdc2325a7d2c1ea4f49536c9bea8c1187d950378:
+.. _cid-ssh_channel_request_state_e::ssh_channel_req_state_error:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SSH_CHANNEL_REQ_STATE_ERROR
+
+A request has been replied and an error happend.
+

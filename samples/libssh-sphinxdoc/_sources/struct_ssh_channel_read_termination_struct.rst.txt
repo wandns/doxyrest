@@ -1,0 +1,29 @@
+.. index:: pair: struct; ssh_channel_read_termination_struct
+.. _doxid-structssh__channel__read__termination__struct:
+.. _cid-ssh_channel_read_termination_struct:
+
+struct ssh_channel_read_termination_struct
+==========================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structssh__channel__read__termination__struct_1a08553fc1cb59d4276f5ddd9309cf85d4:
+.. _cid-ssh_channel_read_termination_struct::buffer:
+.. _doxid-structssh__channel__read__termination__struct_1a068a064822da15bbc84f0b888b3791e3:
+.. _cid-ssh_channel_read_termination_struct::channel:
+.. _doxid-structssh__channel__read__termination__struct_1a56d60a9f4b6cd70f239fdc20ebc0d17c:
+.. _cid-ssh_channel_read_termination_struct::count:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_buffer buffer
+	ssh_channel channel
+	uint32_t count
+

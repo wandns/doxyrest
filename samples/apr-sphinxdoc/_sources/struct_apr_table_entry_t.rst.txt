@@ -1,0 +1,67 @@
+.. index:: pair: struct; apr_table_entry_t
+.. _doxid-structapr__table__entry__t:
+.. _cid-apr_table_entry_t:
+
+struct apr_table_entry_t
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_tables.h>
+
+
+Overview
+~~~~~~~~
+
+The type for each entry in a string-content table :ref:`More...<details-doxid-structapr__table__entry__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char* :ref:`key<doxid-structapr__table__entry__t_1abdccb35ea49dd95082fdce65a5a6001f>`
+	char* :ref:`val<doxid-structapr__table__entry__t_1a755371d0aa6a9487b502c34807271e6f>`
+	apr_uint32_t :ref:`key_checksum<doxid-structapr__table__entry__t_1a0c51574420b6cc7bc6c2e35710e0ad3a>`
+
+.. _details-doxid-structapr__table__entry__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+The type for each entry in a string-content table
+
+Fields
+------
+
+.. _doxid-structapr__table__entry__t_1abdccb35ea49dd95082fdce65a5a6001f:
+.. _cid-apr_table_entry_t::key:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char* key
+
+The key for the current table entry
+
+.. _doxid-structapr__table__entry__t_1a755371d0aa6a9487b502c34807271e6f:
+.. _cid-apr_table_entry_t::val:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char* val
+
+The value for the current table entry
+
+.. _doxid-structapr__table__entry__t_1a0c51574420b6cc7bc6c2e35710e0ad3a:
+.. _cid-apr_table_entry_t::key_checksum:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	apr_uint32_t key_checksum
+
+A checksum for the key, for use by the apr_table internals
+

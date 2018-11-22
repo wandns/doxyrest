@@ -1,0 +1,57 @@
+.. index:: pair: struct; apr_vformatter_buff_t
+.. _doxid-structapr__vformatter__buff__t:
+.. _cid-apr_vformatter_buff_t:
+
+struct apr_vformatter_buff_t
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_lib.h>
+
+
+Overview
+~~~~~~~~
+
+Structure used by the variable-formatter routines. :ref:`More...<details-doxid-structapr__vformatter__buff__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char* :ref:`curpos<doxid-structapr__vformatter__buff__t_1aad69bb2ce382b39f55df6cc59039aee9>`
+	char* :ref:`endpos<doxid-structapr__vformatter__buff__t_1ab4884e759f4285c72df93e0d63022675>`
+
+.. _details-doxid-structapr__vformatter__buff__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Structure used by the variable-formatter routines.
+
+Fields
+------
+
+.. _doxid-structapr__vformatter__buff__t_1aad69bb2ce382b39f55df6cc59039aee9:
+.. _cid-apr_vformatter_buff_t::curpos:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char* curpos
+
+The current position
+
+.. _doxid-structapr__vformatter__buff__t_1ab4884e759f4285c72df93e0d63022675:
+.. _cid-apr_vformatter_buff_t::endpos:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char* endpos
+
+The end position of the format string
+

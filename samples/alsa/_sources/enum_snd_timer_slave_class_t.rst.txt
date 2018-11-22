@@ -1,0 +1,80 @@
+.. index:: pair: enum; snd_timer_slave_class_t
+.. _doxid-group___timer_1gad834b328331c3a4a4fb42041e2e61298:
+.. _cid-snd_timer_slave_class_t:
+
+enum snd_timer_slave_class_t
+============================
+
+
+
+Overview
+~~~~~~~~
+
+timer slave class :ref:`More...<details-doxid-group___timer_1gad834b328331c3a4a4fb42041e2e61298>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_TIMER_SCLASS_NONE<doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298a93c410a46bba52d680058f0718a32879>` = 0
+	:ref:`SND_TIMER_SCLASS_APPLICATION<doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298ae7fbc56d9edddadce36b1c106642df47>` 
+	:ref:`SND_TIMER_SCLASS_SEQUENCER<doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298a1b051f95a8e420b7d0bea1621882bf94>` 
+	:ref:`SND_TIMER_SCLASS_OSS_SEQUENCER<doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298a36e74e47c3d113180d91f869d37a2d38>` 
+	:ref:`SND_TIMER_SCLASS_LAST<doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298a411d2f011abfe46d76af7e0be1056512>` = SND_TIMER_SCLASS_OSS_SEQUENCER
+
+.. _details-doxid-group___timer_1gad834b328331c3a4a4fb42041e2e61298:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+timer slave class
+
+Enum Values
+-----------
+
+.. _doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298a93c410a46bba52d680058f0718a32879:
+.. _cid-snd_timer_slave_class_t::snd_timer_sclass_none:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TIMER_SCLASS_NONE
+
+none
+
+.. _doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298ae7fbc56d9edddadce36b1c106642df47:
+.. _cid-snd_timer_slave_class_t::snd_timer_sclass_application:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TIMER_SCLASS_APPLICATION
+
+for internal use
+
+.. _doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298a1b051f95a8e420b7d0bea1621882bf94:
+.. _cid-snd_timer_slave_class_t::snd_timer_sclass_sequencer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TIMER_SCLASS_SEQUENCER
+
+sequencer timer
+
+.. _doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298a36e74e47c3d113180d91f869d37a2d38:
+.. _cid-snd_timer_slave_class_t::snd_timer_sclass_oss_sequencer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TIMER_SCLASS_OSS_SEQUENCER
+
+OSS sequencer timer
+
+.. _doxid-group___timer_1ggad834b328331c3a4a4fb42041e2e61298a411d2f011abfe46d76af7e0be1056512:
+.. _cid-snd_timer_slave_class_t::snd_timer_sclass_last:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TIMER_SCLASS_LAST
+
+last slave timer
+

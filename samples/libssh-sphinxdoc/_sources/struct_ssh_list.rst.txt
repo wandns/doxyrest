@@ -1,0 +1,30 @@
+.. index:: pair: struct; ssh_list
+.. _doxid-structssh__list:
+.. _cid-ssh_list:
+
+struct ssh_list
+===============
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/misc.h>
+
+
+
+
+.. _doxid-structssh__list_1adfd591e8780c0e9039dc181579a54946:
+.. _cid-ssh_list::end:
+.. _doxid-structssh__list_1aa5c28ddda4de879b07646ac9d43015ae:
+.. _cid-ssh_list::root:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	struct :ref:`ssh_iterator<doxid-structssh__iterator>`* end
+	struct :ref:`ssh_iterator<doxid-structssh__iterator>`* root
+

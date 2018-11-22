@@ -1,0 +1,29 @@
+.. index:: pair: enum; ssh_error_types_e
+.. _doxid-libssh_8h_1a036b2b00fb04337a4d06d719d1b62be1:
+.. _cid-ssh_error_types_e:
+
+enum ssh_error_types_e
+======================
+
+
+
+
+
+.. _doxid-libssh_8h_1a036b2b00fb04337a4d06d719d1b62be1ac3aceef794ead7991dc7a2d0cf93f5c5:
+.. _cid-ssh_error_types_e::ssh_no_error:
+.. _doxid-libssh_8h_1a036b2b00fb04337a4d06d719d1b62be1ad1339fb4b92a9d25bdb99df5de5c4f88:
+.. _cid-ssh_error_types_e::ssh_request_denied:
+.. _doxid-libssh_8h_1a036b2b00fb04337a4d06d719d1b62be1a86ff0b2e8da6ad8628efc556b6ce1887:
+.. _cid-ssh_error_types_e::ssh_fatal:
+.. _doxid-libssh_8h_1a036b2b00fb04337a4d06d719d1b62be1a09a5d3ff30c0ab7c5798eb2ea98354e4:
+.. _cid-ssh_error_types_e::ssh_eintr:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_NO_ERROR =0
+	SSH_REQUEST_DENIED 
+	SSH_FATAL 
+	SSH_EINTR 
+

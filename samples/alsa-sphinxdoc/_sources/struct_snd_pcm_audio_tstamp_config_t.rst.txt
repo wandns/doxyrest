@@ -1,0 +1,26 @@
+.. index:: pair: struct; snd_pcm_audio_tstamp_config_t
+.. _doxid-structsnd__pcm__audio__tstamp__config__t:
+.. _cid-snd_pcm_audio_tstamp_config_t:
+
+struct snd_pcm_audio_tstamp_config_t
+====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structsnd__pcm__audio__tstamp__config__t_1a20342e32550069636728c18351d16b6e:
+.. _cid-snd_pcm_audio_tstamp_config_t::type_requested:
+.. _doxid-structsnd__pcm__audio__tstamp__config__t_1adf9034319342df0fbe8ef7162f0a6699:
+.. _cid-snd_pcm_audio_tstamp_config_t::report_delay:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	unsigned int type_requested :4
+	unsigned int report_delay :1
+

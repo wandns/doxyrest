@@ -1,0 +1,57 @@
+.. index:: pair: union; apr_descriptor
+.. _doxid-unionapr__descriptor:
+.. _cid-apr_descriptor:
+
+union apr_descriptor
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_poll.h>
+
+
+Overview
+~~~~~~~~
+
+Union of either an APR file or socket. :ref:`More...<details-doxid-unionapr__descriptor>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`apr_file_t<doxid-group__apr__file__io_1gaa46e4763ac375ea3c7a43ba6f6099e22>`* :ref:`f<doxid-unionapr__descriptor_1a69d605f2bb33b05ceedb3d95b744ca7e>`
+	:ref:`apr_socket_t<doxid-group__apr__network__io_1ga49262b223e7434746e1f1737659aa2c3>`* :ref:`s<doxid-unionapr__descriptor_1a39a15be8be084afadfa173810b346f6c>`
+
+.. _details-doxid-unionapr__descriptor:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Union of either an APR file or socket.
+
+Fields
+------
+
+.. _doxid-unionapr__descriptor_1a69d605f2bb33b05ceedb3d95b744ca7e:
+.. _cid-apr_descriptor::f:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`apr_file_t<doxid-group__apr__file__io_1gaa46e4763ac375ea3c7a43ba6f6099e22>`* f
+
+file
+
+.. _doxid-unionapr__descriptor_1a39a15be8be084afadfa173810b346f6c:
+.. _cid-apr_descriptor::s:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`apr_socket_t<doxid-group__apr__network__io_1ga49262b223e7434746e1f1737659aa2c3>`* s
+
+socket
+

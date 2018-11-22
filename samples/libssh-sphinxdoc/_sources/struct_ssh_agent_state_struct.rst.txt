@@ -1,0 +1,29 @@
+.. index:: pair: struct; ssh_agent_state_struct
+.. _doxid-structssh__agent__state__struct:
+.. _cid-ssh_agent_state_struct:
+
+struct ssh_agent_state_struct
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structssh__agent__state__struct_1a046c39264f78a0ab557bad16b8951572:
+.. _cid-ssh_agent_state_struct::comment:
+.. _doxid-structssh__agent__state__struct_1afa9e6b41763fccd5322c84555862d316:
+.. _cid-ssh_agent_state_struct::pubkey:
+.. _doxid-structssh__agent__state__struct_1aff904ec87c3104dfb7bb6915ef9a88b6:
+.. _cid-ssh_agent_state_struct::state:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char* comment
+	ssh_key pubkey
+	enum :ref:`ssh_agent_state_e<doxid-group__libssh__auth_1ga288d00c21fe2d652607792379d90b7cf>` state
+

@@ -1,0 +1,30 @@
+.. index:: pair: struct; error_struct
+.. _doxid-structerror__struct:
+.. _cid-error_struct:
+
+struct error_struct
+===================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/priv.h>
+
+
+
+
+.. _doxid-structerror__struct_1abb9814d82bb29c91e1d83463b860e2e8:
+.. _cid-error_struct::error_buffer:
+.. _doxid-structerror__struct_1a9d372cd0ab28637cb02f154c89a0954c:
+.. _cid-error_struct::error_code:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char error_buffer[1024]
+	int error_code
+

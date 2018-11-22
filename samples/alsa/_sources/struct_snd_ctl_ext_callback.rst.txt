@@ -1,0 +1,289 @@
+.. index:: pair: struct; snd_ctl_ext_callback
+.. _doxid-structsnd__ctl__ext__callback:
+.. _cid-snd_ctl_ext_callback:
+
+struct snd_ctl_ext_callback
+===========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <control_external.h>
+
+
+Overview
+~~~~~~~~
+
+Callback table of ext. :ref:`More...<details-doxid-structsnd__ctl__ext__callback>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	void (* :ref:`close<doxid-structsnd__ctl__ext__callback_1ad61ac2d50057ede7b363a385979010fb>`)(snd_ctl_ext_t *ext)
+	int (* :ref:`elem_count<doxid-structsnd__ctl__ext__callback_1ab43cecb31b9bd2fb2d87ebdcff67980a>`)(snd_ctl_ext_t *ext)
+	int (* :ref:`elem_list<doxid-structsnd__ctl__ext__callback_1a47d137dffe0f0ad99313785bc6abf6d1>`)(snd_ctl_ext_t *ext, unsigned int offset, snd_ctl_elem_id_t *id)
+	:ref:`snd_ctl_ext_key_t<doxid-group___ctl_plugin___s_d_k_1gac73a66a3973afb51c4e585177647c693>` (* :ref:`find_elem<doxid-structsnd__ctl__ext__callback_1a9219dbb614782cb8d92f6d5632ef55e2>`)(snd_ctl_ext_t *ext, const snd_ctl_elem_id_t *id)
+	void (* :ref:`free_key<doxid-structsnd__ctl__ext__callback_1a822a8437aeb32b4ec2413c08a3502fde>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key)
+	int (* :ref:`get_attribute<doxid-structsnd__ctl__ext__callback_1add5650b201dc8edbc3eb14111d9bd389>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, int *type, unsigned int *acc, unsigned int *count)
+	int (* :ref:`get_integer_info<doxid-structsnd__ctl__ext__callback_1a3c537dcf813d6a0c8cd7efc92cbaf417>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, long *imin, long *imax, long *istep)
+	int (* :ref:`get_integer64_info<doxid-structsnd__ctl__ext__callback_1aad994483d97828f3d6941a70f46f46c2>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, int64_t *imin, int64_t *imax, int64_t *istep)
+	int (* :ref:`get_enumerated_info<doxid-structsnd__ctl__ext__callback_1adbebb8e8d3a2c8325bfb71736acdfa63>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned int *items)
+	int (* :ref:`get_enumerated_name<doxid-structsnd__ctl__ext__callback_1a2b0c9d3df2ec114369f099a479c67d24>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned int item, char *name, size_t name_max_len)
+	int (* :ref:`read_integer<doxid-structsnd__ctl__ext__callback_1a65328da675e4c1ad959bea026109c313>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, long *value)
+	int (* :ref:`read_integer64<doxid-structsnd__ctl__ext__callback_1a531baab0b857e3c0fcea7641a9a107fb>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, int64_t *value)
+	int (* :ref:`read_enumerated<doxid-structsnd__ctl__ext__callback_1a56e661ca05e9db6f0340d23673651d5c>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned int *items)
+	int (* :ref:`read_bytes<doxid-structsnd__ctl__ext__callback_1aeeafda4a363eeb124ab21f7663cc804d>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned char *data, size_t max_bytes)
+	int (* :ref:`read_iec958<doxid-structsnd__ctl__ext__callback_1a95de209ca2f456797ddbba4cdf5b7bd0>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, snd_aes_iec958_t *iec958)
+	int (* :ref:`write_integer<doxid-structsnd__ctl__ext__callback_1a7313060836f8d45cf31a528ec2d8a6d0>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, long *value)
+	int (* :ref:`write_integer64<doxid-structsnd__ctl__ext__callback_1a3067fb89e0e4b71b7c0c9d3ec1cde0f7>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, int64_t *value)
+	int (* :ref:`write_enumerated<doxid-structsnd__ctl__ext__callback_1a9c42eb6739a90477b7b3775b4972268b>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned int *items)
+	int (* :ref:`write_bytes<doxid-structsnd__ctl__ext__callback_1a844ce4698c73bb316bdbde1554353e4a>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned char *data, size_t max_bytes)
+	int (* :ref:`write_iec958<doxid-structsnd__ctl__ext__callback_1af031bf7a362a9fde9e622be0d36bb9f3>`)(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, snd_aes_iec958_t *iec958)
+	void (* :ref:`subscribe_events<doxid-structsnd__ctl__ext__callback_1a7669a306b86bfe1df7502e195688b855>`)(snd_ctl_ext_t *ext, int subscribe)
+	int (* :ref:`read_event<doxid-structsnd__ctl__ext__callback_1ac99b6d92e4ca9c8e9115e38da0814bf6>`)(snd_ctl_ext_t *ext, snd_ctl_elem_id_t *id, unsigned int *event_mask)
+	int (* :ref:`poll_descriptors_count<doxid-structsnd__ctl__ext__callback_1a89619794442bb2582d4921753de3a344>`)(snd_ctl_ext_t *ext)
+	int (* :ref:`poll_descriptors<doxid-structsnd__ctl__ext__callback_1ae977e058fc11d25ba1a0dea4ebdd91b2>`)(snd_ctl_ext_t *ext, struct pollfd *pfds, unsigned int space)
+	int (* :ref:`poll_revents<doxid-structsnd__ctl__ext__callback_1a03a4c55c5484584d06c263a08cbc0e26>`)(snd_ctl_ext_t *ext, struct pollfd *pfds, unsigned int nfds, unsigned short *revents)
+
+.. _details-doxid-structsnd__ctl__ext__callback:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Callback table of ext.
+
+Callback table of control ext
+
+Fields
+------
+
+.. _doxid-structsnd__ctl__ext__callback_1ad61ac2d50057ede7b363a385979010fb:
+.. _cid-snd_ctl_ext_callback::close:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void (* close )(snd_ctl_ext_t *ext)
+
+close the control handle; optional
+
+.. _doxid-structsnd__ctl__ext__callback_1ab43cecb31b9bd2fb2d87ebdcff67980a:
+.. _cid-snd_ctl_ext_callback::elem_count:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* elem_count )(snd_ctl_ext_t *ext)
+
+return the total number of elements; required
+
+.. _doxid-structsnd__ctl__ext__callback_1a47d137dffe0f0ad99313785bc6abf6d1:
+.. _cid-snd_ctl_ext_callback::elem_list:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* elem_list )(snd_ctl_ext_t *ext, unsigned int offset, snd_ctl_elem_id_t *id)
+
+return the element id of the given offset (array index); required
+
+.. _doxid-structsnd__ctl__ext__callback_1a9219dbb614782cb8d92f6d5632ef55e2:
+.. _cid-snd_ctl_ext_callback::find_elem:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_ctl_ext_key_t<doxid-group___ctl_plugin___s_d_k_1gac73a66a3973afb51c4e585177647c693>` (* find_elem )(snd_ctl_ext_t *ext, const snd_ctl_elem_id_t *id)
+
+convert the element id to a search key; required
+
+.. _doxid-structsnd__ctl__ext__callback_1a822a8437aeb32b4ec2413c08a3502fde:
+.. _cid-snd_ctl_ext_callback::free_key:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void (* free_key )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key)
+
+the destructor of the key; optional
+
+.. _doxid-structsnd__ctl__ext__callback_1add5650b201dc8edbc3eb14111d9bd389:
+.. _cid-snd_ctl_ext_callback::get_attribute:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* get_attribute )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, int *type, unsigned int *acc, unsigned int *count)
+
+get the attribute of the element; required
+
+.. _doxid-structsnd__ctl__ext__callback_1a3c537dcf813d6a0c8cd7efc92cbaf417:
+.. _cid-snd_ctl_ext_callback::get_integer_info:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* get_integer_info )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, long *imin, long *imax, long *istep)
+
+get the element information of integer type
+
+.. _doxid-structsnd__ctl__ext__callback_1aad994483d97828f3d6941a70f46f46c2:
+.. _cid-snd_ctl_ext_callback::get_integer64_info:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* get_integer64_info )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, int64_t *imin, int64_t *imax, int64_t *istep)
+
+get the element information of integer64 type
+
+.. _doxid-structsnd__ctl__ext__callback_1adbebb8e8d3a2c8325bfb71736acdfa63:
+.. _cid-snd_ctl_ext_callback::get_enumerated_info:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* get_enumerated_info )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned int *items)
+
+get the element information of enumerated type
+
+.. _doxid-structsnd__ctl__ext__callback_1a2b0c9d3df2ec114369f099a479c67d24:
+.. _cid-snd_ctl_ext_callback::get_enumerated_name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* get_enumerated_name )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned int item, char *name, size_t name_max_len)
+
+get the name of the enumerated item
+
+.. _doxid-structsnd__ctl__ext__callback_1a65328da675e4c1ad959bea026109c313:
+.. _cid-snd_ctl_ext_callback::read_integer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* read_integer )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, long *value)
+
+read the current values of integer type
+
+.. _doxid-structsnd__ctl__ext__callback_1a531baab0b857e3c0fcea7641a9a107fb:
+.. _cid-snd_ctl_ext_callback::read_integer64:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* read_integer64 )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, int64_t *value)
+
+read the current values of integer64 type
+
+.. _doxid-structsnd__ctl__ext__callback_1a56e661ca05e9db6f0340d23673651d5c:
+.. _cid-snd_ctl_ext_callback::read_enumerated:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* read_enumerated )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned int *items)
+
+read the current values of enumerated type
+
+.. _doxid-structsnd__ctl__ext__callback_1aeeafda4a363eeb124ab21f7663cc804d:
+.. _cid-snd_ctl_ext_callback::read_bytes:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* read_bytes )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned char *data, size_t max_bytes)
+
+read the current values of bytes type
+
+.. _doxid-structsnd__ctl__ext__callback_1a95de209ca2f456797ddbba4cdf5b7bd0:
+.. _cid-snd_ctl_ext_callback::read_iec958:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* read_iec958 )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, snd_aes_iec958_t *iec958)
+
+read the current values of iec958 type
+
+.. _doxid-structsnd__ctl__ext__callback_1a7313060836f8d45cf31a528ec2d8a6d0:
+.. _cid-snd_ctl_ext_callback::write_integer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* write_integer )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, long *value)
+
+update the current values of integer type with the given values
+
+.. _doxid-structsnd__ctl__ext__callback_1a3067fb89e0e4b71b7c0c9d3ec1cde0f7:
+.. _cid-snd_ctl_ext_callback::write_integer64:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* write_integer64 )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, int64_t *value)
+
+update the current values of integer64 type with the given values
+
+.. _doxid-structsnd__ctl__ext__callback_1a9c42eb6739a90477b7b3775b4972268b:
+.. _cid-snd_ctl_ext_callback::write_enumerated:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* write_enumerated )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned int *items)
+
+update the current values of enumerated type with the given values
+
+.. _doxid-structsnd__ctl__ext__callback_1a844ce4698c73bb316bdbde1554353e4a:
+.. _cid-snd_ctl_ext_callback::write_bytes:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* write_bytes )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, unsigned char *data, size_t max_bytes)
+
+update the current values of bytes type with the given values
+
+.. _doxid-structsnd__ctl__ext__callback_1af031bf7a362a9fde9e622be0d36bb9f3:
+.. _cid-snd_ctl_ext_callback::write_iec958:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* write_iec958 )(snd_ctl_ext_t *ext, snd_ctl_ext_key_t key, snd_aes_iec958_t *iec958)
+
+update the current values of iec958 type with the given values
+
+.. _doxid-structsnd__ctl__ext__callback_1a7669a306b86bfe1df7502e195688b855:
+.. _cid-snd_ctl_ext_callback::subscribe_events:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void (* subscribe_events )(snd_ctl_ext_t *ext, int subscribe)
+
+subscribe/unsubscribe the event notification; optional
+
+.. _doxid-structsnd__ctl__ext__callback_1ac99b6d92e4ca9c8e9115e38da0814bf6:
+.. _cid-snd_ctl_ext_callback::read_event:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* read_event )(snd_ctl_ext_t *ext, snd_ctl_elem_id_t *id, unsigned int *event_mask)
+
+read a pending notification event; optional
+
+.. _doxid-structsnd__ctl__ext__callback_1a89619794442bb2582d4921753de3a344:
+.. _cid-snd_ctl_ext_callback::poll_descriptors_count:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* poll_descriptors_count )(snd_ctl_ext_t *ext)
+
+return the number of poll descriptors; optional
+
+.. _doxid-structsnd__ctl__ext__callback_1ae977e058fc11d25ba1a0dea4ebdd91b2:
+.. _cid-snd_ctl_ext_callback::poll_descriptors:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* poll_descriptors )(snd_ctl_ext_t *ext, struct pollfd *pfds, unsigned int space)
+
+fill the poll descriptors; optional
+
+.. _doxid-structsnd__ctl__ext__callback_1a03a4c55c5484584d06c263a08cbc0e26:
+.. _cid-snd_ctl_ext_callback::poll_revents:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int (* poll_revents )(snd_ctl_ext_t *ext, struct pollfd *pfds, unsigned int nfds, unsigned short *revents)
+
+mangle the revents of poll descriptors
+

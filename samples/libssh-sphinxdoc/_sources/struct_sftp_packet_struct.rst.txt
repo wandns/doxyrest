@@ -1,0 +1,33 @@
+.. index:: pair: struct; sftp_packet_struct
+.. _doxid-structsftp__packet__struct:
+.. _cid-sftp_packet_struct:
+
+struct sftp_packet_struct
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/sftp.h>
+
+
+
+
+.. _doxid-structsftp__packet__struct_1a3a3970e63175cb06f0e5c912a711f4a5:
+.. _cid-sftp_packet_struct::payload:
+.. _doxid-structsftp__packet__struct_1ad435dafb1096122ab1b15f7b112c48a5:
+.. _cid-sftp_packet_struct::sftp:
+.. _doxid-structsftp__packet__struct_1afea0d04e7af90142e2ce2b72e0d47baf:
+.. _cid-sftp_packet_struct::type:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_buffer payload
+	sftp_session sftp
+	uint8_t type
+

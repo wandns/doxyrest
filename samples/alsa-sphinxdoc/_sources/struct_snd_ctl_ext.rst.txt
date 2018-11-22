@@ -1,0 +1,190 @@
+.. index:: pair: struct; snd_ctl_ext
+.. _doxid-structsnd__ctl__ext:
+.. _cid-snd_ctl_ext:
+
+struct snd_ctl_ext
+==================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <control_external.h>
+
+
+Overview
+~~~~~~~~
+
+Handle of control ext
+
+External control plugin handle :ref:`More...<details-doxid-structsnd__ctl__ext>`
+
+.. _doxid-structsnd__ctl__ext_1af74ede3410a67d4810cb58d4f9015d7c:
+.. _cid-snd_ctl_ext::c:
+.. _doxid-structsnd__ctl__ext_1aedb26deac67902e906a67456da21a6a3:
+.. _cid-snd_ctl_ext::p:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	unsigned int :ref:`version<doxid-structsnd__ctl__ext_1af3599d3baa6b5ceadecbfbd74b8b773f>`
+	int :ref:`card_idx<doxid-structsnd__ctl__ext_1ac922ab575590b3d179ee439c0891d952>`
+	char :ref:`id<doxid-structsnd__ctl__ext_1a378f125e90ce9a0f20823c056d638263>`[16]
+	char :ref:`driver<doxid-structsnd__ctl__ext_1ae170b3a14d45d3bb830a91773bb832f4>`[16]
+	char :ref:`name<doxid-structsnd__ctl__ext_1a186de36995e8f5d879fcf3abea5aeff2>`[32]
+	char :ref:`longname<doxid-structsnd__ctl__ext_1a3863dfbb46d66f4cd43d93d42d58e393>`[80]
+	char :ref:`mixername<doxid-structsnd__ctl__ext_1a44e14783e538144eac71a6df139989b5>`[80]
+	int :ref:`poll_fd<doxid-structsnd__ctl__ext_1a1b3bab17945ce89342aae1928bd33657>`
+	const :ref:`snd_ctl_ext_callback_t<doxid-group___ctl_plugin___s_d_k_1ga8185c9a0e27e9562511a82dda1d20ddf>`* :ref:`callback<doxid-structsnd__ctl__ext_1a24823fabe7534fdc7ebf0a12461ba9fc>`
+	void* :ref:`private_data<doxid-structsnd__ctl__ext_1abae840f5d02c49540b23b23285248d2b>`
+	:ref:`snd_ctl_t<doxid-group___control_1ga06628f38def84a0fe3da74041db9d51f>`* :ref:`handle<doxid-structsnd__ctl__ext_1af014c69147bee94eaddca82d6916326f>`
+	int :ref:`nonblock<doxid-structsnd__ctl__ext_1a3688ec45a9f38ba73c1ae9058414b033>`
+	int :ref:`subscribed<doxid-structsnd__ctl__ext_1a3a07d58cb46680c6cb9023dbf72e3120>`
+
+	union
+	{
+	    :ref:`snd_ctl_ext_tlv_rw_t<doxid-group___ctl_plugin___s_d_k_1ga51b74c20889bc3b81f5abc434a2267d0>`* c
+	    const unsigned int* p
+	} :ref:`tlv<doxid-structsnd__ctl__ext_1abf57ae6adacfa8d8a49791c5ca47ebd3>`
+
+.. _details-doxid-structsnd__ctl__ext:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Handle of control ext
+
+External control plugin handle
+
+Fields
+------
+
+.. _doxid-structsnd__ctl__ext_1af3599d3baa6b5ceadecbfbd74b8b773f:
+.. _cid-snd_ctl_ext::version:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unsigned int version
+
+protocol version; :ref:`SND_CTL_EXT_VERSION <doxid-group___ctl_plugin___s_d_k_1ga65ea29f84b09ee3e640f88b06d05a1a2>` must be filled here before calling :ref:`snd_ctl_ext_create() <doxid-group___ctl_plugin___s_d_k_1ga317775f9c5e239781e71735ca5ba1ca6>`
+
+.. _doxid-structsnd__ctl__ext_1ac922ab575590b3d179ee439c0891d952:
+.. _cid-snd_ctl_ext::card_idx:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int card_idx
+
+Index of this card; must be filled before calling :ref:`snd_ctl_ext_create() <doxid-group___ctl_plugin___s_d_k_1ga317775f9c5e239781e71735ca5ba1ca6>`
+
+.. _doxid-structsnd__ctl__ext_1a378f125e90ce9a0f20823c056d638263:
+.. _cid-snd_ctl_ext::id:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char id [16]
+
+ID string of this card; must be filled before calling :ref:`snd_ctl_ext_create() <doxid-group___ctl_plugin___s_d_k_1ga317775f9c5e239781e71735ca5ba1ca6>`
+
+.. _doxid-structsnd__ctl__ext_1ae170b3a14d45d3bb830a91773bb832f4:
+.. _cid-snd_ctl_ext::driver:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char driver [16]
+
+Driver name of this card; must be filled before calling :ref:`snd_ctl_ext_create() <doxid-group___ctl_plugin___s_d_k_1ga317775f9c5e239781e71735ca5ba1ca6>`
+
+.. _doxid-structsnd__ctl__ext_1a186de36995e8f5d879fcf3abea5aeff2:
+.. _cid-snd_ctl_ext::name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char name [32]
+
+short name of this card; must be filled before calling :ref:`snd_ctl_ext_create() <doxid-group___ctl_plugin___s_d_k_1ga317775f9c5e239781e71735ca5ba1ca6>`
+
+.. _doxid-structsnd__ctl__ext_1a3863dfbb46d66f4cd43d93d42d58e393:
+.. _cid-snd_ctl_ext::longname:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char longname [80]
+
+Long name of this card; must be filled before calling :ref:`snd_ctl_ext_create() <doxid-group___ctl_plugin___s_d_k_1ga317775f9c5e239781e71735ca5ba1ca6>`
+
+.. _doxid-structsnd__ctl__ext_1a44e14783e538144eac71a6df139989b5:
+.. _cid-snd_ctl_ext::mixername:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char mixername [80]
+
+Mixer name of this card; must be filled before calling :ref:`snd_ctl_ext_create() <doxid-group___ctl_plugin___s_d_k_1ga317775f9c5e239781e71735ca5ba1ca6>`
+
+.. _doxid-structsnd__ctl__ext_1a1b3bab17945ce89342aae1928bd33657:
+.. _cid-snd_ctl_ext::poll_fd:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int poll_fd
+
+poll descriptor
+
+.. _doxid-structsnd__ctl__ext_1a24823fabe7534fdc7ebf0a12461ba9fc:
+.. _cid-snd_ctl_ext::callback:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const :ref:`snd_ctl_ext_callback_t<doxid-group___ctl_plugin___s_d_k_1ga8185c9a0e27e9562511a82dda1d20ddf>`* callback
+
+callbacks of this plugin; must be filled before calling :ref:`snd_pcm_ioplug_create() <doxid-group___p_c_m___i_o_plug_1ga7fb5213a5e776246e2b4dc53ec8d7604>`
+
+.. _doxid-structsnd__ctl__ext_1abae840f5d02c49540b23b23285248d2b:
+.. _cid-snd_ctl_ext::private_data:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void* private_data
+
+private data, which can be used freely in the driver callbacks
+
+.. _doxid-structsnd__ctl__ext_1af014c69147bee94eaddca82d6916326f:
+.. _cid-snd_ctl_ext::handle:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`snd_ctl_t<doxid-group___control_1ga06628f38def84a0fe3da74041db9d51f>`* handle
+
+control handle filled by :ref:`snd_ctl_ext_create() <doxid-group___ctl_plugin___s_d_k_1ga317775f9c5e239781e71735ca5ba1ca6>`
+
+.. _doxid-structsnd__ctl__ext_1a3688ec45a9f38ba73c1ae9058414b033:
+.. _cid-snd_ctl_ext::nonblock:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int nonblock
+
+non-block mode; read-only
+
+.. _doxid-structsnd__ctl__ext_1a3a07d58cb46680c6cb9023dbf72e3120:
+.. _cid-snd_ctl_ext::subscribed:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int subscribed
+
+events subscribed; read-only
+
+.. _doxid-structsnd__ctl__ext_1abf57ae6adacfa8d8a49791c5ca47ebd3:
+.. _cid-snd_ctl_ext::tlv:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	unnamed-union tlv
+
+optional TLV data for the control (since protocol 1.0.1)
+

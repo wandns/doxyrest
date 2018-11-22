@@ -1,0 +1,53 @@
+.. index:: pair: enum; snd_pcm_start_t
+.. _doxid-group___p_c_m_1ga0eae9150f4f207ed05cb629cc3a3673f:
+.. _cid-snd_pcm_start_t:
+
+enum snd_pcm_start_t
+====================
+
+
+
+Overview
+~~~~~~~~
+
+PCM start mode :ref:`More...<details-doxid-group___p_c_m_1ga0eae9150f4f207ed05cb629cc3a3673f>`
+
+.. _doxid-group___p_c_m_1gga0eae9150f4f207ed05cb629cc3a3673fa78da8ffe8eae323c6e05f1fdaa8b1496:
+.. _cid-snd_pcm_start_t::snd_pcm_start_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_PCM_START_DATA<doxid-group___p_c_m_1gga0eae9150f4f207ed05cb629cc3a3673fa1784d28a1a0b6d0dc9726e8093fef095>` = 0
+	:ref:`SND_PCM_START_EXPLICIT<doxid-group___p_c_m_1gga0eae9150f4f207ed05cb629cc3a3673fa3f7514d50731fbec3bf3963f8f50e377>` 
+	SND_PCM_START_LAST = SND_PCM_START_EXPLICIT
+
+.. _details-doxid-group___p_c_m_1ga0eae9150f4f207ed05cb629cc3a3673f:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+PCM start mode
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m_1gga0eae9150f4f207ed05cb629cc3a3673fa1784d28a1a0b6d0dc9726e8093fef095:
+.. _cid-snd_pcm_start_t::snd_pcm_start_data:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_START_DATA
+
+Automatic start on data read/write
+
+.. _doxid-group___p_c_m_1gga0eae9150f4f207ed05cb629cc3a3673fa3f7514d50731fbec3bf3963f8f50e377:
+.. _cid-snd_pcm_start_t::snd_pcm_start_explicit:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_PCM_START_EXPLICIT
+
+Explicit start
+

@@ -1,0 +1,155 @@
+.. index:: pair: struct; snd_tplg_obj_template_t
+.. _doxid-structsnd__tplg__obj__template__t:
+.. _cid-snd_tplg_obj_template_t:
+
+struct snd_tplg_obj_template_t
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. _doxid-structsnd__tplg__obj__template__t_1a7f60bbb385a4cae2bfd543ca39df0a69:
+.. _cid-snd_tplg_obj_template_t::@9:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	enum :ref:`snd_tplg_type<doxid-group__topology_1ga465b5b8dea36052ad6fb12e2886f8757>` :ref:`type<doxid-structsnd__tplg__obj__template__t_1a5ac8a01fbb895f368c4bacb574def128>`
+	int :ref:`index<doxid-structsnd__tplg__obj__template__t_1ae9298a874663f911b54f4019a20171c3>`
+	int :ref:`version<doxid-structsnd__tplg__obj__template__t_1a21e20bff5cedad485802af1362d6810b>`
+	int :ref:`vendor_type<doxid-structsnd__tplg__obj__template__t_1a8ab68f45554811560909ff630f59d6c1>`
+	struct :ref:`snd_tplg_widget_template<doxid-structsnd__tplg__widget__template>`* :ref:`widget<doxid-structsnd__tplg__obj__template__t_1ac5cba47b570ce40dfdbc28f514696642>`
+	struct :ref:`snd_tplg_mixer_template<doxid-structsnd__tplg__mixer__template>`* :ref:`mixer<doxid-structsnd__tplg__obj__template__t_1ace1a0174ae799778c44b18783a60814f>`
+	struct :ref:`snd_tplg_bytes_template<doxid-structsnd__tplg__bytes__template>`* :ref:`bytes_ctl<doxid-structsnd__tplg__obj__template__t_1a327919369281666f2aac412b78cb4a14>`
+	struct :ref:`snd_tplg_enum_template<doxid-structsnd__tplg__enum__template>`* :ref:`enum_ctl<doxid-structsnd__tplg__obj__template__t_1ab176a05b65dce92dc7228a6c5c53c96c>`
+	struct :ref:`snd_tplg_graph_template<doxid-structsnd__tplg__graph__template>`* :ref:`graph<doxid-structsnd__tplg__obj__template__t_1a72cda3f3084484e460f87f2be50ce965>`
+	struct :ref:`snd_tplg_pcm_template<doxid-structsnd__tplg__pcm__template>`* :ref:`pcm<doxid-structsnd__tplg__obj__template__t_1a63cb6b1014c9f038cc4bfee52cede2ba>`
+	struct :ref:`snd_tplg_link_template<doxid-structsnd__tplg__link__template>`* :ref:`link<doxid-structsnd__tplg__obj__template__t_1a01169020ecbc3c5b8112bea25eb3add4>`
+	struct :ref:`snd_tplg_dai_template<doxid-structsnd__tplg__dai__template>`* :ref:`dai<doxid-structsnd__tplg__obj__template__t_1a10ec5352b32b8f12ae51964a341126e9>`
+
+.. _details-doxid-structsnd__tplg__obj__template__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__obj__template__t_1a5ac8a01fbb895f368c4bacb574def128:
+.. _cid-snd_tplg_obj_template_t::type:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	enum :ref:`snd_tplg_type<doxid-group__topology_1ga465b5b8dea36052ad6fb12e2886f8757>` type
+
+template object type
+
+.. _doxid-structsnd__tplg__obj__template__t_1ae9298a874663f911b54f4019a20171c3:
+.. _cid-snd_tplg_obj_template_t::index:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int index
+
+group index for object
+
+.. _doxid-structsnd__tplg__obj__template__t_1a21e20bff5cedad485802af1362d6810b:
+.. _cid-snd_tplg_obj_template_t::version:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int version
+
+optional vendor specific version details
+
+.. _doxid-structsnd__tplg__obj__template__t_1a8ab68f45554811560909ff630f59d6c1:
+.. _cid-snd_tplg_obj_template_t::vendor_type:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int vendor_type
+
+optional vendor specific type info
+
+.. _doxid-structsnd__tplg__obj__template__t_1ac5cba47b570ce40dfdbc28f514696642:
+.. _cid-snd_tplg_obj_template_t::widget:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_widget_template<doxid-structsnd__tplg__widget__template>`* widget
+
+DAPM widget
+
+.. _doxid-structsnd__tplg__obj__template__t_1ace1a0174ae799778c44b18783a60814f:
+.. _cid-snd_tplg_obj_template_t::mixer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_mixer_template<doxid-structsnd__tplg__mixer__template>`* mixer
+
+Mixer control
+
+.. _doxid-structsnd__tplg__obj__template__t_1a327919369281666f2aac412b78cb4a14:
+.. _cid-snd_tplg_obj_template_t::bytes_ctl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_bytes_template<doxid-structsnd__tplg__bytes__template>`* bytes_ctl
+
+Bytes control
+
+.. _doxid-structsnd__tplg__obj__template__t_1ab176a05b65dce92dc7228a6c5c53c96c:
+.. _cid-snd_tplg_obj_template_t::enum_ctl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_enum_template<doxid-structsnd__tplg__enum__template>`* enum_ctl
+
+Enum control
+
+.. _doxid-structsnd__tplg__obj__template__t_1a72cda3f3084484e460f87f2be50ce965:
+.. _cid-snd_tplg_obj_template_t::graph:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_graph_template<doxid-structsnd__tplg__graph__template>`* graph
+
+Graph elements
+
+.. _doxid-structsnd__tplg__obj__template__t_1a63cb6b1014c9f038cc4bfee52cede2ba:
+.. _cid-snd_tplg_obj_template_t::pcm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_pcm_template<doxid-structsnd__tplg__pcm__template>`* pcm
+
+PCM elements
+
+.. _doxid-structsnd__tplg__obj__template__t_1a01169020ecbc3c5b8112bea25eb3add4:
+.. _cid-snd_tplg_obj_template_t::link:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_link_template<doxid-structsnd__tplg__link__template>`* link
+
+physical DAI Links
+
+.. _doxid-structsnd__tplg__obj__template__t_1a10ec5352b32b8f12ae51964a341126e9:
+.. _cid-snd_tplg_obj_template_t::dai:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_dai_template<doxid-structsnd__tplg__dai__template>`* dai
+
+Physical DAI
+

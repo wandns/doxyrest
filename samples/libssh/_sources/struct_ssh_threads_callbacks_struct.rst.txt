@@ -1,0 +1,42 @@
+.. index:: pair: struct; ssh_threads_callbacks_struct
+.. _doxid-structssh__threads__callbacks__struct:
+.. _cid-ssh_threads_callbacks_struct:
+
+struct ssh_threads_callbacks_struct
+===================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/callbacks.h>
+
+
+
+
+.. _doxid-structssh__threads__callbacks__struct_1a663775d1473e2db5633617fd5cb1bea1:
+.. _cid-ssh_threads_callbacks_struct::mutex_destroy:
+.. _doxid-structssh__threads__callbacks__struct_1a65f82f117f07c8751c8b4efc88a2fc73:
+.. _cid-ssh_threads_callbacks_struct::mutex_init:
+.. _doxid-structssh__threads__callbacks__struct_1ae35475609fb2bfb059bbffeec2dba118:
+.. _cid-ssh_threads_callbacks_struct::mutex_lock:
+.. _doxid-structssh__threads__callbacks__struct_1adb4af663da1b9ac9896e41e09b507eda:
+.. _cid-ssh_threads_callbacks_struct::mutex_unlock:
+.. _doxid-structssh__threads__callbacks__struct_1ae662453842916aeb417f6f13a48a1855:
+.. _cid-ssh_threads_callbacks_struct::thread_id:
+.. _doxid-structssh__threads__callbacks__struct_1a2def4dea77cca2a4e12db84c42590a0c:
+.. _cid-ssh_threads_callbacks_struct::type:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`ssh_thread_callback<doxid-callbacks_8h_1a38b69d0556e8753baf87b43e6564687d>` mutex_destroy
+	:ref:`ssh_thread_callback<doxid-callbacks_8h_1a38b69d0556e8753baf87b43e6564687d>` mutex_init
+	:ref:`ssh_thread_callback<doxid-callbacks_8h_1a38b69d0556e8753baf87b43e6564687d>` mutex_lock
+	:ref:`ssh_thread_callback<doxid-callbacks_8h_1a38b69d0556e8753baf87b43e6564687d>` mutex_unlock
+	:ref:`ssh_thread_id_callback<doxid-callbacks_8h_1a33b274177aedd3c91a569c899b231e52>` thread_id
+	const char* type
+

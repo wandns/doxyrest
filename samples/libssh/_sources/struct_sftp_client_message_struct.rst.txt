@@ -1,0 +1,66 @@
+.. index:: pair: struct; sftp_client_message_struct
+.. _doxid-structsftp__client__message__struct:
+.. _cid-sftp_client_message_struct:
+
+struct sftp_client_message_struct
+=================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/sftp.h>
+
+
+
+
+.. _doxid-structsftp__client__message__struct_1a502f7713cea7dffbb812fb2afa1bd004:
+.. _cid-sftp_client_message_struct::attr:
+.. _doxid-structsftp__client__message__struct_1a9f530b20da497a646eab08f98f2ba91b:
+.. _cid-sftp_client_message_struct::attr_num:
+.. _doxid-structsftp__client__message__struct_1ade655aa1635840984a6b1904f4696a44:
+.. _cid-sftp_client_message_struct::attrbuf:
+.. _doxid-structsftp__client__message__struct_1a076c46e06648b96d2341525f53e6b7ad:
+.. _cid-sftp_client_message_struct::complete_message:
+.. _doxid-structsftp__client__message__struct_1ab9e3c030a59d1d4dd41277a3178b96ba:
+.. _cid-sftp_client_message_struct::data:
+.. _doxid-structsftp__client__message__struct_1a0dfcf798c1a9db0aa424b257a5c301b2:
+.. _cid-sftp_client_message_struct::filename:
+.. _doxid-structsftp__client__message__struct_1ac3344ee76c5f4c38cb1776028ef9d9e8:
+.. _cid-sftp_client_message_struct::flags:
+.. _doxid-structsftp__client__message__struct_1aba751a460388bcf5edee368994293e55:
+.. _cid-sftp_client_message_struct::handle:
+.. _doxid-structsftp__client__message__struct_1ad1284968ad047182a4c620afc9ce0b9c:
+.. _cid-sftp_client_message_struct::id:
+.. _doxid-structsftp__client__message__struct_1aa945f8d41a7c059e7399e0f230625e59:
+.. _cid-sftp_client_message_struct::len:
+.. _doxid-structsftp__client__message__struct_1aede01939652638a87d79cfb20cf9a197:
+.. _cid-sftp_client_message_struct::offset:
+.. _doxid-structsftp__client__message__struct_1a2b495eda5533b3a7906633ac56febd93:
+.. _cid-sftp_client_message_struct::sftp:
+.. _doxid-structsftp__client__message__struct_1a79b44727e245d4a407fa39324779ac15:
+.. _cid-sftp_client_message_struct::str_data:
+.. _doxid-structsftp__client__message__struct_1ac3a8d375166e59bbd674e81ba4651563:
+.. _cid-sftp_client_message_struct::type:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	sftp_attributes attr
+	int attr_num
+	ssh_buffer attrbuf
+	ssh_buffer complete_message
+	ssh_string data
+	char* filename
+	uint32_t flags
+	ssh_string handle
+	uint32_t id
+	uint32_t len
+	uint64_t offset
+	sftp_session sftp
+	char* str_data
+	uint8_t type
+

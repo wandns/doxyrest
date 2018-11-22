@@ -1,0 +1,164 @@
+.. index:: pair: group; The SSH threading functions.
+.. _doxid-group__libssh__threads:
+.. _cid-libssh_threads:
+
+The SSH threading functions.
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+Threading with libssh. :ref:`More...<details-doxid-group__libssh__threads>`
+
+.. _doxid-group__libssh__threads_1ga721baef37bce744f820cd2ae598615bb:
+.. _cid-libcrypto_mutexes:
+.. _doxid-group__libssh__threads_1ga3381df5358757a32636727fb0081976c:
+.. _cid-ssh_threads_noop:
+.. _doxid-group__libssh__threads_1gadb5d9b7e2606d95be69a5ad23fc4d073:
+.. _cid-user_callbacks:
+.. _doxid-group__libssh__threads_1gaa1f1de653448e7aea5be684daa208785:
+.. _cid-libcrypto_lock_callback:
+.. _doxid-group__libssh__threads_1ga6b00f27ae935a3239dc87e5356b7078b:
+.. _cid-libcrypto_thread_finalize:
+.. _doxid-group__libssh__threads_1gaf24fe91a8fa9e20e3ef1e2b1ebf0d6e3:
+.. _cid-libcrypto_thread_init:
+.. _doxid-group__libssh__threads_1ga892b23f2f4ffe4e33290a83802faa265:
+.. _cid-ssh_threads_finalize:
+.. _doxid-group__libssh__threads_1gac9431f068584276377498dea938cf951:
+.. _cid-ssh_threads_get_type:
+.. _doxid-group__libssh__threads_1ga93b7aed4984dbd58a270f1f7eb37f5cd:
+.. _cid-ssh_threads_init:
+.. _doxid-group__libssh__threads_1gab410830e69e7f4c910547071ea338037:
+.. _cid-threads_id_noop:
+.. _doxid-group__libssh__threads_1ga8644d8daa52d4911cfcce76bbdeba4f6:
+.. _cid-threads_noop:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// global variables
+
+	static void** libcrypto_mutexes
+	static struct :ref:`ssh_threads_callbacks_struct<doxid-structssh__threads__callbacks__struct>` ssh_threads_noop
+	static struct :ref:`ssh_threads_callbacks_struct<doxid-structssh__threads__callbacks__struct>`* user_callbacks
+
+	// global functions
+
+	:ref:`LIBSSH_API<doxid-libssh_8h_1a2ba7f29ac0f2b5ef7134243d24888ac5>` int
+	:ref:`ssh_threads_set_callbacks<doxid-group__libssh__threads_1gaf473af3fbae6f1bb0e249fd1d079ff68>` (struct :ref:`ssh_threads_callbacks_struct<doxid-structssh__threads__callbacks__struct>`* cb)
+
+	:ref:`LIBSSH_API<doxid-libssh_8h_1a2ba7f29ac0f2b5ef7134243d24888ac5>` struct :ref:`ssh_threads_callbacks_struct<doxid-structssh__threads__callbacks__struct>`*
+	:ref:`ssh_threads_get_noop<doxid-group__libssh__threads_1gaed3006dbae78414fa3b82c8d9af69a88>` (void)
+
+	static
+	void
+	libcrypto_lock_callback (
+	    int mode,
+	    int i,
+	    const char* file,
+	    int line
+	    )
+
+	static
+	void
+	libcrypto_thread_finalize (void)
+
+	static
+	int
+	libcrypto_thread_init (void)
+
+	void
+	ssh_threads_finalize (void)
+
+	const char*
+	ssh_threads_get_type (void)
+
+	int
+	ssh_threads_init (void)
+
+	static
+	unsigned long
+	threads_id_noop (void)
+
+	static
+	int
+	threads_noop (void** lock)
+
+.. _details-doxid-group__libssh__threads:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Threading with libssh.
+
+Global Functions
+----------------
+
+.. _doxid-group__libssh__threads_1gaf473af3fbae6f1bb0e249fd1d079ff68:
+.. _cid-ssh_threads_set_callbacks:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`LIBSSH_API<doxid-libssh_8h_1a2ba7f29ac0f2b5ef7134243d24888ac5>` int
+	ssh_threads_set_callbacks (struct :ref:`ssh_threads_callbacks_struct<doxid-structssh__threads__callbacks__struct>`* cb)
+
+Set the thread callbacks structure.
+
+This is necessary if your program is using libssh in a multithreaded fashion. This function must be called first, outside of any threading context (in your main() function for instance), before you call :ref:`ssh_init() <doxid-group__libssh_1ga3ebf8d6920e563f3b032e3cd5277598e>` .
+
+Bug libgcrypt 1.6 and bigger backend does not support custom callback. Using anything else than pthreads here will fail.
+
+
+
+.. rubric:: Parameters:
+
+.. list-table::
+    :widths: 20 80
+
+    *
+        - cb
+
+        - A pointer to a :ref:`ssh_threads_callbacks_struct <doxid-structssh__threads__callbacks__struct>` structure, which contains the different callbacks to be set.
+
+
+
+.. rubric:: Returns:
+
+Always returns SSH_OK.
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_threads_callbacks_struct <doxid-structssh__threads__callbacks__struct>`
+
+SSH_THREADS_PTHREAD
+
+.. _doxid-group__libssh__threads_1gaed3006dbae78414fa3b82c8d9af69a88:
+.. _cid-ssh_threads_get_noop:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`LIBSSH_API<doxid-libssh_8h_1a2ba7f29ac0f2b5ef7134243d24888ac5>` struct :ref:`ssh_threads_callbacks_struct<doxid-structssh__threads__callbacks__struct>`*
+	ssh_threads_get_noop (void)
+
+Get the noop threads callbacks structure.
+
+This can be used with ssh_threads_set_callbacks. These callbacks do nothing and are being used by default.
+
+
+
+.. rubric:: Returns:
+
+Always returns a valid pointer to the noop callbacks structure.
+
+
+
+.. rubric:: See also:
+
+:ref:`ssh_threads_set_callbacks <doxid-group__libssh__threads_1gaf473af3fbae6f1bb0e249fd1d079ff68>`
+

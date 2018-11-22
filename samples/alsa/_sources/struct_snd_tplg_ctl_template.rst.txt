@@ -1,0 +1,87 @@
+.. index:: pair: struct; snd_tplg_ctl_template
+.. _doxid-structsnd__tplg__ctl__template:
+.. _cid-snd_tplg_ctl_template:
+
+struct snd_tplg_ctl_template
+============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for control objects. :ref:`More...<details-doxid-structsnd__tplg__ctl__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`type<doxid-structsnd__tplg__ctl__template_1ab67cddcd99af948e7f1c31e88fae277b>`
+	const char* :ref:`name<doxid-structsnd__tplg__ctl__template_1ac22769fc8e2dee6739f6b0d0617b939c>`
+	int :ref:`access<doxid-structsnd__tplg__ctl__template_1a0a3e7fa10db19ea81524fe6a55f92e94>`
+	struct :ref:`snd_tplg_io_ops_template<doxid-structsnd__tplg__io__ops__template>` :ref:`ops<doxid-structsnd__tplg__ctl__template_1ab717044852e6fe75883956a9a99d0493>`
+	struct :ref:`snd_tplg_tlv_template<doxid-structsnd__tplg__tlv__template>`* :ref:`tlv<doxid-structsnd__tplg__ctl__template_1ac99aa1726d01df67900f6f264a55c8f6>`
+
+.. _details-doxid-structsnd__tplg__ctl__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for control objects.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__ctl__template_1ab67cddcd99af948e7f1c31e88fae277b:
+.. _cid-snd_tplg_ctl_template::type:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int type
+
+Control type
+
+.. _doxid-structsnd__tplg__ctl__template_1ac22769fc8e2dee6739f6b0d0617b939c:
+.. _cid-snd_tplg_ctl_template::name:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* name
+
+Control name
+
+.. _doxid-structsnd__tplg__ctl__template_1a0a3e7fa10db19ea81524fe6a55f92e94:
+.. _cid-snd_tplg_ctl_template::access:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int access
+
+Control access
+
+.. _doxid-structsnd__tplg__ctl__template_1ab717044852e6fe75883956a9a99d0493:
+.. _cid-snd_tplg_ctl_template::ops:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_io_ops_template<doxid-structsnd__tplg__io__ops__template>` ops
+
+operations
+
+.. _doxid-structsnd__tplg__ctl__template_1ac99aa1726d01df67900f6f264a55c8f6:
+.. _cid-snd_tplg_ctl_template::tlv:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_tlv_template<doxid-structsnd__tplg__tlv__template>`* tlv
+
+non NULL means we have TLV data
+

@@ -1,0 +1,41 @@
+.. index:: pair: struct; pcap_hdr_s
+.. _doxid-structpcap__hdr__s:
+.. _cid-pcap_hdr_s:
+
+struct pcap_hdr_s
+=================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structpcap__hdr__s_1a4181df1dbbb7180ffc2eeb2f088c8e96:
+.. _cid-pcap_hdr_s::magic_number:
+.. _doxid-structpcap__hdr__s_1ac92c648efc85b1fb94a3370426f63d4c:
+.. _cid-pcap_hdr_s::network:
+.. _doxid-structpcap__hdr__s_1ae7ffd02adcc48fbf7d0a14224ed53863:
+.. _cid-pcap_hdr_s::sigfigs:
+.. _doxid-structpcap__hdr__s_1add11b838b20ffdeef2d178f56092338d:
+.. _cid-pcap_hdr_s::snaplen:
+.. _doxid-structpcap__hdr__s_1ade5a1f74b8b5b48d541baaca66b6deac:
+.. _cid-pcap_hdr_s::thiszone:
+.. _doxid-structpcap__hdr__s_1a4eb82ba884155c9aafcf80dc865a4c81:
+.. _cid-pcap_hdr_s::version_major:
+.. _doxid-structpcap__hdr__s_1a8006f4b286e887ca8c9cd88ef4643203:
+.. _cid-pcap_hdr_s::version_minor:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t magic_number
+	uint32_t network
+	uint32_t sigfigs
+	uint32_t snaplen
+	int32_t thiszone
+	uint16_t version_major
+	uint16_t version_minor
+

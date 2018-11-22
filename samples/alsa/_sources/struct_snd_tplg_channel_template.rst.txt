@@ -1,0 +1,18 @@
+.. index:: pair: struct; snd_tplg_channel_template
+.. _doxid-structsnd__tplg__channel__template:
+.. _cid-snd_tplg_channel_template:
+
+struct snd_tplg_channel_template
+================================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Template type for single channel mapping.
+

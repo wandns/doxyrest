@@ -1,0 +1,35 @@
+.. index:: pair: enum; ssh_auth_e
+.. _doxid-libssh_8h_1a5b35a5038ad8eac4a4e4c00c6239e6e2:
+.. _cid-ssh_auth_e:
+
+enum ssh_auth_e
+===============
+
+
+
+
+
+.. _doxid-libssh_8h_1a5b35a5038ad8eac4a4e4c00c6239e6e2ab145398ebf554c3cc5d6acfb241c5235:
+.. _cid-ssh_auth_e::ssh_auth_success:
+.. _doxid-libssh_8h_1a5b35a5038ad8eac4a4e4c00c6239e6e2ac3d2d6d092a7adc147b7f859a0b252d2:
+.. _cid-ssh_auth_e::ssh_auth_denied:
+.. _doxid-libssh_8h_1a5b35a5038ad8eac4a4e4c00c6239e6e2a3bb06206cff7b6f818099d6019418eea:
+.. _cid-ssh_auth_e::ssh_auth_partial:
+.. _doxid-libssh_8h_1a5b35a5038ad8eac4a4e4c00c6239e6e2a644612ea6c0e8413a3ff82547b74ce3a:
+.. _cid-ssh_auth_e::ssh_auth_info:
+.. _doxid-libssh_8h_1a5b35a5038ad8eac4a4e4c00c6239e6e2a0f166cff4fa03faf4e4c11ad854a4996:
+.. _cid-ssh_auth_e::ssh_auth_again:
+.. _doxid-libssh_8h_1a5b35a5038ad8eac4a4e4c00c6239e6e2a33d82f552d20734c17e770af637e3e17:
+.. _cid-ssh_auth_e::ssh_auth_error:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_AUTH_SUCCESS =0
+	SSH_AUTH_DENIED 
+	SSH_AUTH_PARTIAL 
+	SSH_AUTH_INFO 
+	SSH_AUTH_AGAIN 
+	SSH_AUTH_ERROR =-1
+

@@ -1,0 +1,403 @@
+.. index:: pair: enum; snd_pcm_chmap_position
+.. _doxid-group___p_c_m_1ga07f09c302588b9758946fedf97772975:
+.. _cid-snd_pcm_chmap_position:
+
+enum snd_pcm_chmap_position
+===========================
+
+
+
+Overview
+~~~~~~~~
+
+channel positions :ref:`More...<details-doxid-group___p_c_m_1ga07f09c302588b9758946fedf97772975>`
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a3754a57ceb4570b10f68d5ac8698a9f6:
+.. _cid-snd_pcm_chmap_position::snd_chmap_last:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_CHMAP_UNKNOWN<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a5013bd25392cde7881a00bdb4ab030ee>` = 0
+	:ref:`SND_CHMAP_NA<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a757ea8c2af5fcce95adc50d1faf12956>` 
+	:ref:`SND_CHMAP_MONO<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a57f7b8aa28a96384e75d6a75c7f2728c>` 
+	:ref:`SND_CHMAP_FL<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a583e5b3018a572266dff31ceb647173d>` 
+	:ref:`SND_CHMAP_FR<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a1199db6603bfa8756b109720d6f47b88>` 
+	:ref:`SND_CHMAP_RL<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975af55c7cf1772be450187b9c733e5a4601>` 
+	:ref:`SND_CHMAP_RR<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a2de6b761ffe69645bdc84dcc154ca704>` 
+	:ref:`SND_CHMAP_FC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a1b986f167d0af5a2993688f0dc4f7ca7>` 
+	:ref:`SND_CHMAP_LFE<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a2e02fc34fc3156b9b651ddafe9430e76>` 
+	:ref:`SND_CHMAP_SL<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975abef51a1484c1b62ba57abdbf4c319018>` 
+	:ref:`SND_CHMAP_SR<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a99a126ad5674edde88e274247cdc77b0>` 
+	:ref:`SND_CHMAP_RC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975ab826e0b6dc51913bed17b9c9cd501b8b>` 
+	:ref:`SND_CHMAP_FLC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a899724c4ba10d58f489aa95b1be85707>` 
+	:ref:`SND_CHMAP_FRC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a715eee05d56adb21c32f04a2dff32f41>` 
+	:ref:`SND_CHMAP_RLC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a792ec89e7ed77e517fca9a042030cf91>` 
+	:ref:`SND_CHMAP_RRC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a01bb8ab068f1ad7ea82201fda13e7351>` 
+	:ref:`SND_CHMAP_FLW<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a0aba5e9499f8c439d7af5aba4eea7013>` 
+	:ref:`SND_CHMAP_FRW<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a866fd0a5bdacb87f672c06b19c95e3e6>` 
+	:ref:`SND_CHMAP_FLH<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a0ebb60cbf70f6bdf44f23ca53f27a48e>` 
+	:ref:`SND_CHMAP_FCH<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975aa6fc16c41ed3c77d03d5338b71767dd5>` 
+	:ref:`SND_CHMAP_FRH<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975aedc57856e5d15e089ca997bb2517e558>` 
+	:ref:`SND_CHMAP_TC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975af92f549344923b13b3f988a8bd411248>` 
+	:ref:`SND_CHMAP_TFL<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975ab408982aed624e7895a88a70d3cad9ce>` 
+	:ref:`SND_CHMAP_TFR<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975aac94c3e49e00cf6ddc8277be9211af8a>` 
+	:ref:`SND_CHMAP_TFC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a8afc5e5e7278cd11e275c353f7debb76>` 
+	:ref:`SND_CHMAP_TRL<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a9801a726d1ef900db691fb3ee766c15c>` 
+	:ref:`SND_CHMAP_TRR<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a8f2b99c9f99b964305e7b20a24205845>` 
+	:ref:`SND_CHMAP_TRC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975aa38f97720df84f0d0a729a2977a7e96f>` 
+	:ref:`SND_CHMAP_TFLC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a056a6a819e4f86531c2f72f2cca30a2f>` 
+	:ref:`SND_CHMAP_TFRC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a1901ba205094fa4d78ae1b6ccba2a0b7>` 
+	:ref:`SND_CHMAP_TSL<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a37e4efa8f78e28245172e609b3e2edb1>` 
+	:ref:`SND_CHMAP_TSR<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a002352cd72d1a7bb12a371c0a700368e>` 
+	:ref:`SND_CHMAP_LLFE<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a98412e4b242d63dd0f6543d7979f65d2>` 
+	:ref:`SND_CHMAP_RLFE<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a5a90ba518606bd795133b7464e297037>` 
+	:ref:`SND_CHMAP_BC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a6bdb9ff785f20a01942c51f5306f1b7a>` 
+	:ref:`SND_CHMAP_BLC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a64d185c840a6c5a85b373c7b4c24a6ac>` 
+	:ref:`SND_CHMAP_BRC<doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975ae8657844c743e6303622c8a5db01f9fc>` 
+	SND_CHMAP_LAST = SND_CHMAP_BRC
+
+.. _details-doxid-group___p_c_m_1ga07f09c302588b9758946fedf97772975:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+channel positions
+
+Enum Values
+-----------
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a5013bd25392cde7881a00bdb4ab030ee:
+.. _cid-snd_pcm_chmap_position::snd_chmap_unknown:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_UNKNOWN
+
+unspecified
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a757ea8c2af5fcce95adc50d1faf12956:
+.. _cid-snd_pcm_chmap_position::snd_chmap_na:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_NA
+
+N/A, silent
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a57f7b8aa28a96384e75d6a75c7f2728c:
+.. _cid-snd_pcm_chmap_position::snd_chmap_mono:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_MONO
+
+mono stream
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a583e5b3018a572266dff31ceb647173d:
+.. _cid-snd_pcm_chmap_position::snd_chmap_fl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FL
+
+front left
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a1199db6603bfa8756b109720d6f47b88:
+.. _cid-snd_pcm_chmap_position::snd_chmap_fr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FR
+
+front right
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975af55c7cf1772be450187b9c733e5a4601:
+.. _cid-snd_pcm_chmap_position::snd_chmap_rl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_RL
+
+rear left
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a2de6b761ffe69645bdc84dcc154ca704:
+.. _cid-snd_pcm_chmap_position::snd_chmap_rr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_RR
+
+rear right
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a1b986f167d0af5a2993688f0dc4f7ca7:
+.. _cid-snd_pcm_chmap_position::snd_chmap_fc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FC
+
+front center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a2e02fc34fc3156b9b651ddafe9430e76:
+.. _cid-snd_pcm_chmap_position::snd_chmap_lfe:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_LFE
+
+LFE
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975abef51a1484c1b62ba57abdbf4c319018:
+.. _cid-snd_pcm_chmap_position::snd_chmap_sl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_SL
+
+side left
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a99a126ad5674edde88e274247cdc77b0:
+.. _cid-snd_pcm_chmap_position::snd_chmap_sr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_SR
+
+side right
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975ab826e0b6dc51913bed17b9c9cd501b8b:
+.. _cid-snd_pcm_chmap_position::snd_chmap_rc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_RC
+
+rear center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a899724c4ba10d58f489aa95b1be85707:
+.. _cid-snd_pcm_chmap_position::snd_chmap_flc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FLC
+
+front left center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a715eee05d56adb21c32f04a2dff32f41:
+.. _cid-snd_pcm_chmap_position::snd_chmap_frc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FRC
+
+front right center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a792ec89e7ed77e517fca9a042030cf91:
+.. _cid-snd_pcm_chmap_position::snd_chmap_rlc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_RLC
+
+rear left center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a01bb8ab068f1ad7ea82201fda13e7351:
+.. _cid-snd_pcm_chmap_position::snd_chmap_rrc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_RRC
+
+rear right center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a0aba5e9499f8c439d7af5aba4eea7013:
+.. _cid-snd_pcm_chmap_position::snd_chmap_flw:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FLW
+
+front left wide
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a866fd0a5bdacb87f672c06b19c95e3e6:
+.. _cid-snd_pcm_chmap_position::snd_chmap_frw:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FRW
+
+front right wide
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a0ebb60cbf70f6bdf44f23ca53f27a48e:
+.. _cid-snd_pcm_chmap_position::snd_chmap_flh:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FLH
+
+front left high
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975aa6fc16c41ed3c77d03d5338b71767dd5:
+.. _cid-snd_pcm_chmap_position::snd_chmap_fch:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FCH
+
+front center high
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975aedc57856e5d15e089ca997bb2517e558:
+.. _cid-snd_pcm_chmap_position::snd_chmap_frh:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_FRH
+
+front right high
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975af92f549344923b13b3f988a8bd411248:
+.. _cid-snd_pcm_chmap_position::snd_chmap_tc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TC
+
+top center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975ab408982aed624e7895a88a70d3cad9ce:
+.. _cid-snd_pcm_chmap_position::snd_chmap_tfl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TFL
+
+top front left
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975aac94c3e49e00cf6ddc8277be9211af8a:
+.. _cid-snd_pcm_chmap_position::snd_chmap_tfr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TFR
+
+top front right
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a8afc5e5e7278cd11e275c353f7debb76:
+.. _cid-snd_pcm_chmap_position::snd_chmap_tfc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TFC
+
+top front center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a9801a726d1ef900db691fb3ee766c15c:
+.. _cid-snd_pcm_chmap_position::snd_chmap_trl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TRL
+
+top rear left
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a8f2b99c9f99b964305e7b20a24205845:
+.. _cid-snd_pcm_chmap_position::snd_chmap_trr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TRR
+
+top rear right
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975aa38f97720df84f0d0a729a2977a7e96f:
+.. _cid-snd_pcm_chmap_position::snd_chmap_trc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TRC
+
+top rear center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a056a6a819e4f86531c2f72f2cca30a2f:
+.. _cid-snd_pcm_chmap_position::snd_chmap_tflc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TFLC
+
+top front left center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a1901ba205094fa4d78ae1b6ccba2a0b7:
+.. _cid-snd_pcm_chmap_position::snd_chmap_tfrc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TFRC
+
+top front right center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a37e4efa8f78e28245172e609b3e2edb1:
+.. _cid-snd_pcm_chmap_position::snd_chmap_tsl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TSL
+
+top side left
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a002352cd72d1a7bb12a371c0a700368e:
+.. _cid-snd_pcm_chmap_position::snd_chmap_tsr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_TSR
+
+top side right
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a98412e4b242d63dd0f6543d7979f65d2:
+.. _cid-snd_pcm_chmap_position::snd_chmap_llfe:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_LLFE
+
+left LFE
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a5a90ba518606bd795133b7464e297037:
+.. _cid-snd_pcm_chmap_position::snd_chmap_rlfe:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_RLFE
+
+right LFE
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a6bdb9ff785f20a01942c51f5306f1b7a:
+.. _cid-snd_pcm_chmap_position::snd_chmap_bc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_BC
+
+bottom center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975a64d185c840a6c5a85b373c7b4c24a6ac:
+.. _cid-snd_pcm_chmap_position::snd_chmap_blc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_BLC
+
+bottom left center
+
+.. _doxid-group___p_c_m_1gga07f09c302588b9758946fedf97772975ae8657844c743e6303622c8a5db01f9fc:
+.. _cid-snd_pcm_chmap_position::snd_chmap_brc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CHMAP_BRC
+
+bottom right center
+

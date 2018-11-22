@@ -1,0 +1,120 @@
+.. index:: pair: struct; ssh_crypto_struct
+.. _doxid-structssh__crypto__struct:
+.. _cid-ssh_crypto_struct:
+
+struct ssh_crypto_struct
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/crypto.h>
+
+
+
+
+.. _doxid-structssh__crypto__struct_1a0fa9919df32b44ccafc551d220fe609b:
+.. _cid-ssh_crypto_struct::client_kex:
+.. _doxid-structssh__crypto__struct_1a81fd4d5d3caf9d2ea0e5f17d27ccc6a3:
+.. _cid-ssh_crypto_struct::compress_in_ctx:
+.. _doxid-structssh__crypto__struct_1ab28a40b61da2c674b89dc97123deee17:
+.. _cid-ssh_crypto_struct::compress_out_ctx:
+.. _doxid-structssh__crypto__struct_1aa8fb59be5dd1a66f39429dd322fd6daa:
+.. _cid-ssh_crypto_struct::decryptiv:
+.. _doxid-structssh__crypto__struct_1abb583ba8e6dfc2e927a6af51dd450f3a:
+.. _cid-ssh_crypto_struct::decryptkey:
+.. _doxid-structssh__crypto__struct_1a9e1945f0bd57afbf407569d6c523d210:
+.. _cid-ssh_crypto_struct::decryptmac:
+.. _doxid-structssh__crypto__struct_1a264a702f7930c64683183b9334fa19d0:
+.. _cid-ssh_crypto_struct::delayed_compress_in:
+.. _doxid-structssh__crypto__struct_1a180198c8214743d490536a6855244355:
+.. _cid-ssh_crypto_struct::delayed_compress_out:
+.. _doxid-structssh__crypto__struct_1a53a57a0eaf6a4b1dfe3f0f6ab177f84d:
+.. _cid-ssh_crypto_struct::dh_server_signature:
+.. _doxid-structssh__crypto__struct_1aac94072165df7dbad1b08abc81287c87:
+.. _cid-ssh_crypto_struct::digest_len:
+.. _doxid-structssh__crypto__struct_1a9322f181b21f808d19918940335ecf40:
+.. _cid-ssh_crypto_struct::do_compress_in:
+.. _doxid-structssh__crypto__struct_1a2d1c6e8bd0458906a8dffa7ea982fa2d:
+.. _cid-ssh_crypto_struct::do_compress_out:
+.. _doxid-structssh__crypto__struct_1a919a95ded79f8422952644d7205cf5b1:
+.. _cid-ssh_crypto_struct::e:
+.. _doxid-structssh__crypto__struct_1af61cb0b00eb8b0e312e161754f7fffc5:
+.. _cid-ssh_crypto_struct::encryptiv:
+.. _doxid-structssh__crypto__struct_1aac421535e1ea3e781710d3e659f692f2:
+.. _cid-ssh_crypto_struct::encryptkey:
+.. _doxid-structssh__crypto__struct_1ae18fa9cdcc44cf926cf3e37af3168c6b:
+.. _cid-ssh_crypto_struct::encryptmac:
+.. _doxid-structssh__crypto__struct_1a745a8beba8a7cdde208d48ae7ae7ccff:
+.. _cid-ssh_crypto_struct::f:
+.. _doxid-structssh__crypto__struct_1abb03bc38774fc32124b5257da96bc1e7:
+.. _cid-ssh_crypto_struct::hmacbuf:
+.. _doxid-structssh__crypto__struct_1aead09fb1e43713d5a0da7b6de897ff88:
+.. _cid-ssh_crypto_struct::in_cipher:
+.. _doxid-structssh__crypto__struct_1a0080b8074c0e78a24e9a2b5a64ab25df:
+.. _cid-ssh_crypto_struct::k:
+.. _doxid-structssh__crypto__struct_1abb7b0e918e308277cd12968ed578f26f:
+.. _cid-ssh_crypto_struct::kex_methods:
+.. _doxid-structssh__crypto__struct_1a4d0e501e9fe0b45aeebec379319ad005:
+.. _cid-ssh_crypto_struct::kex_type:
+.. _doxid-structssh__crypto__struct_1aa4774a405595a99802d2ef3d0dd3f110:
+.. _cid-ssh_crypto_struct::mac_type:
+.. _doxid-structssh__crypto__struct_1a983a4a59241cfaa5fbea8fc67e963104:
+.. _cid-ssh_crypto_struct::out_cipher:
+.. _doxid-structssh__crypto__struct_1a4e9b63867c4814d84b572adf842f8d2c:
+.. _cid-ssh_crypto_struct::out_hmac:
+.. _doxid-structssh__crypto__struct_1af8fb6bb0ce4c2900556647dcaf6c377a:
+.. _cid-ssh_crypto_struct::secret_hash:
+.. _doxid-structssh__crypto__struct_1ac78255bf9406137ac4d400644c348a82:
+.. _cid-ssh_crypto_struct::server_kex:
+.. _doxid-structssh__crypto__struct_1a8770fe7eb6d57708fa911de3169ce84e:
+.. _cid-ssh_crypto_struct::server_pubkey:
+.. _doxid-structssh__crypto__struct_1ad39b6e05f01fc87f7130c57034196b73:
+.. _cid-ssh_crypto_struct::server_pubkey_type:
+.. _doxid-structssh__crypto__struct_1aedb3b1ec9ca06a1c4c82d965b7ef0577:
+.. _cid-ssh_crypto_struct::session_id:
+.. _doxid-structssh__crypto__struct_1af3fada8bcb741195b209c4af60377ede:
+.. _cid-ssh_crypto_struct::x:
+.. _doxid-structssh__crypto__struct_1a74598cc144a6e39ea99f83c438d9526c:
+.. _cid-ssh_crypto_struct::y:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	struct :ref:`ssh_kex_struct<doxid-structssh__kex__struct>` client_kex
+	void* compress_in_ctx
+	void* compress_out_ctx
+	unsigned char* decryptIV
+	unsigned char* decryptkey
+	unsigned char* decryptMAC
+	int delayed_compress_in
+	int delayed_compress_out
+	ssh_string dh_server_signature
+	size_t digest_len
+	int do_compress_in
+	int do_compress_out
+	bignum e
+	unsigned char* encryptIV
+	unsigned char* encryptkey
+	unsigned char* encryptMAC
+	bignum f
+	unsigned char hmacbuf[64]
+	struct :ref:`ssh_cipher_struct<doxid-structssh__cipher__struct>`* in_cipher
+	bignum k
+	char* kex_methods[SSH_KEX_METHODS]
+	enum :ref:`ssh_key_exchange_e<doxid-crypto_8h_1a7771bd67337acdfd10dbff1c114f0e8f>` kex_type
+	enum :ref:`ssh_mac_e<doxid-wrapper_8h_1aeabf1e8690f469b96f9a8d0e5cce606d>` mac_type
+	struct :ref:`ssh_cipher_struct<doxid-structssh__cipher__struct>`* out_cipher
+	enum :ref:`ssh_hmac_e<doxid-wrapper_8h_1a23eb7bb01b7f804d688feff35807fa6a>` in_hmac out_hmac
+	unsigned char* secret_hash
+	struct :ref:`ssh_kex_struct<doxid-structssh__kex__struct>` server_kex
+	ssh_string server_pubkey
+	const char* server_pubkey_type
+	unsigned char* session_id
+	bignum x
+	bignum y
+

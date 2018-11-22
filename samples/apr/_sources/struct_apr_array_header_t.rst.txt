@@ -1,0 +1,87 @@
+.. index:: pair: struct; apr_array_header_t
+.. _doxid-structapr__array__header__t:
+.. _cid-apr_array_header_t:
+
+struct apr_array_header_t
+=========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_tables.h>
+
+
+Overview
+~~~~~~~~
+
+An opaque array type :ref:`More...<details-doxid-structapr__array__header__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`apr_pool_t<doxid-group__apr__pools_1gaf137f28edcf9a086cd6bc36c20d7cdfb>`* :ref:`pool<doxid-structapr__array__header__t_1a68f353ce65943172fcc9494aa9f6e424>`
+	int :ref:`elt_size<doxid-structapr__array__header__t_1a36a690ebc781edc9e99ac1bec53c1770>`
+	int :ref:`nelts<doxid-structapr__array__header__t_1ab11b88220885c5a0920a06ac85680055>`
+	int :ref:`nalloc<doxid-structapr__array__header__t_1a0ceb78a23ebef1bceea5f0cd3e1513b6>`
+	char* :ref:`elts<doxid-structapr__array__header__t_1af8462fa2a1ddf6406c66cd3dd441a269>`
+
+.. _details-doxid-structapr__array__header__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+An opaque array type
+
+Fields
+------
+
+.. _doxid-structapr__array__header__t_1a68f353ce65943172fcc9494aa9f6e424:
+.. _cid-apr_array_header_t::pool:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`apr_pool_t<doxid-group__apr__pools_1gaf137f28edcf9a086cd6bc36c20d7cdfb>`* pool
+
+The pool the array is allocated out of
+
+.. _doxid-structapr__array__header__t_1a36a690ebc781edc9e99ac1bec53c1770:
+.. _cid-apr_array_header_t::elt_size:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int elt_size
+
+The amount of memory allocated for each element of the array
+
+.. _doxid-structapr__array__header__t_1ab11b88220885c5a0920a06ac85680055:
+.. _cid-apr_array_header_t::nelts:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int nelts
+
+The number of active elements in the array
+
+.. _doxid-structapr__array__header__t_1a0ceb78a23ebef1bceea5f0cd3e1513b6:
+.. _cid-apr_array_header_t::nalloc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int nalloc
+
+The number of elements allocated in the array
+
+.. _doxid-structapr__array__header__t_1af8462fa2a1ddf6406c66cd3dd441a269:
+.. _cid-apr_array_header_t::elts:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	char* elts
+
+The elements in the array
+

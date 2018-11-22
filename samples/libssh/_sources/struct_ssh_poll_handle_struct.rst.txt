@@ -1,0 +1,47 @@
+.. index:: pair: struct; ssh_poll_handle_struct
+.. _doxid-structssh__poll__handle__struct:
+.. _cid-ssh_poll_handle_struct:
+
+struct ssh_poll_handle_struct
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+
+.. _doxid-structssh__poll__handle__struct_1a978249a278c6d7705c76a3a5dfb5a4bb:
+.. _cid-ssh_poll_handle_struct::cb:
+.. _doxid-structssh__poll__handle__struct_1a8b7170de3c4265677f7881d470af50c6:
+.. _cid-ssh_poll_handle_struct::cb_data:
+.. _doxid-structssh__poll__handle__struct_1a43504eb7a861652acb87f719b402d46a:
+.. _cid-ssh_poll_handle_struct::ctx:
+.. _doxid-structssh__poll__handle__struct_1a2ddd01f1c9074109a55554afecca6abf:
+.. _cid-ssh_poll_handle_struct::events:
+.. _doxid-structssh__poll__handle__struct_1af68a7b3d8d77e3cc2c30410e3ae2b53d:
+.. _cid-ssh_poll_handle_struct::fd:
+.. _doxid-structssh__poll__handle__struct_1a93dbdfee8c0ccdb2ac7d38804793d665:
+.. _cid-ssh_poll_handle_struct::idx:
+.. _doxid-structssh__poll__handle__struct_1a6ca52a916efef8688280debd72f96405:
+.. _cid-ssh_poll_handle_struct::lock:
+.. _doxid-structssh__poll__handle__struct_1a299ebdb7d8d0e249fdeed98b004c0a82:
+.. _cid-ssh_poll_handle_struct::session:
+.. _doxid-structssh__poll__handle__struct_1a40f9d57a42656b91dd4af74e3ef3c8eb:
+.. _cid-ssh_poll_handle_struct::x:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`ssh_poll_callback<doxid-poll_8h_1af2a7809ed930c3f7eb5ab1a086673053>` cb
+	void* cb_data
+	ssh_poll_ctx ctx
+	short events
+	:ref:`socket_t<doxid-libssh_8h_1a30353f381f5fccbb956eea1f3a110b6c>` fd
+	size_t idx
+	int lock
+	ssh_session session
+	union ssh_poll_handle_struct::@5 x
+

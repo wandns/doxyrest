@@ -1,0 +1,42 @@
+.. index:: pair: struct; ssh_auth_request
+.. _doxid-structssh__auth__request:
+.. _cid-ssh_auth_request:
+
+struct ssh_auth_request
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/messages.h>
+
+
+
+
+.. _doxid-structssh__auth__request_1a7924bd37da6fd9fbd0157eadc0203c5c:
+.. _cid-ssh_auth_request::kbdint_response:
+.. _doxid-structssh__auth__request_1ad28d3cef6ecd0ecf37ee8ec84d71e396:
+.. _cid-ssh_auth_request::method:
+.. _doxid-structssh__auth__request_1adadadbbbcb2a1d4788b197f57f76aab8:
+.. _cid-ssh_auth_request::password:
+.. _doxid-structssh__auth__request_1ad3aa33442fa6e79892921ac1aa95427b:
+.. _cid-ssh_auth_request::pubkey:
+.. _doxid-structssh__auth__request_1a9a56113522ae0ade9ccf0f95f3cc5d17:
+.. _cid-ssh_auth_request::signature_state:
+.. _doxid-structssh__auth__request_1a88f26343b22a9fdb9e0d7a8313363ccf:
+.. _cid-ssh_auth_request::username:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	char kbdint_response
+	int method
+	char* password
+	struct :ref:`ssh_key_struct<doxid-structssh__key__struct>`* pubkey
+	char signature_state
+	char* username
+

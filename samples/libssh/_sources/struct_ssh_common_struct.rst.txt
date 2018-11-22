@@ -1,0 +1,33 @@
+.. index:: pair: struct; ssh_common_struct
+.. _doxid-structssh__common__struct:
+.. _cid-ssh_common_struct:
+
+struct ssh_common_struct
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/session.h>
+
+
+
+
+.. _doxid-structssh__common__struct_1a2f42939ea278698d861c7617b7529eb7:
+.. _cid-ssh_common_struct::callbacks:
+.. _doxid-structssh__common__struct_1a7f327da0dddbabcf479993cc2e1a74b7:
+.. _cid-ssh_common_struct::error:
+.. _doxid-structssh__common__struct_1ade6c3456cf220bcb7b0823f8e682a82d:
+.. _cid-ssh_common_struct::log_verbosity:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_callbacks callbacks
+	struct :ref:`error_struct<doxid-structerror__struct>` error
+	int log_verbosity
+

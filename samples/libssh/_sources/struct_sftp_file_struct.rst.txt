@@ -1,0 +1,42 @@
+.. index:: pair: struct; sftp_file_struct
+.. _doxid-structsftp__file__struct:
+.. _cid-sftp_file_struct:
+
+struct sftp_file_struct
+=======================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/sftp.h>
+
+
+
+
+.. _doxid-structsftp__file__struct_1a9d3c94c2acbb41c6d775bc4b270c6759:
+.. _cid-sftp_file_struct::eof:
+.. _doxid-structsftp__file__struct_1aad71e26d5b0a4b06ead0af60718888ef:
+.. _cid-sftp_file_struct::handle:
+.. _doxid-structsftp__file__struct_1aac73a6e58520d07d8c3e585e1078dac6:
+.. _cid-sftp_file_struct::name:
+.. _doxid-structsftp__file__struct_1ad47e46eff75b7205d02d1a71f943e26a:
+.. _cid-sftp_file_struct::nonblocking:
+.. _doxid-structsftp__file__struct_1a24b58aa4bd36d115147685ad2723669f:
+.. _cid-sftp_file_struct::offset:
+.. _doxid-structsftp__file__struct_1aa9e5aeea03336176976668a286d06186:
+.. _cid-sftp_file_struct::sftp:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int eof
+	ssh_string handle
+	char* name
+	int nonblocking
+	uint64_t offset
+	sftp_session sftp
+

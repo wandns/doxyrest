@@ -1,0 +1,67 @@
+.. index:: pair: struct; snd_tplg_graph_elem
+.. _doxid-structsnd__tplg__graph__elem:
+.. _cid-snd_tplg_graph_elem:
+
+struct snd_tplg_graph_elem
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for single DAPM graph element. :ref:`More...<details-doxid-structsnd__tplg__graph__elem>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	const char* :ref:`src<doxid-structsnd__tplg__graph__elem_1a103c8eebede5adb8b494f11647f67949>`
+	const char* :ref:`ctl<doxid-structsnd__tplg__graph__elem_1ac51f4e6cca8bbc05d1db9985d6dc751c>`
+	const char* :ref:`sink<doxid-structsnd__tplg__graph__elem_1a536989e825d1d329cc75fd1cc74687da>`
+
+.. _details-doxid-structsnd__tplg__graph__elem:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for single DAPM graph element.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__graph__elem_1a103c8eebede5adb8b494f11647f67949:
+.. _cid-snd_tplg_graph_elem::src:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* src
+
+source widget name
+
+.. _doxid-structsnd__tplg__graph__elem_1ac51f4e6cca8bbc05d1db9985d6dc751c:
+.. _cid-snd_tplg_graph_elem::ctl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* ctl
+
+control name or NULL if no control
+
+.. _doxid-structsnd__tplg__graph__elem_1a536989e825d1d329cc75fd1cc74687da:
+.. _cid-snd_tplg_graph_elem::sink:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	const char* sink
+
+sink widget name
+

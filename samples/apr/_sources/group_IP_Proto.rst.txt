@@ -1,0 +1,63 @@
+.. index:: pair: group; IP Protocol Definitions for use when creating sockets
+.. _doxid-group___i_p___proto:
+.. _cid-ip_proto:
+
+IP Protocol Definitions for use when creating sockets
+=====================================================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`APR_PROTO_SCTP<doxid-group___i_p___proto_1ga89b4fd2811d13e945e937f890b750727>`
+	#define :ref:`APR_PROTO_TCP<doxid-group___i_p___proto_1gad231c935f9f9746ca43b46cdcf80338e>`
+	#define :ref:`APR_PROTO_UDP<doxid-group___i_p___proto_1ga05acc4775ee3f3a637f97c904b8ebd7d>`
+
+.. _details-doxid-group___i_p___proto:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Macros
+------
+
+.. _doxid-group___i_p___proto_1ga89b4fd2811d13e945e937f890b750727:
+.. _cid-apr_proto_sctp:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_PROTO_SCTP
+
+SCTP
+
+.. _doxid-group___i_p___proto_1gad231c935f9f9746ca43b46cdcf80338e:
+.. _cid-apr_proto_tcp:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_PROTO_TCP
+
+TCP
+
+.. _doxid-group___i_p___proto_1ga05acc4775ee3f3a637f97c904b8ebd7d:
+.. _cid-apr_proto_udp:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_PROTO_UDP
+
+UDP
+

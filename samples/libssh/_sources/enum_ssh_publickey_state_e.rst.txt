@@ -1,0 +1,29 @@
+.. index:: pair: enum; ssh_publickey_state_e
+.. _doxid-libssh_8h_1a678ab8f3594510db5765fc626ed91e0e:
+.. _cid-ssh_publickey_state_e:
+
+enum ssh_publickey_state_e
+==========================
+
+
+
+
+
+.. _doxid-libssh_8h_1a678ab8f3594510db5765fc626ed91e0eab8a2e7f7e95c54c1aaef83dfa0e484e7:
+.. _cid-ssh_publickey_state_e::ssh_publickey_state_error:
+.. _doxid-libssh_8h_1a678ab8f3594510db5765fc626ed91e0ea3377056d987d34789b6104357ba7bfae:
+.. _cid-ssh_publickey_state_e::ssh_publickey_state_none:
+.. _doxid-libssh_8h_1a678ab8f3594510db5765fc626ed91e0ea8e0493fe8cfc727e755d8b18075170f6:
+.. _cid-ssh_publickey_state_e::ssh_publickey_state_valid:
+.. _doxid-libssh_8h_1a678ab8f3594510db5765fc626ed91e0ea2d86364e78a5f54a05f58458089c3864:
+.. _cid-ssh_publickey_state_e::ssh_publickey_state_wrong:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_PUBLICKEY_STATE_ERROR =-1
+	SSH_PUBLICKEY_STATE_NONE =0
+	SSH_PUBLICKEY_STATE_VALID =1
+	SSH_PUBLICKEY_STATE_WRONG =2
+

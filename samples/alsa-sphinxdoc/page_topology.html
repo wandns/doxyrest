@@ -1,0 +1,695 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ALSA Topology Interface &#8212; ALSA Library Documentation 1.1.3 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ALSA Use Case Interface" href="page_Usecase.html" />
+    <link rel="prev" title="Use Case Interface" href="group_ucm.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="page_Usecase.html" title="ALSA Use Case Interface"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="group_ucm.html" title="Use Case Interface"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ALSA Library Documentation 1.1.3 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="group_ucm.html"
+                        title="previous chapter">Use Case Interface</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="page_Usecase.html"
+                        title="next chapter">ALSA Use Case Interface</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="alsa-topology-interface">
+<span id="doxid-group-topology-topology"></span><span id="index-0"></span><h1>ALSA Topology Interface</h1>
+<p>The topology interface allows developers to define DSP topologies in a text file format and to convert the text topology to a binary topology representation that can be understood by the kernel. The topology core currently recognises the following object types :-</p>
+<ul class="simple">
+<li>Controls (mixer, enumerated and byte) including TLV data.</li>
+<li>PCMs (Front End DAI &amp; DAI link)</li>
+<li>DAPM widgets</li>
+<li>DAPM graph elements.</li>
+<li>Physical DAI &amp; DAI links</li>
+<li>Private data for each object type.</li>
+<li>Manifest (containing count of each object type)</li>
+</ul>
+<p class="rubric">Topology File Format</p>
+<p>The topology text format uses the standard ALSA configuration file format to describe each topology object type. This allows topology objects to include other topology objects as part of their definition. i.e. a TLV data object can be shared amongst many control objects that use the same TLV data.</p>
+<p class="rubric">Controls</p>
+<p>Topology audio controls can belong to three different types :-</p>
+<ul class="simple">
+<li>Mixer control</li>
+<li>Enumerated control</li>
+<li>Byte control</li>
+</ul>
+<p>Each control type can contain TLV data, private data, operations and also belong to widget objects.</p>
+<p class="rubric">Control Operations</p>
+<p>Driver Kcontrol callback info(), get() and put() operations are mapped with the CTL ops section in topology configuration files. The ctl ops section can assign operations using the standard names (listed below) for the standard kcontrol types or use ID numbers (&gt;256) to map to bespoke driver controls.</p>
+<pre class="highlight literal-block">
+
+</pre>
+<pre class="highlight literal-block">
+ops."ctl" {
+    info "volsw"
+    get "257"
+    put "257"
+}
+</pre>
+<pre class="highlight literal-block">
+
+</pre>
+<p>This mapping shows info() using the standard “volsw” info callback whilst the get() and put() are mapped to bespoke driver callbacks.</p>
+<p>The Standard operations names for control get(), put() and info calls are :-</p>
+<ul class="simple">
+<li>volsw</li>
+<li>volsw_sx</li>
+<li>volsw_xr_sx</li>
+<li>enum</li>
+<li>bytes</li>
+<li>enum_value</li>
+<li>range</li>
+<li>strobe</li>
+</ul>
+<p class="rubric">Control Access</p>
+<p>Controls access can be specified using the “access” section. If no “access” section is defined then default RW access flags are set for normal and TLV controls.</p>
+<pre class="highlight literal-block">
+access [
+    read
+    write
+    tlv_command
+]
+</pre>
+<p>The standard access flags are as follows :-</p>
+<ul class="simple">
+<li>read</li>
+<li>write</li>
+<li>read_write</li>
+<li>volatile</li>
+<li>timestamp</li>
+<li>tlv_read</li>
+<li>tlv_write</li>
+<li>tlv_read_write</li>
+<li>tlv_command</li>
+<li>inactive</li>
+<li>lock</li>
+<li>owner</li>
+<li>tlv_callback</li>
+<li>user</li>
+</ul>
+<p class="rubric">Control TLV Data</p>
+<p>Controls can also use TLV data to represent dB information. This can be done by defining a TLV section and using the TLV section within the control. The TLV data for DBScale types are defined as follows :-</p>
+<pre class="highlight literal-block">
+scale {
+    min "-9000"
+    step "300"
+    mute "1"
+}
+</pre>
+<p>Where the meanings and values for min, step and mute are exactly the same as defined in driver code.</p>
+<p class="rubric">Control Channel Mapping</p>
+<p>Controls can also specify which channels they are mapped with. This is useful for userspace as it allows applications to determine the correct control channel for Left and Right etc. Channel maps are defined as follows :-</p>
+<pre class="highlight literal-block">
+channel."name" {
+    reg "0"
+    shift "0"
+}
+</pre>
+<p>The channel map reg is the register offset for the control, shift is the bit shift within the register for the channel and the section name is the channel name and can be one of the following :-</p>
+<pre class="highlight literal-block">
+* mono        # mono stream
+* fl      # front left
+* fr      # front right
+* rl      # rear left
+* rr      # rear right
+* fc      # front center
+* lfe     # LFE
+* sl      # side left
+* sr      # side right
+* rc      # rear center
+* flc     # front left center
+* frc     # front right center
+* rlc     # rear left center
+* rrc     # rear right center
+* flw     # front left wide
+* frw     # front right wide
+* flh     # front left high
+* fch     # front center high
+* frh     # front right high
+* tc      # top center
+* tfl     # top front left
+* tfr     # top front right
+* tfc     # top front center
+* trl     # top rear left
+* trr     # top rear right
+* trc     # top rear center
+* tflc        # top front left center
+* tfrc        # top front right center
+* tsl     # top side left
+* tsr     # top side right
+* llfe        # left LFE
+* rlfe        # right LFE
+* bc      # bottom center
+* blc     # bottom left center
+* brc     # bottom right center
+</pre>
+<p class="rubric">Control Private Data</p>
+<p>Controls can also have private data. This can be done by defining a private data section and including the section within the control. The private data section is defined as follows :-</p>
+<pre class="highlight literal-block">
+SectionData."pdata for EQU1" {
+   file "/path/to/file"
+   bytes "0x12,0x34,0x56,0x78"
+   shorts "0x1122,0x3344,0x5566,0x7788"
+   words "0xaabbccdd,0x11223344,0x66aa77bb,0xefef1234"
+   tuples "section id of the vendor tuples"
+};
+</pre>
+<p>The file, bytes, shorts, words and tuples keywords are all mutually exclusive as the private data should only be taken from one source. The private data can either be read from a separate file or defined in the topology file using the bytes, shorts, words or tuples keywords. The keyword tuples is to define vendor specific tuples. Please refer to section Vendor Tokens and Vendor tuples.</p>
+<p class="rubric">How to define an element with private data</p>
+<p>An element can refer to a single data section or multiple data sections.</p>
+<p class="rubric">To refer to a single data section:</p>
+<pre class="highlight literal-block">
+Sectionxxx."element name" {
+   ...
+   data "name of data section"     # optional private data
+}
+</pre>
+<p class="rubric">To refer to multiple data sections:</p>
+<pre class="highlight literal-block">
+Sectionxxx."element name" {
+   ...
+   data [                      # optional private data
+       "name of 1st data section"
+       "name of 2nd data section"
+       ...
+   ]
+}
+</pre>
+<p>And data of these sections will be merged in the same order as they are in the list, as the element’s private data for kernel.</p>
+<p class="rubric">Vendor Tokens</p>
+<p>A vendor token list is defined as a new section. Each token element is a pair of string ID and integer value. And both the ID and value are vendor-specific.</p>
+<pre class="highlight literal-block">
+SectionVendorTokens."id of the vendor tokens" {
+   comment "optional comments"
+   VENDOR_TOKEN_ID1 "1"
+   VENDOR_TOKEN_ID2 "2"
+   VENDOR_TOKEN_ID3 "3"
+   ...
+}
+</pre>
+<p class="rubric">Vendor Tuples</p>
+<p>Vendor tuples are defined as a new section. It contains a reference to a vendor token list and several tuple arrays. All arrays share a vendor token list, defined by the tokens keyword. Each tuple array is for a specific type, defined by the string following the tuples keyword. Supported types are: string, uuid, bool, byte, short and word.</p>
+<pre class="highlight literal-block">
+SectionVendorTuples."id of the vendor tuples" {
+   tokens "id of the vendor tokens"
+</pre>
+<pre class="highlight literal-block">
+tuples."string" {
+    VENDOR_TOKEN_ID1 "character string"
+    ...
+}
+</pre>
+<pre class="highlight literal-block">
+tuples."uuid" {         # 16 characters separated by commas
+    VENDOR_TOKEN_ID2 "0x01,0x02,...,0x0f"
+    ...
+}
+</pre>
+<pre class="highlight literal-block">
+tuples."bool" {
+    VENDOR_TOKEN_ID3 "true/false"
+    ...
+}
+</pre>
+<pre class="highlight literal-block">
+tuples."byte" {
+    VENDOR_TOKEN_ID4 "0x11"
+    VENDOR_TOKEN_ID5 "0x22"
+    ...
+}
+</pre>
+<pre class="highlight literal-block">
+tuples."short" {
+    VENDOR_TOKEN_ID6 "0x1122"
+    VENDOR_TOKEN_ID7 "0x3344"
+    ...
+}
+</pre>
+<pre class="highlight literal-block">
+   tuples."word" {
+       VENDOR_TOKEN_ID8 "0x11223344"
+       VENDOR_TOKEN_ID9 "0x55667788"
+       ...
+   }
+}
+</pre>
+<p>To define multiple vendor tuples of same type, please append some characters after the type string (“string”, “uuid”, “bool”, “byte”, “short” or “word”), to avoid ID duplication in the SectionVendorTuples.</p>
+<p>The parser will check the first few characters in ID to get the tuple type. Here is an example:</p>
+<pre class="highlight literal-block">
+SectionVendorTuples."id of the vendor tuples" {
+   ...
+   tuples."word.module0" {
+       VENDOR_TOKEN_PARAM_ID1 "0x00112233"
+       VENDOR_TOKEN_PARAM_ID2 "0x44556677"
+       ...
+   }
+</pre>
+<pre class="highlight literal-block">
+   tuples."word.module2" {
+       VENDOR_TOKEN_PARAM_ID1 "0x11223344"
+       VENDOR_TOKEN_PARAM_ID2 "0x55667788"
+       ...
+   }
+   ...
+}
+</pre>
+<pre class="highlight literal-block">
+
+</pre>
+<p class="rubric">Mixer Controls</p>
+<p>A mixer control is defined as a new section that can include channel mapping, TLV data, callback operations and private data. The mixer section also includes a few other config options that are shown here :-</p>
+<pre class="highlight literal-block">
+SectionControlMixer."mixer name" {
+   comment "optional comments"
+</pre>
+<pre class="highlight literal-block">
+index "1"           # Index number
+</pre>
+<pre class="highlight literal-block">
+channel."name" {        # Channel maps
+   ....
+}
+</pre>
+<pre class="highlight literal-block">
+ops."ctl" {         # Ops callback functions
+   ....
+}
+</pre>
+<pre class="highlight literal-block">
+max "32"            # Max control value
+invert "0"          # Whether control values are inverted
+</pre>
+<pre class="highlight literal-block">
+tlv "tld_data"          # optional TLV data
+</pre>
+<pre class="highlight literal-block">
+   data "pdata for mixer1"     # optional private data
+}
+</pre>
+<p>The section name is used to define the mixer name. The index number can be used to identify topology objects groups. This allows driver operations on objects with index number N and can be used to add/remove pipelines of objects whilst other objects are unaffected.</p>
+<p class="rubric">Byte Controls</p>
+<p>A byte control is defined as a new section that can include channel mapping, TLV data, callback operations and private data. The bytes section also includes a few other config options that are shown here :-</p>
+<pre class="highlight literal-block">
+SectionControlBytes."name" {
+   comment "optional comments"
+</pre>
+<pre class="highlight literal-block">
+index "1"           # Index number
+</pre>
+<pre class="highlight literal-block">
+channel."name" {        # Channel maps
+   ....
+}
+</pre>
+<pre class="highlight literal-block">
+ops."ctl" {         # Ops callback functions
+   ....
+}
+</pre>
+<pre class="highlight literal-block">
+base "0"            # Register base
+num_regs "16"           # Number of registers
+mask "0xff"         # Mask
+max "255"           # Maximum value
+</pre>
+<pre class="highlight literal-block">
+tlv "tld_data"          # optional TLV data
+</pre>
+<pre class="highlight literal-block">
+   data "pdata for mixer1"     # optional private data
+}
+</pre>
+<p class="rubric">Enumerated Controls</p>
+<p>A enumerated control is defined as a new section (like mixer and byte) that can include channel mapping, callback operations, private data and text strings to represent the enumerated control options.</p>
+<p>The text strings for the enumerated controls are defined in a separate section as follows :-</p>
+<pre class="highlight literal-block">
+SectionText."name" {
+</pre>
+<pre class="highlight literal-block">
+       Values [
+           "value1"
+           "value2"
+       "value3"
+       ]
+}
+</pre>
+<p>All the enumerated text values are listed in the values list.</p>
+<p>The enumerated control is similar to the other controls and defined as follows :-</p>
+<pre class="highlight literal-block">
+SectionControlMixer."name" {
+   comment "optional comments"
+</pre>
+<pre class="highlight literal-block">
+index "1"           # Index number
+</pre>
+<pre class="highlight literal-block">
+texts "EQU1"            # Enumerated text items
+</pre>
+<pre class="highlight literal-block">
+channel."name" {        # Channel maps
+   ....
+}
+</pre>
+<pre class="highlight literal-block">
+ops."ctl" {         # Ops callback functions
+   ....
+}
+</pre>
+<pre class="highlight literal-block">
+   data "pdata for mixer1"     # optional private data
+}
+</pre>
+<p class="rubric">DAPM Graph</p>
+<p>DAPM graphs can easily be defined using the topology file. The format is very similar to the DAPM graph kernel format. :-</p>
+<pre class="highlight literal-block">
+SectionGraph."dsp" {
+   index "1"           # Index number
+</pre>
+<pre class="highlight literal-block">
+   lines [
+       "sink1, control, source1"
+       "sink2, , source2"
+   ]
+}
+</pre>
+<p>The lines in the graph are defined as a variable size list of sinks, controls and sources. The control name is optional as some graph lines have no associated controls. The section name can be used to differentiate the graph with other graphs, it’s not used by the kernel atm.</p>
+<p class="rubric">DAPM Widgets</p>
+<p>DAPM widgets are similar to controls in that they can include many other objects. Widgets can contain private data, mixer controls and enum controls.</p>
+<p>The following widget types are supported and match the driver types :-</p>
+<ul class="simple">
+<li>input</li>
+<li>output</li>
+<li>mux</li>
+<li>mixer</li>
+<li>pga</li>
+<li>out_drv</li>
+<li>adc</li>
+<li>dac</li>
+<li>switch</li>
+<li>pre</li>
+<li>post</li>
+<li>aif_in</li>
+<li>aif_out</li>
+<li>dai_in</li>
+<li>dai_out</li>
+<li>dai_link</li>
+</ul>
+<p>Widgets are defined as follows :-</p>
+<pre class="highlight literal-block">
+SectionWidget."name" {
+</pre>
+<pre class="highlight literal-block">
+index "1"           # Index number
+</pre>
+<pre class="highlight literal-block">
+type "aif_in"           # Widget type - detailed above
+stream_name "name"      # Stream name
+</pre>
+<pre class="highlight literal-block">
+no_pm "true"            # No PM control bit.
+reg "20"            # PM bit register offset
+shift "0"           # PM bit register shift
+invert "1           # PM bit is inverted
+subseq "8"          # subsequence number
+</pre>
+<pre class="highlight literal-block">
+event_type "1"          # DAPM widget event type
+event_flags "1"         # DAPM widget event flags
+</pre>
+<pre class="highlight literal-block">
+mixer "name"            # Optional Mixer Control
+enum "name"         # Optional Enum Control
+</pre>
+<pre class="highlight literal-block">
+   data "name"         # optional private data
+}
+</pre>
+<p>The section name is the widget name. The mixer and enum fields are mutually exclusive and used to include controls into the widget. The index and data fields are the same for widgets as they are for controls whilst the other fields map on very closely to the driver widget fields.</p>
+<p class="rubric">Widget Private Data</p>
+<p>Widget can have private data. For the format of the private data, please refer to section Control Private Data.</p>
+<p class="rubric">PCM Capabilities</p>
+<p>Topology can also define the PCM capabilities of front end or physical DAIs. Capabilities can be defined with the following section :-</p>
+<pre class="highlight literal-block">
+SectionPCMCapabilities."name" {
+</pre>
+<pre class="highlight literal-block">
+   formats "S24_LE,S16_LE"     # Supported formats
+   rate_min "48000"        # Max supported sample rate
+   rate_max "48000"        # Min supported sample rate
+   channels_min "2"        # Min number of channels
+   channels_max "2"        # max number of channels
+}
+</pre>
+<p>The supported formats use the same naming convention as the driver macros. The PCM capabilities name can be referred to and included by PCM and physical DAI sections.</p>
+<p class="rubric">PCM Configurations</p>
+<p>PCM runtime configurations can be defined for playback and capture stream directions with the following section :-</p>
+<pre class="highlight literal-block">
+SectionPCMConfig."name" {
+</pre>
+<pre class="highlight literal-block">
+config."playback" {     # playback config
+    format "S16_LE"     # playback format
+    rate "48000"        # playback sample rate
+    channels "2"        # playback channels
+    tdm_slot "0xf"      # playback TDM slot
+}
+</pre>
+<pre class="highlight literal-block">
+   config."capture" {      # capture config
+       format "S16_LE"     # capture format
+       rate "48000"        # capture sample rate
+       channels "2"        # capture channels
+       tdm_slot "0xf"      # capture TDM slot
+   }
+}
+</pre>
+<p>The supported formats use the same naming convention as the driver macros. The PCM configuration name can be referred to and included by PCM and physical link sections.</p>
+<p class="rubric">PCM (Front-end DAI &amp; DAI link)</p>
+<p>PCM sections define the supported capabilities and configurations for supported playback and capture streams, names and flags for front end DAI &amp; DAI links. Topology kernel driver will use a PCM object to create a pair of FE DAI &amp; DAI links.</p>
+<pre class="highlight literal-block">
+SectionPCM."name" {
+</pre>
+<pre class="highlight literal-block">
+index "1"           # Index number
+</pre>
+<pre class="highlight literal-block">
+id "0"              # used for binding to the PCM
+</pre>
+<pre class="highlight literal-block">
+dai."name of front-end DAI" {
+    id "0"      # used for binding to the front-end DAI
+}
+</pre>
+<pre class="highlight literal-block">
+pcm."playback" {
+    capabilities "capabilities1"    # capabilities for playback
+</pre>
+<pre class="highlight literal-block">
+    configs [       # supported configs for playback
+        "config1"
+        "config2"
+    ]
+}
+</pre>
+<pre class="highlight literal-block">
+pcm."capture" {
+    capabilities "capabilities2"    # capabilities for capture
+</pre>
+<pre class="highlight literal-block">
+    configs [       # supported configs for capture
+        "config1"
+        "config2"
+        "config3"
+    ]
+}
+</pre>
+<pre class="highlight literal-block">
+# Optional boolean flags
+symmetric_rates         "true"
+symmetric_channels      "true"
+symmetric_sample_bits       "false"
+</pre>
+<pre class="highlight literal-block">
+   data "name"         # optional private data
+}
+</pre>
+<p class="rubric">Physical DAI Link Configurations</p>
+<p>The runtime configurations of a physical DAI link can be defined by SectionLink.</p>
+<p>Backend DAI links belong to physical links, and can be configured by either SectionLink or SectionBE, with same syntax. But SectionBE is deprecated atm since the internal processing is actually same.</p>
+<pre class="highlight literal-block">
+SectionLink."name" {
+</pre>
+<pre class="highlight literal-block">
+index "1"           # Index number
+</pre>
+<pre class="highlight literal-block">
+id "0"              # used for binding to the link
+</pre>
+<pre class="highlight literal-block">
+stream_name "name"      # used for binding to the link
+</pre>
+<pre class="highlight literal-block">
+hw_configs [    # runtime supported HW configurations, optional
+    "config1"
+    "config2"
+    ...
+]
+</pre>
+<pre class="highlight literal-block">
+default_hw_conf_id "1"      #default HW config ID for init
+</pre>
+<pre class="highlight literal-block">
+# Optional boolean flags
+symmetric_rates         "true"
+symmetric_channels      "false"
+symmetric_sample_bits       "true"
+</pre>
+<pre class="highlight literal-block">
+   data "name"         # optional private data
+}
+</pre>
+<p>A physical link can refer to multiple runtime supported hardware configurations, which is defined by SectionHWConfig.</p>
+<pre class="highlight literal-block">
+SectionHWConfig."name" {
+</pre>
+<pre class="highlight literal-block">
+   id "1"              # used for binding to the config
+   format "I2S"            # physical audio format.
+   bclk   "master"         # Platform is master of bit clock
+   fsync  "slave"          # Platform is slave of fsync
+}
+</pre>
+<p class="rubric">Physical DAI</p>
+<p>A physical DAI (e.g. backend DAI for DPCM) is defined as a new section that can include a unique ID, playback and capture stream capabilities, optional flags, and private data.</p>
+<p>Its PCM stream capablities are same as those for PCM objects, please refer to section ‘PCM Capabilities’.</p>
+<pre class="highlight literal-block">
+SectionDAI."name" {
+</pre>
+<pre class="highlight literal-block">
+index "1"           # Index number
+</pre>
+<pre class="highlight literal-block">
+id "0"              # used for binding to the Backend DAI
+</pre>
+<pre class="highlight literal-block">
+pcm."playback" {
+    capabilities "capabilities1"    # capabilities for playback
+}
+</pre>
+<pre class="highlight literal-block">
+pcm."capture" {
+    capabilities "capabilities2"    # capabilities for capture
+}
+</pre>
+<pre class="highlight literal-block">
+symmetric_rates "true"          # optional flags
+symmetric_channels "true"
+symmetric_sample_bits "false"
+</pre>
+<pre class="highlight literal-block">
+   data "name"         # optional private data
+}
+</pre>
+<p class="rubric">Manifest Private Data</p>
+<p>Manfiest may have private data. Users need to define a manifest section and add the references to 1 or multiple data sections. Please refer to section ‘How to define an element with private data’.</p>
+<p>And the text conf file can have at most 1 manifest section.</p>
+<p>Manifest section is defined as follows :-</p>
+<pre class="highlight literal-block">
+SectionManifest"name" {
+</pre>
+<pre class="highlight literal-block">
+   data "name"         # optional private data
+}
+</pre>
+<p class="rubric">Include other files</p>
+<p>Users may include other files in a text conf file via alsaconf syntax &lt;path/to/configuration-file&gt;. This allows users to define common info in separate files (e.g. vendor tokens, tuples) and share them for different platforms, thus save the total size of config files.</p>
+<p>Users can also specifiy additional configuraiton directories relative to “/usr/share/alsa/” to search the included files, via alsaconf syntax &lt;searchfdir:/relative-path/to/usr/share/alsa&gt;.</p>
+<p>For example, file A and file B are two text conf files for platform X, they will be installed to /usr/share/alsa/topology/platformx. If we need file A to include file B, in file A we can add:</p>
+<p>&lt;searchdir:topology/platformx&gt;</p>
+<p>&lt;name-of-file-B&gt;</p>
+<p>ALSA conf will search and open an included file in the following order of priority:</p>
+<ol class="arabic simple">
+<li>directly open the file by its name;</li>
+<li>search for the file name in “/usr/share/alsa”;</li>
+<li>search for the file name in user specified subdirectories under “/usr/share/alsa”.</li>
+</ol>
+<p>The order of the included files need not to be same as their dependencies, since the topology library will load them all before parsing their dependencies.</p>
+<p>The configuration directories defined by a file will only be used to search the files included by this file.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="page_Usecase.html" title="ALSA Use Case Interface"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="group_ucm.html" title="Use Case Interface"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ALSA Library Documentation 1.1.3 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1998-2017, ALSA Library Maintainers.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>

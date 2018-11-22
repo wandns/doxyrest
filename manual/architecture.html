@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Architectural Overview &mdash; Doxyrest Manual 1.1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lua Frames" href="frames.html" />
+    <link rel="prev" title="Doxyrest Manual" href="index.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Doxyrest Manual
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Architectural Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="frames.html">Lua Frames</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lua_global.html">Lua API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmd-line.html">Command Line Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="samples.html">Samples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Doxyrest Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Architectural Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="architectural-overview">
+<h1>Architectural Overview</h1>
+<div class="section" id="in-a-nutshell">
+<h2>In a Nutshell</h2>
+<img alt="_images/doxyrest-pipeline.png" src="_images/doxyrest-pipeline.png" />
+<ul>
+<li><dl class="first docutils">
+<dt>Doxygen stage:</dt>
+<dd><ul class="first simple">
+<li>Doxygen parses source input (<code class="docutils literal notranslate"><span class="pre">.c</span></code>, <code class="docutils literal notranslate"><span class="pre">.cpp</span></code>, <code class="docutils literal notranslate"><span class="pre">.h</span></code>, <code class="docutils literal notranslate"><span class="pre">.dox</span></code>);</li>
+<li>Doxygen generates XML database (<code class="docutils literal notranslate"><span class="pre">.xml</span></code>) containing the representation of the source tree (including documentation extracted from the comments);</li>
+</ul>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can replace Doxygen with your own tool for <code class="docutils literal notranslate"><span class="pre">.xml</span></code> database generation.</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Doxyrest stage:</dt>
+<dd><ul class="first simple">
+<li>Doxyrest parses Doxygen XML database (<code class="docutils literal notranslate"><span class="pre">.xml</span></code>);</li>
+<li><dl class="first docutils">
+<dt>Doxyrest passes to Lua-base string template engine:</dt>
+<dd><ul class="first last">
+<li>The in-memory representation of Doxygen XML database;</li>
+<li>Lua frames (<code class="docutils literal notranslate"><span class="pre">.rst.in</span></code>) containing Lua-driven templates of reStructuredText.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>String template engine generate reStructuredText (<code class="docutils literal notranslate"><span class="pre">.rst</span></code>);</li>
+</ul>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can replace Lua <code class="docutils literal notranslate"><span class="pre">.rst.in</span></code> frames with your own ones for customization.</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Sphinx stage:</dt>
+<dd><ul class="first last simple">
+<li>Sphinx parses reStructuredText (<code class="docutils literal notranslate"><span class="pre">.rst</span></code>);</li>
+<li><dl class="first docutils">
+<dt>Sphinx generates final documentation:</dt>
+<dd><ul class="first last">
+<li>HTML pages (<code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.js</span></code>);</li>
+<li>PDF file (<code class="docutils literal notranslate"><span class="pre">.pdf</span></code>);</li>
+<li>…</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="details">
+<h2>Details</h2>
+<p>While designing Doxyrest I tried to re-use existing documentation generation tools and techniques as much as possible.</p>
+<div class="section" id="re-used-toolset">
+<h3>Re-used Toolset</h3>
+<p>Developers already know how to document their C/C++/Java code using Doxygen-style comments like:</p>
+<pre class="highlight literal-block">
+<span></span><span class="cm">/*!</span>
+<span class="cm">    \brief This is a brief documentation for class Foo.</span>
+
+<span class="cm">    This is a detailed documentation for class Foo.</span>
+<span class="cm">    ...</span>
+
+<span class="cm"> */</span>
+
+<span class="k">class</span> <span class="nc">Foo</span>
+<span class="p">{</span>
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</pre>
+<p>Why invent and teach people a new way of documenting their code? Let’s <strong>keep</strong> using the same <strong>Doxygen-style comments</strong>!</p>
+<p>Next. <a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> itself is quite good at extracting those comments from the C/C++/Java source code and building a XML database of the source structure. Great! For traditional C-family languages we are going to <strong>re-use Doxygen</strong> as the first stage of documentation generation pipeline.</p>
+<p>Moving on. <a class="reference external" href="http://www.sphinx-doc.org">Sphinx</a> is capable of generating <strong>beautiful documentation</strong> in multiple output formats, most important of which are – at least, for us here at <a class="reference external" href="http://tibbo.com">Tibbo</a> – HTML and PDF. Even more importantly, Sphinx is <strong>completely customizable</strong> using themes and Python scripting. So why look any further? Let’s use Sphinx as a back-end of our pipeline.</p>
+<p>The only missing part of equation is <strong>mid-end</strong> – we need to build a bridge between Doxygen and Sphinx. That’s where <strong>Doxyrest</strong> comes in.</p>
+</div>
+<div class="section" id="building-a-bridge">
+<h3>Building a Bridge</h3>
+<p>The job of Doxyrest is to take a Doxygen-generated XML database and convert it to reStructuredText – the input format of Sphinx.</p>
+<p>The biggest challenge here is to maintain <strong>independence</strong> from the <strong>programming language</strong> of the original sources. Let me elaborate.</p>
+<p>Structure of source files can be described more or less uniformly for most traditional programming languages – as a tree of hierarchical <strong>namespaces</strong> (or <strong>compounds</strong> in Doxygen terminology) and namespace <strong>members</strong>. All these namespaces and members can have different types, of course: <code class="docutils literal notranslate"><span class="pre">struct</span></code>, <code class="docutils literal notranslate"><span class="pre">class</span></code>, <code class="docutils literal notranslate"><span class="pre">variable</span></code>, <code class="docutils literal notranslate"><span class="pre">function</span></code> etc. Doxygen XML could be considered as a standardized way of storing information about the source file structure.</p>
+<p>But what about syntactic difference between the languages? When we generate documentation we have to take a Doxygem XML database (which holds a structure of source files to be documented) and then <strong>re-construct</strong> declarations of all the documentable items – and do so using the syntax of the target language!</p>
+<p>I personally needed Doxyrest for documenting C, C++ and Jancy APIs. Even though all these languages belong to the C-family of programming languages, declarations may look quite different for classes, enums, properties, events etc. And if we move away from the C-family, the problem of customizing the documentation output becomes even more evident.</p>
+<p>In Doxyrest this problem is solved by using a Lua-based <strong>string template engine</strong>. The templates for the output <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files are defined in form of Lua <strong>repleacable</strong> frames <code class="docutils literal notranslate"><span class="pre">.rst.in</span></code>. So you can always create your own Lua frames <code class="docutils literal notranslate"><span class="pre">.rst.in</span></code>. Lua code inside those frames can iterate over Doxygen-XML-encoded representation of the original user source code and build whatever syntactic output is required for your particular language and your project.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="frames.html" class="btn btn-neutral float-right" title="Lua Frames" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Doxyrest Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2018, Tibbo Technology Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'1.1.1',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+.. index:: pair: struct; snd_tplg_bytes_template
+.. _doxid-structsnd__tplg__bytes__template:
+.. _cid-snd_tplg_bytes_template:
+
+struct snd_tplg_bytes_template
+==============================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <topology.h>
+
+
+Overview
+~~~~~~~~
+
+Template type for TLV Scale objects. :ref:`More...<details-doxid-structsnd__tplg__bytes__template>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	struct :ref:`snd_tplg_ctl_template<doxid-structsnd__tplg__ctl__template>` :ref:`hdr<doxid-structsnd__tplg__bytes__template_1a3550150a1ee6e26abeab4bc0da5d0da1>`
+	int :ref:`max<doxid-structsnd__tplg__bytes__template_1a23b07058274bfa51f093380ac9ee5e6c>`
+	int :ref:`mask<doxid-structsnd__tplg__bytes__template_1aaddecbbc7a836db2be9ced8bad8cae0e>`
+	int :ref:`base<doxid-structsnd__tplg__bytes__template_1a1644bf685a8915059c39b70a21673ad0>`
+	int :ref:`num_regs<doxid-structsnd__tplg__bytes__template_1ad46cbdd6e9a9f5dd2f1b840de64dc26a>`
+	struct :ref:`snd_tplg_io_ops_template<doxid-structsnd__tplg__io__ops__template>` :ref:`ext_ops<doxid-structsnd__tplg__bytes__template_1a57c109fd38fe1bc72b5338aec60f8245>`
+	struct snd_soc_tplg_private* :ref:`priv<doxid-structsnd__tplg__bytes__template_1a0d9aba951ddbedcd5fab22ad504ca8ba>`
+
+.. _details-doxid-structsnd__tplg__bytes__template:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Template type for TLV Scale objects.
+
+Fields
+------
+
+.. _doxid-structsnd__tplg__bytes__template_1a3550150a1ee6e26abeab4bc0da5d0da1:
+.. _cid-snd_tplg_bytes_template::hdr:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_ctl_template<doxid-structsnd__tplg__ctl__template>` hdr
+
+control type header
+
+.. _doxid-structsnd__tplg__bytes__template_1a23b07058274bfa51f093380ac9ee5e6c:
+.. _cid-snd_tplg_bytes_template::max:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int max
+
+max byte control value
+
+.. _doxid-structsnd__tplg__bytes__template_1aaddecbbc7a836db2be9ced8bad8cae0e:
+.. _cid-snd_tplg_bytes_template::mask:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int mask
+
+byte control mask
+
+.. _doxid-structsnd__tplg__bytes__template_1a1644bf685a8915059c39b70a21673ad0:
+.. _cid-snd_tplg_bytes_template::base:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int base
+
+base register
+
+.. _doxid-structsnd__tplg__bytes__template_1ad46cbdd6e9a9f5dd2f1b840de64dc26a:
+.. _cid-snd_tplg_bytes_template::num_regs:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int num_regs
+
+number of registers
+
+.. _doxid-structsnd__tplg__bytes__template_1a57c109fd38fe1bc72b5338aec60f8245:
+.. _cid-snd_tplg_bytes_template::ext_ops:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct :ref:`snd_tplg_io_ops_template<doxid-structsnd__tplg__io__ops__template>` ext_ops
+
+ops mapping
+
+.. _doxid-structsnd__tplg__bytes__template_1a0d9aba951ddbedcd5fab22ad504ca8ba:
+.. _cid-snd_tplg_bytes_template::priv:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	struct snd_soc_tplg_private* priv
+
+control private data
+

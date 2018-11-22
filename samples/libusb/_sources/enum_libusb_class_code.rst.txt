@@ -1,0 +1,213 @@
+.. index:: pair: enum; libusb_class_code
+.. _doxid-group__libusb__desc_1gac529888effbefef8af4f9d17ebc903a1:
+.. _cid-libusb_class_code:
+
+enum libusb_class_code
+======================
+
+
+
+Overview
+~~~~~~~~
+
+Device and/or Interface Class codes. :ref:`More...<details-doxid-group__libusb__desc_1gac529888effbefef8af4f9d17ebc903a1>`
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1af393b0c8f1da0b9c558f6e5c113b59b2:
+.. _cid-libusb_class_code::libusb_class_image:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`LIBUSB_CLASS_PER_INTERFACE<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ac6d01c08f92219d625162271d9547550>` = 0
+	:ref:`LIBUSB_CLASS_AUDIO<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a1f87be5c5c32c30e1e6831abdb61461a>` = 1
+	:ref:`LIBUSB_CLASS_COMM<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a7db61f0ea65d1919962ac0370513183b>` = 2
+	:ref:`LIBUSB_CLASS_HID<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ad126069ffbc9cb3cda97fe0fe8c190f3>` = 3
+	:ref:`LIBUSB_CLASS_PHYSICAL<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a7abdd4f2d21f046622717f70ad0b6ea9>` = 5
+	:ref:`LIBUSB_CLASS_PRINTER<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ab1592f5d41d4ee3ccfe0adef8cbf04ee>` = 7
+	:ref:`LIBUSB_CLASS_PTP<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1abcd1d4f42671058f70ab9ae41c5ce303>` = 6
+	LIBUSB_CLASS_IMAGE = 6
+	:ref:`LIBUSB_CLASS_MASS_STORAGE<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ac84d2301375aef28bf5c3f4bda35f9d1>` = 8
+	:ref:`LIBUSB_CLASS_HUB<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a28ba55c39b90ba3f281542e4ffdb626d>` = 9
+	:ref:`LIBUSB_CLASS_DATA<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1aa18621124b0db0f8972556647ad16827>` = 10
+	:ref:`LIBUSB_CLASS_SMART_CARD<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1af4ec75b9ab816c46da747c80bbf9cca0>` = 0x0b
+	:ref:`LIBUSB_CLASS_CONTENT_SECURITY<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a5d306be7a6fbfb331ce25c8c804eada8>` = 0x0d
+	:ref:`LIBUSB_CLASS_VIDEO<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a7deae7d18c3d99dda5bb3bd8b6ec01da>` = 0x0e
+	:ref:`LIBUSB_CLASS_PERSONAL_HEALTHCARE<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ab97e8441e102707252263abcdc29b4c0>` = 0x0f
+	:ref:`LIBUSB_CLASS_DIAGNOSTIC_DEVICE<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a5f1089ee11b766a10a27c0c0600bebfa>` = 0xdc
+	:ref:`LIBUSB_CLASS_WIRELESS<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1aaeea39cf3f500f56381cd6e05132d934>` = 0xe0
+	:ref:`LIBUSB_CLASS_APPLICATION<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a3a95beae54453469c4862efc1606dcc9>` = 0xfe
+	:ref:`LIBUSB_CLASS_VENDOR_SPEC<doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ad68e1d33a332360428f838c6ddd847f6>` = 0xff
+
+.. _details-doxid-group__libusb__desc_1gac529888effbefef8af4f9d17ebc903a1:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Device and/or Interface Class codes.
+
+Enum Values
+-----------
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ac6d01c08f92219d625162271d9547550:
+.. _cid-libusb_class_code::libusb_class_per_interface:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_PER_INTERFACE
+
+In the context of a :ref:`device descriptor <doxid-structlibusb__device__descriptor>` , this bDeviceClass value indicates that each interface specifies its own class information and all interfaces operate independently.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a1f87be5c5c32c30e1e6831abdb61461a:
+.. _cid-libusb_class_code::libusb_class_audio:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_AUDIO
+
+Audio class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a7db61f0ea65d1919962ac0370513183b:
+.. _cid-libusb_class_code::libusb_class_comm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_COMM
+
+Communications class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ad126069ffbc9cb3cda97fe0fe8c190f3:
+.. _cid-libusb_class_code::libusb_class_hid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_HID
+
+Human Interface Device class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a7abdd4f2d21f046622717f70ad0b6ea9:
+.. _cid-libusb_class_code::libusb_class_physical:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_PHYSICAL
+
+Physical.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ab1592f5d41d4ee3ccfe0adef8cbf04ee:
+.. _cid-libusb_class_code::libusb_class_printer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_PRINTER
+
+Printer class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1abcd1d4f42671058f70ab9ae41c5ce303:
+.. _cid-libusb_class_code::libusb_class_ptp:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_PTP
+
+Image class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ac84d2301375aef28bf5c3f4bda35f9d1:
+.. _cid-libusb_class_code::libusb_class_mass_storage:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_MASS_STORAGE
+
+Mass storage class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a28ba55c39b90ba3f281542e4ffdb626d:
+.. _cid-libusb_class_code::libusb_class_hub:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_HUB
+
+Hub class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1aa18621124b0db0f8972556647ad16827:
+.. _cid-libusb_class_code::libusb_class_data:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_DATA
+
+Data class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1af4ec75b9ab816c46da747c80bbf9cca0:
+.. _cid-libusb_class_code::libusb_class_smart_card:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_SMART_CARD
+
+Smart Card.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a5d306be7a6fbfb331ce25c8c804eada8:
+.. _cid-libusb_class_code::libusb_class_content_security:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_CONTENT_SECURITY
+
+Content Security.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a7deae7d18c3d99dda5bb3bd8b6ec01da:
+.. _cid-libusb_class_code::libusb_class_video:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_VIDEO
+
+Video.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ab97e8441e102707252263abcdc29b4c0:
+.. _cid-libusb_class_code::libusb_class_personal_healthcare:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_PERSONAL_HEALTHCARE
+
+Personal Healthcare.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a5f1089ee11b766a10a27c0c0600bebfa:
+.. _cid-libusb_class_code::libusb_class_diagnostic_device:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_DIAGNOSTIC_DEVICE
+
+Diagnostic Device.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1aaeea39cf3f500f56381cd6e05132d934:
+.. _cid-libusb_class_code::libusb_class_wireless:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_WIRELESS
+
+Wireless class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1a3a95beae54453469c4862efc1606dcc9:
+.. _cid-libusb_class_code::libusb_class_application:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_APPLICATION
+
+Application class.
+
+.. _doxid-group__libusb__desc_1ggac529888effbefef8af4f9d17ebc903a1ad68e1d33a332360428f838c6ddd847f6:
+.. _cid-libusb_class_code::libusb_class_vendor_spec:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	LIBUSB_CLASS_VENDOR_SPEC
+
+Class is vendor-specific.
+

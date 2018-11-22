@@ -1,0 +1,30 @@
+.. index:: pair: struct; ssh_kex_struct
+.. _doxid-structssh__kex__struct:
+.. _cid-ssh_kex_struct:
+
+struct ssh_kex_struct
+=====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/kex.h>
+
+
+
+
+.. _doxid-structssh__kex__struct_1a3c982f0a27422694879c0282a102ffa4:
+.. _cid-ssh_kex_struct::cookie:
+.. _doxid-structssh__kex__struct_1a9620899312d1265431824c08d927c82f:
+.. _cid-ssh_kex_struct::methods:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	unsigned char cookie[16]
+	char* methods[10]
+

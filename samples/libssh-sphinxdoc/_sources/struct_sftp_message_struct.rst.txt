@@ -1,0 +1,36 @@
+.. index:: pair: struct; sftp_message_struct
+.. _doxid-structsftp__message__struct:
+.. _cid-sftp_message_struct:
+
+struct sftp_message_struct
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/sftp.h>
+
+
+
+
+.. _doxid-structsftp__message__struct_1a711f70187a8bb0d22041fb1c6b9bccfb:
+.. _cid-sftp_message_struct::id:
+.. _doxid-structsftp__message__struct_1a092571b9833438a0dc7f700c272f9a69:
+.. _cid-sftp_message_struct::packet_type:
+.. _doxid-structsftp__message__struct_1a55df1e936085314815d18eef502d234e:
+.. _cid-sftp_message_struct::payload:
+.. _doxid-structsftp__message__struct_1a6250403630c7bff8a6d88ce11eb581b9:
+.. _cid-sftp_message_struct::sftp:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	uint32_t id
+	uint8_t packet_type
+	ssh_buffer payload
+	sftp_session sftp
+

@@ -1,0 +1,50 @@
+.. index:: pair: enum; apr_interface_e
+.. _doxid-group__apr__network__io_1ga1982f44f48fdf00a8bd754bc7b773edc:
+.. _cid-apr_interface_e:
+
+enum apr_interface_e
+====================
+
+
+
+Overview
+~~~~~~~~
+
+Enum used to denote either the local and remote endpoint of a connection. :ref:`More...<details-doxid-group__apr__network__io_1ga1982f44f48fdf00a8bd754bc7b773edc>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`APR_LOCAL<doxid-group__apr__network__io_1gga1982f44f48fdf00a8bd754bc7b773edca6c23a4bf48b8f93dff08adf827382616>` 
+	:ref:`APR_REMOTE<doxid-group__apr__network__io_1gga1982f44f48fdf00a8bd754bc7b773edcaeb8be70b031f06a513ac0ebcaa5bac8a>` 
+
+.. _details-doxid-group__apr__network__io_1ga1982f44f48fdf00a8bd754bc7b773edc:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Enum used to denote either the local and remote endpoint of a connection.
+
+Enum Values
+-----------
+
+.. _doxid-group__apr__network__io_1gga1982f44f48fdf00a8bd754bc7b773edca6c23a4bf48b8f93dff08adf827382616:
+.. _cid-apr_interface_e::apr_local:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	APR_LOCAL
+
+Socket information for local end of connection
+
+.. _doxid-group__apr__network__io_1gga1982f44f48fdf00a8bd754bc7b773edcaeb8be70b031f06a513ac0ebcaa5bac8a:
+.. _cid-apr_interface_e::apr_remote:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	APR_REMOTE
+
+Socket information for remote end of connection
+

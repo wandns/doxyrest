@@ -1,0 +1,54 @@
+.. index:: pair: struct; sftp_session_struct
+.. _doxid-structsftp__session__struct:
+.. _cid-sftp_session_struct:
+
+struct sftp_session_struct
+==========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/sftp.h>
+
+
+
+
+.. _doxid-structsftp__session__struct_1a031eaadc52212e07665165f1ddb242df:
+.. _cid-sftp_session_struct::channel:
+.. _doxid-structsftp__session__struct_1a3702f144213d3c19c2b1377987ad36e2:
+.. _cid-sftp_session_struct::client_version:
+.. _doxid-structsftp__session__struct_1aea9fedf0560934fd2b65225989bb0871:
+.. _cid-sftp_session_struct::errnum:
+.. _doxid-structsftp__session__struct_1a3fd7b5f1c21ccd955f2e03584015c11c:
+.. _cid-sftp_session_struct::ext:
+.. _doxid-structsftp__session__struct_1a81fbd42106aa1d0e7e79da2e9838e86a:
+.. _cid-sftp_session_struct::handles:
+.. _doxid-structsftp__session__struct_1a63942ef9df1a0eb7e5316506f3baba37:
+.. _cid-sftp_session_struct::id_counter:
+.. _doxid-structsftp__session__struct_1a2d5b35a5b64d586e1344c96ee979fc5d:
+.. _cid-sftp_session_struct::queue:
+.. _doxid-structsftp__session__struct_1a718a8fe846d08543e11b260cae07e547:
+.. _cid-sftp_session_struct::server_version:
+.. _doxid-structsftp__session__struct_1a83a14a0777cb4f219cd7f52da4845b5f:
+.. _cid-sftp_session_struct::session:
+.. _doxid-structsftp__session__struct_1afea247670cf6b0a9308cfb13aa98864c:
+.. _cid-sftp_session_struct::version:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	ssh_channel channel
+	int client_version
+	int errnum
+	sftp_ext ext
+	void** handles
+	uint32_t id_counter
+	sftp_request_queue queue
+	int server_version
+	ssh_session session
+	int version
+

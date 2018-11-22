@@ -1,0 +1,229 @@
+.. index:: pair: group; ctype functions
+.. _doxid-group__apr__ctype:
+.. _cid-apr_ctype:
+
+ctype functions
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+These macros allow correct support of 8-bit characters on systems which support 8-bit characters. :ref:`More...<details-doxid-group__apr__ctype>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`apr_isalnum<doxid-group__apr__ctype_1ga4fa78e6e7272dae64731768a17a2e003>`(c)
+	#define :ref:`apr_isalpha<doxid-group__apr__ctype_1ga9ecd5b94a7816591afd68040b0624327>`(c)
+	#define :ref:`apr_isascii<doxid-group__apr__ctype_1gae7cab1b39d2e0fc14f343ec14e12565a>`(c)
+	#define :ref:`apr_iscntrl<doxid-group__apr__ctype_1gacc8b4597be99c895ea042e8088ee94ab>`(c)
+	#define :ref:`apr_isdigit<doxid-group__apr__ctype_1ga8c453b1d66015b357c3d3a3ddb7d97d7>`(c)
+	#define :ref:`apr_isgraph<doxid-group__apr__ctype_1gad4fbfcf508e7771ca85e85e4ac9567c2>`(c)
+	#define :ref:`apr_islower<doxid-group__apr__ctype_1gaff5eeb2f6350095ce86cc2cd4b1d38ee>`(c)
+	#define :ref:`apr_isprint<doxid-group__apr__ctype_1ga20da56fc8bbedc9f8a40d20c1cc58bac>`(c)
+	#define :ref:`apr_ispunct<doxid-group__apr__ctype_1ga1db14e8d5f9891010c8bad08aa100674>`(c)
+	#define :ref:`apr_isspace<doxid-group__apr__ctype_1ga23f4c7721923a0f0f444fd7fb196047a>`(c)
+	#define :ref:`apr_isupper<doxid-group__apr__ctype_1ga362f53cc44aab662aaf04fa87e36035b>`(c)
+	#define :ref:`apr_isxdigit<doxid-group__apr__ctype_1ga9d30f3c5d538c21c6d50565cda8654d0>`(c)
+	#define :ref:`apr_tolower<doxid-group__apr__ctype_1gaa591f2a7eb578b1fb3ae9aeaab9eafaa>`(c)
+	#define :ref:`apr_toupper<doxid-group__apr__ctype_1ga83d2a3217282784d24897658ad0717b7>`(c)
+
+.. _details-doxid-group__apr__ctype:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+These macros allow correct support of 8-bit characters on systems which support 8-bit characters. Pretty dumb how the cast is required, but that's legacy libc for ya. These new macros do not support EOF like the standard macros do. Tough.
+
+Macros
+------
+
+.. _doxid-group__apr__ctype_1ga4fa78e6e7272dae64731768a17a2e003:
+.. _cid-apr_isalnum:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isalnum(c)
+
+
+
+.. rubric:: See also:
+
+isalnum
+
+.. _doxid-group__apr__ctype_1ga9ecd5b94a7816591afd68040b0624327:
+.. _cid-apr_isalpha:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isalpha(c)
+
+
+
+.. rubric:: See also:
+
+isalpha
+
+.. _doxid-group__apr__ctype_1gae7cab1b39d2e0fc14f343ec14e12565a:
+.. _cid-apr_isascii:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isascii(c)
+
+
+
+.. rubric:: See also:
+
+isascii
+
+.. _doxid-group__apr__ctype_1gacc8b4597be99c895ea042e8088ee94ab:
+.. _cid-apr_iscntrl:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_iscntrl(c)
+
+
+
+.. rubric:: See also:
+
+iscntrl
+
+.. _doxid-group__apr__ctype_1ga8c453b1d66015b357c3d3a3ddb7d97d7:
+.. _cid-apr_isdigit:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isdigit(c)
+
+
+
+.. rubric:: See also:
+
+isdigit
+
+.. _doxid-group__apr__ctype_1gad4fbfcf508e7771ca85e85e4ac9567c2:
+.. _cid-apr_isgraph:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isgraph(c)
+
+
+
+.. rubric:: See also:
+
+isgraph
+
+.. _doxid-group__apr__ctype_1gaff5eeb2f6350095ce86cc2cd4b1d38ee:
+.. _cid-apr_islower:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_islower(c)
+
+
+
+.. rubric:: See also:
+
+islower
+
+.. _doxid-group__apr__ctype_1ga20da56fc8bbedc9f8a40d20c1cc58bac:
+.. _cid-apr_isprint:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isprint(c)
+
+
+
+.. rubric:: See also:
+
+isprint
+
+.. _doxid-group__apr__ctype_1ga1db14e8d5f9891010c8bad08aa100674:
+.. _cid-apr_ispunct:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_ispunct(c)
+
+
+
+.. rubric:: See also:
+
+ispunct
+
+.. _doxid-group__apr__ctype_1ga23f4c7721923a0f0f444fd7fb196047a:
+.. _cid-apr_isspace:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isspace(c)
+
+
+
+.. rubric:: See also:
+
+isspace
+
+.. _doxid-group__apr__ctype_1ga362f53cc44aab662aaf04fa87e36035b:
+.. _cid-apr_isupper:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isupper(c)
+
+
+
+.. rubric:: See also:
+
+isupper
+
+.. _doxid-group__apr__ctype_1ga9d30f3c5d538c21c6d50565cda8654d0:
+.. _cid-apr_isxdigit:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_isxdigit(c)
+
+
+
+.. rubric:: See also:
+
+isxdigit
+
+.. _doxid-group__apr__ctype_1gaa591f2a7eb578b1fb3ae9aeaab9eafaa:
+.. _cid-apr_tolower:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_tolower(c)
+
+
+
+.. rubric:: See also:
+
+tolower
+
+.. _doxid-group__apr__ctype_1ga83d2a3217282784d24897658ad0717b7:
+.. _cid-apr_toupper:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define apr_toupper(c)
+
+
+
+.. rubric:: See also:
+
+toupper
+

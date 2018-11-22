@@ -1,0 +1,101 @@
+.. index:: pair: struct; apr_pollfd_t
+.. _doxid-structapr__pollfd__t:
+.. _cid-apr_pollfd_t:
+
+struct apr_pollfd_t
+===================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <apr_poll.h>
+
+
+Overview
+~~~~~~~~
+
+Poll descriptor set. :ref:`More...<details-doxid-structapr__pollfd__t>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	:ref:`apr_pool_t<doxid-group__apr__pools_1gaf137f28edcf9a086cd6bc36c20d7cdfb>`* :ref:`p<doxid-structapr__pollfd__t_1adae68586ed671472590efe8770de38cc>`
+	:ref:`apr_datatype_e<doxid-group__apr__poll_1ga0a8549d84c1721788b102a4cc8b4b0f0>` :ref:`desc_type<doxid-structapr__pollfd__t_1acfafd260241a874745f49ba2df246c53>`
+	apr_int16_t :ref:`reqevents<doxid-structapr__pollfd__t_1abcedac7097a97823a38ece6e47f4ea9f>`
+	apr_int16_t :ref:`rtnevents<doxid-structapr__pollfd__t_1aed5b2109b27984975309922bfa84e3f6>`
+	:ref:`apr_descriptor<doxid-unionapr__descriptor>` :ref:`desc<doxid-structapr__pollfd__t_1ad63baa71bb91f80513d33482e28fb967>`
+	void* :ref:`client_data<doxid-structapr__pollfd__t_1a01220e7a71963456461baa40b2a05716>`
+
+.. _details-doxid-structapr__pollfd__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Poll descriptor set.
+
+Fields
+------
+
+.. _doxid-structapr__pollfd__t_1adae68586ed671472590efe8770de38cc:
+.. _cid-apr_pollfd_t::p:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`apr_pool_t<doxid-group__apr__pools_1gaf137f28edcf9a086cd6bc36c20d7cdfb>`* p
+
+associated pool
+
+.. _doxid-structapr__pollfd__t_1acfafd260241a874745f49ba2df246c53:
+.. _cid-apr_pollfd_t::desc_type:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`apr_datatype_e<doxid-group__apr__poll_1ga0a8549d84c1721788b102a4cc8b4b0f0>` desc_type
+
+descriptor type
+
+.. _doxid-structapr__pollfd__t_1abcedac7097a97823a38ece6e47f4ea9f:
+.. _cid-apr_pollfd_t::reqevents:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	apr_int16_t reqevents
+
+requested events
+
+.. _doxid-structapr__pollfd__t_1aed5b2109b27984975309922bfa84e3f6:
+.. _cid-apr_pollfd_t::rtnevents:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	apr_int16_t rtnevents
+
+returned events
+
+.. _doxid-structapr__pollfd__t_1ad63baa71bb91f80513d33482e28fb967:
+.. _cid-apr_pollfd_t::desc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	:ref:`apr_descriptor<doxid-unionapr__descriptor>` desc
+
+
+
+.. rubric:: See also:
+
+:ref:`apr_descriptor <doxid-unionapr__descriptor>`
+
+.. _doxid-structapr__pollfd__t_1a01220e7a71963456461baa40b2a05716:
+.. _cid-apr_pollfd_t::client_data:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	void* client_data
+
+allows app to associate context
+

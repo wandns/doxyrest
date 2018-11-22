@@ -1,0 +1,23 @@
+.. index:: pair: enum; ssh_des_e
+.. _doxid-wrapper_8h_1a972b17be894f22e360cd8b19abb47546:
+.. _cid-ssh_des_e:
+
+enum ssh_des_e
+==============
+
+
+
+
+
+.. _doxid-wrapper_8h_1a972b17be894f22e360cd8b19abb47546a568bb6037c5eeb20677f46b09f0c587d:
+.. _cid-ssh_des_e::ssh_3des:
+.. _doxid-wrapper_8h_1a972b17be894f22e360cd8b19abb47546a37102fa462670277c2633c132d27e118:
+.. _cid-ssh_des_e::ssh_des:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_3DES 
+	SSH_DES 
+

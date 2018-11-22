@@ -1,0 +1,50 @@
+.. index:: pair: enum; ssh_session_state_e
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992c:
+.. _cid-ssh_session_state_e:
+
+enum ssh_session_state_e
+========================
+
+
+
+
+
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992ca6e96b3ae323d058e27297e97c01c1d7f:
+.. _cid-ssh_session_state_e::ssh_session_state_none:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992cad7664a3923c57a333c0c5ff14f5d6c1e:
+.. _cid-ssh_session_state_e::ssh_session_state_connecting:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992ca82652ed2dc1cdfd2c8cdb12a3ab6b703:
+.. _cid-ssh_session_state_e::ssh_session_state_socket_connected:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992caa688177b6c71d2eaf7af6b9e3b3dea5b:
+.. _cid-ssh_session_state_e::ssh_session_state_banner_received:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992ca64f98e48c54ec9ae09070b92c1f47659:
+.. _cid-ssh_session_state_e::ssh_session_state_initial_kex:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992ca336024640ab057d21d87ded010687dc7:
+.. _cid-ssh_session_state_e::ssh_session_state_kexinit_received:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992ca1dcace0fedd97312d6829ecc526d3606:
+.. _cid-ssh_session_state_e::ssh_session_state_dh:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992ca0bf582a8796f77262a1161fabc9a587b:
+.. _cid-ssh_session_state_e::ssh_session_state_authenticating:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992caced7c62fd9f24fe8f6672d50b8219f60:
+.. _cid-ssh_session_state_e::ssh_session_state_authenticated:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992ca855474fc84a2fb170fcb72546af8eeb8:
+.. _cid-ssh_session_state_e::ssh_session_state_error:
+.. _doxid-session_8h_1a9bbd1d5ae11485e27279be6ad461992ca05407079ea8dd73449ac6f9ddbf58084:
+.. _cid-ssh_session_state_e::ssh_session_state_disconnected:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	SSH_SESSION_STATE_NONE =0
+	SSH_SESSION_STATE_CONNECTING 
+	SSH_SESSION_STATE_SOCKET_CONNECTED 
+	SSH_SESSION_STATE_BANNER_RECEIVED 
+	SSH_SESSION_STATE_INITIAL_KEX 
+	SSH_SESSION_STATE_KEXINIT_RECEIVED 
+	SSH_SESSION_STATE_DH 
+	SSH_SESSION_STATE_AUTHENTICATING 
+	SSH_SESSION_STATE_AUTHENTICATED 
+	SSH_SESSION_STATE_ERROR 
+	SSH_SESSION_STATE_DISCONNECTED 
+

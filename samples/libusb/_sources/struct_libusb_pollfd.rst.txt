@@ -1,0 +1,59 @@
+.. index:: pair: struct; libusb_pollfd
+.. _doxid-structlibusb__pollfd:
+.. _cid-libusb_pollfd:
+
+struct libusb_pollfd
+====================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <libusb.h>
+
+
+Overview
+~~~~~~~~
+
+File descriptor for polling. :ref:`More...<details-doxid-structlibusb__pollfd>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	int :ref:`fd<doxid-structlibusb__pollfd_1a6bf9823709974cfb204e008eae7d451a>`
+	short :ref:`events<doxid-structlibusb__pollfd_1a5e6391383c132343ecd2f34b78ca017e>`
+
+.. _details-doxid-structlibusb__pollfd:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+File descriptor for polling.
+
+Fields
+------
+
+.. _doxid-structlibusb__pollfd_1a6bf9823709974cfb204e008eae7d451a:
+.. _cid-libusb_pollfd::fd:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	int fd
+
+Numeric file descriptor.
+
+.. _doxid-structlibusb__pollfd_1a5e6391383c132343ecd2f34b78ca017e:
+.. _cid-libusb_pollfd::events:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	short events
+
+Event flags to poll for from <poll.h>.
+
+POLLIN indicates that you should monitor this file descriptor for becoming ready to read from, and POLLOUT indicates that you should monitor this file descriptor for nonblocking write readiness.
+

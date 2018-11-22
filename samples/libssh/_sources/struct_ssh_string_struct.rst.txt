@@ -1,0 +1,30 @@
+.. index:: pair: struct; ssh_string_struct
+.. _doxid-structssh__string__struct:
+.. _cid-ssh_string_struct:
+
+struct ssh_string_struct
+========================
+
+.. toctree::
+	:hidden:
+
+.. code-block:: cpp
+	:class: overview-code-block
+
+	#include <include/libssh/string.h>
+
+
+
+
+.. _doxid-structssh__string__struct_1a83100894983e1d38c634911591f77725:
+.. _cid-ssh_string_struct::data:
+.. _doxid-structssh__string__struct_1ab515f5142c84e51ea7ace968f50e720b:
+.. _cid-ssh_string_struct::size:
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// fields
+
+	unsigned char data[1]
+	uint32_t size
+

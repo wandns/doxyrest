@@ -1,0 +1,50 @@
+.. index:: pair: enum; snd_output_type_t
+.. _doxid-group___output_1ga7217dd8d10e2491388e866d3354a4b29:
+.. _cid-snd_output_type_t:
+
+enum snd_output_type_t
+======================
+
+
+
+Overview
+~~~~~~~~
+
+Output type. :ref:`More...<details-doxid-group___output_1ga7217dd8d10e2491388e866d3354a4b29>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_OUTPUT_STDIO<doxid-group___output_1gga7217dd8d10e2491388e866d3354a4b29ad8291a0da96f6bf0cc0352e256fe8c50>` 
+	:ref:`SND_OUTPUT_BUFFER<doxid-group___output_1gga7217dd8d10e2491388e866d3354a4b29a5630f21823bbe05e6547b8cc27af4e37>` 
+
+.. _details-doxid-group___output_1ga7217dd8d10e2491388e866d3354a4b29:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Output type.
+
+Enum Values
+-----------
+
+.. _doxid-group___output_1gga7217dd8d10e2491388e866d3354a4b29ad8291a0da96f6bf0cc0352e256fe8c50:
+.. _cid-snd_output_type_t::snd_output_stdio:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_OUTPUT_STDIO
+
+Output to a stdio stream.
+
+.. _doxid-group___output_1gga7217dd8d10e2491388e866d3354a4b29a5630f21823bbe05e6547b8cc27af4e37:
+.. _cid-snd_output_type_t::snd_output_buffer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_OUTPUT_BUFFER
+
+Output to a memory buffer.
+

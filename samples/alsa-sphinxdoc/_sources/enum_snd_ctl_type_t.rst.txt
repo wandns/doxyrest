@@ -1,0 +1,70 @@
+.. index:: pair: enum; snd_ctl_type_t
+.. _doxid-group___control_1ga9d0e18b3c1b8cb729d4561b968296a76:
+.. _cid-snd_ctl_type_t:
+
+enum snd_ctl_type_t
+===================
+
+
+
+Overview
+~~~~~~~~
+
+CTL type :ref:`More...<details-doxid-group___control_1ga9d0e18b3c1b8cb729d4561b968296a76>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_CTL_TYPE_HW<doxid-group___control_1gga9d0e18b3c1b8cb729d4561b968296a76a94bec3f8cfcb14bd7dd5b0f243e039f9>` 
+	:ref:`SND_CTL_TYPE_SHM<doxid-group___control_1gga9d0e18b3c1b8cb729d4561b968296a76ab304ede71aad4a331d3532bc9dc39668>` 
+	:ref:`SND_CTL_TYPE_INET<doxid-group___control_1gga9d0e18b3c1b8cb729d4561b968296a76a7697d758fab4cb3c23aa87ce4149a621>` 
+	:ref:`SND_CTL_TYPE_EXT<doxid-group___control_1gga9d0e18b3c1b8cb729d4561b968296a76a7c74ac3b8c063b460a5e1f74ae8a377c>` 
+
+.. _details-doxid-group___control_1ga9d0e18b3c1b8cb729d4561b968296a76:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+CTL type
+
+Enum Values
+-----------
+
+.. _doxid-group___control_1gga9d0e18b3c1b8cb729d4561b968296a76a94bec3f8cfcb14bd7dd5b0f243e039f9:
+.. _cid-snd_ctl_type_t::snd_ctl_type_hw:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_TYPE_HW
+
+Kernel level CTL
+
+.. _doxid-group___control_1gga9d0e18b3c1b8cb729d4561b968296a76ab304ede71aad4a331d3532bc9dc39668:
+.. _cid-snd_ctl_type_t::snd_ctl_type_shm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_TYPE_SHM
+
+Shared memory client CTL
+
+.. _doxid-group___control_1gga9d0e18b3c1b8cb729d4561b968296a76a7697d758fab4cb3c23aa87ce4149a621:
+.. _cid-snd_ctl_type_t::snd_ctl_type_inet:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_TYPE_INET
+
+INET client CTL (not yet implemented)
+
+.. _doxid-group___control_1gga9d0e18b3c1b8cb729d4561b968296a76a7c74ac3b8c063b460a5e1f74ae8a377c:
+.. _cid-snd_ctl_type_t::snd_ctl_type_ext:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_CTL_TYPE_EXT
+
+External control plugin
+

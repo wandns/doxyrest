@@ -1,0 +1,220 @@
+.. index:: pair: enum; snd_tplg_type
+.. _doxid-group__topology_1ga465b5b8dea36052ad6fb12e2886f8757:
+.. _cid-snd_tplg_type:
+
+enum snd_tplg_type
+==================
+
+
+
+Overview
+~~~~~~~~
+
+Topology object types :ref:`More...<details-doxid-group__topology_1ga465b5b8dea36052ad6fb12e2886f8757>`
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// enum values
+
+	:ref:`SND_TPLG_TYPE_TLV<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757aaf27c1cc4c621a45d46432326a1aa888>` = 0
+	:ref:`SND_TPLG_TYPE_MIXER<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a96c0e408a18ede418d5e88b15a1a092d>` 
+	:ref:`SND_TPLG_TYPE_ENUM<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757acd5e9bf0971828063b10a6ce1c5f5d06>` 
+	:ref:`SND_TPLG_TYPE_TEXT<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a001f35143cd77fc5d1ffcf943197f05f>` 
+	:ref:`SND_TPLG_TYPE_DATA<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a465f9e3757181d5cfc2198b072445f96>` 
+	:ref:`SND_TPLG_TYPE_BYTES<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757abfabfba93f42f3480ba1a157b040d2c9>` 
+	:ref:`SND_TPLG_TYPE_STREAM_CONFIG<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a0f7aab87018f1c08cf34d85331eaf04e>` 
+	:ref:`SND_TPLG_TYPE_STREAM_CAPS<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a0aaae49f2f43033ea4492a244ff4d6c7>` 
+	:ref:`SND_TPLG_TYPE_PCM<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757ab9c96aed8ec27baa5174b95c1a48f24e>` 
+	:ref:`SND_TPLG_TYPE_DAPM_WIDGET<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757ad4dc07d95c540edc290caa096f782638>` 
+	:ref:`SND_TPLG_TYPE_DAPM_GRAPH<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a60c8b0cf1870569f70e09efe0a1335fa>` 
+	:ref:`SND_TPLG_TYPE_BE<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a8f1276de125c64cd18d4de09f077057b>` 
+	:ref:`SND_TPLG_TYPE_CC<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a88677abcdb522863847c547c5f48ab46>` 
+	:ref:`SND_TPLG_TYPE_MANIFEST<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a0728bac919b44131c4181976964aba47>` 
+	:ref:`SND_TPLG_TYPE_TOKEN<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a3a9bcd3df54f0eb979b8e30611dca531>` 
+	:ref:`SND_TPLG_TYPE_TUPLE<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757ac8749fd8387d76b060e8954286e05403>` 
+	:ref:`SND_TPLG_TYPE_LINK<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a6c902fd43a05f900a35c8e73dc853755>` 
+	:ref:`SND_TPLG_TYPE_HW_CONFIG<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a418ddc4b18fd0f9998dbc5eaddfd3bea>` 
+	:ref:`SND_TPLG_TYPE_DAI<doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a6163e1b023ee7a14c6ddd555df9083a3>` 
+
+.. _details-doxid-group__topology_1ga465b5b8dea36052ad6fb12e2886f8757:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Topology object types
+
+Enum Values
+-----------
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757aaf27c1cc4c621a45d46432326a1aa888:
+.. _cid-snd_tplg_type::snd_tplg_type_tlv:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_TLV
+
+TLV Data
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a96c0e408a18ede418d5e88b15a1a092d:
+.. _cid-snd_tplg_type::snd_tplg_type_mixer:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_MIXER
+
+Mixer control
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757acd5e9bf0971828063b10a6ce1c5f5d06:
+.. _cid-snd_tplg_type::snd_tplg_type_enum:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_ENUM
+
+Enumerated control
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a001f35143cd77fc5d1ffcf943197f05f:
+.. _cid-snd_tplg_type::snd_tplg_type_text:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_TEXT
+
+Text data
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a465f9e3757181d5cfc2198b072445f96:
+.. _cid-snd_tplg_type::snd_tplg_type_data:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_DATA
+
+Private data
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757abfabfba93f42f3480ba1a157b040d2c9:
+.. _cid-snd_tplg_type::snd_tplg_type_bytes:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_BYTES
+
+Byte control
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a0f7aab87018f1c08cf34d85331eaf04e:
+.. _cid-snd_tplg_type::snd_tplg_type_stream_config:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_STREAM_CONFIG
+
+PCM Stream configuration
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a0aaae49f2f43033ea4492a244ff4d6c7:
+.. _cid-snd_tplg_type::snd_tplg_type_stream_caps:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_STREAM_CAPS
+
+PCM Stream capabilities
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757ab9c96aed8ec27baa5174b95c1a48f24e:
+.. _cid-snd_tplg_type::snd_tplg_type_pcm:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_PCM
+
+PCM stream device
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757ad4dc07d95c540edc290caa096f782638:
+.. _cid-snd_tplg_type::snd_tplg_type_dapm_widget:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_DAPM_WIDGET
+
+DAPM widget
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a60c8b0cf1870569f70e09efe0a1335fa:
+.. _cid-snd_tplg_type::snd_tplg_type_dapm_graph:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_DAPM_GRAPH
+
+DAPM graph elements
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a8f1276de125c64cd18d4de09f077057b:
+.. _cid-snd_tplg_type::snd_tplg_type_be:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_BE
+
+BE DAI link
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a88677abcdb522863847c547c5f48ab46:
+.. _cid-snd_tplg_type::snd_tplg_type_cc:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_CC
+
+Hostless codec <-> codec link
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a0728bac919b44131c4181976964aba47:
+.. _cid-snd_tplg_type::snd_tplg_type_manifest:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_MANIFEST
+
+Topology manifest
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a3a9bcd3df54f0eb979b8e30611dca531:
+.. _cid-snd_tplg_type::snd_tplg_type_token:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_TOKEN
+
+Vendor tokens
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757ac8749fd8387d76b060e8954286e05403:
+.. _cid-snd_tplg_type::snd_tplg_type_tuple:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_TUPLE
+
+Vendor tuples
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a6c902fd43a05f900a35c8e73dc853755:
+.. _cid-snd_tplg_type::snd_tplg_type_link:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_LINK
+
+Physical DAI link
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a418ddc4b18fd0f9998dbc5eaddfd3bea:
+.. _cid-snd_tplg_type::snd_tplg_type_hw_config:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_HW_CONFIG
+
+Link HW config
+
+.. _doxid-group__topology_1gga465b5b8dea36052ad6fb12e2886f8757a6163e1b023ee7a14c6ddd555df9083a3:
+.. _cid-snd_tplg_type::snd_tplg_type_dai:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	SND_TPLG_TYPE_DAI
+
+Physical DAI
+

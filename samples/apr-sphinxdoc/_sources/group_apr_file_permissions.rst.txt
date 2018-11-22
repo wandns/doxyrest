@@ -1,0 +1,397 @@
+.. index:: pair: group; File Permissions flags
+.. _doxid-group__apr__file__permissions:
+.. _cid-apr_file_permissions:
+
+File Permissions flags
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: overview-code-block
+
+	// macros
+
+	#define :ref:`APR_FILE_SOURCE_PERMS<doxid-group__apr__file__permissions_1gaa72c8bc4ab1bd5615bee4333d23dc16b>`
+	#define :ref:`APR_FPROT_FILE_SOURCE_PERMS<doxid-group__apr__file__permissions_1gac08d4e868c7c9532f7c97c70556663dc>`
+	#define :ref:`APR_FPROT_GEXECUTE<doxid-group__apr__file__permissions_1gab627bef3f9ceb84bbf00906eaeb12184>`
+	#define :ref:`APR_FPROT_GREAD<doxid-group__apr__file__permissions_1ga5ad9b67b8008db3ffc56c3c2a65aa192>`
+	#define :ref:`APR_FPROT_GSETID<doxid-group__apr__file__permissions_1ga5fcf6746afdd4e9b8be6ceab6892a3f5>`
+	#define :ref:`APR_FPROT_GWRITE<doxid-group__apr__file__permissions_1gacecdc9f88b04c768150418688b786500>`
+	#define :ref:`APR_FPROT_OS_DEFAULT<doxid-group__apr__file__permissions_1gad3c65a67ee6eb12ecc6a33857397900b>`
+	#define :ref:`APR_FPROT_UEXECUTE<doxid-group__apr__file__permissions_1ga156e1374a4ef30e745340d8c20b36d03>`
+	#define :ref:`APR_FPROT_UREAD<doxid-group__apr__file__permissions_1gaab6c4c2e7b95f4345c248c27b3f1a655>`
+	#define :ref:`APR_FPROT_USETID<doxid-group__apr__file__permissions_1ga67caebf5bbe4f3f4b6252a75e5ce066f>`
+	#define :ref:`APR_FPROT_UWRITE<doxid-group__apr__file__permissions_1ga50b985779b15fbfdae0758e98ffb92af>`
+	#define :ref:`APR_FPROT_WEXECUTE<doxid-group__apr__file__permissions_1ga760d69c09b38ddf1e0aff09362d8ce11>`
+	#define :ref:`APR_FPROT_WREAD<doxid-group__apr__file__permissions_1ga194718630250b0f0dd4be38c86dac717>`
+	#define :ref:`APR_FPROT_WSTICKY<doxid-group__apr__file__permissions_1ga989dbea02f779a5f20a643d7e4ee9952>`
+	#define :ref:`APR_FPROT_WWRITE<doxid-group__apr__file__permissions_1ga51692a9828f5b6288d89495378944260>`
+	#define :ref:`APR_GEXECUTE<doxid-group__apr__file__permissions_1ga79ce615a96a407d6c53325a2f8cdee3d>`
+	#define :ref:`APR_GREAD<doxid-group__apr__file__permissions_1ga1bd0305f31cb3bb20a8f9db898b96eb1>`
+	#define :ref:`APR_GSETID<doxid-group__apr__file__permissions_1ga4e4e9bb05f2bb156b174461551c9c329>`
+	#define :ref:`APR_GWRITE<doxid-group__apr__file__permissions_1ga794c425b459aa46939f6febabbe9daef>`
+	#define :ref:`APR_OS_DEFAULT<doxid-group__apr__file__permissions_1ga8552adb50d545d5fc7faeabb4f4a388f>`
+	#define :ref:`APR_UEXECUTE<doxid-group__apr__file__permissions_1ga4c08d7e798ab4022e31ed70f06f202b5>`
+	#define :ref:`APR_UREAD<doxid-group__apr__file__permissions_1ga51dc87ecd94c98e97694e68d5d9620a0>`
+	#define :ref:`APR_USETID<doxid-group__apr__file__permissions_1gafae6b531c08999345536cae5654d0d03>`
+	#define :ref:`APR_UWRITE<doxid-group__apr__file__permissions_1ga4faa7fdfa3bcda569dd1e23ae002c5e5>`
+	#define :ref:`APR_WEXECUTE<doxid-group__apr__file__permissions_1ga7bf4afea195c62f41aad1d3e94dcdac6>`
+	#define :ref:`APR_WREAD<doxid-group__apr__file__permissions_1ga5c987d2b1ace95b4ffa7c5a322721aad>`
+	#define :ref:`APR_WSTICKY<doxid-group__apr__file__permissions_1ga824d6685d59e3efddb6ee7fdbee69c13>`
+	#define :ref:`APR_WWRITE<doxid-group__apr__file__permissions_1ga7aac61689e9aaa93176bdb4911f56863>`
+
+.. _details-doxid-group__apr__file__permissions:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Macros
+------
+
+.. _doxid-group__apr__file__permissions_1gaa72c8bc4ab1bd5615bee4333d23dc16b:
+.. _cid-apr_file_source_perms:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FILE_SOURCE_PERMS
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_FILE_SOURCE_PERMS <doxid-group__apr__file__permissions_1gac08d4e868c7c9532f7c97c70556663dc>`
+
+.. _doxid-group__apr__file__permissions_1gac08d4e868c7c9532f7c97c70556663dc:
+.. _cid-apr_fprot_file_source_perms:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_FILE_SOURCE_PERMS
+
+Copy source file's permissions
+
+.. _doxid-group__apr__file__permissions_1gab627bef3f9ceb84bbf00906eaeb12184:
+.. _cid-apr_fprot_gexecute:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_GEXECUTE
+
+Execute by group
+
+.. _doxid-group__apr__file__permissions_1ga5ad9b67b8008db3ffc56c3c2a65aa192:
+.. _cid-apr_fprot_gread:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_GREAD
+
+Read by group
+
+.. _doxid-group__apr__file__permissions_1ga5fcf6746afdd4e9b8be6ceab6892a3f5:
+.. _cid-apr_fprot_gsetid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_GSETID
+
+Set group id
+
+.. _doxid-group__apr__file__permissions_1gacecdc9f88b04c768150418688b786500:
+.. _cid-apr_fprot_gwrite:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_GWRITE
+
+Write by group
+
+.. _doxid-group__apr__file__permissions_1gad3c65a67ee6eb12ecc6a33857397900b:
+.. _cid-apr_fprot_os_default:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_OS_DEFAULT
+
+use OS's default permissions
+
+.. _doxid-group__apr__file__permissions_1ga156e1374a4ef30e745340d8c20b36d03:
+.. _cid-apr_fprot_uexecute:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_UEXECUTE
+
+Execute by user
+
+.. _doxid-group__apr__file__permissions_1gaab6c4c2e7b95f4345c248c27b3f1a655:
+.. _cid-apr_fprot_uread:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_UREAD
+
+Read by user
+
+.. _doxid-group__apr__file__permissions_1ga67caebf5bbe4f3f4b6252a75e5ce066f:
+.. _cid-apr_fprot_usetid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_USETID
+
+Set user id
+
+.. _doxid-group__apr__file__permissions_1ga50b985779b15fbfdae0758e98ffb92af:
+.. _cid-apr_fprot_uwrite:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_UWRITE
+
+Write by user
+
+.. _doxid-group__apr__file__permissions_1ga760d69c09b38ddf1e0aff09362d8ce11:
+.. _cid-apr_fprot_wexecute:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_WEXECUTE
+
+Execute by others
+
+.. _doxid-group__apr__file__permissions_1ga194718630250b0f0dd4be38c86dac717:
+.. _cid-apr_fprot_wread:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_WREAD
+
+Read by others
+
+.. _doxid-group__apr__file__permissions_1ga989dbea02f779a5f20a643d7e4ee9952:
+.. _cid-apr_fprot_wsticky:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_WSTICKY
+
+Sticky bit
+
+.. _doxid-group__apr__file__permissions_1ga51692a9828f5b6288d89495378944260:
+.. _cid-apr_fprot_wwrite:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_FPROT_WWRITE
+
+Write by others
+
+.. _doxid-group__apr__file__permissions_1ga79ce615a96a407d6c53325a2f8cdee3d:
+.. _cid-apr_gexecute:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_GEXECUTE
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_GEXECUTE <doxid-group__apr__file__permissions_1gab627bef3f9ceb84bbf00906eaeb12184>`
+
+.. _doxid-group__apr__file__permissions_1ga1bd0305f31cb3bb20a8f9db898b96eb1:
+.. _cid-apr_gread:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_GREAD
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_GREAD <doxid-group__apr__file__permissions_1ga5ad9b67b8008db3ffc56c3c2a65aa192>`
+
+.. _doxid-group__apr__file__permissions_1ga4e4e9bb05f2bb156b174461551c9c329:
+.. _cid-apr_gsetid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_GSETID
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_GSETID <doxid-group__apr__file__permissions_1ga5fcf6746afdd4e9b8be6ceab6892a3f5>`
+
+.. _doxid-group__apr__file__permissions_1ga794c425b459aa46939f6febabbe9daef:
+.. _cid-apr_gwrite:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_GWRITE
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_GWRITE <doxid-group__apr__file__permissions_1gacecdc9f88b04c768150418688b786500>`
+
+.. _doxid-group__apr__file__permissions_1ga8552adb50d545d5fc7faeabb4f4a388f:
+.. _cid-apr_os_default:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_OS_DEFAULT
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_OS_DEFAULT <doxid-group__apr__file__permissions_1gad3c65a67ee6eb12ecc6a33857397900b>`
+
+.. _doxid-group__apr__file__permissions_1ga4c08d7e798ab4022e31ed70f06f202b5:
+.. _cid-apr_uexecute:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_UEXECUTE
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_UEXECUTE <doxid-group__apr__file__permissions_1ga156e1374a4ef30e745340d8c20b36d03>`
+
+.. _doxid-group__apr__file__permissions_1ga51dc87ecd94c98e97694e68d5d9620a0:
+.. _cid-apr_uread:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_UREAD
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_UREAD <doxid-group__apr__file__permissions_1gaab6c4c2e7b95f4345c248c27b3f1a655>`
+
+.. _doxid-group__apr__file__permissions_1gafae6b531c08999345536cae5654d0d03:
+.. _cid-apr_usetid:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_USETID
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_USETID <doxid-group__apr__file__permissions_1ga67caebf5bbe4f3f4b6252a75e5ce066f>`
+
+.. _doxid-group__apr__file__permissions_1ga4faa7fdfa3bcda569dd1e23ae002c5e5:
+.. _cid-apr_uwrite:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_UWRITE
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_UWRITE <doxid-group__apr__file__permissions_1ga50b985779b15fbfdae0758e98ffb92af>`
+
+.. _doxid-group__apr__file__permissions_1ga7bf4afea195c62f41aad1d3e94dcdac6:
+.. _cid-apr_wexecute:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_WEXECUTE
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_WEXECUTE <doxid-group__apr__file__permissions_1ga760d69c09b38ddf1e0aff09362d8ce11>`
+
+.. _doxid-group__apr__file__permissions_1ga5c987d2b1ace95b4ffa7c5a322721aad:
+.. _cid-apr_wread:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_WREAD
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_WREAD <doxid-group__apr__file__permissions_1ga194718630250b0f0dd4be38c86dac717>`
+
+.. _doxid-group__apr__file__permissions_1ga824d6685d59e3efddb6ee7fdbee69c13:
+.. _cid-apr_wsticky:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_WSTICKY
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_WSTICKY <doxid-group__apr__file__permissions_1ga989dbea02f779a5f20a643d7e4ee9952>`
+
+.. _doxid-group__apr__file__permissions_1ga7aac61689e9aaa93176bdb4911f56863:
+.. _cid-apr_wwrite:
+.. ref-code-block:: cpp
+	:class: title-code-block
+
+	#define APR_WWRITE
+
+Deprecated
+
+
+
+.. rubric:: See also:
+
+:ref:`APR_FPROT_WWRITE <doxid-group__apr__file__permissions_1ga51692a9828f5b6288d89495378944260>`
+
