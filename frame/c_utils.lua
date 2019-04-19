@@ -1154,6 +1154,8 @@ function getDocBlockContents (block, context)
 			end
 		elseif block.m_blockKind == "table" then
 			s = getSimpleTableContents (block.m_childBlockList, context)
+		elseif block.m_blockKind == "ulink" then
+			s = "`" .. block.m_text .. " <" .. block.m_url .. ">`_"
 		else
 			s = text
 		end
