@@ -118,8 +118,8 @@ struct DocImageBlock: DocBlock
 {
 	ImageKind m_imageKind;
 	sl::String m_name;
-	int m_width;
-	int m_height;
+	int m_width = 0;
+	int m_height = 0;
 
 	virtual
 	void
