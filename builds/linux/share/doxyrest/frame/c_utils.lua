@@ -1152,10 +1152,10 @@ function getDocBlockContents (block, context)
 			else
 				s = text
 			end
-		elseif block.m_blockKind == "table" then
-			s = getSimpleTableContents (block.m_childBlockList, context)
 		elseif block.m_blockKind == "ulink" then
 			s = "`" .. block.m_text .. " <" .. block.m_url .. ">`_"
+		elseif block.m_blockKind == "table" then
+			s = getSimpleTableContents (block.m_childBlockList, context)
 		else
 			s = text
 		end
@@ -1286,8 +1286,8 @@ function getItemDetailedDocumentation (item)
 end
 
 function getSimpleTableContents (blockList, context)
-	tbl = {}
-	maxwidths = {}
+	local tbl = {}
+	local maxwidths = {}
 
 	for i = 1, #blockList do
 		local block = blockList [i]
@@ -1296,7 +1296,7 @@ function getSimpleTableContents (blockList, context)
 			local row = {}
 			for rownum = 1, #rowblock do
 				if rowblock[rownum].m_blockKind == 'entry' then
-					local entryblock = rowblock[rownum].m_childBlockList 
+					local entryblock = rowblock[rownum].m_childBlockList
 					for entry = 1, #entryblock do
 						if entryblock[entry].m_blockKind == 'para' then
 							local t = trimWhitespace(entryblock[entry].m_childBlockList[1].m_text)
@@ -1317,7 +1317,7 @@ function getSimpleTableContents (blockList, context)
 		return ''
 	end
 
-	headfoot = ''
+	local headfoot = ''
 	for i = 1, #maxwidths do
 		headfoot = headfoot .. string.rep('=', maxwidths[i]) .. '  '
 	end
